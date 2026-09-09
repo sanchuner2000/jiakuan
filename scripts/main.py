@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 SOURCE_URLS = [
-    "https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/everything.txt ",
+    "https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/everything.txt",
 ]
 
 OUTPUT_DIR = "output"
