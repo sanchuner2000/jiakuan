@@ -6,74 +6,22 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaohe
   type: vless
-  server: 172.67.209.127
+  server: 104.16.107.139
   port: 8880
-  uuid: 8bcfe782-60c4-4c09-b46c-330f1aa3741c
+  uuid: bf380279-cbd5-4e55-96d1-f5a652aaf6b3
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=proxyip.us.cmliussss.net
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: snowy-lab-6cab.237-2da.workers.dev
+      Host: mute-dust-f0c4.456-8ae.workers.dev
 - name: 🇸🇨 SC 02 - xiaohe
   type: vless
-  server: 45.130.125.30
+  server: 104.21.23.72
   port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime58.workers.dev
-- name: 🇸🇨 SC 03 - xiaohe
-  type: vless
-  server: icook.tw
-  port: 8880
-  uuid: aa7461af-3176-42a3-8974-59930189c521
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: round-block-e864.326.workers.dev
-- name: 🇸🇨 SC 04 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 1113b881-179c-411c-b29b-53dae8faaf0a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: raspy-sun-3de0.338.workers.dev
-- name: 🇸🇨 SC 05 - xiaohe
-  type: vless
-  server: 104.16.98.215
-  port: 8880
-  uuid: 3aaabf99-32c6-4032-8695-c9f0eb28be6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.us.cmliussss.net
-    headers:
-      Host: divine-sound-9e93.22-be2.workers.dev
-- name: 🇸🇨 SC 06 - xiaohe
-  type: vless
-  server: 104.18.34.245
-  port: 8880
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  uuid: bf667068-11cb-4c37-a867-4a2b03b45555
   udp: true
   tls: false
   skip-cert-verify: true
@@ -81,8 +29,8 @@ proxies:
   ws-opts:
     path: /pyip
     headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
-- name: 🇸🇨 SC 07 - xiaohe
+      Host: flat-sun-b8d3.225-154.workers.dev
+- name: 🇸🇨 SC 03 - xiaohe
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -92,6 +40,32 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇨 SC 04 - xiaohe
+  type: vless
+  server: 104.18.34.245
+  port: 8880
+  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: silent-snow-1a0d.241-b0a.workers.dev
+- name: 🇸🇨 SC 05 - xiaohe
+  type: vless
+  server: lucky-sunset-d12e.201-98c.workers.dev
+  port: 8880
+  uuid: ef770523-8eb5-403f-9e95-06b328719c87
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lucky-sunset-d12e.201-98c.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,8 +76,6 @@ proxy-groups:
   - 🇸🇨 SC 03 - xiaohe
   - 🇸🇨 SC 04 - xiaohe
   - 🇸🇨 SC 05 - xiaohe
-  - 🇸🇨 SC 06 - xiaohe
-  - 🇸🇨 SC 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -114,7 +86,5 @@ proxy-groups:
   - 🇸🇨 SC 03 - xiaohe
   - 🇸🇨 SC 04 - xiaohe
   - 🇸🇨 SC 05 - xiaohe
-  - 🇸🇨 SC 06 - xiaohe
-  - 🇸🇨 SC 07 - xiaohe
 rules:
 - MATCH,PROXIES
