@@ -19,45 +19,22 @@ proxies:
     headers:
       Host: ccs2g.pai50288.uk
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /lMnsZUN4/
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: v2ray1.dozapp.xyz
 - name: 🌐 其他地区 (Other) 03 - xiaohe
-  type: vless
-  server: sparkling-shadow-481d.342-429.workers.dev
-  port: 8880
-  uuid: e431026f-d605-4a52-8b3b-0912a68dc9d1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: sparkling-shadow-481d.342-429.workers.dev
-- name: 🌐 其他地区 (Other) 04 - xiaohe
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 4e81922a-1c2e-41ee-bb4c-9095a0a363fe
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: gentle-cell-501a.273-d6b.workers.dev
-- name: 🌐 其他地区 (Other) 05 - xiaohe
   type: vless
   server: 188.114.97.6
   port: 8080
@@ -70,98 +47,23 @@ proxies:
     path: /fp=chrome
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 06 - xiaohe
-  type: vless
-  server: ccs2g.pai50288.uk
-  port: 443
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+- name: 🌐 其他地区 (Other) 04 - xiaohe
+  type: vmess
+  server: www.nextkyc.com
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccs2g.pai50288.uk
+  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /pai50288
+    path: /lMnsZUN4/
     headers:
-      Host: ccs2g.pai50288.uk
-- name: 🌐 其他地区 (Other) 07 - xiaohe
-  type: vless
-  server: 172.65.90.52
-  port: 8880
-  uuid: 812b1aeb-c6f7-43cb-8d8b-981711fea21a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: dark-cake-4743.198-46c.workers.dev
-- name: 🌐 其他地区 (Other) 08 - xiaohe
-  type: vless
-  server: ticket.cutizeh.ir
-  port: 1102
-  uuid: 888ace32-07d3-4000-b6c2-1268d9715f1b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: DbArC_oPTXXRSuurm980XmEJTAQrz31ThG_3C0xFlxg
-  servername: ookla.com
-  client-fingerprint: chrome
-- name: 🌐 其他地区 (Other) 09 - xiaohe
-  type: vless
-  server: skk.moe
-  port: 8880
-  uuid: 8cde6cd0-7903-4aef-8ce8-528fa9677d7b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: steep-glitter-7c3c.367-5c9.workers.dev
-- name: 🌐 其他地区 (Other) 10 - xiaohe
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 4e81922a-1c2e-41ee-bb4c-9095a0a363fe
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: gentle-cell-501a.273-d6b.workers.dev
-- name: 🌐 其他地区 (Other) 11 - xiaohe
-  type: vless
-  server: winter-hall-a0a2.74-532.workers.dev
-  port: 8880
-  uuid: d503ca85-91c2-426d-98ce-7a6f44666be1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: winter-hall-a0a2.74-532.workers.dev
-- name: 🌐 其他地区 (Other) 12 - xiaohe
-  type: vless
-  server: 104.18.34.245
-  port: 8880
-  uuid: 78b73cc4-8c3c-40ce-bb74-d5dcd3277c67
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.jp.cmliussss.net
-    headers:
-      Host: white-hill-f907.23-b68.workers.dev
-- name: 🌐 其他地区 (Other) 13 - xiaohe
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 05 - xiaohe
   type: vless
   server: 188.114.97.6
   port: 443
@@ -175,189 +77,6 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 14 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: deee4a60-e8c3-456f-846f-aa2c2b7fae24
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=proxyip.sg.cmliussss.net
-    headers:
-      Host: broad-bush-c2c8.37-9a0.workers.dev
-- name: 🌐 其他地区 (Other) 15 - xiaohe
-  type: vless
-  server: 104.17.58.113
-  port: 8880
-  uuid: 6d6b7a8d-a9fa-4889-a5f4-d112c6b6f494
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: small-cake-e99b.390-a20.workers.dev
-- name: 🌐 其他地区 (Other) 16 - xiaohe
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 17 - xiaohe
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: bf667068-11cb-4c37-a867-4a2b03b45555
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: flat-sun-b8d3.225-154.workers.dev
-- name: 🌐 其他地区 (Other) 18 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: e3c7c198-2b02-42c2-b78f-22dfc078219c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vl/3k4QnDlh2r3IPLPNFGLAeMJ5df?ed=2560
-    headers:
-      Host: uj-kn9gcgkzl0wmmy5wrkmalvhzdw62z.soltannatlos.workers.dev
-- name: 🌐 其他地区 (Other) 19 - xiaohe
-  type: vless
-  server: 172.66.170.53
-  port: 8880
-  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: polished-meadow-2ac5.228-76d.workers.dev
-- name: 🌐 其他地区 (Other) 20 - xiaohe
-  type: vless
-  server: 172.64.80.1
-  port: 8880
-  uuid: 84270e8b-567e-45c6-b2f2-56ec9a67ae1e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: young-leaf-a723.162-4da.workers.dev
-- name: 🌐 其他地区 (Other) 21 - xiaohe
-  type: vless
-  server: www.iplocation.net
-  port: 8880
-  uuid: 878dd962-027b-4bd3-a1f8-66be68a03c4d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: young-wind-3c58.240-2ce.workers.dev
-- name: 🌐 其他地区 (Other) 22 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 59a0424b-d36b-4685-bac5-89d50d8969a8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: billowing-snowflake-f056.63-f14.workers.dev
-- name: 🌐 其他地区 (Other) 23 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: caa0f615-2598-4b78-b339-2824658a602b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: soft-dream-429a.319.workers.dev
-- name: 🌐 其他地区 (Other) 24 - xiaohe
-  type: vless
-  server: lucky-field-0220.191-de2.workers.dev
-  port: 8880
-  uuid: 01c2fb74-10b5-452d-b893-67cb528b6a8d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucky-field-0220.191-de2.workers.dev
-- name: 🌐 其他地区 (Other) 25 - xiaohe
-  type: vless
-  server: www.zsu.gov.ua
-  port: 8880
-  uuid: 30a2a9a6-6a03-4353-a7fb-63831d64f718
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: orange-lab-896e.365-80b.workers.dev
-- name: 🌐 其他地区 (Other) 26 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: autumn-dawn-fa6b.337-272.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: autumn-dawn-fa6b.337-272.workers.dev
-- name: 🌐 其他地区 (Other) 27 - xiaohe
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -368,28 +87,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 03 - xiaohe
   - 🌐 其他地区 (Other) 04 - xiaohe
   - 🌐 其他地区 (Other) 05 - xiaohe
-  - 🌐 其他地区 (Other) 06 - xiaohe
-  - 🌐 其他地区 (Other) 07 - xiaohe
-  - 🌐 其他地区 (Other) 08 - xiaohe
-  - 🌐 其他地区 (Other) 09 - xiaohe
-  - 🌐 其他地区 (Other) 10 - xiaohe
-  - 🌐 其他地区 (Other) 11 - xiaohe
-  - 🌐 其他地区 (Other) 12 - xiaohe
-  - 🌐 其他地区 (Other) 13 - xiaohe
-  - 🌐 其他地区 (Other) 14 - xiaohe
-  - 🌐 其他地区 (Other) 15 - xiaohe
-  - 🌐 其他地区 (Other) 16 - xiaohe
-  - 🌐 其他地区 (Other) 17 - xiaohe
-  - 🌐 其他地区 (Other) 18 - xiaohe
-  - 🌐 其他地区 (Other) 19 - xiaohe
-  - 🌐 其他地区 (Other) 20 - xiaohe
-  - 🌐 其他地区 (Other) 21 - xiaohe
-  - 🌐 其他地区 (Other) 22 - xiaohe
-  - 🌐 其他地区 (Other) 23 - xiaohe
-  - 🌐 其他地区 (Other) 24 - xiaohe
-  - 🌐 其他地区 (Other) 25 - xiaohe
-  - 🌐 其他地区 (Other) 26 - xiaohe
-  - 🌐 其他地区 (Other) 27 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -400,27 +97,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 03 - xiaohe
   - 🌐 其他地区 (Other) 04 - xiaohe
   - 🌐 其他地区 (Other) 05 - xiaohe
-  - 🌐 其他地区 (Other) 06 - xiaohe
-  - 🌐 其他地区 (Other) 07 - xiaohe
-  - 🌐 其他地区 (Other) 08 - xiaohe
-  - 🌐 其他地区 (Other) 09 - xiaohe
-  - 🌐 其他地区 (Other) 10 - xiaohe
-  - 🌐 其他地区 (Other) 11 - xiaohe
-  - 🌐 其他地区 (Other) 12 - xiaohe
-  - 🌐 其他地区 (Other) 13 - xiaohe
-  - 🌐 其他地区 (Other) 14 - xiaohe
-  - 🌐 其他地区 (Other) 15 - xiaohe
-  - 🌐 其他地区 (Other) 16 - xiaohe
-  - 🌐 其他地区 (Other) 17 - xiaohe
-  - 🌐 其他地区 (Other) 18 - xiaohe
-  - 🌐 其他地区 (Other) 19 - xiaohe
-  - 🌐 其他地区 (Other) 20 - xiaohe
-  - 🌐 其他地区 (Other) 21 - xiaohe
-  - 🌐 其他地区 (Other) 22 - xiaohe
-  - 🌐 其他地区 (Other) 23 - xiaohe
-  - 🌐 其他地区 (Other) 24 - xiaohe
-  - 🌐 其他地区 (Other) 25 - xiaohe
-  - 🌐 其他地区 (Other) 26 - xiaohe
-  - 🌐 其他地区 (Other) 27 - xiaohe
 rules:
 - MATCH,PROXIES
