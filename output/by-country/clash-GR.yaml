@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+- name: 🇬🇷 GR 01 - xiaohe
   type: vless
-  server: best-internet-iran.app.runonflux.io
-  port: 443
-  uuid: 31d5256b-b7e8-40cd-a541-441f63e60984
+  server: 91.186.218.227
+  port: 4443
+  uuid: 97423fab-93df-4061-be7a-e6ca8d7eb3d7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: best-internet-iran.app.runonflux.io
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
   network: ws
   ws-opts:
-    path: /xvpnws/
+    path: /@Marisa_kristi
     headers:
-      Host: ''
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  - 🇬🇷 GR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  - 🇬🇷 GR 01 - xiaohe
 rules:
 - MATCH,PROXIES

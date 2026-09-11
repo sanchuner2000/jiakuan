@@ -6,18 +6,29 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
   type: vless
-  server: ov-france1.09vpn.com
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  server: 51.77.217.70
+  port: 2053
+  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
+  reality-opts:
+    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 02 - xiaohe
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: 2211972b-a45a-4951-a640-6173d573e637
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 03 - xiaohe
   type: vless
   server: 149.202.58.99
   port: 443
@@ -31,77 +42,7 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 03 - xiaohe
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
-  servername: www.google.com
-  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 04 - xiaohe
-  type: vless
-  server: 213.136.92.67
-  port: 443
-  uuid: af348651-1624-4710-b55f-0307a22d891f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jvJPfOHtnr2sH79qG-rEtJHFbr36_7Ag7ARsUmtSDQo
-  servername: status.play.google.com
-  client-fingerprint: ios
-- name: 🇫🇷 法国 (France) 05 - xiaohe
-  type: vless
-  server: ww1.levikogjgfdd.ir
-  port: 443
-  uuid: af348651-1624-4710-b55f-0307a22d891f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jvJPfOHtnr2sH79qG-rEtJHFbr36_7Ag7ARsUmtSDQo
-  servername: status.play.google.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 06 - xiaohe
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 07 - xiaohe
-  type: vless
-  server: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/5a26a30b00dc
-    headers:
-      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
-- name: 🇫🇷 法国 (France) 08 - xiaohe
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 09 - xiaohe
   type: vless
   server: ov-france1.09vpn.com
   port: 80
@@ -114,7 +55,33 @@ proxies:
     path: /vless/
     headers:
       Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 10 - xiaohe
+- name: 🇫🇷 法国 (France) 05 - xiaohe
+  type: vless
+  server: shop.theawesomenpl.ru
+  port: 50715
+  uuid: b761689d-592e-46b2-b704-af7a9110b0ac
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: YyF_0swCrKvtCDKmnGhz9UshtvQxUbpemVO8d_Bj6Ro
+  servername: www.nvidia.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 06 - xiaohe
+  type: vless
+  server: bab-6.site
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: ''
+- name: 🇫🇷 法国 (France) 07 - xiaohe
   type: vless
   server: shop.theawesomenpl.ru
   port: 50715
@@ -126,6 +93,44 @@ proxies:
     public-key: YyF_0swCrKvtCDKmnGhz9UshtvQxUbpemVO8d_Bj6Ro
   servername: www.nvidia.com
   client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 08 - xiaohe
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 09 - xiaohe
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: akamaized.net
+- name: 🇫🇷 法国 (France) 10 - xiaohe
+  type: vless
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-France1.09vpn.com
 - name: 🇫🇷 法国 (France) 11 - xiaohe
   type: vless
   server: ov-france1.09vpn.com
@@ -141,9 +146,9 @@ proxies:
       Host: ov-france1.09vpn.com
 - name: 🇫🇷 法国 (France) 12 - xiaohe
   type: vless
-  server: OV-France1.09vpn.com
+  server: ov-france1.09vpn.com
   port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
   udp: true
   tls: false
   skip-cert-verify: true
@@ -151,20 +156,27 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: OV-France1.09vpn.com
+      Host: ov-france1.09vpn.com
 - name: 🇫🇷 法国 (France) 13 - xiaohe
   type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: 2211972b-a45a-4951-a640-6173d573e637
+  server: ww1.levikogjgfdd.ir
+  port: 443
+  uuid: af348651-1624-4710-b55f-0307a22d891f
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+    public-key: jvJPfOHtnr2sH79qG-rEtJHFbr36_7Ag7ARsUmtSDQo
+  servername: status.play.google.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 14 - xiaohe
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 15 - xiaohe
   type: vless
   server: bab-6.site
   port: 443
@@ -178,50 +190,11 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 15 - xiaohe
-  type: vless
-  server: shop.theawesomenpl.ru
-  port: 50715
-  uuid: b761689d-592e-46b2-b704-af7a9110b0ac
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YyF_0swCrKvtCDKmnGhz9UshtvQxUbpemVO8d_Bj6Ro
-  servername: www.nvidia.com
-  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 16 - xiaohe
-  type: vless
-  server: bab-6.site
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: ''
-- name: 🇫🇷 法国 (France) 17 - xiaohe
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: akamaized.net
-- name: 🇫🇷 法国 (France) 18 - xiaohe
   type: vless
   server: ov-france1.09vpn.com
   port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
   tls: false
   skip-cert-verify: true
@@ -230,26 +203,6 @@ proxies:
     path: /vless/
     headers:
       Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 19 - xiaohe
-  type: vless
-  server: 35.181.15.183
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 20 - xiaohe
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
-  servername: www.google.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -271,10 +224,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 14 - xiaohe
   - 🇫🇷 法国 (France) 15 - xiaohe
   - 🇫🇷 法国 (France) 16 - xiaohe
-  - 🇫🇷 法国 (France) 17 - xiaohe
-  - 🇫🇷 法国 (France) 18 - xiaohe
-  - 🇫🇷 法国 (France) 19 - xiaohe
-  - 🇫🇷 法国 (France) 20 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -296,9 +245,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 14 - xiaohe
   - 🇫🇷 法国 (France) 15 - xiaohe
   - 🇫🇷 法国 (France) 16 - xiaohe
-  - 🇫🇷 法国 (France) 17 - xiaohe
-  - 🇫🇷 法国 (France) 18 - xiaohe
-  - 🇫🇷 法国 (France) 19 - xiaohe
-  - 🇫🇷 法国 (France) 20 - xiaohe
 rules:
 - MATCH,PROXIES

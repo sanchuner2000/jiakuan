@@ -6,47 +6,6 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   type: vless
-  server: www.shopify.com
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  type: vless
-  server: 172.67.152.71
-  port: 8880
-  uuid: 38135fde-7044-4407-8faf-e1ab08e47402
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: white-bush-712e.498-f8f.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  type: vless
   server: mfa.gov.ua
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -59,20 +18,21 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   type: vless
-  server: nameless-poetry-cc33.268-910.workers.dev
-  port: 8880
-  uuid: b1b99d33-8df1-4c74-b140-28941b43a4d2
+  server: 188.114.97.6
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /?ed=2560
     headers:
-      Host: nameless-poetry-cc33.268-910.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   type: vless
   server: cf.9999669.xyz
   port: 2087
@@ -86,7 +46,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   type: vless
   server: 8.6.112.6
   port: 2087
@@ -100,6 +60,20 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
+  type: vless
+  server: www.shopify.com
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,8 +84,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -122,7 +94,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
   - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

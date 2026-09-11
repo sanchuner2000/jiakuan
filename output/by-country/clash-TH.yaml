@@ -6,56 +6,82 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - xiaohe
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 3bf2781f-63a2-4c38-ad02-2cc337c2f7fa
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /ws
     headers:
-      Host: silent-heart-175f.325-a85.workers.dev
+      Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 TH 02 - xiaohe
   type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 392ed37c-c0cd-472e-8765-a94677005b0b
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /ws
     headers:
-      Host: frosty-bread-788f.398.workers.dev
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 03 - xiaohe
   type: vless
-  server: 104.18.12.229
-  port: 8880
-  uuid: 380de97f-1d87-4394-acb8-f9ad7a422ac1
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /ws
     headers:
-      Host: proud-recipe-239d.305-0da.workers.dev
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 04 - xiaohe
   type: vless
-  server: 104.17.178.154
-  port: 8880
-  uuid: a8c23fe7-d2bb-46ba-a14e-8847f1944642
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /ws
     headers:
-      Host: billowing-fire-a10b.301-d6c.workers.dev
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 05 - xiaohe
+  type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 06 - xiaohe
+  type: vless
+  server: V2rAy.SiMsPeEdUp.CoM
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +91,8 @@ proxy-groups:
   - 🇹🇭 TH 02 - xiaohe
   - 🇹🇭 TH 03 - xiaohe
   - 🇹🇭 TH 04 - xiaohe
+  - 🇹🇭 TH 05 - xiaohe
+  - 🇹🇭 TH 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +102,7 @@ proxy-groups:
   - 🇹🇭 TH 02 - xiaohe
   - 🇹🇭 TH 03 - xiaohe
   - 🇹🇭 TH 04 - xiaohe
+  - 🇹🇭 TH 05 - xiaohe
+  - 🇹🇭 TH 06 - xiaohe
 rules:
 - MATCH,PROXIES

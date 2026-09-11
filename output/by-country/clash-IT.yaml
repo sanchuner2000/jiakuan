@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: 57.131.32.191
   port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  uuid: b3051b10-716d-455b-9811-aefcce3d633e
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,26 +16,20 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-italy1.09vpn.com
+      Host: 57.131.32.191
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
   type: vless
-  server: milan.adaspoloandco.com
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: milan.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /RoBeRt
-    headers:
-      Host: milan.adaspoloandco.com
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
   type: vless
   server: 57.131.32.191
   port: 80
-  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
+  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
   udp: true
   tls: false
   skip-cert-verify: true
@@ -46,40 +40,6 @@ proxies:
       Host: 57.131.32.191
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
-  type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: b3051b10-716d-455b-9811-aefcce3d633e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.131.32.191
-- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
-  type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-italy1.09vpn.com
-- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
-  type: vless
   server: milan.adaspoloandco.com
   port: 8443
   uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
@@ -92,9 +52,38 @@ proxies:
     path: /RoBeRt
     headers:
       Host: milan.adaspoloandco.com
-- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   type: vless
   server: ov-italy1.09vpn.com
+  port: 80
+  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-italy1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
+  type: vless
+  server: 57.131.32.191
   port: 80
   uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
   udp: true
@@ -104,7 +93,7 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-italy1.09vpn.com
+      Host: 57.131.32.191
 - name: 🇮🇹 意大利 (Italy) 09 - xiaohe
   type: vless
   server: ov-italy1.09vpn.com
@@ -120,9 +109,9 @@ proxies:
       Host: ov-italy1.09vpn.com
 - name: 🇮🇹 意大利 (Italy) 10 - xiaohe
   type: vless
-  server: 57.131.32.191
+  server: ov-italy1.09vpn.com
   port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  uuid: b3051b10-716d-455b-9811-aefcce3d633e
   udp: true
   tls: false
   skip-cert-verify: true
@@ -130,12 +119,12 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: 57.131.32.191
+      Host: ov-italy1.09vpn.com
 - name: 🇮🇹 意大利 (Italy) 11 - xiaohe
   type: vless
   server: ov-italy1.09vpn.com
   port: 80
-  uuid: b3051b10-716d-455b-9811-aefcce3d633e
+  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
   udp: true
   tls: false
   skip-cert-verify: true
@@ -156,7 +145,7 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: OV-Italy1.09vpn.com
+      Host: ov-italy1.09vpn.com
 - name: 🇮🇹 意大利 (Italy) 13 - xiaohe
   type: vless
   server: OV-Italy1.09vpn.com
@@ -174,7 +163,7 @@ proxies:
   type: vless
   server: 57.131.32.191
   port: 80
-  uuid: b3051b10-716d-455b-9811-aefcce3d633e
+  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
   udp: true
   tls: false
   skip-cert-verify: true
@@ -182,12 +171,12 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-italy1.09vpn.com
+      Host: 57.131.32.191
 - name: 🇮🇹 意大利 (Italy) 15 - xiaohe
   type: vless
-  server: 57.131.32.191
+  server: ov-italy1.09vpn.com
   port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
   udp: true
   tls: false
   skip-cert-verify: true
@@ -200,6 +189,32 @@ proxies:
   type: vless
   server: 57.131.32.191
   port: 80
+  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.131.32.191
+- name: 🇮🇹 意大利 (Italy) 17 - xiaohe
+  type: vless
+  server: 57.131.32.191
+  port: 80
+  uuid: b3051b10-716d-455b-9811-aefcce3d633e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-italy1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 18 - xiaohe
+  type: vless
+  server: 57.131.32.191
+  port: 80
   uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
   udp: true
   tls: false
@@ -209,9 +224,9 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Italy1.09vpn.com
-- name: 🇮🇹 意大利 (Italy) 17 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 19 - xiaohe
   type: vless
-  server: 57.131.32.191
+  server: ov-italy1.09vpn.com
   port: 80
   uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
   udp: true
@@ -222,27 +237,6 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Italy1.09vpn.com
-- name: 🇮🇹 意大利 (Italy) 18 - xiaohe
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 19 - xiaohe
-  type: vless
-  server: ov-italy1.09vpn.com
-  port: 80
-  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-italy1.09vpn.com
 - name: 🇮🇹 意大利 (Italy) 20 - xiaohe
   type: vless
   server: 57.131.32.191
@@ -255,43 +249,8 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: 57.131.32.191
+      Host: ov-italy1.09vpn.com
 - name: 🇮🇹 意大利 (Italy) 21 - xiaohe
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 22 - xiaohe
-  type: vless
-  server: milan.adaspoloandco.com
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: milan.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /RoBeRt
-    headers:
-      Host: milan.adaspoloandco.com
-- name: 🇮🇹 意大利 (Italy) 23 - xiaohe
-  type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.131.32.191
-- name: 🇮🇹 意大利 (Italy) 24 - xiaohe
   type: vless
   server: 57.131.32.191
   port: 80
@@ -304,7 +263,54 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Italy1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 22 - xiaohe
+  type: vless
+  server: 57.131.32.191
+  port: 80
+  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Italy1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 23 - xiaohe
+  type: vless
+  server: ov-italy1.09vpn.com
+  port: 80
+  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-italy1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 24 - xiaohe
+  type: vless
+  server: 57.131.32.191
+  port: 80
+  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Italy1.09vpn.com
 - name: 🇮🇹 意大利 (Italy) 25 - xiaohe
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 26 - xiaohe
   type: vless
   server: 57.131.32.191
   port: 80
@@ -317,38 +323,11 @@ proxies:
     path: /vless/
     headers:
       Host: ov-italy1.09vpn.com
-- name: 🇮🇹 意大利 (Italy) 26 - xiaohe
-  type: vless
-  server: OV-Italy1.09vpn.com
-  port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Italy1.09vpn.com
 - name: 🇮🇹 意大利 (Italy) 27 - xiaohe
-  type: vless
-  server: milan.adaspoloandco.com
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: milan.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /RoBeRt
-    headers:
-      Host: milan.adaspoloandco.com
-- name: 🇮🇹 意大利 (Italy) 28 - xiaohe
   type: vless
   server: 57.131.32.191
   port: 80
-  uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
+  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
   udp: true
   tls: false
   skip-cert-verify: true
@@ -357,9 +336,21 @@ proxies:
     path: /vless/
     headers:
       Host: ov-italy1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 28 - xiaohe
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 29 - xiaohe
   type: vless
-  server: ov-italy1.09vpn.com
+  server: 57.131.32.191
   port: 80
   uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
   udp: true
@@ -372,7 +363,7 @@ proxies:
       Host: ov-italy1.09vpn.com
 - name: 🇮🇹 意大利 (Italy) 30 - xiaohe
   type: vless
-  server: ov-italy1.09vpn.com
+  server: 57.131.32.191
   port: 80
   uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
   udp: true
@@ -385,40 +376,7 @@ proxies:
       Host: ov-italy1.09vpn.com
 - name: 🇮🇹 意大利 (Italy) 31 - xiaohe
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 32 - xiaohe
-  type: vless
-  server: 57.131.32.191
-  port: 80
-  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Italy1.09vpn.com
-- name: 🇮🇹 意大利 (Italy) 33 - xiaohe
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 34 - xiaohe
-  type: vless
-  server: ov-italy1.09vpn.com
+  server: OV-Italy1.09vpn.com
   port: 80
   uuid: 1e280316-0408-47c4-b058-05b8f1f17f02
   udp: true
@@ -428,21 +386,7 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-italy1.09vpn.com
-- name: 🇮🇹 意大利 (Italy) 35 - xiaohe
-  type: vless
-  server: milan.adaspoloandco.com
-  port: 8443
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: milan.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /RoBeRt
-    headers:
-      Host: milan.adaspoloandco.com
+      Host: OV-Italy1.09vpn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -479,10 +423,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 29 - xiaohe
   - 🇮🇹 意大利 (Italy) 30 - xiaohe
   - 🇮🇹 意大利 (Italy) 31 - xiaohe
-  - 🇮🇹 意大利 (Italy) 32 - xiaohe
-  - 🇮🇹 意大利 (Italy) 33 - xiaohe
-  - 🇮🇹 意大利 (Italy) 34 - xiaohe
-  - 🇮🇹 意大利 (Italy) 35 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -519,9 +459,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 29 - xiaohe
   - 🇮🇹 意大利 (Italy) 30 - xiaohe
   - 🇮🇹 意大利 (Italy) 31 - xiaohe
-  - 🇮🇹 意大利 (Italy) 32 - xiaohe
-  - 🇮🇹 意大利 (Italy) 33 - xiaohe
-  - 🇮🇹 意大利 (Italy) 34 - xiaohe
-  - 🇮🇹 意大利 (Italy) 35 - xiaohe
 rules:
 - MATCH,PROXIES

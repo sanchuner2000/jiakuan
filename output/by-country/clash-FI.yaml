@@ -6,40 +6,44 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  server: 151.101.56.6
+  port: 443
+  uuid: cc4a473a-2e15-4fc6-ec54-47c3aa5cec09
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    headers:
+      Host: c12.com
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  server: 212.193.18.183
+  port: 8443
+  uuid: c037d90b-83ec-422f-b547-c77575392f6f
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
+    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
+  servername: maps.apple.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  server: 87.121.82.237.vhubtest.ru
+  port: 443
+  uuid: 49d39628-53cf-5345-a8d7-b31e0069b545
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  servername: 87.121.82.237.vhubtest.ru
+  network: ws
+  ws-opts:
+    path: /websocket?ed=2560
+    headers:
+      Host: 87.121.82.237.vhubtest.ru
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
   server: 185.79.138.71
@@ -54,18 +58,16 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 05 - xiaohe
   type: vless
-  server: land.zavqeron.ir
-  port: 2053
-  uuid: f2900749-7cff-42b7-9566-dfb03840d374
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: zavqeron.ir
-  network: ws
-  ws-opts:
-    path: /fi-cdn
-    headers:
-      Host: land.zavqeron.ir
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 06 - xiaohe
   type: vless
   server: 185.79.138.71
@@ -126,6 +128,30 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
+- name: 🇫🇮 FI 11 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 12 - xiaohe
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -141,6 +167,8 @@ proxy-groups:
   - 🇫🇮 FI 08 - xiaohe
   - 🇫🇮 FI 09 - xiaohe
   - 🇫🇮 FI 10 - xiaohe
+  - 🇫🇮 FI 11 - xiaohe
+  - 🇫🇮 FI 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -156,5 +184,7 @@ proxy-groups:
   - 🇫🇮 FI 08 - xiaohe
   - 🇫🇮 FI 09 - xiaohe
   - 🇫🇮 FI 10 - xiaohe
+  - 🇫🇮 FI 11 - xiaohe
+  - 🇫🇮 FI 12 - xiaohe
 rules:
 - MATCH,PROXIES
