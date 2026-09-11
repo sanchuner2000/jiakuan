@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇧🇪 BE 01 - xiaohe
   type: vless
-  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  port: 2095
-  uuid: 73796e63-0000-4000-8000-000000000008
+  server: 172.67.155.136
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
   udp: true
   tls: false
   skip-cert-verify: true
@@ -19,7 +19,7 @@ proxies:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 - name: 🇧🇪 BE 02 - xiaohe
   type: vless
-  server: 104.21.64.198
+  server: 172.67.155.136
   port: 2095
   uuid: 73796e63-0000-4000-8000-000000000008
   udp: true
@@ -32,9 +32,9 @@ proxies:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 - name: 🇧🇪 BE 03 - xiaohe
   type: vless
-  server: 104.21.64.198
-  port: 2095
-  uuid: 73796e63-0000-4000-8000-000000000008
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
   udp: true
   tls: false
   skip-cert-verify: true
@@ -45,7 +45,7 @@ proxies:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 - name: 🇧🇪 BE 04 - xiaohe
   type: vless
-  server: 172.67.155.136
+  server: 104.21.64.198
   port: 2086
   uuid: 73796e63-0000-4000-8000-000000000007
   udp: true
@@ -58,7 +58,7 @@ proxies:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 - name: 🇧🇪 BE 05 - xiaohe
   type: vless
-  server: 172.67.155.136
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
   port: 2095
   uuid: 73796e63-0000-4000-8000-000000000008
   udp: true
@@ -71,7 +71,7 @@ proxies:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 - name: 🇧🇪 BE 06 - xiaohe
   type: vless
-  server: 104.21.64.198
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
   port: 2086
   uuid: 73796e63-0000-4000-8000-000000000007
   udp: true
@@ -110,9 +110,9 @@ proxies:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 - name: 🇧🇪 BE 09 - xiaohe
   type: vless
-  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  port: 2086
-  uuid: 73796e63-0000-4000-8000-000000000007
+  server: 104.21.64.198
+  port: 2095
+  uuid: 73796e63-0000-4000-8000-000000000008
   udp: true
   tls: false
   skip-cert-verify: true
@@ -123,9 +123,9 @@ proxies:
       Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 - name: 🇧🇪 BE 10 - xiaohe
   type: vless
-  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  port: 2086
-  uuid: 73796e63-0000-4000-8000-000000000007
+  server: 104.21.64.198
+  port: 2095
+  uuid: 73796e63-0000-4000-8000-000000000008
   udp: true
   tls: false
   skip-cert-verify: true

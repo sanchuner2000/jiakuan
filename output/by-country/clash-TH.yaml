@@ -1,0 +1,78 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇭 TH 01 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 3bf2781f-63a2-4c38-ad02-2cc337c2f7fa
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: silent-heart-175f.325-a85.workers.dev
+- name: 🇹🇭 TH 02 - xiaohe
+  type: vless
+  server: 104.21.70.21
+  port: 8080
+  uuid: 392ed37c-c0cd-472e-8765-a94677005b0b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: frosty-bread-788f.398.workers.dev
+- name: 🇹🇭 TH 03 - xiaohe
+  type: vless
+  server: 104.18.12.229
+  port: 8880
+  uuid: 380de97f-1d87-4394-acb8-f9ad7a422ac1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: proud-recipe-239d.305-0da.workers.dev
+- name: 🇹🇭 TH 04 - xiaohe
+  type: vless
+  server: 104.17.178.154
+  port: 8880
+  uuid: a8c23fe7-d2bb-46ba-a14e-8847f1944642
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: billowing-fire-a10b.301-d6c.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇭 TH 01 - xiaohe
+  - 🇹🇭 TH 02 - xiaohe
+  - 🇹🇭 TH 03 - xiaohe
+  - 🇹🇭 TH 04 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇭 TH 01 - xiaohe
+  - 🇹🇭 TH 02 - xiaohe
+  - 🇹🇭 TH 03 - xiaohe
+  - 🇹🇭 TH 04 - xiaohe
+rules:
+- MATCH,PROXIES
