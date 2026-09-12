@@ -6,23 +6,39 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   type: vless
-  server: app.life-pro.ir
-  port: 8082
-  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
+  server: 185.71.219.237
+  port: 47660
+  uuid: Telegram_ATOVPN
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  type: vless
+  server: 188.114.99.250
+  port: 443
+  uuid: 30cc2bdb-4d43-4a4e-8cae-bb44e615fc90
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kurdnet.arianetmili.xyz
+  network: ws
+  ws-opts:
+    path: /full
+    headers:
+      Host: kurdnet.arianetmili.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES

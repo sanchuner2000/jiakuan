@@ -6,17 +6,33 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
   type: vless
-  server: 15.236.172.122
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 02 - xiaohe
   type: vless
-  server: ov-france1.09vpn.com
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 03 - xiaohe
+  type: vless
+  server: 152.228.162.19
   port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
   udp: true
   tls: false
   skip-cert-verify: true
@@ -24,20 +40,12 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 03 - xiaohe
-  type: vless
-  server: 15.236.172.122
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: akamaized.net
 - name: 🇫🇷 法国 (France) 04 - xiaohe
   type: vless
   server: ov-france1.09vpn.com
   port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
   tls: false
   skip-cert-verify: true
@@ -47,58 +55,6 @@ proxies:
     headers:
       Host: ov-france1.09vpn.com
 - name: 🇫🇷 法国 (France) 05 - xiaohe
-  type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇫🇷 法国 (France) 06 - xiaohe
-  type: vless
-  server: 172.64.32.103
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇫🇷 法国 (France) 07 - xiaohe
-  type: vless
-  server: 172.64.229.170
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇫🇷 法国 (France) 08 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇫🇷 法国 (France) 09 - xiaohe
   type: vless
   server: 149.202.58.99
   port: 443
@@ -112,47 +68,23 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 10 - xiaohe
-  type: vless
-  server: bab-6.site
+- name: 🇫🇷 法国 (France) 06 - xiaohe
+  type: vmess
+  server: 90.127.143.135
   port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
+  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /vws/
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 11 - xiaohe
-  type: vless
-  server: 172.64.32.103
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇫🇷 法国 (France) 12 - xiaohe
-  type: vless
-  server: ov-france1.09vpn.com
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 13 - xiaohe
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇫🇷 法国 (France) 07 - xiaohe
   type: vless
   server: bab-6.site
   port: 443
@@ -166,27 +98,21 @@ proxies:
     path: /vws/
     headers:
       Host: ''
-- name: 🇫🇷 法国 (France) 14 - xiaohe
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 15 - xiaohe
+- name: 🇫🇷 法国 (France) 08 - xiaohe
   type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
+  server: bab-6.site
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vws/
     headers:
-      Host: akamaized.net
-- name: 🇫🇷 法国 (France) 16 - xiaohe
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 09 - xiaohe
   type: vless
   server: OV-France1.09vpn.com
   port: 80
@@ -199,46 +125,52 @@ proxies:
     path: /vless/
     headers:
       Host: OV-France1.09vpn.com
-- name: 🇫🇷 法国 (France) 17 - xiaohe
+- name: 🇫🇷 法国 (France) 10 - xiaohe
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇫🇷 法国 (France) 18 - xiaohe
-  type: vless
-  server: 172.64.158.146
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇫🇷 法国 (France) 19 - xiaohe
-  type: vless
-  server: 162.159.0.169
+  server: ov-france1.09vpn.com
   port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /vless/
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 11 - xiaohe
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 12 - xiaohe
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 13 - xiaohe
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -257,12 +189,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 11 - xiaohe
   - 🇫🇷 法国 (France) 12 - xiaohe
   - 🇫🇷 法国 (France) 13 - xiaohe
-  - 🇫🇷 法国 (France) 14 - xiaohe
-  - 🇫🇷 法国 (France) 15 - xiaohe
-  - 🇫🇷 法国 (France) 16 - xiaohe
-  - 🇫🇷 法国 (France) 17 - xiaohe
-  - 🇫🇷 法国 (France) 18 - xiaohe
-  - 🇫🇷 法国 (France) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -281,11 +207,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 11 - xiaohe
   - 🇫🇷 法国 (France) 12 - xiaohe
   - 🇫🇷 法国 (France) 13 - xiaohe
-  - 🇫🇷 法国 (France) 14 - xiaohe
-  - 🇫🇷 法国 (France) 15 - xiaohe
-  - 🇫🇷 法国 (France) 16 - xiaohe
-  - 🇫🇷 法国 (France) 17 - xiaohe
-  - 🇫🇷 法国 (France) 18 - xiaohe
-  - 🇫🇷 法国 (France) 19 - xiaohe
 rules:
 - MATCH,PROXIES
