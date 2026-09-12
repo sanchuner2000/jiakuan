@@ -1,0 +1,46 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇱 PL 01 - xiaohe
+  type: vless
+  server: poland-sgood.wopd.butnorwa.butter.silicore.ir
+  port: 9000
+  uuid: b33e4571-de3f-4249-b246-b2acf3db2f36
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
+  servername: sheets.google.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 02 - xiaohe
+  type: vless
+  server: poland-sgood.wopd.butnorwa.butter.silicore.ir
+  port: 9000
+  uuid: b33e4571-de3f-4249-b246-b2acf3db2f36
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
+  servername: sheets.google.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇱 PL 01 - xiaohe
+  - 🇵🇱 PL 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇱 PL 01 - xiaohe
+  - 🇵🇱 PL 02 - xiaohe
+rules:
+- MATCH,PROXIES
