@@ -6,24 +6,125 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
-  server: secdn-51.ktuda-skp.net
-  port: 443
-  uuid: 3def775e-8ccd-46f5-87d6-ce299d89d6c1
+  server: 89.22.224.146
+  port: 43788
+  uuid: 49a6eeaf-7dbf-4aa5-ba21-b36cd47e724e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: secdn-51.ktuda-skp.net
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇸🇪 SE 02 - xiaohe
+  type: vless
+  server: 213.21.229.126
+  port: 12345
+  uuid: 5ff5bd3f-929d-4d25-8c61-c6fc1a967ab2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇸🇪 SE 03 - xiaohe
+  type: vless
+  server: 213.21.229.126
+  port: 12345
+  uuid: b71961c9-4aa9-4283-b342-1ef99a46fe23
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇸🇪 SE 04 - xiaohe
+  type: vless
+  server: 109.120.155.155
+  port: 444
+  uuid: c325206e-0f0c-4472-9d76-43e9b9b2ef63
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇸🇪 SE 05 - xiaohe
+  type: vless
+  server: 213.21.229.126
+  port: 12345
+  uuid: 58809ac1-22fe-4372-8d84-ccaca97043fd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇸🇪 SE 06 - xiaohe
+  type: vless
+  server: 213.21.229.126
+  port: 12345
+  uuid: 48312288-a6eb-4cf7-9d75-73ddad1c9d1a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇸🇪 SE 07 - xiaohe
+  type: vless
+  server: 213.21.229.126
+  port: 12345
+  uuid: ae796abd-e6dc-43ee-aa49-6d728927bdf1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - xiaohe
+  - 🇸🇪 SE 02 - xiaohe
+  - 🇸🇪 SE 03 - xiaohe
+  - 🇸🇪 SE 04 - xiaohe
+  - 🇸🇪 SE 05 - xiaohe
+  - 🇸🇪 SE 06 - xiaohe
+  - 🇸🇪 SE 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - xiaohe
+  - 🇸🇪 SE 02 - xiaohe
+  - 🇸🇪 SE 03 - xiaohe
+  - 🇸🇪 SE 04 - xiaohe
+  - 🇸🇪 SE 05 - xiaohe
+  - 🇸🇪 SE 06 - xiaohe
+  - 🇸🇪 SE 07 - xiaohe
 rules:
 - MATCH,PROXIES
