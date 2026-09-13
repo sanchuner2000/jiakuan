@@ -26,7 +26,7 @@ proxies:
   network: ws
   ws-opts:
     path: /trojan
-- name: 🇨🇭 瑞士 (Switzerland) 03 - sanchun
+- name: 🇱🇺 卢森堡 (Luxembourg) 03 - sanchun
   server: mfyousheng.nl.eu.org
   port: 443
   udp: true
@@ -37,19 +37,19 @@ proxies:
   network: ws
   ws-opts:
     path: /tjwsLhx0SFASG4l9FERJ1g
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: ccs2g.pai50288.uk
+- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
+  server: 47.80.62.191
   port: 443
   udp: true
   type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  uuid: 43e60b75-9920-450a-94ee-8762758ca49c
+  flow: xtls-rprx-vision
   tls: true
-  servername: ccs2g.pai50288.uk
-  skip-cert-verify: false
+  reality-opts:
+    public-key: Qe5e0FBZwuwYMRYikx8sH5iaowPQwdkn6kgIN8xrQHE
+    short-id: bd0040df20a53b36
+  servername: www.logitech.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /pai50288
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,8 +57,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - sanchun
   - 🇮🇩 印尼 (Indonesia) 02 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 03 - sanchun
-  - 🇺🇸 美国 (United States) 04 - sanchun
+  - 🇱🇺 卢森堡 (Luxembourg) 03 - sanchun
+  - 🇰🇷 韩国 (South Korea) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,7 +66,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - sanchun
   - 🇮🇩 印尼 (Indonesia) 02 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 03 - sanchun
-  - 🇺🇸 美国 (United States) 04 - sanchun
+  - 🇱🇺 卢森堡 (Luxembourg) 03 - sanchun
+  - 🇰🇷 韩国 (South Korea) 04 - sanchun
 rules:
 - MATCH,PROXIES
