@@ -53,7 +53,7 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 SOURCE_URLS = [
-    "https://gh-proxy.com/raw.githubusercontent.com/Ruk1ng001/freeSub/main/v2ray",
+    "https://misub-43i.pages.dev/test",
     "",
     "",
 ]
