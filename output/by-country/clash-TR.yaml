@@ -4,30 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: ccs2g.pai50288.uk
+- name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
+  server: partaa2.api3-max.ru
   port: 443
   udp: true
   type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  uuid: 97ecaad4-452c-45ec-b591-d68d3308aad4
+  flow: xtls-rprx-vision
   tls: true
-  servername: ccs2g.pai50288.uk
+  servername: partaa2.api3-max.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /pai50288
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 01 - sanchun
 rules:
 - MATCH,PROXIES

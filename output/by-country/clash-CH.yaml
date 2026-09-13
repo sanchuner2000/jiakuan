@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇱 荷兰 (Netherlands) 01 - xiaohe
-  server: 188.42.145.180
+- name: 🇨🇭 瑞士 (Switzerland) 01 - sanchun
+  server: mfyousheng.nl.eu.org
   port: 443
   udp: true
   type: trojan
-  password: humanity
-  sni: www.volumeroot.com
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  sni: mfyousheng.nl.eu.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
+    path: /tjwsLhx0SFASG4l9FERJ1g
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇱 荷兰 (Netherlands) 01 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 (Netherlands) 01 - xiaohe
+  - 🇨🇭 瑞士 (Switzerland) 01 - sanchun
 rules:
 - MATCH,PROXIES

@@ -4,230 +4,38 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 01 - xiaohe",
-      "server": "216.106.183.35",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 02 - xiaohe",
-      "server": "47.85.188.30",
-      "server_port": 12004,
-      "uuid": "8b5552bd-4cc7-4cac-af08-81c21686fd4f",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 03 - xiaohe",
-      "server": "67.220.85.46",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 04 - xiaohe",
-      "server": "38.110.1.246",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 05 - xiaohe",
-      "server": "38.91.107.49",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 06 - xiaohe",
-      "server": "67.220.95.3",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 07 - xiaohe",
-      "server": "129.146.143.80",
-      "server_port": 48111,
-      "uuid": "d4603cc2-e0ee-4651-83f5-1db5b7168177",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 08 - xiaohe",
-      "server": "82.198.246.97",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 09 - xiaohe",
-      "server": "84.17.41.2",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 10 - xiaohe",
-      "server": "82.198.246.233",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 11 - xiaohe",
-      "server": "169.197.142.22",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 12 - xiaohe",
-      "server": "129.146.77.248",
-      "server_port": 39495,
-      "uuid": "f836c736-87fc-4fde-aabc-00857ecdff3e",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "129.146.77.248"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 13 - xiaohe",
-      "server": "216.106.185.141",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 14 - xiaohe",
-      "server": "82.198.246.37",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 15 - xiaohe",
-      "server": "www.shopify.com",
-      "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "guanwang.awsno.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/hls/cctv5phd.m3u8",
-        "headers": {
-          "Host": "guanwang.awsno.com"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 16 - xiaohe",
-      "server": "178.95.170.98",
-      "server_port": 2087,
-      "uuid": "bf443e4a-aa9e-4509-abf0-d0f6828d57be",
-      "transport": {
-        "type": "ws",
-        "path": "/4bc027a44532"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 17 - xiaohe",
-      "server": "104.17.77.77",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
+      "tag": "🇺🇸 美国 (United States) 01 - sanchun",
+      "server": "ccs2g.pai50288.uk",
+      "server_port": 443,
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
+        "server_name": "ccs2g.pai50288.uk",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
-        }
+        "path": "/pai50288"
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 18 - xiaohe",
-      "server": "107.173.254.27",
-      "server_port": 15311,
-      "uuid": "ad78d02b-873f-4cff-8d4a-673f53d6ce0f",
-      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 - xiaohe",
-        "🇺🇸 美国 (United States) 02 - xiaohe",
-        "🇺🇸 美国 (United States) 03 - xiaohe",
-        "🇺🇸 美国 (United States) 04 - xiaohe",
-        "🇺🇸 美国 (United States) 05 - xiaohe",
-        "🇺🇸 美国 (United States) 06 - xiaohe",
-        "🇺🇸 美国 (United States) 07 - xiaohe",
-        "🇺🇸 美国 (United States) 08 - xiaohe",
-        "🇺🇸 美国 (United States) 09 - xiaohe",
-        "🇺🇸 美国 (United States) 10 - xiaohe",
-        "🇺🇸 美国 (United States) 11 - xiaohe",
-        "🇺🇸 美国 (United States) 12 - xiaohe",
-        "🇺🇸 美国 (United States) 13 - xiaohe",
-        "🇺🇸 美国 (United States) 14 - xiaohe",
-        "🇺🇸 美国 (United States) 15 - xiaohe",
-        "🇺🇸 美国 (United States) 16 - xiaohe",
-        "🇺🇸 美国 (United States) 17 - xiaohe",
-        "🇺🇸 美国 (United States) 18 - xiaohe"
+        "🇺🇸 美国 (United States) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 - xiaohe",
-        "🇺🇸 美国 (United States) 02 - xiaohe",
-        "🇺🇸 美国 (United States) 03 - xiaohe",
-        "🇺🇸 美国 (United States) 04 - xiaohe",
-        "🇺🇸 美国 (United States) 05 - xiaohe",
-        "🇺🇸 美国 (United States) 06 - xiaohe",
-        "🇺🇸 美国 (United States) 07 - xiaohe",
-        "🇺🇸 美国 (United States) 08 - xiaohe",
-        "🇺🇸 美国 (United States) 09 - xiaohe",
-        "🇺🇸 美国 (United States) 10 - xiaohe",
-        "🇺🇸 美国 (United States) 11 - xiaohe",
-        "🇺🇸 美国 (United States) 12 - xiaohe",
-        "🇺🇸 美国 (United States) 13 - xiaohe",
-        "🇺🇸 美国 (United States) 14 - xiaohe",
-        "🇺🇸 美国 (United States) 15 - xiaohe",
-        "🇺🇸 美国 (United States) 16 - xiaohe",
-        "🇺🇸 美国 (United States) 17 - xiaohe",
-        "🇺🇸 美国 (United States) 18 - xiaohe"
+        "🇺🇸 美国 (United States) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

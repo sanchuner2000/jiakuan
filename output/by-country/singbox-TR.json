@@ -5,22 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-      "server": "5.253.30.99",
-      "server_port": 40443,
-      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - sanchun",
+      "server": "partaa2.api3-max.ru",
+      "server_port": 443,
+      "uuid": "97ecaad4-452c-45ec-b591-d68d3308aad4",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "partaa2.api3-max.ru",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -29,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
