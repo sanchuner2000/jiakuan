@@ -5,18 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇷 希腊 (Greece) 01 - xiaohe
-  server: 94.241.174.157
-  port: 40443
+  server: 185.126.238.87
+  port: 2083
   udp: true
   type: vless
-  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
-    short-id: beb4
-  servername: deepl.com
-  client-fingerprint: qq
+  uuid: 7668f678-faee-40cc-9b56-9c39dc773388
+  network: grpc
+  grpc-opts:
+    grpc-service-name: security.debian.org
 proxy-groups:
 - name: PROXIES
   type: select
