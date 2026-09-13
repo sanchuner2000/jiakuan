@@ -53,7 +53,7 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 SOURCE_URLS = [
-    "https://raw.githubusercontent.com/menghuier1/goida-vpn-configs/refs/heads/main/githubmirror/1.txt",
+    "https://gh-proxy.com/raw.githubusercontent.com/Ruk1ng001/freeSub/main/v2ray",
     "",
     "",
 ]
