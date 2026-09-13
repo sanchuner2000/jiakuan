@@ -5,74 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 31.56.189.27
-  port: 2087
+  server: 5.254.4.131
+  port: 443
   udp: true
   type: vless
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  uuid: bd89bec6-43a4-4cf7-9484-d70adeb2853c
+  flow: xtls-rprx-vision
   tls: true
-  servername: srv-21bac9.vless.monster
-  skip-cert-verify: false
+  reality-opts:
+    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+    short-id: dc124373ff9327cf
+  servername: cdn3-42.taobao.com
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 92.113.124.204
-  port: 18443
-  udp: true
-  type: vless
-  uuid: 85cc0966-5e66-4f4f-b479-66b448553738
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: ccaa5bd3-ce49-4188-bf7e-078bbd421712
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
 rules:
 - MATCH,PROXIES
