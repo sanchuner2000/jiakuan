@@ -4,40 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
-  server: partaa2.api3-max.ru
+- name: 🇺🇸 美国 (United States) 01 - sanchun
+  server: 144.202.99.96
+  port: 443
+  udp: true
+  type: hysteria2
+  password: user1:ShVN9wnGVNptyPsNNpdBhlTUBG7vKZqh
+  sni: 144.202.99.96
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 02 - sanchun
+  server: 47.80.14.8
   port: 443
   udp: true
   type: vless
-  uuid: 97ecaad4-452c-45ec-b591-d68d3308aad4
+  uuid: 581cb8c3-dadb-4e10-a18b-5e79bfe7bd93
   flow: xtls-rprx-vision
   tls: true
-  servername: partaa2.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇮🇩 印尼 (Indonesia) 02 - sanchun
-  server: edu.ruangguru.com
-  port: 443
-  udp: true
-  type: trojan
-  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
-  sni: id1.nathaya.web.id
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /trojan
-- name: 🇱🇺 卢森堡 (Luxembourg) 03 - sanchun
-  server: mfyousheng.nl.eu.org
-  port: 443
-  udp: true
-  type: trojan
-  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
-  sni: mfyousheng.nl.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tjwsLhx0SFASG4l9FERJ1g
-- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
+  reality-opts:
+    public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
+    short-id: 71110d3f7ef57760
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 03 - sanchun
   server: 47.80.62.191
   port: 443
   udp: true
@@ -50,23 +38,34 @@ proxies:
     short-id: bd0040df20a53b36
   servername: www.logitech.com
   client-fingerprint: chrome
+- name: 🇮🇩 印尼 (Indonesia) 04 - sanchun
+  server: edu.ruangguru.com
+  port: 443
+  udp: true
+  type: trojan
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  sni: id1.nathaya.web.id
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /trojan
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - sanchun
-  - 🇮🇩 印尼 (Indonesia) 02 - sanchun
-  - 🇱🇺 卢森堡 (Luxembourg) 03 - sanchun
-  - 🇰🇷 韩国 (South Korea) 04 - sanchun
+  - 🇺🇸 美国 (United States) 01 - sanchun
+  - 🇰🇷 韩国 (South Korea) 02 - sanchun
+  - 🇰🇷 韩国 (South Korea) 03 - sanchun
+  - 🇮🇩 印尼 (Indonesia) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - sanchun
-  - 🇮🇩 印尼 (Indonesia) 02 - sanchun
-  - 🇱🇺 卢森堡 (Luxembourg) 03 - sanchun
-  - 🇰🇷 韩国 (South Korea) 04 - sanchun
+  - 🇺🇸 美国 (United States) 01 - sanchun
+  - 🇰🇷 韩国 (South Korea) 02 - sanchun
+  - 🇰🇷 韩国 (South Korea) 03 - sanchun
+  - 🇮🇩 印尼 (Indonesia) 04 - sanchun
 rules:
 - MATCH,PROXIES
