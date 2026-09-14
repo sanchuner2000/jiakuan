@@ -4,15 +4,79 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "144.202.99.96",
-      "server_port": 443,
-      "password": "user1:ShVN9wnGVNptyPsNNpdBhlTUBG7vKZqh",
+      "server": "5.253.38.67",
+      "server_port": 40444,
+      "uuid": "e9c123df-6ce2-4b3c-abd9-6c2afb83cd94",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "144.202.99.96",
-        "insecure": true
+        "server_name": "www.lovelive-anime.jp",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU",
+          "short_id": "b3f2a1c9"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "ccs2g.pai50288.uk",
+      "server_port": 443,
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccs2g.pai50288.uk",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/pai50288"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "198.200.42.129",
+      "server_port": 52977,
+      "uuid": "2f6f1856-5466-4078-b1f0-d3f977211ada",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "X-DQShHbh23E3SeJjZzC-WStkChJU0lxgktpGalzjw4",
+          "short_id": "0fb9c965"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "45.40.149.50",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime39.workers.dev"
+        }
       }
     },
     {
@@ -20,14 +84,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 - sanchun"
+        "🇺🇸 美国 (United States) 01 - sanchun",
+        "🇺🇸 美国 (United States) 02 - sanchun",
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 - sanchun"
+        "🇺🇸 美国 (United States) 01 - sanchun",
+        "🇺🇸 美国 (United States) 02 - sanchun",
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

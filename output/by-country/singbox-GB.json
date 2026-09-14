@@ -1,0 +1,101 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 - sanchun",
+      "server": "208.103.161.249",
+      "server_port": 80,
+      "uuid": "a3c51f71-ffb5-4c80-a136-cee4b36d6e85",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - sanchun",
+      "server": "158.173.221.214",
+      "server_port": 11001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c58d16e593d44f42"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - sanchun",
+      "server": "31.76.54.56",
+      "server_port": 6443,
+      "uuid": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HHz-2xJzux-wn53uLOnSpdjds9rnRZEI7sr6z5hYnis",
+          "short_id": "79245360"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 04 - sanchun",
+      "server": "193.25.216.175",
+      "server_port": 18555,
+      "uuid": "15553b23-a621-4dfd-995e-2fe28d124526",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.oracle.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFbCyrLOre-V3ORpBjqenGfDt62Ng_i1sSq-DmZHVgc",
+          "short_id": "89e0494514ec"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇬🇧 英国 (United Kingdom) 01 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 02 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 03 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 04 - sanchun"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇬🇧 英国 (United Kingdom) 01 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 02 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 03 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 04 - sanchun"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
