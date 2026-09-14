@@ -17,37 +17,17 @@ proxies:
     short-id: 41dd2ebdd7e0a61a
   servername: www.apple.com
   client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: jp5.catzl.top
-  port: 40055
-  udp: true
-  type: anytls
-  password: 435d3dfc-3715-4a32-b57b-679f149dcab3
-  sni: jp5.catzl.top
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: iijjp.mggl.wang
-  port: 35791
-  udp: true
-  type: anytls
-  password: 9e98496a-0036-4cc6-8302-3929c29ba772
-  sni: www.apple.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇯🇵 日本 (Japan) 01 - sanchun
-  - 🇯🇵 日本 (Japan) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 日本 (Japan) 01 - sanchun
-  - 🇯🇵 日本 (Japan) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
 rules:
 - MATCH,PROXIES

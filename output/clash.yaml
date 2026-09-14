@@ -5,52 +5,55 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 38.244.20.149
-  port: 443
+  server: us1-r.link-t7.com
+  port: 10238
   udp: true
   type: vless
-  uuid: a2e2d5e7-5d23-40d8-baad-088b9e26b9c2
-  flow: xtls-rprx-vision
+  uuid: 7134DB35-F254-4468-BA00-D9C099CF5AF7
   tls: true
   reality-opts:
-    public-key: HR3BRJLZP0CBPG3r4aTXk0JhAzkyKoEW8WnW8xtHtCA
-    short-id: 0631f6666e3e7035
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 5.253.38.67
-  port: 40444
-  udp: true
-  type: vless
-  uuid: 7f2defc4-9d59-404d-87b1-86e3a3ea0730
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU
-    short-id: b3f2a1c9
-  servername: www.lovelive-anime.jp
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 38.244.20.41
+  network: grpc
+  grpc-opts:
+    grpc-service-name: movie
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: us05.shifor01.life
   port: 443
   udp: true
   type: vless
-  uuid: 2869896f-424d-481a-bd68-f2fcae11b0c4
+  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: EZgb6P-QQtBeVAWDh1vjvR5Qg1dRk2uYkUG1hMz-qnA
-    short-id: 802db6d56acb5d79
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: us2.catzl.top
-  port: 40022
+    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
+    short-id: 169fc2df88419465
+  servername: us05.shifor01.life
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 03 - sanchun
+  server: 199.232.78.160
+  port: 443
   udp: true
-  type: anytls
-  password: 435d3dfc-3715-4a32-b57b-679f149dcab3
-  sni: us2.catzl.top
+  type: trojan
+  password: MiTiVPN
+  sni: ssl.fastly.com
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: '@mehrosaboran'
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 151.101.56.7
+  port: 443
+  udp: true
+  type: trojan
+  password: MiTiVPN
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: '---@mehrosaboran'
 - name: 🇩🇪 德国 (Germany) 05 - sanchun
   server: 151.101.56.101
   port: 443
@@ -63,6 +66,19 @@ proxies:
   ws-opts:
     path: '@VPNine1'
 - name: 🇺🇸 美国 (United States) 06 - sanchun
+  server: 38.244.20.149
+  port: 443
+  udp: true
+  type: vless
+  uuid: a2e2d5e7-5d23-40d8-baad-088b9e26b9c2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HR3BRJLZP0CBPG3r4aTXk0JhAzkyKoEW8WnW8xtHtCA
+    short-id: 0631f6666e3e7035
+  servername: www.apple.com
+  client-fingerprint: safari
+- name: 🇩🇪 德国 (Germany) 07 - sanchun
   server: 199.232.78.101
   port: 443
   udp: true
@@ -72,18 +88,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇩🇪 德国 (Germany) 07 - sanchun
-  server: 199.232.78.160
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: '---@mehrosaboran'
 - name: 🇺🇸 美国 (United States) 08 - sanchun
   server: www.shopify.com
   port: 443
@@ -100,7 +105,35 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇯🇵 日本 (Japan) 09 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
+  server: kr3-r.link-t7.com
+  port: 10048
+  udp: true
+  type: vless
+  uuid: 7134DB35-F254-4468-BA00-D9C099CF5AF7
+  tls: true
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+- name: 🇺🇸 美国 (United States) 10 - sanchun
+  server: 38.244.20.41
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2869896f-424d-481a-bd68-f2fcae11b0c4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EZgb6P-QQtBeVAWDh1vjvR5Qg1dRk2uYkUG1hMz-qnA
+    short-id: 802db6d56acb5d79
+  servername: www.apple.com
+  client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 11 - sanchun
   server: 103.76.85.156
   port: 443
   udp: true
@@ -113,165 +146,7 @@ proxies:
     short-id: 41dd2ebdd7e0a61a
   servername: www.apple.com
   client-fingerprint: safari
-- name: 🇩🇪 德国 (Germany) 10 - sanchun
-  server: 151.101.56.7
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: '---@bored_vpn'
-- name: 🇩🇪 德国 (Germany) 11 - sanchun
-  server: 212.80.7.141
-  port: 443
-  udp: true
-  type: vless
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-  servername: de.pinkmoon.pro
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 12 - sanchun
-  server: 167.82.76.7
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: '@mehrosaboran'
-- name: 🇹🇼 中国台湾 (Taiwan) 13 - sanchun
-  server: tw1.catzl.top
-  port: 40071
-  udp: true
-  type: anytls
-  password: 435d3dfc-3715-4a32-b57b-679f149dcab3
-  sni: tw1.catzl.top
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 14 - sanchun
-  server: 45.91.138.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
-    short-id: 169fc2df88419465
-  servername: us05.shifor01.life
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 15 - sanchun
-  server: jp5.catzl.top
-  port: 40055
-  udp: true
-  type: anytls
-  password: 435d3dfc-3715-4a32-b57b-679f149dcab3
-  sni: jp5.catzl.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 16 - sanchun
-  server: 13.143.143.217
-  port: 443
-  udp: true
-  type: vless
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-  servername: pol2.pinkmoon.pro
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 17 - sanchun
-  server: 150.40.127.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3a22ca95-bd99-4c6b-a799-f8f73930ea05
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: nl.convert-flow.net
-  client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 18 - sanchun
-  server: iijjp.mggl.wang
-  port: 35791
-  udp: true
-  type: anytls
-  password: 9e98496a-0036-4cc6-8302-3929c29ba772
-  sni: www.apple.com
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 19 - sanchun
-  server: pl-waw.dontblockmepls.com
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 20 - sanchun
-  server: 146.70.23.32
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇳🇱 荷兰 (Netherlands) 21 - sanchun
-  server: 89.105.206.123
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3a22ca95-bd99-4c6b-a799-f8f73930ea05
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: nl.convert-flow.net
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 22 - sanchun
-  server: 94.156.179.46
-  port: 443
-  udp: true
-  type: vless
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-  servername: de.pinkmoon.pro
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 23 - sanchun
-  server: 158.173.221.214
-  port: 11001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-- name: 🇸🇬 新加坡 (Singapore) 24 - sanchun
-  server: msjp.mangshe.xyz
-  port: 20562
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 25 - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 12 - sanchun
   server: 13.143.137.164
   port: 9443
   udp: true
@@ -284,7 +159,7 @@ proxies:
     short-id: e336c9a786fae301
   servername: plaincanvas.videoclothing.xyz
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 26 - sanchun
+- name: 🇸🇬 新加坡 (Singapore) 13 - sanchun
   server: news.zoom.us
   port: 8443
   udp: true
@@ -292,28 +167,13 @@ proxies:
   uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   tls: true
   servername: u.srilankangrill.online
-  skip-cert-verify: false
-  client-fingerprint: safari
+  skip-cert-verify: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇹🇭 泰国 (Thailand) 27 - sanchun
-  server: 172.66.1.60
-  port: 443
-  udp: true
-  type: vless
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  tls: true
-  servername: tl.520783.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /assets/dist/app-update-payload.dat
-    headers:
-      Host: tl.520783.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -321,31 +181,17 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇩🇪 德国 (Germany) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇩🇪 德国 (Germany) 07 - sanchun
   - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇯🇵 日本 (Japan) 09 - sanchun
-  - 🇩🇪 德国 (Germany) 10 - sanchun
-  - 🇩🇪 德国 (Germany) 11 - sanchun
-  - 🇩🇪 德国 (Germany) 12 - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 13 - sanchun
-  - 🇺🇸 美国 (United States) 14 - sanchun
-  - 🇯🇵 日本 (Japan) 15 - sanchun
-  - 🇵🇱 波兰 (Poland) 16 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 17 - sanchun
-  - 🇯🇵 日本 (Japan) 18 - sanchun
-  - 🇵🇱 波兰 (Poland) 19 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 20 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 21 - sanchun
-  - 🇩🇪 德国 (Germany) 22 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 23 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 24 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 25 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 26 - sanchun
-  - 🇹🇭 泰国 (Thailand) 27 - sanchun
+  - 🇰🇷 韩国 (South Korea) 09 - sanchun
+  - 🇺🇸 美国 (United States) 10 - sanchun
+  - 🇯🇵 日本 (Japan) 11 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 12 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 13 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -353,30 +199,16 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇩🇪 德国 (Germany) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇩🇪 德国 (Germany) 07 - sanchun
   - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇯🇵 日本 (Japan) 09 - sanchun
-  - 🇩🇪 德国 (Germany) 10 - sanchun
-  - 🇩🇪 德国 (Germany) 11 - sanchun
-  - 🇩🇪 德国 (Germany) 12 - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 13 - sanchun
-  - 🇺🇸 美国 (United States) 14 - sanchun
-  - 🇯🇵 日本 (Japan) 15 - sanchun
-  - 🇵🇱 波兰 (Poland) 16 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 17 - sanchun
-  - 🇯🇵 日本 (Japan) 18 - sanchun
-  - 🇵🇱 波兰 (Poland) 19 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 20 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 21 - sanchun
-  - 🇩🇪 德国 (Germany) 22 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 23 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 24 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 25 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 26 - sanchun
-  - 🇹🇭 泰国 (Thailand) 27 - sanchun
+  - 🇰🇷 韩国 (South Korea) 09 - sanchun
+  - 🇺🇸 美国 (United States) 10 - sanchun
+  - 🇯🇵 日本 (Japan) 11 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 12 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 13 - sanchun
 rules:
 - MATCH,PROXIES

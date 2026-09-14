@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  server: msjp.mangshe.xyz
-  port: 20562
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
   server: news.zoom.us
   port: 8443
   udp: true
@@ -20,8 +12,8 @@ proxies:
   uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   tls: true
   servername: u.srilankangrill.online
-  skip-cert-verify: false
-  client-fingerprint: safari
+  skip-cert-verify: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
@@ -33,13 +25,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
 rules:
 - MATCH,PROXIES

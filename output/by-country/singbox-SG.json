@@ -4,30 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-      "server": "msjp.mangshe.xyz",
-      "server_port": 20562,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 - sanchun",
       "server": "news.zoom.us",
       "server_port": 8443,
       "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
       "tls": {
         "enabled": true,
         "server_name": "u.srilankangrill.online",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -43,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

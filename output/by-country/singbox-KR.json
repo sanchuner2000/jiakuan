@@ -5,25 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - sanchun",
-      "server": "172.66.1.60",
-      "server_port": 443,
-      "uuid": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
+      "tag": "🇰🇷 韩国 (South Korea) 01 - sanchun",
+      "server": "kr3-r.link-t7.com",
+      "server_port": 10048,
+      "uuid": "7134DB35-F254-4468-BA00-D9C099CF5AF7",
       "tls": {
         "enabled": true,
-        "server_name": "tl.520783.xyz",
-        "insecure": false,
+        "server_name": "s0.awsstatic.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/assets/dist/app-update-payload.dat",
-        "headers": {
-          "Host": "tl.520783.xyz"
-        }
+        "type": "grpc",
+        "service_name": "update"
       }
     },
     {
@@ -31,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - sanchun"
+        "🇰🇷 韩国 (South Korea) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - sanchun"
+        "🇰🇷 韩国 (South Korea) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

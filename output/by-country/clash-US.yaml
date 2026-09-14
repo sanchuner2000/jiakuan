@@ -5,6 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
+  server: us1-r.link-t7.com
+  port: 10238
+  udp: true
+  type: vless
+  uuid: 7134DB35-F254-4468-BA00-D9C099CF5AF7
+  tls: true
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: movie
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: us05.shifor01.life
+  port: 443
+  udp: true
+  type: vless
+  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
+    short-id: 169fc2df88419465
+  servername: us05.shifor01.life
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 151.101.56.7
+  port: 443
+  udp: true
+  type: trojan
+  password: MiTiVPN
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: '---@mehrosaboran'
+- name: 🇺🇸 美国 (United States) 04 - sanchun
   server: 38.244.20.149
   port: 443
   udp: true
@@ -17,52 +56,7 @@ proxies:
     short-id: 0631f6666e3e7035
   servername: www.apple.com
   client-fingerprint: safari
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 5.253.38.67
-  port: 40444
-  udp: true
-  type: vless
-  uuid: 7f2defc4-9d59-404d-87b1-86e3a3ea0730
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU
-    short-id: b3f2a1c9
-  servername: www.lovelive-anime.jp
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 38.244.20.41
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2869896f-424d-481a-bd68-f2fcae11b0c4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EZgb6P-QQtBeVAWDh1vjvR5Qg1dRk2uYkUG1hMz-qnA
-    short-id: 802db6d56acb5d79
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: us2.catzl.top
-  port: 40022
-  udp: true
-  type: anytls
-  password: 435d3dfc-3715-4a32-b57b-679f149dcab3
-  sni: us2.catzl.top
-  skip-cert-verify: false
 - name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: 199.232.78.101
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇺🇸 美国 (United States) 06 - sanchun
   server: www.shopify.com
   port: 443
   udp: true
@@ -78,19 +72,19 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 07 - sanchun
-  server: 45.91.138.179
+- name: 🇺🇸 美国 (United States) 06 - sanchun
+  server: 38.244.20.41
   port: 443
   udp: true
   type: vless
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
+  uuid: 2869896f-424d-481a-bd68-f2fcae11b0c4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
-    short-id: 169fc2df88419465
-  servername: us05.shifor01.life
-  client-fingerprint: firefox
+    public-key: EZgb6P-QQtBeVAWDh1vjvR5Qg1dRk2uYkUG1hMz-qnA
+    short-id: 802db6d56acb5d79
+  servername: www.apple.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,7 +96,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
-  - 🇺🇸 美国 (United States) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -114,6 +107,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
-  - 🇺🇸 美国 (United States) 07 - sanchun
 rules:
 - MATCH,PROXIES

@@ -25,46 +25,18 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
-      "server": "jp5.catzl.top",
-      "server_port": 40055,
-      "password": "435d3dfc-3715-4a32-b57b-679f149dcab3",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp5.catzl.top",
-        "insecure": false
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
-      "server": "iijjp.mggl.wang",
-      "server_port": 35791,
-      "password": "9e98496a-0036-4cc6-8302-3929c29ba772",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 - sanchun",
-        "🇯🇵 日本 (Japan) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 - sanchun",
-        "🇯🇵 日本 (Japan) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
