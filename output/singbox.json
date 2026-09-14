@@ -6,108 +6,6 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "us1-r.link-t7.com",
-      "server_port": 10238,
-      "uuid": "7134DB35-F254-4468-BA00-D9C099CF5AF7",
-      "tls": {
-        "enabled": true,
-        "server_name": "s0.awsstatic.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
-          "short_id": "686c0ef0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "movie"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
-      "server": "us05.shifor01.life",
-      "server_port": 443,
-      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "us05.shifor01.life",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
-          "short_id": "169fc2df88419465"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 03 - sanchun",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "@mehrosaboran",
-        "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-44.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
-      "server": "151.101.56.7",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "---@mehrosaboran",
-        "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-22.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 05 - sanchun",
-      "server": "151.101.56.101",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "@VPNine1",
-        "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
       "server": "38.244.20.149",
       "server_port": 443,
       "uuid": "a2e2d5e7-5d23-40d8-baad-088b9e26b9c2",
@@ -127,71 +25,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 07 - sanchun",
-      "server": "199.232.78.101",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "---@mehrosaboran",
-        "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
-      "server": "www.shopify.com",
-      "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "guanwang.awsno.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/hls/cctv5phd.m3u8",
-        "headers": {
-          "Host": "guanwang.awsno.com"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - sanchun",
-      "server": "kr3-r.link-t7.com",
-      "server_port": 10048,
-      "uuid": "7134DB35-F254-4468-BA00-D9C099CF5AF7",
-      "tls": {
-        "enabled": true,
-        "server_name": "s0.awsstatic.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
-          "short_id": "686c0ef0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "update"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 10 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
       "server": "38.244.20.41",
       "server_port": 443,
       "uuid": "2869896f-424d-481a-bd68-f2fcae11b0c4",
@@ -212,7 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
       "server": "103.76.85.156",
       "server_port": 443,
       "uuid": "4082b282-dc67-40df-b114-f70d71d61f6f",
@@ -233,7 +68,47 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 12 - sanchun",
+      "tag": "🇳🇴 挪威 (Norway) 04 - sanchun",
+      "server": "89.185.81.65",
+      "server_port": 40443,
+      "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4",
+          "short_id": "7606"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - sanchun",
       "server": "13.143.137.164",
       "server_port": 9443,
       "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
@@ -253,46 +128,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 13 - sanchun",
-      "server": "news.zoom.us",
-      "server_port": 8443,
-      "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
-      "tls": {
-        "enabled": true,
-        "server_name": "u.srilankangrill.online",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "u.srilankangrill.online"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇩🇪 德国 (Germany) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇩🇪 德国 (Germany) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇩🇪 德国 (Germany) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun",
-        "🇰🇷 韩国 (South Korea) 09 - sanchun",
-        "🇺🇸 美国 (United States) 10 - sanchun",
-        "🇯🇵 日本 (Japan) 11 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 12 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 13 - sanchun"
+        "🇯🇵 日本 (Japan) 03 - sanchun",
+        "🇳🇴 挪威 (Norway) 04 - sanchun",
+        "🇺🇸 美国 (United States) 05 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 06 - sanchun"
       ]
     },
     {
@@ -301,17 +146,10 @@
       "outbounds": [
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇩🇪 德国 (Germany) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇩🇪 德国 (Germany) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇩🇪 德国 (Germany) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun",
-        "🇰🇷 韩国 (South Korea) 09 - sanchun",
-        "🇺🇸 美国 (United States) 10 - sanchun",
-        "🇯🇵 日本 (Japan) 11 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 12 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 13 - sanchun"
+        "🇯🇵 日本 (Japan) 03 - sanchun",
+        "🇳🇴 挪威 (Norway) 04 - sanchun",
+        "🇺🇸 美国 (United States) 05 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 06 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
