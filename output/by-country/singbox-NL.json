@@ -15,7 +15,28 @@
         "server_name": "nl.convert-flow.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
+          "short_id": "00a61d55a07de885"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+      "server": "89.105.206.123",
+      "server_port": 443,
+      "uuid": "3a22ca95-bd99-4c6b-a799-f8f73930ea05",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl.convert-flow.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

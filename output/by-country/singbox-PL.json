@@ -5,43 +5,43 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - sanchun",
-      "server": "144.31.90.75",
+      "tag": "🇵🇱 波兰 (Poland) 01 - sanchun",
+      "server": "13.143.143.217",
       "server_port": 443,
-      "uuid": "3a22ca95-bd99-4c6b-a799-f8f73930ea05",
+      "uuid": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fl.convert-flow.net",
+        "server_name": "pol2.pinkmoon.pro",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
-          "short_id": "00a61d55a07de885"
+          "public_key": "DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk",
+          "short_id": "8ffa160e608bf539"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - sanchun",
-      "server": "p4mhflzkouf53uhb82b2.tulfexa.ir",
-      "server_port": 443,
-      "uuid": "1a67126c-b9c4-4e78-b96e-eabd4002ab0c",
+      "tag": "🇵🇱 波兰 (Poland) 02 - sanchun",
+      "server": "pl-waw.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sheets.google.com",
+        "server_name": "rusbid.de",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Bj9X3UJ2D5Q14wfBOwTz3s09SkFRVgMKTcn93s6kNHo",
-          "short_id": "8c0d541cdfe5e68d"
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
+          "short_id": ""
         }
       }
     },
@@ -50,16 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - sanchun",
-        "🇫🇮 芬兰 (Finland) 02 - sanchun"
+        "🇵🇱 波兰 (Poland) 01 - sanchun",
+        "🇵🇱 波兰 (Poland) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - sanchun",
-        "🇫🇮 芬兰 (Finland) 02 - sanchun"
+        "🇵🇱 波兰 (Poland) 01 - sanchun",
+        "🇵🇱 波兰 (Poland) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

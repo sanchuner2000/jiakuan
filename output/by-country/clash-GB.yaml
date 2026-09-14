@@ -5,16 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - sanchun
-  server: 208.103.161.249
-  port: 80
+  server: 146.70.23.32
+  port: 8080
   udp: true
-  type: vless
-  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 02 - sanchun
   server: 158.173.221.214
   port: 11001
@@ -22,32 +18,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: c58d16e593d44f42
-- name: 🇬🇧 英国 (United Kingdom) 03 - sanchun
-  server: 31.76.54.56
-  port: 6443
-  udp: true
-  type: vless
-  uuid: d7cad038-0c3f-4cce-8f8a-36464aaf66c0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: HHz-2xJzux-wn53uLOnSpdjds9rnRZEI7sr6z5hYnis
-    short-id: '79245360'
-  servername: www.samsung.com
-  client-fingerprint: ios
-- name: 🇬🇧 英国 (United Kingdom) 04 - sanchun
-  server: 193.25.216.175
-  port: 18555
-  udp: true
-  type: vless
-  uuid: 15553b23-a621-4dfd-995e-2fe28d124526
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: aFbCyrLOre-V3ORpBjqenGfDt62Ng_i1sSq-DmZHVgc
-    short-id: 89e0494514ec
-  servername: www.oracle.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇬🇧 英国 (United Kingdom) 01 - sanchun
   - 🇬🇧 英国 (United Kingdom) 02 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 03 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇬🇧 英国 (United Kingdom) 01 - sanchun
   - 🇬🇧 英国 (United Kingdom) 02 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 03 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 04 - sanchun
 rules:
 - MATCH,PROXIES

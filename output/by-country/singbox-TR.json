@@ -6,20 +6,21 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - sanchun",
-      "server": "158.94.216.50",
-      "server_port": 32306,
-      "uuid": "f1505323-ecb6-4152-9a5b-d37b3ae1cacf",
+      "server": "13.143.137.164",
+      "server_port": 9443,
+      "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "play-apps-features.googleusercontent.com",
+        "server_name": "plaincanvas.videoclothing.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "5iqitmx5fd71pubTxlrX0sd-ei7palcgVL7vtKToJGA",
-          "short_id": "61614f026070554f"
+          "public_key": "dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ",
+          "short_id": "e336c9a786fae301"
         }
       }
     },
