@@ -4,31 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 01 - sanchun",
-      "server": "194.169.54.16",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "type": "hysteria2",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 - sanchun",
+      "server": "vpn-uk-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/picture?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "server_name": "vpn-uk-002.fastervpn.world",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 02 - sanchun",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - sanchun",
       "server": "129.151.64.169",
       "server_port": 31867,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -54,16 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - sanchun",
-        "🇫🇷 法国 (France) 02 - sanchun"
+        "🇬🇧 英国 (United Kingdom) 01 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - sanchun",
-        "🇫🇷 法国 (France) 02 - sanchun"
+        "🇬🇧 英国 (United Kingdom) 01 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

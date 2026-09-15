@@ -4,22 +4,15 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 法国 (France) 01 - sanchun
-  server: 194.169.54.16
-  port: 8443
+- name: 🇬🇧 英国 (United Kingdom) 01 - sanchun
+  server: vpn-uk-002.fastervpn.world
+  port: 443
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /picture?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇫🇷 法国 (France) 02 - sanchun
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-uk-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 02 - sanchun
   server: 129.151.64.169
   port: 31867
   udp: true
@@ -39,14 +32,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇫🇷 法国 (France) 01 - sanchun
-  - 🇫🇷 法国 (France) 02 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 01 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 (France) 01 - sanchun
-  - 🇫🇷 法国 (France) 02 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 01 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 02 - sanchun
 rules:
 - MATCH,PROXIES

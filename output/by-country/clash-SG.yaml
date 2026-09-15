@@ -5,35 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  server: sg-1.gsafevpnapi.com
-  port: 20270
+  server: 149.88.23.202
+  port: 18000
   udp: true
-  type: vless
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
-    short-id: fc13d6208ebbae16
-  servername: www.yahoo.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
-  server: 103.137.22.71
+  server: 47.129.241.226
   port: 443
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /register?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
-  server: 43.159.12.36
+  server: 43.175.131.30
   port: 443
   udp: true
   type: vless
@@ -44,7 +32,7 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /file/project/novel?ed=2560
+    path: /article?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 04 - sanchun
@@ -63,19 +51,29 @@ proxies:
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 05 - sanchun
-  server: hola.salirukou.shop
-  port: 23421
+  server: 8.222.84.103
+  port: 443
   udp: true
   type: vless
-  uuid: c3b4f19d-0d47-42a7-8547-667f63671dc2
-  flow: xtls-rprx-vision
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  reality-opts:
-    public-key: 2hno34Shv08fZVNkr2aTiOTxoTU_qxWzx3bbsfEzqzk
-    short-id: b639f979
-  servername: iosapps.itunes.apple.com
-  client-fingerprint: ios
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /member/discount?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 06 - sanchun
+  server: sg1.xiaoliyu.cyou
+  port: 1933
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: sg1.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 07 - sanchun
   server: 140.245.38.33
   port: 2096
   udp: true
@@ -90,51 +88,6 @@ proxies:
     path: /class/season?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 07 - sanchun
-  server: 8.222.84.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /member/discount?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 08 - sanchun
-  server: 38.207.184.202
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /mall?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 09 - sanchun
-  server: 43.175.131.30
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /article?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,8 +100,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 05 - sanchun
   - 🇸🇬 新加坡 (Singapore) 06 - sanchun
   - 🇸🇬 新加坡 (Singapore) 07 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 08 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -161,7 +112,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 05 - sanchun
   - 🇸🇬 新加坡 (Singapore) 06 - sanchun
   - 🇸🇬 新加坡 (Singapore) 07 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 08 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 09 - sanchun
 rules:
 - MATCH,PROXIES
