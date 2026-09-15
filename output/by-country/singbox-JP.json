@@ -4,75 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 01 - sanchun",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
-      "server": "jp-1.gsafevpnapi.com",
-      "server_port": 20270,
-      "uuid": "5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE",
-          "short_id": "28500ae15838f905"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 04 - sanchun",
-      "server": "207.148.112.220",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/discuss?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 - sanchun",
       "server": "210.152.85.154",
       "server_port": 19364,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -95,8 +28,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 06 - sanchun",
-      "server": "104.238.148.149",
+      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
+      "server": "85.121.50.16",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
@@ -110,15 +43,47 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/about?ed=2560",
+        "path": "/friends/go.php?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
+      "server": "138.3.208.26",
+      "server_port": 50160,
+      "password": "184cdec28da5a09450803c8debcd2cc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 07 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 04 - sanchun",
+      "server": "jp-1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE",
+          "short_id": "28500ae15838f905"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 05 - sanchun",
       "server": "207.148.99.230",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -140,6 +105,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 06 - sanchun",
+      "server": "207.148.112.220",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/discuss?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -149,8 +137,7 @@
         "🇯🇵 日本 (Japan) 03 - sanchun",
         "🇯🇵 日本 (Japan) 04 - sanchun",
         "🇯🇵 日本 (Japan) 05 - sanchun",
-        "🇯🇵 日本 (Japan) 06 - sanchun",
-        "🇯🇵 日本 (Japan) 07 - sanchun"
+        "🇯🇵 日本 (Japan) 06 - sanchun"
       ]
     },
     {
@@ -162,8 +149,7 @@
         "🇯🇵 日本 (Japan) 03 - sanchun",
         "🇯🇵 日本 (Japan) 04 - sanchun",
         "🇯🇵 日本 (Japan) 05 - sanchun",
-        "🇯🇵 日本 (Japan) 06 - sanchun",
-        "🇯🇵 日本 (Japan) 07 - sanchun"
+        "🇯🇵 日本 (Japan) 06 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

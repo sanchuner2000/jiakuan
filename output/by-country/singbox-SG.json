@@ -12,15 +12,26 @@
       "security": "auto"
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
-      "server": "47.129.241.226",
+      "server": "43.159.12.36",
       "server_port": 443,
-      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-sg-001.fastervpn.world",
-        "insecure": true
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/file/project/novel?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
       }
     },
     {
@@ -47,26 +58,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇬 新加坡 (Singapore) 04 - sanchun",
-      "server": "45.77.241.190",
-      "server_port": 8441,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "server": "sg1.xiaoliyu.cyou",
+      "server_port": 1933,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/act/company/intro?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "server_name": "sg1.xiaoliyu.cyou",
+        "insecure": true
       }
     },
     {
@@ -93,22 +93,10 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 - sanchun",
-      "server": "sg1.xiaoliyu.cyou",
-      "server_port": 1933,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg1.xiaoliyu.cyou",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 07 - sanchun",
-      "server": "140.245.38.33",
-      "server_port": 2096,
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - sanchun",
+      "server": "45.77.241.190",
+      "server_port": 8441,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
@@ -121,7 +109,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/class/season?ed=2560",
+        "path": "/act/company/intro?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -137,8 +125,7 @@
         "🇸🇬 新加坡 (Singapore) 03 - sanchun",
         "🇸🇬 新加坡 (Singapore) 04 - sanchun",
         "🇸🇬 新加坡 (Singapore) 05 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 06 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 07 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 06 - sanchun"
       ]
     },
     {
@@ -150,8 +137,7 @@
         "🇸🇬 新加坡 (Singapore) 03 - sanchun",
         "🇸🇬 新加坡 (Singapore) 04 - sanchun",
         "🇸🇬 新加坡 (Singapore) 05 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 06 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 07 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 06 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
