@@ -36,7 +36,7 @@ except ImportError as e:
 
 SOURCE_URLS = [
     "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt",
-    "https://raw.githubusercontent.com/kooker/FreeSubsCheck/main/base64.txt",
+    "https://raw.githubusercontent.com/mhui-0920/FreeSubsCheck/refs/heads/main/kooker.jp.txt",
 ]
 
 OUTPUT_DIR = "output"
