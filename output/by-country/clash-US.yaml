@@ -5,60 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 38.244.20.41
-  port: 443
+  server: us-1.gsafevpnapi.com
+  port: 20270
   udp: true
   type: vless
-  uuid: 2869896f-424d-481a-bd68-f2fcae11b0c4
-  flow: xtls-rprx-vision
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
   tls: true
   reality-opts:
-    public-key: EZgb6P-QQtBeVAWDh1vjvR5Qg1dRk2uYkUG1hMz-qnA
-    short-id: 802db6d56acb5d79
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 38.244.20.149
-  port: 443
-  udp: true
-  type: vless
-  uuid: a2e2d5e7-5d23-40d8-baad-088b9e26b9c2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: HR3BRJLZP0CBPG3r4aTXk0JhAzkyKoEW8WnW8xtHtCA
-    short-id: 0631f6666e3e7035
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: us05.shifor01.life
-  port: 443
-  udp: true
-  type: vless
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
-    short-id: 169fc2df88419465
-  servername: us05.shifor01.life
+    public-key: 9I4kbgR2flpbRraCLQ-C0umbyQO26riRY3-GY-Tp9DE
+    short-id: e67d9a00676f15ac
+  servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: www.shopify.com
-  port: 443
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 31.77.8.97
+  port: 110
   udp: true
   type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: e8758bf0-c234-4809-89f7-25fd868316d0
   alterId: 0
   cipher: auto
-  tls: true
-  servername: guanwang.awsno.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,8 +31,6 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇺🇸 美国 (United States) 03 - sanchun
-  - 🇺🇸 美国 (United States) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,7 +38,5 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇺🇸 美国 (United States) 03 - sanchun
-  - 🇺🇸 美国 (United States) 04 - sanchun
 rules:
 - MATCH,PROXIES
