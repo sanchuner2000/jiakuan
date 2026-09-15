@@ -5,10 +5,10 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "38.244.20.149",
+      "tag": "🇯🇵 日本 (Japan) 01 - sanchun",
+      "server": "103.76.85.156",
       "server_port": 443,
-      "uuid": "a2e2d5e7-5d23-40d8-baad-088b9e26b9c2",
+      "uuid": "4082b282-dc67-40df-b114-f70d71d61f6f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -19,8 +19,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "HR3BRJLZP0CBPG3r4aTXk0JhAzkyKoEW8WnW8xtHtCA",
-          "short_id": "0631f6666e3e7035"
+          "public_key": "SsqcoKQAh4wOwKVxQcS4QGb_8xiHJ_IgzsEoTsEPDj8",
+          "short_id": "41dd2ebdd7e0a61a"
         }
       }
     },
@@ -47,10 +47,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
-      "server": "103.76.85.156",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "38.244.20.149",
       "server_port": 443,
-      "uuid": "4082b282-dc67-40df-b114-f70d71d61f6f",
+      "uuid": "a2e2d5e7-5d23-40d8-baad-088b9e26b9c2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -61,28 +61,29 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "SsqcoKQAh4wOwKVxQcS4QGb_8xiHJ_IgzsEoTsEPDj8",
-          "short_id": "41dd2ebdd7e0a61a"
+          "public_key": "HR3BRJLZP0CBPG3r4aTXk0JhAzkyKoEW8WnW8xtHtCA",
+          "short_id": "0631f6666e3e7035"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 04 - sanchun",
-      "server": "89.185.81.65",
-      "server_port": 40443,
-      "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "us05.shifor01.life",
+      "server_port": 443,
+      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "us05.shifor01.life",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4",
-          "short_id": "7606"
+          "public_key": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
+          "short_id": "169fc2df88419465"
         }
       }
     },
@@ -108,7 +109,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - sanchun",
+      "tag": "🇳🇴 挪威 (Norway) 06 - sanchun",
+      "server": "89.185.81.65",
+      "server_port": 40443,
+      "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4",
+          "short_id": "7606"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 07 - sanchun",
       "server": "13.143.137.164",
       "server_port": 9443,
       "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
@@ -128,28 +149,53 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 08 - sanchun",
+      "server": "31.59.150.174",
+      "server_port": 9443,
+      "uuid": "92089155-6602-4122-86d4-fe6de20e8c4d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hotcoals.aeternavpn.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI",
+          "short_id": "a1b2c3d4"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 - sanchun",
+        "🇯🇵 日本 (Japan) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun",
-        "🇳🇴 挪威 (Norway) 04 - sanchun",
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun",
         "🇺🇸 美国 (United States) 05 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 06 - sanchun"
+        "🇳🇴 挪威 (Norway) 06 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 07 - sanchun",
+        "🇲🇩 摩尔多瓦 (Moldova) 08 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 - sanchun",
+        "🇯🇵 日本 (Japan) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun",
-        "🇳🇴 挪威 (Norway) 04 - sanchun",
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun",
         "🇺🇸 美国 (United States) 05 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 06 - sanchun"
+        "🇳🇴 挪威 (Norway) 06 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 07 - sanchun",
+        "🇲🇩 摩尔多瓦 (Moldova) 08 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

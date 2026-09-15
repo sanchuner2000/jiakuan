@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
+      "server": "38.244.20.41",
+      "server_port": 443,
+      "uuid": "2869896f-424d-481a-bd68-f2fcae11b0c4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EZgb6P-QQtBeVAWDh1vjvR5Qg1dRk2uYkUG1hMz-qnA",
+          "short_id": "802db6d56acb5d79"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
       "server": "38.244.20.149",
       "server_port": 443,
       "uuid": "a2e2d5e7-5d23-40d8-baad-088b9e26b9c2",
@@ -26,28 +47,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
-      "server": "38.244.20.41",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "us05.shifor01.life",
       "server_port": 443,
-      "uuid": "2869896f-424d-481a-bd68-f2fcae11b0c4",
+      "uuid": "11f21602-47aa-42e2-9149-69120f2e6df6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "us05.shifor01.life",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "EZgb6P-QQtBeVAWDh1vjvR5Qg1dRk2uYkUG1hMz-qnA",
-          "short_id": "802db6d56acb5d79"
+          "public_key": "36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE",
+          "short_id": "169fc2df88419465"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
       "server": "www.shopify.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
@@ -72,7 +93,8 @@
         "auto",
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun"
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ]
     },
     {
@@ -81,7 +103,8 @@
       "outbounds": [
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun"
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

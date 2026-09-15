@@ -4,17 +4,17 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 38.244.20.149
+- name: 🇯🇵 日本 (Japan) 01 - sanchun
+  server: 103.76.85.156
   port: 443
   udp: true
   type: vless
-  uuid: a2e2d5e7-5d23-40d8-baad-088b9e26b9c2
+  uuid: 4082b282-dc67-40df-b114-f70d71d61f6f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: HR3BRJLZP0CBPG3r4aTXk0JhAzkyKoEW8WnW8xtHtCA
-    short-id: 0631f6666e3e7035
+    public-key: SsqcoKQAh4wOwKVxQcS4QGb_8xiHJ_IgzsEoTsEPDj8
+    short-id: 41dd2ebdd7e0a61a
   servername: www.apple.com
   client-fingerprint: safari
 - name: 🇺🇸 美国 (United States) 02 - sanchun
@@ -30,30 +30,31 @@ proxies:
     short-id: 802db6d56acb5d79
   servername: www.apple.com
   client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: 103.76.85.156
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 38.244.20.149
   port: 443
   udp: true
   type: vless
-  uuid: 4082b282-dc67-40df-b114-f70d71d61f6f
+  uuid: a2e2d5e7-5d23-40d8-baad-088b9e26b9c2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SsqcoKQAh4wOwKVxQcS4QGb_8xiHJ_IgzsEoTsEPDj8
-    short-id: 41dd2ebdd7e0a61a
+    public-key: HR3BRJLZP0CBPG3r4aTXk0JhAzkyKoEW8WnW8xtHtCA
+    short-id: 0631f6666e3e7035
   servername: www.apple.com
   client-fingerprint: safari
-- name: 🇳🇴 挪威 (Norway) 04 - sanchun
-  server: 89.185.81.65
-  port: 40443
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: us05.shifor01.life
+  port: 443
   udp: true
   type: vless
-  uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
+  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
-    short-id: '7606'
-  servername: deepl.com
+    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
+    short-id: 169fc2df88419465
+  servername: us05.shifor01.life
   client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 05 - sanchun
   server: www.shopify.com
@@ -71,7 +72,19 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇹🇷 土耳其 (Turkey) 06 - sanchun
+- name: 🇳🇴 挪威 (Norway) 06 - sanchun
+  server: 89.185.81.65
+  port: 40443
+  udp: true
+  type: vless
+  uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
+  tls: true
+  reality-opts:
+    public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
+    short-id: '7606'
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 07 - sanchun
   server: 13.143.137.164
   port: 9443
   udp: true
@@ -84,27 +97,44 @@ proxies:
     short-id: e336c9a786fae301
   servername: plaincanvas.videoclothing.xyz
   client-fingerprint: firefox
+- name: 🇲🇩 摩尔多瓦 (Moldova) 08 - sanchun
+  server: 31.59.150.174
+  port: 9443
+  udp: true
+  type: vless
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
+    short-id: a1b2c3d4
+  servername: hotcoals.aeternavpn.space
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 - sanchun
+  - 🇯🇵 日本 (Japan) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
-  - 🇳🇴 挪威 (Norway) 04 - sanchun
+  - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 06 - sanchun
+  - 🇳🇴 挪威 (Norway) 06 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 07 - sanchun
+  - 🇲🇩 摩尔多瓦 (Moldova) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 - sanchun
+  - 🇯🇵 日本 (Japan) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
-  - 🇳🇴 挪威 (Norway) 04 - sanchun
+  - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 06 - sanchun
+  - 🇳🇴 挪威 (Norway) 06 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 07 - sanchun
+  - 🇲🇩 摩尔多瓦 (Moldova) 08 - sanchun
 rules:
 - MATCH,PROXIES
