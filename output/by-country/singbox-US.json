@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "107.175.219.48",
-      "server_port": 443,
-      "password": "18bd49994f2eea74ff62798bd75fb7d1",
-      "tls": {
-        "enabled": true,
-        "server_name": "107.175.219.48",
-        "insecure": true
-      }
+      "server": "82.198.246.233",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
     },
     {
       "type": "hysteria2",
@@ -32,20 +28,28 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "ltu-01.node.lumixnet.com",
+      "server": "82.198.246.37",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "100.42.228.109",
       "server_port": 443,
-      "password": "7c5566a7-4b55-4659-975f-06507d32fd3f",
+      "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "ltu-01.node.lumixnet.com",
+        "server_name": "t.me/ripaojiedian",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
       "server": "2.27.249.79",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
@@ -60,15 +64,27 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "100.42.228.109",
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
+      "server": "ltu-01.node.lumixnet.com",
       "server_port": 443,
-      "password": "BxceQaOe",
+      "password": "7c5566a7-4b55-4659-975f-06507d32fd3f",
       "tls": {
         "enabled": true,
-        "server_name": "t.me/ripaojiedian",
+        "server_name": "ltu-01.node.lumixnet.com",
         "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "server": "gta.internet-card.sbs",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "gta.internet-card.sbs",
+        "insecure": false
       }
     },
     {
@@ -80,7 +96,9 @@
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
         "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun"
+        "🇺🇸 美国 (United States) 05 - sanchun",
+        "🇺🇸 美国 (United States) 06 - sanchun",
+        "🇺🇸 美国 (United States) 07 - sanchun"
       ]
     },
     {
@@ -91,7 +109,9 @@
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
         "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun"
+        "🇺🇸 美国 (United States) 05 - sanchun",
+        "🇺🇸 美国 (United States) 06 - sanchun",
+        "🇺🇸 美国 (United States) 07 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
