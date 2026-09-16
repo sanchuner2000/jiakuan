@@ -4,26 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "mybb.com",
+      "server": "107.175.219.48",
       "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "password": "18bd49994f2eea74ff62798bd75fb7d1",
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
-        }
+        "server_name": "107.175.219.48",
+        "insecure": true
       }
     },
     {
@@ -43,40 +32,20 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "100.42.228.109",
+      "server": "ltu-01.node.lumixnet.com",
       "server_port": 443,
-      "password": "BxceQaOe",
+      "password": "7c5566a7-4b55-4659-975f-06507d32fd3f",
       "tls": {
         "enabled": true,
-        "server_name": "t.me/ripaojiedian",
+        "server_name": "ltu-01.node.lumixnet.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇺🇸 美国 (United States) 04 - sanchun",
-      "server": "107.175.219.48",
-      "server_port": 443,
-      "password": "18bd49994f2eea74ff62798bd75fb7d1",
-      "tls": {
-        "enabled": true,
-        "server_name": "107.175.219.48",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "82.198.246.233",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
       "server": "2.27.249.79",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
@@ -91,35 +60,15 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
-      "server": "ltu-01.node.lumixnet.com",
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
+      "server": "100.42.228.109",
       "server_port": 443,
-      "password": "7c5566a7-4b55-4659-975f-06507d32fd3f",
+      "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "ltu-01.node.lumixnet.com",
+        "server_name": "t.me/ripaojiedian",
         "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
-      "server": "104.21.57.84",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
-        }
       }
     },
     {
@@ -131,10 +80,7 @@
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
         "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun"
+        "🇺🇸 美国 (United States) 05 - sanchun"
       ]
     },
     {
@@ -145,10 +91,7 @@
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
         "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun"
+        "🇺🇸 美国 (United States) 05 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

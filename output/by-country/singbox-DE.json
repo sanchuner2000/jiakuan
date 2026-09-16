@@ -20,40 +20,18 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
-      "server": "194.226.142.120",
-      "server_port": 443,
-      "uuid": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "renderer-stream-2-62.mirra.now",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v1/gpu-stream/socket",
-        "headers": {
-          "Host": "renderer-stream-2-62.mirra.now"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 - sanchun",
-        "🇩🇪 德国 (Germany) 02 - sanchun"
+        "🇩🇪 德国 (Germany) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 - sanchun",
-        "🇩🇪 德国 (Germany) 02 - sanchun"
+        "🇩🇪 德国 (Germany) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
