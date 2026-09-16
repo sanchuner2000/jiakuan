@@ -5,6 +5,48 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
+  server: 82.198.246.233
+  port: 180
+  udp: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 45.40.149.50
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime39.workers.dev
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 104.19.87.194
+  port: 443
+  udp: true
+  type: vless
+  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
+  tls: true
+  servername: ld.223350.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ld.223350.xyz
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 100.42.228.109
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 05 - sanchun
   server: 107.172.67.52
   port: 2053
   udp: true
@@ -14,7 +56,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: maintell
-- name: 🇺🇸 美国 (United States) 02 - sanchun
+- name: 🇺🇸 美国 (United States) 06 - sanchun
   server: 107.175.219.48
   port: 443
   udp: true
@@ -22,7 +64,59 @@ proxies:
   password: 18bd49994f2eea74ff62798bd75fb7d1
   sni: 107.175.219.48
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 03 - sanchun
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: us-1.gsafevpnapi.com
+  port: 20270
+  udp: true
+  type: vless
+  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  tls: true
+  reality-opts:
+    public-key: 9I4kbgR2flpbRraCLQ-C0umbyQO26riRY3-GY-Tp9DE
+    short-id: e67d9a00676f15ac
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 08 - sanchun
+  server: 31.77.8.97
+  port: 110
+  udp: true
+  type: vmess
+  uuid: e8758bf0-c234-4809-89f7-25fd868316d0
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 09 - sanchun
+  server: 172.67.209.218
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
+  tls: true
+  servername: api-endpoint-global.f00f.ccwu.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /BzuntJ8qZN0TRKbC8TveMxJ0
+    headers:
+      Host: api-endpoint-global.f00f.ccwu.cc
+- name: 🇺🇸 美国 (United States) 10 - sanchun
+  server: 144.31.49.138
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ru1.sferavpn.pro
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇺🇸 美国 (United States) 11 - sanchun
+  server: ltu-01.node.lumixnet.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 7c5566a7-4b55-4659-975f-06507d32fd3f
+  sni: ltu-01.node.lumixnet.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 12 - sanchun
   server: 2.27.249.79
   port: 443
   udp: true
@@ -32,22 +126,22 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: gta.internet-card.sbs
-  port: 443
+- name: 🇺🇸 美国 (United States) 13 - sanchun
+  server: 104.21.57.84
+  port: 8443
   udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: 100.42.228.109
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +152,14 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
+  - 🇺🇸 美国 (United States) 08 - sanchun
+  - 🇺🇸 美国 (United States) 09 - sanchun
+  - 🇺🇸 美国 (United States) 10 - sanchun
+  - 🇺🇸 美国 (United States) 11 - sanchun
+  - 🇺🇸 美国 (United States) 12 - sanchun
+  - 🇺🇸 美国 (United States) 13 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +170,13 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
+  - 🇺🇸 美国 (United States) 08 - sanchun
+  - 🇺🇸 美国 (United States) 09 - sanchun
+  - 🇺🇸 美国 (United States) 10 - sanchun
+  - 🇺🇸 美国 (United States) 11 - sanchun
+  - 🇺🇸 美国 (United States) 12 - sanchun
+  - 🇺🇸 美国 (United States) 13 - sanchun
 rules:
 - MATCH,PROXIES

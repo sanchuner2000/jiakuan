@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  server: 46.17.42.166
-  port: 50111
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
   server: msk.frkn.org
   port: 443
   udp: true
@@ -25,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
 rules:
 - MATCH,PROXIES
