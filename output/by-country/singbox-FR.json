@@ -4,16 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇲🇽 墨西哥 (Mexico) 01 - sanchun",
-      "server": "50.62.198.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 01 - sanchun",
+      "server": "www.calmlunch.com",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/assignment",
         "headers": {
-          "Host": "vms.lifetime39.workers.dev"
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -22,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 墨西哥 (Mexico) 01 - sanchun"
+        "🇫🇷 法国 (France) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 墨西哥 (Mexico) 01 - sanchun"
+        "🇫🇷 法国 (France) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
-  server: 208.103.161.249
-  port: 80
-  udp: true
-  type: vless
-  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
-- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   server: 72.56.102.31
   port: 443
   udp: true
@@ -23,7 +12,7 @@ proxies:
   password: BWAFlp8g53
   sni: 72.56.102.31
   skip-cert-verify: true
-- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   server: hysteria.udpgw.com
   port: 8443
   udp: true
@@ -40,7 +29,6 @@ proxy-groups:
   - AUTO
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
 rules:
 - MATCH,PROXIES
