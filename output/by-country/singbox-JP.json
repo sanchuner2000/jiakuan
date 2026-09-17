@@ -16,18 +16,36 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
+      "server": "8.211.175.129",
+      "server_port": 443,
+      "password": "0bffb8e71bca29788862f986caae97b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "8.211.175.129",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "5c8f1a3e7b2d9046c1f8a5e3b7d04f2a"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun",
+        "🇯🇵 日本 (Japan) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun",
+        "🇯🇵 日本 (Japan) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

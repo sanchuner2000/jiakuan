@@ -12,17 +12,29 @@ proxies:
   password: 184cdec28da5a09450803c8debcd2cc9
   sni: www.bing.com
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 02 - sanchun
+  server: 8.211.175.129
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 0bffb8e71bca29788862f986caae97b3
+  sni: 8.211.175.129
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇯🇵 日本 (Japan) 01 - sanchun
+  - 🇯🇵 日本 (Japan) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 日本 (Japan) 01 - sanchun
+  - 🇯🇵 日本 (Japan) 02 - sanchun
 rules:
 - MATCH,PROXIES
