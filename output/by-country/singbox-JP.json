@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
-      "server": "72.56.102.31",
-      "server_port": 443,
-      "password": "BWAFlp8g53",
+      "tag": "🇯🇵 日本 (Japan) 01 - sanchun",
+      "server": "138.3.208.26",
+      "server_port": 50160,
+      "password": "184cdec28da5a09450803c8debcd2cc9",
       "tls": {
         "enabled": true,
-        "server_name": "72.56.102.31",
+        "server_name": "www.bing.com",
         "insecure": true
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

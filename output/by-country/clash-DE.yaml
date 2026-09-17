@@ -5,6 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
+  server: 212.16.92.112
+  port: 443
+  udp: true
+  type: vless
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: jobinvest.ru
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 02 - sanchun
+  server: 212.16.92.121
+  port: 443
+  udp: true
+  type: vless
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: jobinvest.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 03 - sanchun
+  server: 212.16.92.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: jobinvest.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 04 - sanchun
   server: 2.27.59.206
   port: 443
   udp: true
@@ -20,11 +56,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 04 - sanchun
 rules:
 - MATCH,PROXIES
