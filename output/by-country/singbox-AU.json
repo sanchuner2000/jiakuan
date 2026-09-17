@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 01 - sanchun",
-      "server": "144.31.93.126",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
+      "server": "82.198.246.233",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
