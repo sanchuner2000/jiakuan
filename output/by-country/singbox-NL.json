@@ -16,18 +16,36 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+      "server": "hysteria.udpgw.com",
+      "server_port": 8443,
+      "password": "HowdyHysteria2023w0W",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni-here.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "HysteriaHowdy"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
