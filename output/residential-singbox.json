@@ -4,15 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun",
-      "server": "news.gazette.help",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
+      "server": "7dba81fc3a0b.oylfmxz.cn",
       "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "news.gazette.help",
+        "server_name": "7dba81fc3a0b.oylfmxz.cn",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -20,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

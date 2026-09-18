@@ -4,23 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 01 - sanchun",
-      "server": "atomic-prase23893.my-vm.work",
-      "server_port": 8088,
-      "uuid": "tmp_user",
-      "transport": {
-        "type": "ws",
-        "path": "/api",
-        "headers": {
-          "Host": "queuev4.vk.com"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 02 - sanchun",
-      "server": "go.wwwinternetvideo.click",
+      "tag": "🇵🇱 波兰 (Poland) 01 - sanchun",
+      "server": "144.31.93.126",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
@@ -34,16 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - sanchun",
-        "🇵🇱 波兰 (Poland) 02 - sanchun"
+        "🇵🇱 波兰 (Poland) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - sanchun",
-        "🇵🇱 波兰 (Poland) 02 - sanchun"
+        "🇵🇱 波兰 (Poland) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

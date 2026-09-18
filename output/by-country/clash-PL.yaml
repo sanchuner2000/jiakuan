@@ -5,18 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - sanchun
-  server: atomic-prase23893.my-vm.work
-  port: 8088
-  udp: true
-  type: vless
-  uuid: tmp_user
-  network: ws
-  ws-opts:
-    path: /api
-    headers:
-      Host: queuev4.vk.com
-- name: 🇵🇱 波兰 (Poland) 02 - sanchun
-  server: go.wwwinternetvideo.click
+  server: 144.31.93.126
   port: 443
   udp: true
   type: hysteria2
@@ -29,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - sanchun
-  - 🇵🇱 波兰 (Poland) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - sanchun
-  - 🇵🇱 波兰 (Poland) 02 - sanchun
 rules:
 - MATCH,PROXIES
