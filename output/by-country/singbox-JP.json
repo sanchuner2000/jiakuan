@@ -16,19 +16,15 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
-      "server": "8.211.175.129",
-      "server_port": 443,
-      "password": "0bffb8e71bca29788862f986caae97b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "8.211.175.129",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "5c8f1a3e7b2d9046c1f8a5e3b7d04f2a"
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
       }
     },
     {

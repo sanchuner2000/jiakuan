@@ -13,14 +13,51 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 82.198.246.233
-  port: 180
+  server: 107.172.67.52
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: maintell
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 198.46.159.171
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: EkkoHY2_2024!
+  sni: 198.46.159.171
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 172.67.167.78
+  port: 8443
   udp: true
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 (United States) 03 - sanchun
+  tls: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 🇺🇸 美国 (United States) 05 - sanchun
+  server: 80.93.202.40
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime02.workers.dev
+- name: 🇺🇸 美国 (United States) 06 - sanchun
   server: flax-spinel23895.my-vm.work
   port: 8088
   udp: true
@@ -31,17 +68,22 @@ proxies:
     path: /api
     headers:
       Host: queuev4.vk.com
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: 107.172.67.52
-  port: 2053
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: mybb.com
+  port: 443
   udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: maintell
-- name: 🇺🇸 美国 (United States) 05 - sanchun
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇺🇸 美国 (United States) 08 - sanchun
   server: 2.27.249.79
   port: 443
   udp: true
@@ -61,6 +103,9 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
+  - 🇺🇸 美国 (United States) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +116,8 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
+  - 🇺🇸 美国 (United States) 08 - sanchun
 rules:
 - MATCH,PROXIES
