@@ -4,43 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
-  server: 7dba81fc3a0b.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 7dba81fc3a0b.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: mybb.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇨🇦 加拿大 (Canada) 03 - sanchun
-  server: 15.223.122.197
-  port: 443
+- name: 🇺🇸 美国 (United States) 01 - sanchun
+  server: 198.46.159.171
+  port: 8443
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  password: EkkoHY2_2024!
+  sni: 198.46.159.171
   skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 82.198.246.233
+  port: 180
+  udp: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇦🇺 澳大利亚 (Australia) 03 - sanchun
+  server: 82.198.246.37
+  port: 180
+  udp: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 04 - sanchun
   server: 23.162.200.198
   port: 18000
@@ -50,6 +37,24 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇺🇸 美国 (United States) 05 - sanchun
+  server: 107.172.67.52
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: maintell
+- name: 🇨🇦 加拿大 (Canada) 06 - sanchun
+  server: 15.223.122.197
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 07 - sanchun
   server: flax-spinel23895.my-vm.work
   port: 8088
   udp: true
@@ -60,52 +65,7 @@ proxies:
     path: /api
     headers:
       Host: queuev4.vk.com
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: 82.198.246.233
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 07 - sanchun
-  server: 167.82.76.7
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 (United States) 08 - sanchun
-  server: 100.42.228.109
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 09 - sanchun
-  server: 107.172.67.52
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: maintell
-- name: 🇬🇧 英国 (United Kingdom) 10 - sanchun
-  server: vpn-uk-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-uk-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇳🇱 荷兰 (Netherlands) 11 - sanchun
+- name: 🇳🇱 荷兰 (Netherlands) 08 - sanchun
   server: 72.56.102.31
   port: 443
   udp: true
@@ -113,94 +73,7 @@ proxies:
   password: BWAFlp8g53
   sni: 72.56.102.31
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 12 - sanchun
-  server: 162.249.126.7
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hopp-germany-new.ddnsguru.com
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 13 - sanchun
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇺🇸 美国 (United States) 14 - sanchun
-  server: 198.46.159.171
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: EkkoHY2_2024!
-  sni: 198.46.159.171
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 15 - sanchun
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 16 - sanchun
-  server: msk.frkn.org
-  port: 443
-  udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 17 - sanchun
-  server: 85.204.107.178
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 18 - sanchun
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 19 - sanchun
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 20 - sanchun
-  server: 2.27.249.79
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: nl1.sferavpn.pro
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇵🇱 波兰 (Poland) 21 - sanchun
-  server: 144.31.93.126
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 22 - sanchun
+- name: 🇺🇸 美国 (United States) 09 - sanchun
   server: www.shopify.com
   port: 443
   udp: true
@@ -216,25 +89,35 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇭🇰 中国香港 (Hong Kong) 23 - sanchun
-  server: dog-hk.kunlun01dns.com
-  port: 21019
+- name: 🇷🇴 罗马尼亚 (Romania) 10 - sanchun
+  server: 162.249.126.7
+  port: 8443
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 24 - sanchun
-  server: 2.27.59.206
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hopp-germany-new.ddnsguru.com
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 11 - sanchun
+  server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: de1.sferavpn.pro
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇳🇱 荷兰 (Netherlands) 12 - sanchun
+  server: hysteria.udpgw.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HowdyHysteria2023w0W
+  sni: sni-here.com
   skip-cert-verify: true
   obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇸🇬 新加坡 (Singapore) 25 - sanchun
+  obfs-password: HysteriaHowdy
+- name: 🇸🇬 新加坡 (Singapore) 13 - sanchun
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -242,7 +125,81 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇮🇳 印度 (India) 26 - sanchun
+- name: 🇬🇧 英国 (United Kingdom) 14 - sanchun
+  server: vpn-uk-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-uk-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 15 - sanchun
+  server: 85.204.107.178
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
+- name: 🇸🇪 瑞典 (Sweden) 16 - sanchun
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 17 - sanchun
+  server: 100.42.228.109
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 18 - sanchun
+  server: msk.frkn.org
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: false
+- name: 🇦🇺 澳大利亚 (Australia) 19 - sanchun
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 20 - sanchun
+  server: 144.31.93.126
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 21 - sanchun
+  server: ltu-01.node.lumixnet.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 7c5566a7-4b55-4659-975f-06507d32fd3f
+  sni: ltu-01.node.lumixnet.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 22 - sanchun
+  server: 2.27.249.79
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: nl1.sferavpn.pro
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇮🇳 印度 (India) 23 - sanchun
   server: vpn-in-001.fastervpn.world
   port: 443
   udp: true
@@ -250,51 +207,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-in-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 27 - sanchun
-  server: 162.249.125.133
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇺🇸 美国 (United States) 28 - sanchun
-  server: 144.31.49.138
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: ru1.sferavpn.pro
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇹🇭 泰国 (Thailand) 29 - sanchun
-  server: 119.46.51.45
-  port: 37515
-  udp: true
-  type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 30 - sanchun
-  server: 188.253.25.172
-  port: 443
-  udp: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: renderer-stream-2-62.mirra.now
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-- name: 🇺🇸 美国 (United States) 31 - sanchun
+- name: 🇺🇸 美国 (United States) 24 - sanchun
   server: 104.21.57.84
   port: 8443
   udp: true
@@ -310,90 +223,81 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🇩🇪 德国 (Germany) 32 - sanchun
-  server: uwu.blueknightnet.qzz.io
-  port: 2087
+- name: 🇩🇪 德国 (Germany) 25 - sanchun
+  server: 111.88.74.167
+  port: 443
   udp: true
-  type: trojan
-  password: sva5wot3avf7yobn
-  sni: uwu.dianaw.cc.cd
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: renderer-stream-2-62.mirra.now
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
+  - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇨🇦 加拿大 (Canada) 03 - sanchun
+  - 🇦🇺 澳大利亚 (Australia) 03 - sanchun
   - 🇨🇦 加拿大 (Canada) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇨🇦 加拿大 (Canada) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
-  - 🇺🇸 美国 (United States) 08 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 08 - sanchun
   - 🇺🇸 美国 (United States) 09 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 10 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 11 - sanchun
-  - 🇷🇴 罗马尼亚 (Romania) 12 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 13 - sanchun
-  - 🇺🇸 美国 (United States) 14 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 15 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 16 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 17 - sanchun
-  - 🇯🇵 日本 (Japan) 18 - sanchun
-  - 🇯🇵 日本 (Japan) 19 - sanchun
-  - 🇺🇸 美国 (United States) 20 - sanchun
-  - 🇵🇱 波兰 (Poland) 21 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 10 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 11 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 12 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 13 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 14 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 15 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 16 - sanchun
+  - 🇺🇸 美国 (United States) 17 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 18 - sanchun
+  - 🇦🇺 澳大利亚 (Australia) 19 - sanchun
+  - 🇵🇱 波兰 (Poland) 20 - sanchun
+  - 🇺🇸 美国 (United States) 21 - sanchun
   - 🇺🇸 美国 (United States) 22 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 23 - sanchun
-  - 🇩🇪 德国 (Germany) 24 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 25 - sanchun
-  - 🇮🇳 印度 (India) 26 - sanchun
-  - 🇷🇴 罗马尼亚 (Romania) 27 - sanchun
-  - 🇺🇸 美国 (United States) 28 - sanchun
-  - 🇹🇭 泰国 (Thailand) 29 - sanchun
-  - 🇩🇪 德国 (Germany) 30 - sanchun
-  - 🇺🇸 美国 (United States) 31 - sanchun
-  - 🇩🇪 德国 (Germany) 32 - sanchun
+  - 🇮🇳 印度 (India) 23 - sanchun
+  - 🇺🇸 美国 (United States) 24 - sanchun
+  - 🇩🇪 德国 (Germany) 25 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
+  - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇨🇦 加拿大 (Canada) 03 - sanchun
+  - 🇦🇺 澳大利亚 (Australia) 03 - sanchun
   - 🇨🇦 加拿大 (Canada) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇨🇦 加拿大 (Canada) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
-  - 🇺🇸 美国 (United States) 08 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 08 - sanchun
   - 🇺🇸 美国 (United States) 09 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 10 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 11 - sanchun
-  - 🇷🇴 罗马尼亚 (Romania) 12 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 13 - sanchun
-  - 🇺🇸 美国 (United States) 14 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 15 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 16 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 17 - sanchun
-  - 🇯🇵 日本 (Japan) 18 - sanchun
-  - 🇯🇵 日本 (Japan) 19 - sanchun
-  - 🇺🇸 美国 (United States) 20 - sanchun
-  - 🇵🇱 波兰 (Poland) 21 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 10 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 11 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 12 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 13 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 14 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 15 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 16 - sanchun
+  - 🇺🇸 美国 (United States) 17 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 18 - sanchun
+  - 🇦🇺 澳大利亚 (Australia) 19 - sanchun
+  - 🇵🇱 波兰 (Poland) 20 - sanchun
+  - 🇺🇸 美国 (United States) 21 - sanchun
   - 🇺🇸 美国 (United States) 22 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 23 - sanchun
-  - 🇩🇪 德国 (Germany) 24 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 25 - sanchun
-  - 🇮🇳 印度 (India) 26 - sanchun
-  - 🇷🇴 罗马尼亚 (Romania) 27 - sanchun
-  - 🇺🇸 美国 (United States) 28 - sanchun
-  - 🇹🇭 泰国 (Thailand) 29 - sanchun
-  - 🇩🇪 德国 (Germany) 30 - sanchun
-  - 🇺🇸 美国 (United States) 31 - sanchun
-  - 🇩🇪 德国 (Germany) 32 - sanchun
+  - 🇮🇳 印度 (India) 23 - sanchun
+  - 🇺🇸 美国 (United States) 24 - sanchun
+  - 🇩🇪 德国 (Germany) 25 - sanchun
 rules:
 - MATCH,PROXIES
