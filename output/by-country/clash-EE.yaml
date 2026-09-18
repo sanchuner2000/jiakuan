@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 - sanchun
-  server: vpn-uk-002.fastervpn.world
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
+  server: news.gazette.help
   port: 443
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-uk-002.fastervpn.world
-  skip-cert-verify: true
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: news.gazette.help
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
 rules:
 - MATCH,PROXIES

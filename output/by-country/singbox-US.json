@@ -6,26 +6,6 @@
     {
       "type": "hysteria2",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "198.46.159.171",
-      "server_port": 8443,
-      "password": "EkkoHY2_2024!",
-      "tls": {
-        "enabled": true,
-        "server_name": "198.46.159.171",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
-      "server": "82.198.246.233",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
       "server": "107.172.67.52",
       "server_port": 2053,
       "password": "maintell",
@@ -40,22 +20,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
-      "server": "flax-spinel23895.my-vm.work",
-      "server_port": 8088,
-      "uuid": "tmp_user",
-      "transport": {
-        "type": "ws",
-        "path": "/api",
-        "headers": {
-          "Host": "queuev4.vk.com"
-        }
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "198.46.159.171",
+      "server_port": 8443,
+      "password": "EkkoHY2_2024!",
+      "tls": {
+        "enabled": true,
+        "server_name": "198.46.159.171",
+        "insecure": true
       }
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
       "server": "www.shopify.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
@@ -74,20 +52,16 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
-      "server": "100.42.228.109",
-      "server_port": 443,
-      "password": "BxceQaOe",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me/ripaojiedian",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "82.198.246.233",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
       "server": "ltu-01.node.lumixnet.com",
       "server_port": 443,
       "password": "7c5566a7-4b55-4659-975f-06507d32fd3f",
@@ -99,7 +73,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
       "server": "2.27.249.79",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
@@ -114,8 +88,20 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "server": "gta.internet-card.sbs",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "gta.internet-card.sbs",
+        "insecure": true
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 09 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
       "server": "104.21.57.84",
       "server_port": 8443,
       "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
@@ -145,8 +131,7 @@
         "🇺🇸 美国 (United States) 05 - sanchun",
         "🇺🇸 美国 (United States) 06 - sanchun",
         "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun",
-        "🇺🇸 美国 (United States) 09 - sanchun"
+        "🇺🇸 美国 (United States) 08 - sanchun"
       ]
     },
     {
@@ -160,8 +145,7 @@
         "🇺🇸 美国 (United States) 05 - sanchun",
         "🇺🇸 美国 (United States) 06 - sanchun",
         "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun",
-        "🇺🇸 美国 (United States) 09 - sanchun"
+        "🇺🇸 美国 (United States) 08 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

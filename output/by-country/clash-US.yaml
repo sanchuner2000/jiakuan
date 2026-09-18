@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 198.46.159.171
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: EkkoHY2_2024!
-  sni: 198.46.159.171
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 82.198.246.233
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 03 - sanchun
   server: 107.172.67.52
   port: 2053
   udp: true
@@ -30,18 +14,15 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: maintell
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: flax-spinel23895.my-vm.work
-  port: 8088
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 198.46.159.171
+  port: 8443
   udp: true
-  type: vless
-  uuid: tmp_user
-  network: ws
-  ws-opts:
-    path: /api
-    headers:
-      Host: queuev4.vk.com
-- name: 🇺🇸 美国 (United States) 05 - sanchun
+  type: hysteria2
+  password: EkkoHY2_2024!
+  sni: 198.46.159.171
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 03 - sanchun
   server: www.shopify.com
   port: 443
   udp: true
@@ -57,15 +38,15 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: 100.42.228.109
-  port: 443
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 82.198.246.233
+  port: 180
   udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 07 - sanchun
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 05 - sanchun
   server: ltu-01.node.lumixnet.com
   port: 443
   udp: true
@@ -73,7 +54,7 @@ proxies:
   password: 7c5566a7-4b55-4659-975f-06507d32fd3f
   sni: ltu-01.node.lumixnet.com
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 08 - sanchun
+- name: 🇺🇸 美国 (United States) 06 - sanchun
   server: 2.27.249.79
   port: 443
   udp: true
@@ -83,7 +64,15 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇺🇸 美国 (United States) 09 - sanchun
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: gta.internet-card.sbs
+  port: 443
+  udp: true
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: gta.internet-card.sbs
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 08 - sanchun
   server: 104.21.57.84
   port: 8443
   udp: true
@@ -112,7 +101,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
   - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇺🇸 美国 (United States) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,6 +114,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
   - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇺🇸 美国 (United States) 09 - sanchun
 rules:
 - MATCH,PROXIES
