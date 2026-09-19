@@ -12,17 +12,62 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  server: 34.87.113.18
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50cbda48-00ce-4688-8b3d-0177ab8f177c
+  tls: true
+  reality-opts:
+    public-key: GqyMciP_v8rJZKLJd-EgzQmWbi_Qx_c_n1f-nlPkaEA
+    short-id: b1fef7a9181ea31d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  server: 35.185.179.62
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  tls: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+    short-id: eb97ce837da2f6ad
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 04 - sanchun
+  server: 43.160.220.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /buy/uploads?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
 rules:
 - MATCH,PROXIES

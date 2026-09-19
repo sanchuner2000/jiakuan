@@ -1,0 +1,46 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇬🇧 英国 (United Kingdom) 01 - sanchun
+  server: 34.142.108.254
+  port: 443
+  udp: true
+  type: vless
+  uuid: ed492b33-c6b4-463f-8359-3634b0d44251
+  tls: true
+  reality-opts:
+    public-key: matDwR2fEV41IhLs23SkP9dS6d6qiaRKS4ndb3uR1lk
+    short-id: 89ea42ae375d4933
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 02 - sanchun
+  server: 35.246.34.105
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9743b4f9-24c3-4e53-8b03-c3b5cd9b71b2
+  tls: true
+  reality-opts:
+    public-key: bx1ylgNlSmg4i-abKzPcSHGMlIE6gdf66Ysjv25ZrE4
+    short-id: 1b580f160d965b01
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇬🇧 英国 (United Kingdom) 01 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 02 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇬🇧 英国 (United Kingdom) 01 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 02 - sanchun
+rules:
+- MATCH,PROXIES

@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - sanchun
+  server: 34.51.172.152
+  port: 443
+  udp: true
+  type: vless
+  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
+  tls: true
+  reality-opts:
+    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+    short-id: b4a6faed784ff461
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 02 - sanchun
   server: se-node.rumedia-cdn.com
   port: 25443
   udp: true
@@ -18,11 +30,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 02 - sanchun
 rules:
 - MATCH,PROXIES

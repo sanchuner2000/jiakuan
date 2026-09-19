@@ -1,0 +1,73 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 - sanchun",
+      "server": "34.142.108.254",
+      "server_port": 443,
+      "uuid": "ed492b33-c6b4-463f-8359-3634b0d44251",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "matDwR2fEV41IhLs23SkP9dS6d6qiaRKS4ndb3uR1lk",
+          "short_id": "89ea42ae375d4933"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - sanchun",
+      "server": "35.246.34.105",
+      "server_port": 443,
+      "uuid": "9743b4f9-24c3-4e53-8b03-c3b5cd9b71b2",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bx1ylgNlSmg4i-abKzPcSHGMlIE6gdf66Ysjv25ZrE4",
+          "short_id": "1b580f160d965b01"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇬🇧 英国 (United Kingdom) 01 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 02 - sanchun"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇬🇧 英国 (United Kingdom) 01 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 02 - sanchun"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

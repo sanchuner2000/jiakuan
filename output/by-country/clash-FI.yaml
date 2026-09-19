@@ -1,0 +1,60 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇮 芬兰 (Finland) 01 - sanchun
+  server: 34.88.172.173
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
+  tls: true
+  reality-opts:
+    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
+    short-id: d4b34bc6b3d2b5ab
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 02 - sanchun
+  server: 34.88.172.76
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7238b912-44dd-48fe-ab89-6be3d5034446
+  tls: true
+  reality-opts:
+    public-key: EhvUHgqz3l98xPNiq8r02nbk1NQrnqHWwqR70kKd7gk
+    short-id: f55104a5c6729677
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - sanchun
+  server: est1313.ggisopi.su
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇮 芬兰 (Finland) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 02 - sanchun
+  - 🇫🇮 芬兰 (Finland) 03 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇮 芬兰 (Finland) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 02 - sanchun
+  - 🇫🇮 芬兰 (Finland) 03 - sanchun
+rules:
+- MATCH,PROXIES
