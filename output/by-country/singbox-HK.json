@@ -4,22 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
-      "server": "35.220.207.209",
+      "server": "ex1ogt73nzpqkac2.v.3dns.vip",
       "server_port": 443,
-      "uuid": "90153538-ef08-4942-b8e1-41e7c523e659",
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM",
-          "short_id": "56d4e7ae4f86fa39"
+        "server_name": "EX1oGt73NzPQKAc2.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "EX1oGt73NzPQKAc2.v.3dns.vip"
         }
       }
     },
@@ -44,23 +44,80 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - sanchun",
-      "server": "34.92.19.135",
+      "server": "47.76.44.32",
       "server_port": 443,
-      "uuid": "75d38591-267e-4d89-98bc-164f25b50880",
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4",
-          "short_id": "64b3f192fc0669e1"
+        "server_name": "93ucrn4i0PffUAbk.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "93ucrn4i0PffUAbk.v.3dns.vip"
         }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - sanchun",
+      "server": "47.83.19.148",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "6JDvArazgU3qQR6Q.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "6JDvArazgU3qQR6Q.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - sanchun",
+      "server": "47.86.107.119",
+      "server_port": 443,
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "lcv8v9l7OyamxxfZ.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "lcv8v9l7OyamxxfZ.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - sanchun",
+      "server": "ejomsxptp19apygl.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "ejomsxptp19apygl.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess"
       }
     },
     {
@@ -70,7 +127,10 @@
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
         "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 04 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 05 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 06 - sanchun"
       ]
     },
     {
@@ -79,7 +139,10 @@
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
         "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 04 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 05 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 06 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

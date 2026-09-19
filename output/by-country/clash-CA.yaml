@@ -13,18 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 02 - sanchun
-  server: 34.95.28.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
-  tls: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-    short-id: c9d4bf8d94ec8dab
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 03 - sanchun
   server: 15.223.122.197
   port: 443
   udp: true
@@ -32,18 +20,6 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: t.me
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 04 - sanchun
-  server: 34.19.224.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2ea95ec3-6b09-470e-952a-ebb171b0d666
-  tls: true
-  reality-opts:
-    public-key: 0dSYzX_uvVr-YmiONeKxPt7TdFkaFeYopYfjobxxEC4
-    short-id: 341ec000a90f1ced
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇨🇦 加拿大 (Canada) 01 - sanchun
   - 🇨🇦 加拿大 (Canada) 02 - sanchun
-  - 🇨🇦 加拿大 (Canada) 03 - sanchun
-  - 🇨🇦 加拿大 (Canada) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 (Canada) 01 - sanchun
   - 🇨🇦 加拿大 (Canada) 02 - sanchun
-  - 🇨🇦 加拿大 (Canada) 03 - sanchun
-  - 🇨🇦 加拿大 (Canada) 04 - sanchun
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
-  server: 199.232.78.101
+  server: 199.232.78.160
   port: 443
   udp: true
   type: trojan
@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /
 - name: 🇩🇪 德国 (Germany) 02 - sanchun
-  server: 151.101.56.7
+  server: 199.232.78.101
   port: 443
   udp: true
   type: trojan
@@ -27,18 +27,16 @@ proxies:
   ws-opts:
     path: /
 - name: 🇩🇪 德国 (Germany) 03 - sanchun
-  server: 2.26.51.75
+  server: 151.101.56.7
   port: 443
   udp: true
-  type: vless
-  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
-    short-id: d4f6a8c1b2e3f9aa
-  servername: 4pda.to
-  client-fingerprint: firefox
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇩🇪 德国 (Germany) 04 - sanchun
   server: 57.129.96.67
   port: 443
@@ -51,8 +49,17 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 05 - sanchun
-  server: 164.92.147.213
-  port: 2087
+  server: ov-germany1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 06 - sanchun
+  server: 89.110.66.154
+  port: 443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -62,10 +69,10 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /city/my?ed=2560
+    path: /streams/home?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 06 - sanchun
+- name: 🇩🇪 德国 (Germany) 07 - sanchun
   server: rubifen.adaspoloandco.com
   port: 443
   udp: true
@@ -78,43 +85,19 @@ proxies:
   network: ws
   ws-opts:
     path: /GOrbEh
-- name: 🇩🇪 德国 (Germany) 07 - sanchun
-  server: 34.159.123.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3255d065-119c-4103-a422-ea9d301b0707
-  tls: true
-  reality-opts:
-    public-key: -XH2d9x4wRi--KvR6XTcZW9HXbikI2_262zfYDr1uFw
-    short-id: 690ec9207866c84e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 08 - sanchun
-  server: 34.159.242.163
+  server: 2.26.51.75
   port: 443
   udp: true
   type: vless
-  uuid: 753fa5ef-0b08-4fd3-b688-173ff594b758
+  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: XRYeVrK7q9baNj66NmBBIX_sllPJtxOBTjrxTaQMQ2U
-    short-id: 7394ea3cc2106697
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 09 - sanchun
-  server: apicdn.4subnodes.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
-  tls: true
-  servername: apicdn.4subnodes.com
-  skip-cert-verify: false
+    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
+    short-id: d4f6a8c1b2e3f9aa
+  servername: 4pda.to
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,7 +111,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 06 - sanchun
   - 🇩🇪 德国 (Germany) 07 - sanchun
   - 🇩🇪 德国 (Germany) 08 - sanchun
-  - 🇩🇪 德国 (Germany) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -142,6 +124,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 06 - sanchun
   - 🇩🇪 德国 (Germany) 07 - sanchun
   - 🇩🇪 德国 (Germany) 08 - sanchun
-  - 🇩🇪 德国 (Germany) 09 - sanchun
 rules:
 - MATCH,PROXIES

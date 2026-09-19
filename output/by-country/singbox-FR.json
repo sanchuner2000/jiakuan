@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 01 - sanchun",
-      "server": "nasnet-162191099-direct.mbghalibaf.com",
+      "server": "162.19.10.99",
       "server_port": 443,
       "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
       "flow": "xtls-rprx-vision",
@@ -17,58 +17,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 02 - sanchun",
-      "server": "162.159.244.91",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 03 - sanchun",
-      "server": "152.228.162.19",
-      "server_port": 80,
-      "uuid": "25f86cb1-2140-4085-abcb-c3a0ea7a4be0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 04 - sanchun",
-      "server": "34.155.54.237",
-      "server_port": 443,
-      "uuid": "069a2bbd-3fc9-470f-a251-c836a96ed04a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SVT2WeXMIrumlh5VG1lbHN6YbqL7-u2iRkv1js8XEU4",
-          "short_id": "3f95392a418ec8fd"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 05 - sanchun",
+      "tag": "🇫🇷 法国 (France) 02 - sanchun",
       "server": "188.114.96.19",
       "server_port": 80,
       "uuid": "479526cd-5011-43cf-a788-504da95e07c2",
@@ -87,10 +37,7 @@
       "outbounds": [
         "auto",
         "🇫🇷 法国 (France) 01 - sanchun",
-        "🇫🇷 法国 (France) 02 - sanchun",
-        "🇫🇷 法国 (France) 03 - sanchun",
-        "🇫🇷 法国 (France) 04 - sanchun",
-        "🇫🇷 法国 (France) 05 - sanchun"
+        "🇫🇷 法国 (France) 02 - sanchun"
       ]
     },
     {
@@ -98,10 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 法国 (France) 01 - sanchun",
-        "🇫🇷 法国 (France) 02 - sanchun",
-        "🇫🇷 法国 (France) 03 - sanchun",
-        "🇫🇷 法国 (France) 04 - sanchun",
-        "🇫🇷 法国 (France) 05 - sanchun"
+        "🇫🇷 法国 (France) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

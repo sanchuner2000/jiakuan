@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - sanchun
-  server: 34.88.172.173
+  server: est1313.ggisopi.su
   port: 443
   udp: true
   type: vless
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-    short-id: d4b34bc6b3d2b5ab
-  servername: www.cloudflare.com
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - sanchun
-  server: 34.118.43.133
-  port: 443
-  udp: true
-  type: vless
-  uuid: 16e310b7-659e-45ee-a4b0-10e0289b8621
-  tls: true
-  reality-opts:
-    public-key: -bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ
-    short-id: 7e7623474d41f032
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 02 - sanchun
   server: atomic-prase23893.my-vm.work
   port: 8088
   udp: true
@@ -27,6 +15,14 @@ proxies:
     path: /api
     headers:
       Host: queuev4.vk.com
+- name: 🇵🇱 波兰 (Poland) 02 - sanchun
+  server: 144.31.93.126
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 03 - sanchun
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -39,24 +35,6 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04 - sanchun
-  server: 144.31.93.126
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - sanchun
-  server: 144.31.5.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl6.moritech.net
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,8 +43,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - sanchun
   - 🇵🇱 波兰 (Poland) 02 - sanchun
   - 🇵🇱 波兰 (Poland) 03 - sanchun
-  - 🇵🇱 波兰 (Poland) 04 - sanchun
-  - 🇵🇱 波兰 (Poland) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,7 +51,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - sanchun
   - 🇵🇱 波兰 (Poland) 02 - sanchun
   - 🇵🇱 波兰 (Poland) 03 - sanchun
-  - 🇵🇱 波兰 (Poland) 04 - sanchun
-  - 🇵🇱 波兰 (Poland) 05 - sanchun
 rules:
 - MATCH,PROXIES

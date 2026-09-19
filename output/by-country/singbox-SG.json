@@ -14,46 +14,6 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
-      "server": "34.87.113.18",
-      "server_port": 443,
-      "uuid": "50cbda48-00ce-4688-8b3d-0177ab8f177c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GqyMciP_v8rJZKLJd-EgzQmWbi_Qx_c_n1f-nlPkaEA",
-          "short_id": "b1fef7a9181ea31d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - sanchun",
-      "server": "35.185.179.62",
-      "server_port": 443,
-      "uuid": "5567cac6-2a32-4318-83cd-7df3a9eebbd7",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4",
-          "short_id": "eb97ce837da2f6ad"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - sanchun",
       "server": "43.160.220.86",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -80,9 +40,7 @@
       "outbounds": [
         "auto",
         "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 03 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 04 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
       ]
     },
     {
@@ -90,9 +48,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 03 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 04 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
