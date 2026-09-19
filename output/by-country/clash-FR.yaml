@@ -5,19 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - sanchun
-  server: 13.37.31.153
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 02 - sanchun
-  server: 13.37.31.153
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 03 - sanchun
-  server: 162.19.10.99
+  server: nasnet-162191099-direct.mbghalibaf.com
   port: 443
   udp: true
   type: vless
@@ -26,7 +14,18 @@ proxies:
   tls: true
   servername: nasnet-162191099-direct.mbghalibaf.com
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 04 - sanchun
+- name: 🇫🇷 法国 (France) 02 - sanchun
+  server: 162.159.244.91
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 03 - sanchun
   server: 152.228.162.19
   port: 80
   udp: true
@@ -35,29 +34,19 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
+- name: 🇫🇷 法国 (France) 04 - sanchun
+  server: 34.155.54.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: 069a2bbd-3fc9-470f-a251-c836a96ed04a
+  tls: true
+  reality-opts:
+    public-key: SVT2WeXMIrumlh5VG1lbHN6YbqL7-u2iRkv1js8XEU4
+    short-id: 3f95392a418ec8fd
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 05 - sanchun
-  server: 172.64.150.28
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 06 - sanchun
-  server: 185.255.179.166
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 07 - sanchun
   server: 188.114.96.19
   port: 80
   udp: true
@@ -80,8 +69,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 03 - sanchun
   - 🇫🇷 法国 (France) 04 - sanchun
   - 🇫🇷 法国 (France) 05 - sanchun
-  - 🇫🇷 法国 (France) 06 - sanchun
-  - 🇫🇷 法国 (France) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,7 +79,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 03 - sanchun
   - 🇫🇷 法国 (France) 04 - sanchun
   - 🇫🇷 法国 (France) 05 - sanchun
-  - 🇫🇷 法国 (France) 06 - sanchun
-  - 🇫🇷 法国 (France) 07 - sanchun
 rules:
 - MATCH,PROXIES

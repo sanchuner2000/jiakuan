@@ -6,21 +6,12 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - sanchun",
-      "server": "34.142.108.254",
-      "server_port": 443,
-      "uuid": "ed492b33-c6b4-463f-8359-3634b0d44251",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "matDwR2fEV41IhLs23SkP9dS6d6qiaRKS4ndb3uR1lk",
-          "short_id": "89ea42ae375d4933"
-        }
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "dbb78c94-9f87-4d7d-b945-2000b60352fd",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
       }
     },
     {
@@ -44,12 +35,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - sanchun",
+      "server": "34.142.108.254",
+      "server_port": 443,
+      "uuid": "ed492b33-c6b4-463f-8359-3634b0d44251",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "matDwR2fEV41IhLs23SkP9dS6d6qiaRKS4ndb3uR1lk",
+          "short_id": "89ea42ae375d4933"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇬🇧 英国 (United Kingdom) 01 - sanchun",
-        "🇬🇧 英国 (United Kingdom) 02 - sanchun"
+        "🇬🇧 英国 (United Kingdom) 02 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 03 - sanchun"
       ]
     },
     {
@@ -57,7 +69,8 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 英国 (United Kingdom) 01 - sanchun",
-        "🇬🇧 英国 (United Kingdom) 02 - sanchun"
+        "🇬🇧 英国 (United Kingdom) 02 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

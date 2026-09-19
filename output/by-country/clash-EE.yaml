@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
-  server: mybb.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   server: 94.183.170.135
   port: 443
   udp: true
@@ -28,7 +13,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   server: 95.85.224.17
   port: 443
   udp: true
@@ -47,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
 rules:
 - MATCH,PROXIES

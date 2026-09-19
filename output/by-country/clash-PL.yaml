@@ -17,6 +17,17 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 02 - sanchun
+  server: atomic-prase23893.my-vm.work
+  port: 8088
+  udp: true
+  type: vless
+  uuid: tmp_user
+  network: ws
+  ws-opts:
+    path: /api
+    headers:
+      Host: queuev4.vk.com
+- name: 🇵🇱 波兰 (Poland) 03 - sanchun
   server: pl-waw.dontblockmepls.com
   port: 2063
   udp: true
@@ -28,17 +39,6 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - sanchun
-  server: pl6.moritech.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl6.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 04 - sanchun
   server: 144.31.93.126
   port: 443
@@ -48,16 +48,15 @@ proxies:
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 05 - sanchun
-  server: atomic-prase23893.my-vm.work
-  port: 8088
+  server: 144.31.5.64
+  port: 443
   udp: true
   type: vless
-  uuid: tmp_user
-  network: ws
-  ws-opts:
-    path: /api
-    headers:
-      Host: queuev4.vk.com
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl6.moritech.net
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

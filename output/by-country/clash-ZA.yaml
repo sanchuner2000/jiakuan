@@ -4,16 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 芬兰 (Finland) 01 - sanchun
-  server: 34.88.172.173
+- name: 🇿🇦 南非 (South Africa) 01 - sanchun
+  server: 34.35.174.85
   port: 443
   udp: true
   type: vless
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
+  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
   tls: true
   reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-    short-id: d4b34bc6b3d2b5ab
+    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
+    short-id: 5ced03e42cc31aab
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 芬兰 (Finland) 01 - sanchun
+  - 🇿🇦 南非 (South Africa) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 (Finland) 01 - sanchun
+  - 🇿🇦 南非 (South Africa) 01 - sanchun
 rules:
 - MATCH,PROXIES

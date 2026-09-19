@@ -4,17 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - sanchun",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
+      "type": "trojan",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - sanchun",
+      "server": "199.232.78.160",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
+        "path": "/",
         "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
+          "Host": "mitivpn---ss--s---mitivpn-55e.global.ssl.fastly.net"
         }
       }
     },
@@ -23,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - sanchun"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - sanchun"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

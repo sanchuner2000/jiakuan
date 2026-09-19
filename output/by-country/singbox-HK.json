@@ -24,18 +24,62 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "3aa71202-a099-49c1-99fc-6662f3335369",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "yoga-suggesting-recording-calls.trycloudflare.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/3aa71202-a099-49c1-99fc-6662f3335369-vm",
+        "headers": {
+          "Host": "yoga-suggesting-recording-calls.trycloudflare.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - sanchun",
+      "server": "34.92.19.135",
+      "server_port": 443,
+      "uuid": "75d38591-267e-4d89-98bc-164f25b50880",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4",
+          "short_id": "64b3f192fc0669e1"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

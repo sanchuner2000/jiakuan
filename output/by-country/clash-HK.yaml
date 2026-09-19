@@ -16,17 +16,49 @@ proxies:
     short-id: 56d4e7ae4f86fa39
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
+  server: www.shopify.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: yoga-suggesting-recording-calls.trycloudflare.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
+    headers:
+      Host: yoga-suggesting-recording-calls.trycloudflare.com
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
+  server: 34.92.19.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  tls: true
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+    short-id: 64b3f192fc0669e1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
 rules:
 - MATCH,PROXIES

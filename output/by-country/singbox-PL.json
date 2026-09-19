@@ -26,6 +26,20 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - sanchun",
+      "server": "atomic-prase23893.my-vm.work",
+      "server_port": 8088,
+      "uuid": "tmp_user",
+      "transport": {
+        "type": "ws",
+        "path": "/api",
+        "headers": {
+          "Host": "queuev4.vk.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - sanchun",
       "server": "pl-waw.dontblockmepls.com",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
@@ -45,23 +59,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - sanchun",
-      "server": "pl6.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
       "tag": "🇵🇱 波兰 (Poland) 04 - sanchun",
       "server": "144.31.93.126",
@@ -76,15 +73,14 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 05 - sanchun",
-      "server": "atomic-prase23893.my-vm.work",
-      "server_port": 8088,
-      "uuid": "tmp_user",
-      "transport": {
-        "type": "ws",
-        "path": "/api",
-        "headers": {
-          "Host": "queuev4.vk.com"
-        }
+      "server": "144.31.5.64",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl6.moritech.net",
+        "insecure": false
       }
     },
     {

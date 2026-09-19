@@ -17,6 +17,18 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 02 - sanchun
+  server: 34.51.231.250
+  port: 443
+  udp: true
+  type: vless
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
+  tls: true
+  reality-opts:
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+    short-id: 79ff7d51e3c56323
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 03 - sanchun
   server: se-node.rumedia-cdn.com
   port: 25443
   udp: true
@@ -31,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - sanchun
   - 🇸🇪 瑞典 (Sweden) 02 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - sanchun
   - 🇸🇪 瑞典 (Sweden) 02 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 03 - sanchun
 rules:
 - MATCH,PROXIES

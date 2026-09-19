@@ -5,17 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 104.17.147.22
-  port: 80
+  server: 100.42.228.109
+  port: 443
   udp: true
-  type: vless
-  uuid: 63f1ef69-92fd-427a-b3e4-98ffddf81ac6
+  type: trojan
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 167.82.76.7
+  port: 443
+  udp: true
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /nPKoVRUdyuRZ6jpY/YnBiLnlvdXNlZi5pc2VnYXJvLmNvbSxwcm94eWlwLmNtbGl1c3Nzcy5uZXQsbmltYS5uc2NsLmlyLHR1cmsucmFkaWNhbGl6YXRpb24uaXI=
-    headers:
-      Host: young-rice-749e.heliy78750.workers.dev
-- name: 🇺🇸 美国 (United States) 02 - sanchun
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 34.187.170.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: dffab367-7769-4c6c-86f2-66fc6bd03003
+  tls: true
+  reality-opts:
+    public-key: LYnDDS0AkBwVeeTyIEE5MhrTV_PZO5f1qBAbMN6z4HM
+    short-id: f1955f72763eb2fb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 107.172.67.52
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: maintell
+- name: 🇺🇸 美国 (United States) 05 - sanchun
   server: 3h-unitedstates1.09vpn.com
   port: 80
   udp: true
@@ -24,23 +54,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 82.198.246.233
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: 82.198.246.37
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 05 - sanchun
+- name: 🇺🇸 美国 (United States) 06 - sanchun
   server: 34.10.76.179
   port: 443
   udp: true
@@ -52,7 +66,7 @@ proxies:
     short-id: 7dfdbf323c4ef0a8
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 06 - sanchun
+- name: 🇺🇸 美国 (United States) 07 - sanchun
   server: 198.46.159.171
   port: 8443
   udp: true
@@ -60,18 +74,6 @@ proxies:
   password: EkkoHY2_2024!
   sni: 198.46.159.171
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 07 - sanchun
-  server: 34.42.36.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3893f05b-9b24-4bb1-a1dc-ba55509b0a01
-  tls: true
-  reality-opts:
-    public-key: Th2whwnn3zQaHdImi5B1wYn8hxXz3JQs3_AQCuHfanQ
-    short-id: 76d093d99ceaf06a
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 08 - sanchun
   server: 8.234.247.219
   port: 443
@@ -85,41 +87,48 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 09 - sanchun
-  server: 107.172.67.52
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: maintell
-- name: 🇺🇸 美国 (United States) 10 - sanchun
-  server: 34.187.170.146
+  server: 34.42.36.75
   port: 443
   udp: true
   type: vless
-  uuid: dffab367-7769-4c6c-86f2-66fc6bd03003
+  uuid: 3893f05b-9b24-4bb1-a1dc-ba55509b0a01
   tls: true
   reality-opts:
-    public-key: LYnDDS0AkBwVeeTyIEE5MhrTV_PZO5f1qBAbMN6z4HM
-    short-id: f1955f72763eb2fb
+    public-key: Th2whwnn3zQaHdImi5B1wYn8hxXz3JQs3_AQCuHfanQ
+    short-id: 76d093d99ceaf06a
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 10 - sanchun
+  server: cdn.snobvpn.online
+  port: 80
+  udp: true
+  type: vless
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  network: ws
+  ws-opts:
+    path: /snob-ws
 - name: 🇺🇸 美国 (United States) 11 - sanchun
-  server: sperma.mervi.icu
+  server: us05.shifor01.life
   port: 443
   udp: true
   type: vless
-  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
+  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0HbKjaC76YjP_8B9fiOqebmIMhieA3MBBJu6PPeHgAo
-    short-id: d6dce6fe103eae6a
-  servername: sperma.mervi.icu
-  client-fingerprint: random
+    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
+    short-id: 169fc2df88419465
+  servername: us05.shifor01.life
+  client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 12 - sanchun
+  server: ltu-01.node.lumixnet.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 7c5566a7-4b55-4659-975f-06507d32fd3f
+  sni: ltu-01.node.lumixnet.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 13 - sanchun
   server: 2.27.249.79
   port: 443
   udp: true
@@ -129,23 +138,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇺🇸 美国 (United States) 13 - sanchun
-  server: ltu-01.node.lumixnet.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 7c5566a7-4b55-4659-975f-06507d32fd3f
-  sni: ltu-01.node.lumixnet.com
-  skip-cert-verify: true
 - name: 🇺🇸 美国 (United States) 14 - sanchun
-  server: 100.42.228.109
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 15 - sanchun
   server: 172.67.167.78
   port: 8443
   udp: true
@@ -161,28 +154,6 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🇺🇸 美国 (United States) 16 - sanchun
-  server: cdn.snobvpn.online
-  port: 80
-  udp: true
-  type: vless
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  network: ws
-  ws-opts:
-    path: /snob-ws
-- name: 🇺🇸 美国 (United States) 17 - sanchun
-  server: ccs2g.pai50288.uk
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  tls: true
-  servername: ccs2g.pai50288.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /pai50288
 proxy-groups:
 - name: PROXIES
   type: select
@@ -202,9 +173,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 12 - sanchun
   - 🇺🇸 美国 (United States) 13 - sanchun
   - 🇺🇸 美国 (United States) 14 - sanchun
-  - 🇺🇸 美国 (United States) 15 - sanchun
-  - 🇺🇸 美国 (United States) 16 - sanchun
-  - 🇺🇸 美国 (United States) 17 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -224,8 +192,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 12 - sanchun
   - 🇺🇸 美国 (United States) 13 - sanchun
   - 🇺🇸 美国 (United States) 14 - sanchun
-  - 🇺🇸 美国 (United States) 15 - sanchun
-  - 🇺🇸 美国 (United States) 16 - sanchun
-  - 🇺🇸 美国 (United States) 17 - sanchun
 rules:
 - MATCH,PROXIES

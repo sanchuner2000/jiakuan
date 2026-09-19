@@ -4,40 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇨🇦 加拿大 (Canada) 01 - sanchun",
-      "server": "15.223.122.197",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
-      }
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
     },
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 02 - sanchun",
-      "server": "34.19.224.156",
-      "server_port": 443,
-      "uuid": "2ea95ec3-6b09-470e-952a-ebb171b0d666",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0dSYzX_uvVr-YmiONeKxPt7TdFkaFeYopYfjobxxEC4",
-          "short_id": "341ec000a90f1ced"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 03 - sanchun",
       "server": "34.95.28.161",
       "server_port": 443,
       "uuid": "448b76ac-c636-4303-bec1-0b2c22afee0c",
@@ -56,12 +32,36 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "hysteria2",
+      "tag": "🇨🇦 加拿大 (Canada) 03 - sanchun",
+      "server": "15.223.122.197",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 04 - sanchun",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "34.19.224.156",
+      "server_port": 443,
+      "uuid": "2ea95ec3-6b09-470e-952a-ebb171b0d666",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0dSYzX_uvVr-YmiONeKxPt7TdFkaFeYopYfjobxxEC4",
+          "short_id": "341ec000a90f1ced"
+        }
+      }
     },
     {
       "type": "selector",

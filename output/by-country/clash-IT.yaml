@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - sanchun
-  server: 34.154.92.210
-  port: 443
-  udp: true
-  type: vless
-  uuid: fffe33b6-5735-4a71-adb1-1c154def9024
-  tls: true
-  reality-opts:
-    public-key: -Tb9KKp870JxcZ3Ka7Rx5ez3QBYryX4e8_jdyNZu2wE
-    short-id: ed278463058a6dc9
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 02 - sanchun
   server: 34.154.47.33
   port: 443
   udp: true
@@ -26,6 +14,18 @@ proxies:
   reality-opts:
     public-key: jGfJxbIyf2aLRFQyT9NsJBu1CzJmrAa2sF19GNw46z8
     short-id: 29615707650b941d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 02 - sanchun
+  server: 34.154.92.210
+  port: 443
+  udp: true
+  type: vless
+  uuid: fffe33b6-5735-4a71-adb1-1c154def9024
+  tls: true
+  reality-opts:
+    public-key: -Tb9KKp870JxcZ3Ka7Rx5ez3QBYryX4e8_jdyNZu2wE
+    short-id: ed278463058a6dc9
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
