@@ -5,14 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 82.198.246.37
-  port: 180
+  server: 104.16.10.2
+  port: 443
   udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+  tls: true
+  servername: vip.868068.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: vip.868068.xyz
 - name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 107.172.67.52
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: maintell
+- name: 🇺🇸 美国 (United States) 03 - sanchun
   server: 100.42.228.109
   port: 443
   udp: true
@@ -20,30 +37,7 @@ proxies:
   password: BxceQaOe
   sni: t.me/ripaojiedian
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: mybb.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
 - name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: 198.46.159.171
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: EkkoHY2_2024!
-  sni: 198.46.159.171
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 05 - sanchun
   server: 167.82.76.7
   port: 443
   udp: true
@@ -54,17 +48,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: 107.172.67.52
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: maintell
-- name: 🇺🇸 美国 (United States) 07 - sanchun
+- name: 🇺🇸 美国 (United States) 05 - sanchun
   server: www.shopify.com
   port: 443
   udp: true
@@ -80,7 +64,15 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 08 - sanchun
+- name: 🇺🇸 美国 (United States) 06 - sanchun
+  server: 198.46.159.171
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: EkkoHY2_2024!
+  sni: 198.46.159.171
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 07 - sanchun
   server: 2.27.249.79
   port: 443
   udp: true
@@ -90,22 +82,14 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇺🇸 美国 (United States) 09 - sanchun
-  server: 172.67.167.78
-  port: 8443
+- name: 🇺🇸 美国 (United States) 08 - sanchun
+  server: 82.198.246.233
+  port: 180
   udp: true
   type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,7 +103,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
   - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇺🇸 美国 (United States) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,6 +116,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
   - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇺🇸 美国 (United States) 09 - sanchun
 rules:
 - MATCH,PROXIES

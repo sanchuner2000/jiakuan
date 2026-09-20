@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
+      "server": "82.198.246.37",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - sanchun",
       "server": "34.87.244.111",
       "server_port": 443,
       "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
@@ -28,14 +36,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
+        "🇦🇺 澳大利亚 (Australia) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
+        "🇦🇺 澳大利亚 (Australia) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
