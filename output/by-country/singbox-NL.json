@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+      "server": "72.56.102.31",
+      "server_port": 443,
+      "password": "BWAFlp8g53",
+      "tls": {
+        "enabled": true,
+        "server_name": "72.56.102.31",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
       "server": "31.76.76.28",
       "server_port": 443,
       "uuid": "de5906f3-df38-4463-aa9d-2b01320cc6ea",
@@ -16,7 +28,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+      "tag": "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
       "server": "nl5.freekeysh110.online",
       "server_port": 443,
       "uuid": "090b4f5d-8cdd-4a80-999f-4e2905406c7f",
@@ -36,20 +48,19 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
-      "server": "72.56.102.31",
-      "server_port": 443,
-      "password": "BWAFlp8g53",
-      "tls": {
-        "enabled": true,
-        "server_name": "72.56.102.31",
-        "insecure": true
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 04 - sanchun",
+      "server": "163.172.213.174",
+      "server_port": 80,
+      "uuid": "e73df646-1f62-41bf-8c50-653497d603d0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 04 - sanchun",
+      "tag": "🇳🇱 荷兰 (Netherlands) 05 - sanchun",
       "server": "hhhorp.plus-hit.ru",
       "server_port": 443,
       "uuid": "84a794a5-2420-4ca7-8e08-8d21571f36f3",
@@ -66,17 +77,6 @@
           "public_key": "N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA",
           "short_id": "7c8e3d4a9b1f26d3"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 05 - sanchun",
-      "server": "sc-thenetherlands1.09vpn.com",
-      "server_port": 80,
-      "uuid": "40cc9b52-25b8-4cd5-8b45-715ae26e6baf",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
       }
     },
     {

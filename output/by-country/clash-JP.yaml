@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 02 - sanchun
   server: 108.160.136.71
   port: 443
   udp: true
@@ -27,21 +19,23 @@ proxies:
     path: /doc/products/view?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: 103.115.18.54
-  port: 443
+- name: 🇯🇵 日本 (Japan) 02 - sanchun
+  server: 172.111.146.64
+  port: 80
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
   network: ws
   ws-opts:
-    path: /episode/files?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+    path: /vless/
+- name: 🇯🇵 日本 (Japan) 03 - sanchun
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 04 - sanchun
   server: 168.138.43.75
   port: 80

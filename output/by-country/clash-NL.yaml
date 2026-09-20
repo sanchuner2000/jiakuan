@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  server: 72.56.102.31
+  port: 443
+  udp: true
+  type: hysteria2
+  password: BWAFlp8g53
+  sni: 72.56.102.31
+  skip-cert-verify: true
+- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   server: 31.76.76.28
   port: 443
   udp: true
@@ -13,7 +21,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
   server: nl5.freekeysh110.online
   port: 443
   udp: true
@@ -26,15 +34,16 @@ proxies:
     short-id: 04b9f0b2470fae16
   servername: nl5.freekeysh110.online
   client-fingerprint: edge
-- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
-  server: 72.56.102.31
-  port: 443
-  udp: true
-  type: hysteria2
-  password: BWAFlp8g53
-  sni: 72.56.102.31
-  skip-cert-verify: true
 - name: 🇳🇱 荷兰 (Netherlands) 04 - sanchun
+  server: 163.172.213.174
+  port: 80
+  udp: true
+  type: vless
+  uuid: e73df646-1f62-41bf-8c50-653497d603d0
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇳🇱 荷兰 (Netherlands) 05 - sanchun
   server: hhhorp.plus-hit.ru
   port: 443
   udp: true
@@ -47,15 +56,6 @@ proxies:
     short-id: 7c8e3d4a9b1f26d3
   servername: hhhorp.plus-hit.ru
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 05 - sanchun
-  server: sc-thenetherlands1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  network: ws
-  ws-opts:
-    path: /vless/
 - name: 🇳🇱 荷兰 (Netherlands) 06 - sanchun
   server: hysteria.udpgw.com
   port: 8443

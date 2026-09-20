@@ -4,26 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
-      "server": "82.198.246.37",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - sanchun",
+      "server": "v2ray.simspeedup.com",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "transport": {
+        "type": "ws",
+        "path": "/ws"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
+        "🇹🇭 泰国 (Thailand) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
+        "🇹🇭 泰国 (Thailand) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
