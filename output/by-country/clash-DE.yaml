@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
-  server: 2.26.51.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
-    short-id: d4f6a8c1b2e3f9aa
-  servername: 4pda.to
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 02 - sanchun
   server: 147.90.229.204
   port: 443
   udp: true
@@ -32,31 +19,17 @@ proxies:
     path: /sort/outbound/redirect.php?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 03 - sanchun
-  server: 2.27.59.206
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: de1.sferavpn.pro
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 - sanchun
-  - 🇩🇪 德国 (Germany) 02 - sanchun
-  - 🇩🇪 德国 (Germany) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 - sanchun
-  - 🇩🇪 德国 (Germany) 02 - sanchun
-  - 🇩🇪 德国 (Germany) 03 - sanchun
 rules:
 - MATCH,PROXIES

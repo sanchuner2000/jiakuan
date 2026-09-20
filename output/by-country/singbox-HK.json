@@ -4,25 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
-      "server": "147.90.229.204",
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+      "server": "93ucrn4i0pffuabk.v.3dns.vip",
       "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "93ucrn4i0pffuabk.v.3dns.vip",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/sort/outbound/redirect.php?ed=2560",
+        "path": "/ws-vmess",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "93ucrn4i0PffUAbk.v.3dns.vip"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
