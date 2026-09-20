@@ -5,24 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - sanchun",
-      "server": "a2.arshia-nova.ir",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
+      "server": "34.87.244.111",
       "server_port": 443,
-      "uuid": "9503e890-3702-4847-af0a-2bceac2f0da0",
+      "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "c12.com"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E",
+          "short_id": "d725f0dd8cce210f"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

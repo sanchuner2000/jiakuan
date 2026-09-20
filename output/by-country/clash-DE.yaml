@@ -5,43 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
-  server: 104.17.147.22
-  port: 80
-  udp: true
-  type: vless
-  uuid: 63f1ef69-92fd-427a-b3e4-98ffddf81ac6
-  network: ws
-  ws-opts:
-    path: /nPKoVRUdyuRZ6jpY/YnBiLnlvdXNlZi5pc2VnYXJvLmNvbSxwcm94eWlwLmNtbGl1c3Nzcy5uZXQsbmltYS5uc2NsLmlyLHR1cmsucmFkaWNhbGl6YXRpb24uaXI=
-    headers:
-      Host: young-rice-749e.heliy78750.workers.dev
-- name: 🇩🇪 德国 (Germany) 02 - sanchun
-  server: 57.129.96.67
-  port: 443
-  udp: true
-  type: vless
-  uuid: nasnet
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nasnet-571299667-direct.mbghalibaf.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 03 - sanchun
-  server: 164.92.147.213
-  port: 2087
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /city/my?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 04 - sanchun
   server: 2.26.51.75
   port: 443
   udp: true
@@ -54,21 +17,8 @@ proxies:
     short-id: d4f6a8c1b2e3f9aa
   servername: 4pda.to
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 05 - sanchun
-  server: rubifen.adaspoloandco.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-- name: 🇩🇪 德国 (Germany) 06 - sanchun
-  server: 89.110.66.154
+- name: 🇩🇪 德国 (Germany) 02 - sanchun
+  server: 147.90.229.204
   port: 443
   udp: true
   type: vless
@@ -79,19 +29,10 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /streams/home?ed=2560
+    path: /sort/outbound/redirect.php?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇩🇪 德国 (Germany) 07 - sanchun
-  server: ov-germany1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇩🇪 德国 (Germany) 08 - sanchun
+- name: 🇩🇪 德国 (Germany) 03 - sanchun
   server: 2.27.59.206
   port: 443
   udp: true
@@ -101,19 +42,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇩🇪 德国 (Germany) 09 - sanchun
-  server: apicdn.4subnodes.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
-  tls: true
-  servername: apicdn.4subnodes.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
 proxy-groups:
 - name: PROXIES
   type: select
@@ -122,12 +50,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 01 - sanchun
   - 🇩🇪 德国 (Germany) 02 - sanchun
   - 🇩🇪 德国 (Germany) 03 - sanchun
-  - 🇩🇪 德国 (Germany) 04 - sanchun
-  - 🇩🇪 德国 (Germany) 05 - sanchun
-  - 🇩🇪 德国 (Germany) 06 - sanchun
-  - 🇩🇪 德国 (Germany) 07 - sanchun
-  - 🇩🇪 德国 (Germany) 08 - sanchun
-  - 🇩🇪 德国 (Germany) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -136,11 +58,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 01 - sanchun
   - 🇩🇪 德国 (Germany) 02 - sanchun
   - 🇩🇪 德国 (Germany) 03 - sanchun
-  - 🇩🇪 德国 (Germany) 04 - sanchun
-  - 🇩🇪 德国 (Germany) 05 - sanchun
-  - 🇩🇪 德国 (Germany) 06 - sanchun
-  - 🇩🇪 德国 (Germany) 07 - sanchun
-  - 🇩🇪 德国 (Germany) 08 - sanchun
-  - 🇩🇪 德国 (Germany) 09 - sanchun
 rules:
 - MATCH,PROXIES

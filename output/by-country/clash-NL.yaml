@@ -13,50 +13,6 @@ proxies:
   sni: 72.56.102.31
   skip-cert-verify: true
 - name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  server: 31.76.76.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
-  server: nl5.freekeysh110.online
-  port: 443
-  udp: true
-  type: vless
-  uuid: 090b4f5d-8cdd-4a80-999f-4e2905406c7f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sgPREsDFJUchKawgXgFGEM4YBjTDur0rgD2GuQmZXzA
-    short-id: 04b9f0b2470fae16
-  servername: nl5.freekeysh110.online
-  client-fingerprint: edge
-- name: 🇳🇱 荷兰 (Netherlands) 04 - sanchun
-  server: 163.172.213.174
-  port: 80
-  udp: true
-  type: vless
-  uuid: e73df646-1f62-41bf-8c50-653497d603d0
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇳🇱 荷兰 (Netherlands) 05 - sanchun
-  server: hhhorp.plus-hit.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 84a794a5-2420-4ca7-8e08-8d21571f36f3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA
-    short-id: 7c8e3d4a9b1f26d3
-  servername: hhhorp.plus-hit.ru
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 06 - sanchun
   server: hysteria.udpgw.com
   port: 8443
   udp: true
@@ -73,10 +29,6 @@ proxy-groups:
   - AUTO
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 05 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,9 +36,5 @@ proxy-groups:
   proxies:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 05 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 06 - sanchun
 rules:
 - MATCH,PROXIES

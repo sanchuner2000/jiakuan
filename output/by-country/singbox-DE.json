@@ -6,60 +6,6 @@
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
-      "server": "104.17.147.22",
-      "server_port": 80,
-      "uuid": "63f1ef69-92fd-427a-b3e4-98ffddf81ac6",
-      "transport": {
-        "type": "ws",
-        "path": "/nPKoVRUdyuRZ6jpY/YnBiLnlvdXNlZi5pc2VnYXJvLmNvbSxwcm94eWlwLmNtbGl1c3Nzcy5uZXQsbmltYS5uc2NsLmlyLHR1cmsucmFkaWNhbGl6YXRpb24uaXI=",
-        "headers": {
-          "Host": "young-rice-749e.heliy78750.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
-      "server": "57.129.96.67",
-      "server_port": 443,
-      "uuid": "nasnet",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-571299667-direct.mbghalibaf.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 03 - sanchun",
-      "server": "164.92.147.213",
-      "server_port": 2087,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/city/my?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 04 - sanchun",
       "server": "2.26.51.75",
       "server_port": 443,
       "uuid": "57e2a48b-0cc2-4b60-aacd-b36358fcba96",
@@ -80,28 +26,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 05 - sanchun",
-      "server": "rubifen.adaspoloandco.com",
-      "server_port": 443,
-      "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575",
-      "tls": {
-        "enabled": true,
-        "server_name": "rubifen.adaspoloandco.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/GOrbEh"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 06 - sanchun",
-      "server": "89.110.66.154",
+      "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
+      "server": "147.90.229.204",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
@@ -115,26 +41,15 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/streams/home?ed=2560",
+        "path": "/sort/outbound/redirect.php?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 07 - sanchun",
-      "server": "ov-germany1.09vpn.com",
-      "server_port": 80,
-      "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 08 - sanchun",
+      "tag": "🇩🇪 德国 (Germany) 03 - sanchun",
       "server": "2.27.59.206",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
@@ -149,39 +64,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 09 - sanchun",
-      "server": "apicdn.4subnodes.com",
-      "server_port": 443,
-      "uuid": "1f959100-a98b-47fb-84fa-359246dc458a",
-      "tls": {
-        "enabled": true,
-        "server_name": "apicdn.4subnodes.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/apiv1/esa1-asda2jcvnbpseflkn-kjweksad"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇩🇪 德国 (Germany) 01 - sanchun",
         "🇩🇪 德国 (Germany) 02 - sanchun",
-        "🇩🇪 德国 (Germany) 03 - sanchun",
-        "🇩🇪 德国 (Germany) 04 - sanchun",
-        "🇩🇪 德国 (Germany) 05 - sanchun",
-        "🇩🇪 德国 (Germany) 06 - sanchun",
-        "🇩🇪 德国 (Germany) 07 - sanchun",
-        "🇩🇪 德国 (Germany) 08 - sanchun",
-        "🇩🇪 德国 (Germany) 09 - sanchun"
+        "🇩🇪 德国 (Germany) 03 - sanchun"
       ]
     },
     {
@@ -190,13 +79,7 @@
       "outbounds": [
         "🇩🇪 德国 (Germany) 01 - sanchun",
         "🇩🇪 德国 (Germany) 02 - sanchun",
-        "🇩🇪 德国 (Germany) 03 - sanchun",
-        "🇩🇪 德国 (Germany) 04 - sanchun",
-        "🇩🇪 德国 (Germany) 05 - sanchun",
-        "🇩🇪 德国 (Germany) 06 - sanchun",
-        "🇩🇪 德国 (Germany) 07 - sanchun",
-        "🇩🇪 德国 (Germany) 08 - sanchun",
-        "🇩🇪 德国 (Germany) 09 - sanchun"
+        "🇩🇪 德国 (Germany) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

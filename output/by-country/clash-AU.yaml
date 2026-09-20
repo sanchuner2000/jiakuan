@@ -4,17 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 - sanchun
-  server: 35.201.230.136
+- name: 🇦🇺 澳大利亚 (Australia) 01 - sanchun
+  server: 34.87.244.111
   port: 443
   udp: true
   type: vless
-  uuid: 18eef0d3-35b3-4a5f-97a1-7b5264530dd8
-  flow: xtls-rprx-vision
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
   tls: true
   reality-opts:
-    public-key: Uq9Q8VXK9VkVOJ1M5PfORTqMhjjGoIS40-V0tAG_1FM
-    short-id: 5e13a6d43d0644c9
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -22,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 - sanchun
+  - 🇦🇺 澳大利亚 (Australia) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 - sanchun
+  - 🇦🇺 澳大利亚 (Australia) 01 - sanchun
 rules:
 - MATCH,PROXIES

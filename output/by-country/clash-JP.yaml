@@ -5,7 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
-  server: 108.160.136.71
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 02 - sanchun
+  server: 103.115.18.54
   port: 443
   udp: true
   type: vless
@@ -16,39 +24,9 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /doc/products/view?ed=2560
+    path: /mall/china/doc?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: 172.111.146.64
-  port: 80
-  udp: true
-  type: vless
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 04 - sanchun
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 168.138.43.75
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,8 +34,6 @@ proxy-groups:
   - AUTO
   - 🇯🇵 日本 (Japan) 01 - sanchun
   - 🇯🇵 日本 (Japan) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
-  - 🇯🇵 日本 (Japan) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,7 +41,5 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 (Japan) 01 - sanchun
   - 🇯🇵 日本 (Japan) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
-  - 🇯🇵 日本 (Japan) 04 - sanchun
 rules:
 - MATCH,PROXIES
