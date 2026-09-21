@@ -4,57 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "45.131.7.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime02.workers.dev"
-        }
-      }
+      "server": "82.198.246.37",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 02 - sanchun",
-      "server": "104.16.10.2",
-      "server_port": 443,
-      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
-      "tls": {
-        "enabled": true,
-        "server_name": "vip.868068.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=us.xiabibi.cf",
-        "headers": {
-          "Host": "vip.868068.xyz"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "198.46.159.171",
-      "server_port": 8443,
-      "password": "EkkoHY2_2024!",
-      "tls": {
-        "enabled": true,
-        "server_name": "198.46.159.171",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
       "server": "mybb.com",
       "server_port": 443,
       "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
@@ -76,24 +35,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "107.172.67.52",
-      "server_port": 2053,
-      "password": "maintell",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "maintell"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
       "server": "100.42.228.109",
       "server_port": 443,
       "password": "BxceQaOe",
@@ -105,7 +48,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
       "server": "167.82.76.7",
       "server_port": 443,
       "password": "MiTIVPN",
@@ -123,48 +66,36 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
-      "server": "www.shopify.com",
-      "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "guanwang.awsno.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/hls/cctv5phd.m3u8",
-        "headers": {
-          "Host": "guanwang.awsno.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 09 - sanchun",
-      "server": "172.67.167.78",
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
+      "server": "198.46.159.171",
       "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
+      "password": "EkkoHY2_2024!",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
-        }
+        "server_name": "198.46.159.171",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 10 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
+      "server": "107.172.67.52",
+      "server_port": 2053,
+      "password": "maintell",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "maintell"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
       "server": "2.27.249.79",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
@@ -180,7 +111,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 11 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
       "server": "gta.internet-card.sbs",
       "server_port": 443,
       "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
@@ -202,10 +133,7 @@
         "🇺🇸 美国 (United States) 05 - sanchun",
         "🇺🇸 美国 (United States) 06 - sanchun",
         "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun",
-        "🇺🇸 美国 (United States) 09 - sanchun",
-        "🇺🇸 美国 (United States) 10 - sanchun",
-        "🇺🇸 美国 (United States) 11 - sanchun"
+        "🇺🇸 美国 (United States) 08 - sanchun"
       ]
     },
     {
@@ -219,10 +147,7 @@
         "🇺🇸 美国 (United States) 05 - sanchun",
         "🇺🇸 美国 (United States) 06 - sanchun",
         "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun",
-        "🇺🇸 美国 (United States) 09 - sanchun",
-        "🇺🇸 美国 (United States) 10 - sanchun",
-        "🇺🇸 美国 (United States) 11 - sanchun"
+        "🇺🇸 美国 (United States) 08 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

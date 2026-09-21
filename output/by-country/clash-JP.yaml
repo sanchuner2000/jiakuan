@@ -13,17 +13,6 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 03 - sanchun
   server: 103.115.18.54
   port: 443
   udp: true
@@ -35,7 +24,7 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /episode/files?ed=2560
+    path: /mall/china/doc?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -45,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇯🇵 日本 (Japan) 01 - sanchun
   - 🇯🇵 日本 (Japan) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 (Japan) 01 - sanchun
   - 🇯🇵 日本 (Japan) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
 rules:
 - MATCH,PROXIES

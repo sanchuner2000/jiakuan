@@ -16,20 +16,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
       "server": "103.115.18.54",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -44,7 +32,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/episode/files?ed=2560",
+        "path": "/mall/china/doc?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -56,8 +44,7 @@
       "outbounds": [
         "auto",
         "🇯🇵 日本 (Japan) 01 - sanchun",
-        "🇯🇵 日本 (Japan) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun"
+        "🇯🇵 日本 (Japan) 02 - sanchun"
       ]
     },
     {
@@ -65,8 +52,7 @@
       "tag": "auto",
       "outbounds": [
         "🇯🇵 日本 (Japan) 01 - sanchun",
-        "🇯🇵 日本 (Japan) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun"
+        "🇯🇵 日本 (Japan) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

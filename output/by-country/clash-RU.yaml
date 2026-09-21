@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  server: 147.90.229.204
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sort/outbound/redirect.php?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
   server: msk.frkn.org
   port: 443
   udp: true
@@ -33,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
 rules:
 - MATCH,PROXIES
