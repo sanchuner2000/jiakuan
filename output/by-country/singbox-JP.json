@@ -32,7 +32,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/mall/china/doc?ed=2560",
+        "path": "/episode/files?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }

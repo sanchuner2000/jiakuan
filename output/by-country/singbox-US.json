@@ -4,51 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "82.198.246.37",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
-      "server": "mybb.com",
-      "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "server": "107.172.67.52",
+      "server_port": 2053,
+      "password": "maintell",
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "100.42.228.109",
-      "server_port": 443,
-      "password": "BxceQaOe",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me/ripaojiedian",
+        "server_name": "bing.com",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "maintell"
       }
     },
     {
       "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
       "server": "167.82.76.7",
       "server_port": 443,
       "password": "MiTIVPN",
@@ -66,36 +39,16 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "198.46.159.171",
-      "server_port": 8443,
-      "password": "EkkoHY2_2024!",
-      "tls": {
-        "enabled": true,
-        "server_name": "198.46.159.171",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "82.198.246.233",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
-      "server": "107.172.67.52",
-      "server_port": 2053,
-      "password": "maintell",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "maintell"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
       "server": "2.27.249.79",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
@@ -110,18 +63,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
-      "server": "gta.internet-card.sbs",
-      "server_port": 443,
-      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
-      "tls": {
-        "enabled": true,
-        "server_name": "gta.internet-card.sbs",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -129,11 +70,7 @@
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun"
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ]
     },
     {
@@ -143,11 +80,7 @@
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun"
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
