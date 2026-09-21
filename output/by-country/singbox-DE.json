@@ -4,26 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
-      "server": "147.90.229.204",
+      "server": "2.27.59.206",
       "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "password": "cd74c0a406664a5bc0bac098220a2468",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "de1.sferavpn.pro",
+        "insecure": true
       },
-      "transport": {
-        "type": "ws",
-        "path": "/sort/outbound/redirect.php?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
       }
     },
     {
