@@ -5,126 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
-  server: 207.57.129.114
-  port: 14934
+  server: 172.67.130.159
+  port: 2096
   udp: true
   type: vless
-  uuid: 630b700b-3c91-463a-9ef5-ee01f5848b45
-  flow: xtls-rprx-vision
+  uuid: ecb9ab47-31aa-4dd9-92eb-191047b353bd
   tls: true
-  reality-opts:
-    public-key: C9qIqeSCAkCLIqki3n21hyeILLltWcZJ6M0HgRTGmk4
-  servername: dash.cloudflare.com
+  servername: cdn-hk.skyvora.app
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
-  server: 207.57.131.116
-  port: 60156
-  udp: true
-  type: vless
-  uuid: d42830a2-4a5f-4f55-bd01-fc3d2651505e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0WCIcNPaAc_UqgQmKptY2vvQKSCjz7LkoG6YEgtzuFs
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
-  server: 207.57.131.82
-  port: 42038
-  udp: true
-  type: vless
-  uuid: 451ae20e-adca-4d00-bf12-9572f58f181b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uK4Syxig1VpR42JEkbld2ZIaymNkt5MW4UMt21LsaRA
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
-  server: 38.207.177.203
-  port: 24681
-  udp: true
-  type: vless
-  uuid: 5d2a0ea5-9563-4778-aed4-c97ec0e5f2a8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: t-BhtrNH7C1zTuLOuBu4tXeIv3JR-cN88pVFywIkti4
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - sanchun
-  server: 38.147.171.99
-  port: 46042
-  udp: true
-  type: vless
-  uuid: 1e89e68f-eceb-4159-baee-2b77c9d34717
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: BjAkOapbZN6R4cUgz8Ye-o-uyWz6o_LoUlI5kbURMh0
-  servername: dash.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
-  server: 68.64.182.58
-  port: 44407
-  udp: true
-  type: vless
-  uuid: 7c14a115-019f-4d67-8c7c-6f6814fb5610
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1jRHait01lfgKnhfctcvx6EbGtvBxyZyi4JMcIl3qzI
-  servername: dash.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
-  server: 45.145.228.129
-  port: 3077
-  udp: true
-  type: vless
-  uuid: 308afb3e-b0ce-41c8-9987-4023161fac75
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 48zW4lXrGFUEbsQ1JSRrv2yLzmxMsWYSk9KACEG_eFk
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - sanchun
-  server: 68.64.183.115
-  port: 27684
-  udp: true
-  type: vless
-  uuid: ff7fecdc-f816-4ff7-9447-65ecbae25ec2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: CTB0zNN-oslyk5a3NfliC_nUakFUn94QH8X_rN5ZvlQ
-  servername: dash.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /f7i3lo6xbs
+    headers:
+      Host: cdn-hk.skyvora.app
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 05 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 05 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 08 - sanchun
 rules:
 - MATCH,PROXIES

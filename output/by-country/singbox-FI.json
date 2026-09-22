@@ -1,0 +1,79 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - sanchun",
+      "server": "202.166.187.132",
+      "server_port": 443,
+      "uuid": "8be20011-59b1-4118-91ed-83e8e6b662cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "f.yoptybla.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "f.yoptybla.ru"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - sanchun",
+      "server": "k2.cloud--vpn.site",
+      "server_port": 443,
+      "uuid": "1fac5e18-2ca8-4626-c299-1f3f21c6b55e",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "c12.com"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇫🇮 芬兰 (Finland) 01 - sanchun",
+        "🇫🇮 芬兰 (Finland) 02 - sanchun"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇫🇮 芬兰 (Finland) 01 - sanchun",
+        "🇫🇮 芬兰 (Finland) 02 - sanchun"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

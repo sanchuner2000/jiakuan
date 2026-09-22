@@ -4,8 +4,84 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - sanchun",
+      "server": "31.59.125.106",
+      "server_port": 443,
+      "uuid": "129799e0-a9b1-4ae8-80bd-fa92db813f85",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "poll2.shhflow.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "g2sbZDGTg4l1Dcg_Y4UKpbncPKEh7iFtTlWYbfi2sCk",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - sanchun",
+      "server": "50.7.249.189",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "poland-mori-new-ded.failspace.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - sanchun",
+      "server": "50.7.249.197",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "poland-new-first-one.failspace.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 04 - sanchun",
+      "server": "2.59.253.251",
+      "server_port": 443,
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 05 - sanchun",
       "server": "go.wwwinternetvideo.click",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
@@ -20,14 +96,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - sanchun"
+        "🇵🇱 波兰 (Poland) 01 - sanchun",
+        "🇵🇱 波兰 (Poland) 02 - sanchun",
+        "🇵🇱 波兰 (Poland) 03 - sanchun",
+        "🇵🇱 波兰 (Poland) 04 - sanchun",
+        "🇵🇱 波兰 (Poland) 05 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - sanchun"
+        "🇵🇱 波兰 (Poland) 01 - sanchun",
+        "🇵🇱 波兰 (Poland) 02 - sanchun",
+        "🇵🇱 波兰 (Poland) 03 - sanchun",
+        "🇵🇱 波兰 (Poland) 04 - sanchun",
+        "🇵🇱 波兰 (Poland) 05 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

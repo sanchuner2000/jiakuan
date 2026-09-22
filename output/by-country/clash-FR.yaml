@@ -1,0 +1,65 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇷 法国 (France) 01 - sanchun
+  server: 188.114.96.19
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 02 - sanchun
+  server: 45.95.96.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  servername: gesmankos.sadiepinki.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 03 - sanchun
+  server: 199.232.78.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: XpnTeam-17
+  tls: true
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇷 法国 (France) 02 - sanchun
+  - 🇫🇷 法国 (France) 03 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇷 法国 (France) 02 - sanchun
+  - 🇫🇷 法国 (France) 03 - sanchun
+rules:
+- MATCH,PROXIES

@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "167.82.76.7",
+      "server": "199.232.78.160",
       "server_port": 443,
       "password": "MiTIVPN",
       "tls": {
@@ -18,35 +18,13 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net"
+          "Host": "mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 02 - sanchun",
-      "server": "45.40.151.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime42.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "82.198.246.233",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
       "server": "mybb.com",
       "server_port": 443,
       "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
@@ -69,7 +47,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
       "server": "107.172.67.52",
       "server_port": 2053,
       "password": "maintell",
@@ -84,8 +62,53 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
+      "server": "82.198.246.233",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 06 - sanchun",
+      "server": "50.7.36.30",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ad-dedic-3.failspace.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
       "server": "2.27.249.79",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
@@ -100,39 +123,24 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
-      "server": "104.21.57.84",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 08 - sanchun",
-      "server": "144.31.49.138",
-      "server_port": 443,
-      "password": "cd74c0a406664a5bc0bac098220a2468",
+      "server": "150.241.101.17",
+      "server_port": 8443,
+      "uuid": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ru1.sferavpn.pro",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
+        "server_name": "yandex.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
       }
     },
     {

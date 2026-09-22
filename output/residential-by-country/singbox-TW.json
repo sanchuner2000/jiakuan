@@ -4,25 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
-      "server": "172.67.130.159",
-      "server_port": 2096,
-      "uuid": "ecb9ab47-31aa-4dd9-92eb-191047b353bd",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
+      "server": "654168416355441.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "cdn-hk.skyvora.app",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "654168416355441.oylfmxz.cn",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/f7i3lo6xbs",
+        "path": "/",
         "headers": {
-          "Host": "cdn-hk.skyvora.app"
+          "Host": "654168416355441.oylfmxz.cn"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
