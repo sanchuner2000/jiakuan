@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - sanchun
-  server: 188.114.96.19
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 479526cd-5011-43cf-a788-504da95e07c2
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 02 - sanchun
   server: 45.95.96.236
   port: 443
   udp: true
@@ -30,21 +17,30 @@ proxies:
     short-id: 4fa44664f6a566d3
   servername: gesmankos.sadiepinki.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 03 - sanchun
-  server: 199.232.78.170
-  port: 443
+- name: 🇫🇷 法国 (France) 02 - sanchun
+  server: 188.114.96.19
+  port: 80
   udp: true
-  type: vless
-  uuid: XpnTeam-17
-  tls: true
-  servername: ssl.fastly.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: Appxdn.global.ssl.fastly.net
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 03 - sanchun
+  server: 165.215.250.14
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: //assignment
 proxy-groups:
 - name: PROXIES
   type: select

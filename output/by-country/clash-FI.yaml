@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - sanchun
-  server: 202.166.187.132
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
-  tls: true
-  servername: f.yoptybla.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f.yoptybla.ru
-- name: 🇫🇮 芬兰 (Finland) 02 - sanchun
   server: k2.cloud--vpn.site
   port: 443
   udp: true
@@ -34,6 +19,34 @@ proxies:
     path: /
     headers:
       Host: c12.com
+- name: 🇫🇮 芬兰 (Finland) 02 - sanchun
+  server: 31.76.80.230
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
+  tls: true
+  servername: fin.luxes.network
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assets
+- name: 🇫🇮 芬兰 (Finland) 03 - sanchun
+  server: 202.166.187.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
+  tls: true
+  servername: f.yoptybla.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f.yoptybla.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +54,7 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - sanchun
   - 🇫🇮 芬兰 (Finland) 02 - sanchun
+  - 🇫🇮 芬兰 (Finland) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +62,6 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - sanchun
   - 🇫🇮 芬兰 (Finland) 02 - sanchun
+  - 🇫🇮 芬兰 (Finland) 03 - sanchun
 rules:
 - MATCH,PROXIES

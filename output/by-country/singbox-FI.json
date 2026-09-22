@@ -6,29 +6,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - sanchun",
-      "server": "202.166.187.132",
-      "server_port": 443,
-      "uuid": "8be20011-59b1-4118-91ed-83e8e6b662cd",
-      "tls": {
-        "enabled": true,
-        "server_name": "f.yoptybla.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "f.yoptybla.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - sanchun",
       "server": "k2.cloud--vpn.site",
       "server_port": 443,
       "uuid": "1fac5e18-2ca8-4626-c299-1f3f21c6b55e",
@@ -50,12 +27,56 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - sanchun",
+      "server": "31.76.80.230",
+      "server_port": 8443,
+      "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
+      "tls": {
+        "enabled": true,
+        "server_name": "fin.luxes.network",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assets"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - sanchun",
+      "server": "202.166.187.132",
+      "server_port": 443,
+      "uuid": "8be20011-59b1-4118-91ed-83e8e6b662cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "f.yoptybla.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "f.yoptybla.ru"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - sanchun",
-        "🇫🇮 芬兰 (Finland) 02 - sanchun"
+        "🇫🇮 芬兰 (Finland) 02 - sanchun",
+        "🇫🇮 芬兰 (Finland) 03 - sanchun"
       ]
     },
     {
@@ -63,7 +84,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - sanchun",
-        "🇫🇮 芬兰 (Finland) 02 - sanchun"
+        "🇫🇮 芬兰 (Finland) 02 - sanchun",
+        "🇫🇮 芬兰 (Finland) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

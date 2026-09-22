@@ -5,40 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - sanchun
-  server: 31.59.125.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: 129799e0-a9b1-4ae8-80bd-fa92db813f85
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g2sbZDGTg4l1Dcg_Y4UKpbncPKEh7iFtTlWYbfi2sCk
-  servername: poll2.shhflow.xyz
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 02 - sanchun
-  server: 50.7.249.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-mori-new-ded.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - sanchun
-  server: 50.7.249.197
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-new-first-one.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04 - sanchun
   server: 2.59.253.251
   port: 443
   udp: true
@@ -51,7 +17,19 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - sanchun
+- name: 🇵🇱 波兰 (Poland) 02 - sanchun
+  server: 31.59.125.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: 129799e0-a9b1-4ae8-80bd-fa92db813f85
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: g2sbZDGTg4l1Dcg_Y4UKpbncPKEh7iFtTlWYbfi2sCk
+  servername: poll2.shhflow.xyz
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 03 - sanchun
   server: go.wwwinternetvideo.click
   port: 443
   udp: true
@@ -67,8 +45,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - sanchun
   - 🇵🇱 波兰 (Poland) 02 - sanchun
   - 🇵🇱 波兰 (Poland) 03 - sanchun
-  - 🇵🇱 波兰 (Poland) 04 - sanchun
-  - 🇵🇱 波兰 (Poland) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,7 +53,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - sanchun
   - 🇵🇱 波兰 (Poland) 02 - sanchun
   - 🇵🇱 波兰 (Poland) 03 - sanchun
-  - 🇵🇱 波兰 (Poland) 04 - sanchun
-  - 🇵🇱 波兰 (Poland) 05 - sanchun
 rules:
 - MATCH,PROXIES

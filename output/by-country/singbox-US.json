@@ -4,50 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "password": "MiTIVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
-      "server": "mybb.com",
-      "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
-      "tls": {
-        "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
-        }
-      }
+      "server": "82.198.246.37",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
       "server": "107.172.67.52",
       "server_port": 2053,
       "password": "maintell",
@@ -63,7 +29,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
       "server": "www.shopify.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
@@ -82,33 +48,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "82.198.246.233",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
-      "server": "50.7.36.30",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ad-dedic-3.failspace.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
       "server": "2.27.249.79",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
@@ -124,7 +65,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
       "server": "150.241.101.17",
       "server_port": 8443,
       "uuid": "47d9b534-8a0a-4bd2-90f1-1d6ade14427e",
@@ -152,10 +93,7 @@
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
         "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun"
+        "🇺🇸 美国 (United States) 05 - sanchun"
       ]
     },
     {
@@ -166,10 +104,7 @@
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
         "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun"
+        "🇺🇸 美国 (United States) 05 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
