@@ -5,7 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
-  server: 104.21.8.201
+  server: 207.57.133.53
+  port: 51135
+  udp: true
+  type: vless
+  uuid: 87f0cd64-02c8-49e7-b07a-349afed26693
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko
+  servername: www.ebay.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
+  server: 172.67.130.159
   port: 2096
   udp: true
   type: vless
@@ -19,17 +31,37 @@ proxies:
     path: /f7i3lo6xbs
     headers:
       Host: cdn-hk.skyvora.app
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
 rules:
 - MATCH,PROXIES

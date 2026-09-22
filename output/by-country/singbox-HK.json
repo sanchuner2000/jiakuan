@@ -6,7 +6,28 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
-      "server": "104.21.8.201",
+      "server": "207.57.133.53",
+      "server_port": 51135,
+      "uuid": "87f0cd64-02c8-49e7-b07a-349afed26693",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ebay.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+      "server": "172.67.130.159",
       "server_port": 2096,
       "uuid": "ecb9ab47-31aa-4dd9-92eb-191047b353bd",
       "tls": {
@@ -27,18 +48,42 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - sanchun",
+      "server": "vah4urdzl3jdx5r2.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "vah4urdzl3jdx5r2.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "vah4urdzl3jdx5r2.v.3dns.vip"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
