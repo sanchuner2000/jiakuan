@@ -4,22 +4,170 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
-      "server": "47.83.19.148",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
+      "server": "207.57.129.114",
+      "server_port": 14934,
+      "uuid": "630b700b-3c91-463a-9ef5-ee01f5848b45",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "6JDvArazgU3qQR6Q.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "6JDvArazgU3qQR6Q.v.3dns.vip"
+        "server_name": "dash.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "C9qIqeSCAkCLIqki3n21hyeILLltWcZJ6M0HgRTGmk4",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+      "server": "207.57.131.116",
+      "server_port": 60156,
+      "uuid": "d42830a2-4a5f-4f55-bd01-fc3d2651505e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0WCIcNPaAc_UqgQmKptY2vvQKSCjz7LkoG6YEgtzuFs",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - sanchun",
+      "server": "207.57.131.82",
+      "server_port": 42038,
+      "uuid": "451ae20e-adca-4d00-bf12-9572f58f181b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uK4Syxig1VpR42JEkbld2ZIaymNkt5MW4UMt21LsaRA",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - sanchun",
+      "server": "38.207.177.203",
+      "server_port": 24681,
+      "uuid": "5d2a0ea5-9563-4778-aed4-c97ec0e5f2a8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "t-BhtrNH7C1zTuLOuBu4tXeIv3JR-cN88pVFywIkti4",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - sanchun",
+      "server": "38.147.171.99",
+      "server_port": 46042,
+      "uuid": "1e89e68f-eceb-4159-baee-2b77c9d34717",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dash.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BjAkOapbZN6R4cUgz8Ye-o-uyWz6o_LoUlI5kbURMh0",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - sanchun",
+      "server": "68.64.182.58",
+      "server_port": 44407,
+      "uuid": "7c14a115-019f-4d67-8c7c-6f6814fb5610",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dash.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1jRHait01lfgKnhfctcvx6EbGtvBxyZyi4JMcIl3qzI",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - sanchun",
+      "server": "45.145.228.129",
+      "server_port": 3077,
+      "uuid": "308afb3e-b0ce-41c8-9987-4023161fac75",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "48zW4lXrGFUEbsQ1JSRrv2yLzmxMsWYSk9KACEG_eFk",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - sanchun",
+      "server": "68.64.183.115",
+      "server_port": 27684,
+      "uuid": "ff7fecdc-f816-4ff7-9447-65ecbae25ec2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dash.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CTB0zNN-oslyk5a3NfliC_nUakFUn94QH8X_rN5ZvlQ",
+          "short_id": ""
         }
       }
     },
@@ -28,14 +176,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 04 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 05 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 06 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 07 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 08 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 04 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 05 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 06 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 07 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 08 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
