@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - sanchun
+  server: k2.cloud--vpn.site
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  tls: true
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 芬兰 (Finland) 02 - sanchun
   server: 31.76.80.230
   port: 8443
   udp: true
@@ -23,11 +38,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 02 - sanchun
 rules:
 - MATCH,PROXIES

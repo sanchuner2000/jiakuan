@@ -16,8 +16,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇨🇦 加拿大 (Canada) 02 - sanchun",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 03 - sanchun",
       "server": "104.21.8.201",
       "server_port": 2096,
       "uuid": "1d54a125-8f1e-46bb-9a23-0ecf4ac92db8",
@@ -37,14 +45,6 @@
           "Host": "cdn-ca.skyvora.app"
         }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 03 - sanchun",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
     },
     {
       "type": "selector",

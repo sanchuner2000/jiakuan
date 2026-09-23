@@ -13,6 +13,14 @@ proxies:
   sni: t.me
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 02 - sanchun
+  server: 23.162.200.198
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 03 - sanchun
   server: 104.21.8.201
   port: 2096
   udp: true
@@ -27,14 +35,6 @@ proxies:
     path: /fqg7aacd8s
     headers:
       Host: cdn-ca.skyvora.app
-- name: 🇨🇦 加拿大 (Canada) 03 - sanchun
-  server: 23.162.200.198
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select

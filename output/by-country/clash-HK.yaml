@@ -17,7 +17,7 @@ proxies:
   servername: www.ebay.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
-  server: 172.67.130.159
+  server: 104.21.8.201
   port: 2096
   udp: true
   type: vless
@@ -31,22 +31,6 @@ proxies:
     path: /f7i3lo6xbs
     headers:
       Host: cdn-hk.skyvora.app
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,22 @@
     {
       "type": "hysteria2",
       "tag": "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+      "server": "hysteria.udpgw.com",
+      "server_port": 8443,
+      "password": "HowdyHysteria2023w0W",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni-here.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "HysteriaHowdy"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
       "server": "72.56.102.31",
       "server_port": 443,
       "password": "BWAFlp8g53",
@@ -17,7 +33,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+      "tag": "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
       "server": "172.67.130.159",
       "server_port": 2096,
       "uuid": "bdc5e450-3e2d-4001-928e-e3bc6cecb249",
@@ -36,22 +52,6 @@
         "headers": {
           "Host": "cdn.skyvora.app"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
-      "server": "hysteria.udpgw.com",
-      "server_port": 8443,
-      "password": "HowdyHysteria2023w0W",
-      "tls": {
-        "enabled": true,
-        "server_name": "sni-here.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "HysteriaHowdy"
       }
     },
     {
