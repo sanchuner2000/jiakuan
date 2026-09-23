@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "107.172.76.105",
-      "server_port": 443,
-      "password": "975e9f98b4a1b01285ffdb8158ced798",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c8d95078e61be690c18e2fbbefe5e2ef"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 01 - sanchun",
       "server": "136.117.218.86",
       "server_port": 443,
       "uuid": "dffab367-7769-4c6c-86f2-66fc6bd03003",
@@ -40,8 +24,36 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "100.42.228.109",
+      "server_port": 443,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me/ripaojiedian",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "107.172.67.52",
+      "server_port": 2053,
+      "password": "maintell",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "maintell"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
       "server": "www.shopify.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
@@ -60,31 +72,15 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
-      "server": "100.42.228.109",
-      "server_port": 443,
-      "password": "BxceQaOe",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me/ripaojiedian",
-        "insecure": true
-      }
-    },
-    {
       "type": "hysteria2",
       "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "107.172.67.52",
-      "server_port": 2053,
-      "password": "maintell",
+      "server": "ltu-01.node.lumixnet.com",
+      "server_port": 443,
+      "password": "7c5566a7-4b55-4659-975f-06507d32fd3f",
       "tls": {
         "enabled": true,
-        "server_name": "bing.com",
+        "server_name": "ltu-01.node.lumixnet.com",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "maintell"
       }
     },
     {
@@ -106,13 +102,17 @@
     {
       "type": "hysteria2",
       "tag": "🇺🇸 美国 (United States) 07 - sanchun",
-      "server": "ltu-01.node.lumixnet.com",
+      "server": "107.172.76.105",
       "server_port": 443,
-      "password": "7c5566a7-4b55-4659-975f-06507d32fd3f",
+      "password": "975e9f98b4a1b01285ffdb8158ced798",
       "tls": {
         "enabled": true,
-        "server_name": "ltu-01.node.lumixnet.com",
+        "server_name": "www.bing.com",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c8d95078e61be690c18e2fbbefe5e2ef"
       }
     },
     {

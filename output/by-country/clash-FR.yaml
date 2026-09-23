@@ -17,40 +17,17 @@ proxies:
     short-id: 4fa44664f6a566d3
   servername: gesmankos.sadiepinki.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 02 - sanchun
-  server: 15.188.95.192
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 03 - sanchun
-  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 479526cd-5011-43cf-a788-504da95e07c2
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇷 法国 (France) 01 - sanchun
-  - 🇫🇷 法国 (France) 02 - sanchun
-  - 🇫🇷 法国 (France) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇷 法国 (France) 01 - sanchun
-  - 🇫🇷 法国 (France) 02 - sanchun
-  - 🇫🇷 法国 (France) 03 - sanchun
 rules:
 - MATCH,PROXIES
