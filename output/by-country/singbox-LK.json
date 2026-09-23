@@ -5,15 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 01 - sanchun",
-      "server": "platform117.golnamakcert.top",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - sanchun",
+      "server": "free.sahanwickramasinghe.me",
       "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
       "transport": {
         "type": "ws",
-        "path": "/platform117",
+        "path": "/",
         "headers": {
-          "Host": "platform117.halalkhor.info"
+          "Host": "free.sahanwickramasinghe.me"
         }
       }
     },
@@ -22,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 (Chile) 01 - sanchun"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 (Chile) 01 - sanchun"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

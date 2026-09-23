@@ -6,44 +6,40 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
-      "server": "207.57.133.53",
-      "server_port": 51135,
-      "uuid": "87f0cd64-02c8-49e7-b07a-349afed26693",
-      "flow": "xtls-rprx-vision",
+      "server": "34.96.146.210",
+      "server_port": 443,
+      "uuid": "90153538-ef08-4942-b8e1-41e7c523e659",
       "tls": {
         "enabled": true,
-        "server_name": "www.ebay.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko",
-          "short_id": ""
+          "public_key": "tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM",
+          "short_id": "56d4e7ae4f86fa39"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
-      "server": "104.21.8.201",
-      "server_port": 2096,
-      "uuid": "ecb9ab47-31aa-4dd9-92eb-191047b353bd",
+      "server": "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "cdn-hk.skyvora.app",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/f7i3lo6xbs",
+        "path": "/",
         "headers": {
-          "Host": "cdn-hk.skyvora.app"
+          "Host": "dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn"
         }
       }
     },
