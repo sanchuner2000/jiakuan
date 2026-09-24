@@ -34,37 +34,9 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "100.42.228.109",
-      "server_port": 443,
-      "password": "BxceQaOe",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me/ripaojiedian",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
-      "server": "107.172.76.105",
-      "server_port": 443,
-      "password": "975e9f98b4a1b01285ffdb8158ced798",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c8d95078e61be690c18e2fbbefe5e2ef"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "guanwang.awsno.com",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "www.shopify.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
       "security": "auto",
@@ -82,8 +54,20 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "100.42.228.109",
+      "server_port": 443,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me/ripaojiedian",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
       "server": "51.81.203.63",
       "server_port": 443,
       "uuid": "cb2dbb6a-a1ea-4023-9ace-6466cee57241",
@@ -104,7 +88,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
       "server": "136.117.218.86",
       "server_port": 443,
       "uuid": "dffab367-7769-4c6c-86f2-66fc6bd03003",
@@ -123,18 +107,28 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
-      "server": "108.162.198.178",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "server": "107.172.76.105",
+      "server_port": 443,
+      "password": "975e9f98b4a1b01285ffdb8158ced798",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c8d95078e61be690c18e2fbbefe5e2ef"
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
+      "server": "82.198.246.233",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
     },
     {
       "type": "hysteria2",
@@ -165,25 +159,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 11 - sanchun",
-      "server": "172.67.220.58",
-      "server_port": 443,
-      "uuid": "a1a6a3be-2bf9-46a2-bc24-328306e49ab7",
-      "tls": {
-        "enabled": true,
-        "server_name": "7-m17.kUWaIT.kDnS.Fr",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fVs1qv0xm8dxmnwuaPwokxgY4XlP",
-        "headers": {
-          "Host": "7-M17.KuWAit.kdNS.fR"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -197,8 +172,7 @@
         "🇺🇸 美国 (United States) 07 - sanchun",
         "🇺🇸 美国 (United States) 08 - sanchun",
         "🇺🇸 美国 (United States) 09 - sanchun",
-        "🇺🇸 美国 (United States) 10 - sanchun",
-        "🇺🇸 美国 (United States) 11 - sanchun"
+        "🇺🇸 美国 (United States) 10 - sanchun"
       ]
     },
     {
@@ -214,8 +188,7 @@
         "🇺🇸 美国 (United States) 07 - sanchun",
         "🇺🇸 美国 (United States) 08 - sanchun",
         "🇺🇸 美国 (United States) 09 - sanchun",
-        "🇺🇸 美国 (United States) 10 - sanchun",
-        "🇺🇸 美国 (United States) 11 - sanchun"
+        "🇺🇸 美国 (United States) 10 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -26,25 +26,7 @@ proxies:
   obfs: salamander
   obfs-password: maintell
 - name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 100.42.228.109
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: 107.172.76.105
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 975e9f98b4a1b01285ffdb8158ced798
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c8d95078e61be690c18e2fbbefe5e2ef
-- name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: guanwang.awsno.com
+  server: www.shopify.com
   port: 443
   udp: true
   type: vmess
@@ -59,7 +41,15 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 06 - sanchun
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 100.42.228.109
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 05 - sanchun
   server: 51.81.203.63
   port: 443
   udp: true
@@ -72,7 +62,7 @@ proxies:
     short-id: 4477382ff6d3d41c
   servername: www.icloud.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 07 - sanchun
+- name: 🇺🇸 美国 (United States) 06 - sanchun
   server: 136.117.218.86
   port: 443
   udp: true
@@ -84,17 +74,24 @@ proxies:
     short-id: f1955f72763eb2fb
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 08 - sanchun
-  server: 108.162.198.178
-  port: 8880
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: 107.172.76.105
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: hysteria2
+  password: 975e9f98b4a1b01285ffdb8158ced798
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c8d95078e61be690c18e2fbbefe5e2ef
+- name: 🇺🇸 美国 (United States) 08 - sanchun
+  server: 82.198.246.233
+  port: 180
+  udp: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 🇺🇸 美国 (United States) 09 - sanchun
   server: ltu-01.node.lumixnet.com
   port: 443
@@ -113,20 +110,6 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇺🇸 美国 (United States) 11 - sanchun
-  server: 172.67.220.58
-  port: 443
-  udp: true
-  type: vless
-  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
-  tls: true
-  servername: 7-m17.kUWaIT.kDnS.Fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /fVs1qv0xm8dxmnwuaPwokxgY4XlP
-    headers:
-      Host: 7-M17.KuWAit.kdNS.fR
 proxy-groups:
 - name: PROXIES
   type: select
@@ -142,7 +125,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 08 - sanchun
   - 🇺🇸 美国 (United States) 09 - sanchun
   - 🇺🇸 美国 (United States) 10 - sanchun
-  - 🇺🇸 美国 (United States) 11 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -158,6 +140,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 08 - sanchun
   - 🇺🇸 美国 (United States) 09 - sanchun
   - 🇺🇸 美国 (United States) 10 - sanchun
-  - 🇺🇸 美国 (United States) 11 - sanchun
 rules:
 - MATCH,PROXIES

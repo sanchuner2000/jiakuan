@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+  server: 93ucrn4i0pffuabk.v.3dns.vip
   port: 443
   udp: true
   type: vmess
@@ -13,11 +13,13 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0PffUAbk.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
