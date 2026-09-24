@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+- name: 🌐 其他地区 (Other) 01 - sanchun
+  server: ccs2g.pai50288.uk
   port: 443
   udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
   tls: true
-  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  servername: ccs2g.pai50288.uk
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /pai50288
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  - 🌐 其他地区 (Other) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  - 🌐 其他地区 (Other) 01 - sanchun
 rules:
 - MATCH,PROXIES

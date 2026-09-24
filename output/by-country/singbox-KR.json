@@ -16,28 +16,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - sanchun",
-      "server": "34.64.149.137",
-      "server_port": 443,
-      "uuid": "700a7a0e-3f27-406c-81d1-aa1abe411af8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8",
-          "short_id": "3fd0a8ddef3ae5c6"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - sanchun",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - sanchun",
       "server": "152-69-231-175.liao.kdns.fr",
       "server_port": 50160,
       "password": "1beb216e3f60aea9555dae60d219a5ca",
@@ -53,8 +33,7 @@
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01 - sanchun",
-        "🇰🇷 韩国 (South Korea) 02 - sanchun",
-        "🇰🇷 韩国 (South Korea) 03 - sanchun"
+        "🇰🇷 韩国 (South Korea) 02 - sanchun"
       ]
     },
     {
@@ -62,8 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 - sanchun",
-        "🇰🇷 韩国 (South Korea) 02 - sanchun",
-        "🇰🇷 韩国 (South Korea) 03 - sanchun"
+        "🇰🇷 韩国 (South Korea) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

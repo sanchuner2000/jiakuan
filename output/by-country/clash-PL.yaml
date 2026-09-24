@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - sanchun
-  server: 2.59.253.251
-  port: 443
-  udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: nvidia.com
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 02 - sanchun
   server: go.wwwinternetvideo.click
   port: 443
   udp: true
@@ -31,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - sanchun
-  - 🇵🇱 波兰 (Poland) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - sanchun
-  - 🇵🇱 波兰 (Poland) 02 - sanchun
 rules:
 - MATCH,PROXIES
