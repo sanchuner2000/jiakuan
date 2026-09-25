@@ -16,6 +16,16 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 107.172.76.105
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 975e9f98b4a1b01285ffdb8158ced798
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c8d95078e61be690c18e2fbbefe5e2ef
+- name: 🇺🇸 美国 (United States) 03 - sanchun
   server: 108.162.198.178
   port: 8880
   udp: true
@@ -26,15 +36,18 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 82.198.246.37
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 155.46.167.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime50.workers.dev
+- name: 🇺🇸 美国 (United States) 05 - sanchun
   server: 136.117.218.86
   port: 443
   udp: true
@@ -46,7 +59,30 @@ proxies:
     short-id: f1955f72763eb2fb
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 05 - sanchun
+- name: 🇺🇸 美国 (United States) 06 - sanchun
+  server: 100.42.228.109
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: mybb.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇺🇸 美国 (United States) 08 - sanchun
   server: 107.172.67.52
   port: 2053
   udp: true
@@ -56,51 +92,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: maintell
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: 107.172.76.105
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 975e9f98b4a1b01285ffdb8158ced798
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c8d95078e61be690c18e2fbbefe5e2ef
-- name: 🇺🇸 美国 (United States) 07 - sanchun
-  server: 100.42.228.109
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 08 - sanchun
-  server: 51.81.203.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-    short-id: 4477382ff6d3d41c
-  servername: www.icloud.com
-  client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 09 - sanchun
-  server: 45.159.79.71
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 321Ii2xbCoyll6WJ0Qm1Sh8qcC0kxXvUaZhe3kyasD8
-    short-id: a1b2c3d4e5f6a7b8
-  servername: sentry.io
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 10 - sanchun
   server: www.shopify.com
   port: 443
   udp: true
@@ -116,14 +108,32 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 11 - sanchun
-  server: ltu-01.node.lumixnet.com
+- name: 🇺🇸 美国 (United States) 10 - sanchun
+  server: ccs2g.pai50288.uk
   port: 443
   udp: true
-  type: hysteria2
-  password: 7c5566a7-4b55-4659-975f-06507d32fd3f
-  sni: ltu-01.node.lumixnet.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pai50288
+- name: 🇺🇸 美国 (United States) 11 - sanchun
+  server: 51.81.203.63
+  port: 443
+  udp: true
+  type: vless
+  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
+    short-id: 4477382ff6d3d41c
+  servername: www.icloud.com
+  client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 12 - sanchun
   server: 2.27.249.79
   port: 443
@@ -135,7 +145,15 @@ proxies:
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
 - name: 🇺🇸 美国 (United States) 13 - sanchun
-  server: 172.67.167.78
+  server: ltu-01.node.lumixnet.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 7c5566a7-4b55-4659-975f-06507d32fd3f
+  sni: ltu-01.node.lumixnet.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 14 - sanchun
+  server: www.nextkyc.com
   port: 8443
   udp: true
   type: vmess
@@ -150,19 +168,31 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🇺🇸 美国 (United States) 14 - sanchun
-  server: ccs2g.pai50288.uk
+- name: 🇺🇸 美国 (United States) 15 - sanchun
+  server: 144.31.49.138
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ru1.sferavpn.pro
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇺🇸 美国 (United States) 16 - sanchun
+  server: 172.67.212.14
   port: 443
   udp: true
   type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
   tls: true
-  servername: ccs2g.pai50288.uk
+  servername: 8-m19.souTh-afRiCA-ONLinE.CcwU.CC
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /pai50288
+    path: /CjBjB9sn5pCvaSwScc
+    headers:
+      Host: 8-m19.SoUth-AFriCa-onlInE.cCwU.cC
 proxy-groups:
 - name: PROXIES
   type: select
@@ -182,6 +212,8 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 12 - sanchun
   - 🇺🇸 美国 (United States) 13 - sanchun
   - 🇺🇸 美国 (United States) 14 - sanchun
+  - 🇺🇸 美国 (United States) 15 - sanchun
+  - 🇺🇸 美国 (United States) 16 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -201,5 +233,7 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 12 - sanchun
   - 🇺🇸 美国 (United States) 13 - sanchun
   - 🇺🇸 美国 (United States) 14 - sanchun
+  - 🇺🇸 美国 (United States) 15 - sanchun
+  - 🇺🇸 美国 (United States) 16 - sanchun
 rules:
 - MATCH,PROXIES
