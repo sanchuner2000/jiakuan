@@ -23,21 +23,6 @@ proxies:
   password: 184cdec28da5a09450803c8debcd2cc9
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: 172.67.156.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇯🇵 日本 (Japan) 01 - sanchun
   - 🇯🇵 日本 (Japan) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 (Japan) 01 - sanchun
   - 🇯🇵 日本 (Japan) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
 rules:
 - MATCH,PROXIES
