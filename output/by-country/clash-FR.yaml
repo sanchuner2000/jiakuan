@@ -1,0 +1,57 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇷 法国 (France) 01 - sanchun
+  server: 208.103.161.249
+  port: 80
+  udp: true
+  type: vless
+  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
+- name: 🇫🇷 法国 (France) 02 - sanchun
+  server: 185.220.100.168
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 03 - sanchun
+  server: 104.17.121.43
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇷 法国 (France) 02 - sanchun
+  - 🇫🇷 法国 (France) 03 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇷 法国 (France) 02 - sanchun
+  - 🇫🇷 法国 (France) 03 - sanchun
+rules:
+- MATCH,PROXIES

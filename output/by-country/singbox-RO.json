@@ -5,14 +5,18 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - sanchun",
-      "server": "152-69-231-175.liao.kdns.fr",
-      "server_port": 50160,
-      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
+      "server": "162.249.125.133",
+      "server_port": 443,
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
       "tls": {
         "enabled": true,
-        "server_name": "152-69-231-175.liao.kdns.fr",
+        "server_name": "hy2-new.aspidnet.xyz",
         "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c1b4086fea89914496c7e10967a419216566"
       }
     },
     {
@@ -20,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - sanchun"
+        "🇷🇴 罗马尼亚 (Romania) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - sanchun"
+        "🇷🇴 罗马尼亚 (Romania) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
