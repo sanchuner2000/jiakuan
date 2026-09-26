@@ -15,7 +15,7 @@ proxies:
   obfs: salamander
   obfs-password: c8d95078e61be690c18e2fbbefe5e2ef
 - name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 82.198.246.37
+  server: 82.198.246.233
   port: 180
   udp: true
   type: vmess
@@ -23,32 +23,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 100.42.228.109
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: 107.172.67.52
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: maintell
-- name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: 85.209.157.177
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
-  sni: hopp-transit.1cooldns.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 06 - sanchun
   server: 2.26.11.234
   port: 9543
   udp: true
@@ -61,22 +35,14 @@ proxies:
     short-id: 123abcdf
   servername: storage.yandexcloud.net
   client-fingerprint: safari
-- name: 🇺🇸 美国 (United States) 07 - sanchun
-  server: 104.21.57.84
-  port: 8443
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 85.209.157.177
+  port: 8080
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
+  type: hysteria2
+  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
+  sni: hopp-transit.1cooldns.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,9 +52,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
-  - 🇺🇸 美国 (United States) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
-  - 🇺🇸 美国 (United States) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,8 +61,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
-  - 🇺🇸 美国 (United States) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
-  - 🇺🇸 美国 (United States) 07 - sanchun
 rules:
 - MATCH,PROXIES

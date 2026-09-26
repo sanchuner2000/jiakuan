@@ -22,54 +22,14 @@
     {
       "type": "vmess",
       "tag": "🇺🇸 美国 (United States) 02 - sanchun",
-      "server": "82.198.246.37",
+      "server": "82.198.246.233",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
     },
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "100.42.228.109",
-      "server_port": 443,
-      "password": "BxceQaOe",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me/ripaojiedian",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
-      "server": "107.172.67.52",
-      "server_port": 2053,
-      "password": "maintell",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "maintell"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "85.209.157.177",
-      "server_port": 8080,
-      "password": "dsmO0439gj_nX942GJRE_9j39fbcxv52_R",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-transit.1cooldns.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
       "server": "2.26.11.234",
       "server_port": 9543,
       "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
@@ -89,23 +49,15 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
-      "server": "104.21.57.84",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "85.209.157.177",
+      "server_port": 8080,
+      "password": "dsmO0439gj_nX942GJRE_9j39fbcxv52_R",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
+        "server_name": "hopp-transit.1cooldns.com",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lMnsZUN4/",
-        "headers": {
-          "Host": "v2ray1.dozapp.xyz"
-        }
       }
     },
     {
@@ -116,10 +68,7 @@
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇺🇸 美国 (United States) 07 - sanchun"
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ]
     },
     {
@@ -129,10 +78,7 @@
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇺🇸 美国 (United States) 07 - sanchun"
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
