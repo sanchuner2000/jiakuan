@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 01 - sanchun",
-      "server": "152.53.1.40",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 - sanchun",
+      "server": "34.65.151.186",
       "server_port": 443,
-      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
-      "flow": "xtls-rprx-vision",
+      "uuid": "a18f08dc-76ae-453a-98f5-d41eab7e649b",
       "tls": {
         "enabled": true,
-        "server_name": "at.quattro-tech.ru",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "short_id": "43dcff53849b81e6"
+          "public_key": "f8aV8naD8NKt_mLKaOou0qUrIM1Ge25kJNxywpF3OB0",
+          "short_id": "d016c76007f78038"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

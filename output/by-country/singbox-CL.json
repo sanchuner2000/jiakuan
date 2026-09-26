@@ -5,15 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - sanchun",
-      "server": "fi.snobvpn.online",
+      "tag": "🇨🇱 智利 (Chile) 01 - sanchun",
+      "server": "platform103.golnamakcert.top",
       "server_port": 80,
-      "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/snob-ws",
+        "path": "/platform103",
         "headers": {
-          "Host": "fi.snobvpn.online"
+          "Host": "platform103.halalkhor.info"
         }
       }
     },
@@ -22,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - sanchun"
+        "🇨🇱 智利 (Chile) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - sanchun"
+        "🇨🇱 智利 (Chile) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

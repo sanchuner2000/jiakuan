@@ -5,16 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 108.162.198.178
-  port: 8880
+  server: 82.198.246.233
+  port: 180
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 🇺🇸 美国 (United States) 02 - sanchun
   server: 107.172.76.105
   port: 443
@@ -36,71 +33,19 @@ proxies:
   obfs: salamander
   obfs-password: maintell
 - name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: 104.18.46.46
-  port: 80
+  server: 2.26.11.234
+  port: 9543
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
 - name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: 45.159.79.71
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 321Ii2xbCoyll6WJ0Qm1Sh8qcC0kxXvUaZhe3kyasD8
-    short-id: a1b2c3d4e5f6a7b8
-  servername: sentry.io
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: mybb.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇺🇸 美国 (United States) 07 - sanchun
-  server: 51.81.203.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-    short-id: 4477382ff6d3d41c
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 08 - sanchun
-  server: ccs2g.pai50288.uk
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  tls: true
-  servername: ccs2g.pai50288.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /pai50288
-- name: 🇺🇸 美国 (United States) 09 - sanchun
   server: 85.209.157.177
   port: 8080
   udp: true
@@ -108,23 +53,7 @@ proxies:
   password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
   sni: hopp-transit.1cooldns.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 10 - sanchun
-  server: 172.64.80.1
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🇺🇸 美国 (United States) 11 - sanchun
+- name: 🇺🇸 美国 (United States) 06 - sanchun
   server: 72.56.41.33
   port: 40443
   udp: true
@@ -148,11 +77,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
-  - 🇺🇸 美国 (United States) 07 - sanchun
-  - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇺🇸 美国 (United States) 09 - sanchun
-  - 🇺🇸 美国 (United States) 10 - sanchun
-  - 🇺🇸 美国 (United States) 11 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -164,10 +88,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
-  - 🇺🇸 美国 (United States) 07 - sanchun
-  - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇺🇸 美国 (United States) 09 - sanchun
-  - 🇺🇸 美国 (United States) 10 - sanchun
-  - 🇺🇸 美国 (United States) 11 - sanchun
 rules:
 - MATCH,PROXIES
