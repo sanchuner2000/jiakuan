@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 82.198.246.233
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 02 - sanchun
   server: 107.172.76.105
   port: 443
   udp: true
@@ -22,7 +14,23 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c8d95078e61be690c18e2fbbefe5e2ef
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 82.198.246.37
+  port: 180
+  udp: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 100.42.228.109
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 04 - sanchun
   server: 107.172.67.52
   port: 2053
   udp: true
@@ -32,7 +40,15 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: maintell
-- name: 🇺🇸 美国 (United States) 04 - sanchun
+- name: 🇺🇸 美国 (United States) 05 - sanchun
+  server: 85.209.157.177
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
+  sni: hopp-transit.1cooldns.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 06 - sanchun
   server: 2.26.11.234
   port: 9543
   udp: true
@@ -45,27 +61,22 @@ proxies:
     short-id: 123abcdf
   servername: storage.yandexcloud.net
   client-fingerprint: safari
-- name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: 85.209.157.177
-  port: 8080
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: 104.21.57.84
+  port: 8443
   udp: true
-  type: hysteria2
-  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
-  sni: hopp-transit.1cooldns.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: 72.56.41.33
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
-    short-id: ee33
-  servername: deepl.com
-  client-fingerprint: edge
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +88,7 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,5 +100,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
 rules:
 - MATCH,PROXIES

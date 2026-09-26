@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 - sanchun
-  server: iranivib.kashimo.top
-  port: 57007
+- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - sanchun
+  server: 132.243.242.97
+  port: 9543
   udp: true
   type: vless
-  uuid: 1e68828d-bcae-43f8-953e-ab9611cdc07b
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: xJrOVncq9U06-mrcoQMJRVT0ZI3pKiL870j_FYHnswg
-    short-id: 86652c20afc7a2bc
-  servername: scone-pa.clients6.google.com
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - sanchun
 rules:
 - MATCH,PROXIES

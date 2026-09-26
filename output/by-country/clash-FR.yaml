@@ -10,34 +10,17 @@ proxies:
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 02 - sanchun
-  server: 199.232.78.160
-  port: 443
-  udp: true
-  type: vless
-  uuid: XpnTeam-34
-  tls: true
-  servername: ssl.fastly.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇷 法国 (France) 01 - sanchun
-  - 🇫🇷 法国 (France) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇷 法国 (France) 01 - sanchun
-  - 🇫🇷 法国 (France) 02 - sanchun
 rules:
 - MATCH,PROXIES

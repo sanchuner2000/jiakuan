@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - sanchun
-  server: esbe.vihodest.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 88956de8-38db-449c-8410-4b70a4fb5c9b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE
-    short-id: e93196a756abca09
-  servername: esbe.vihodest.net
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 02 - sanchun
   server: 138.124.181.185
   port: 443
   udp: true
@@ -30,6 +17,19 @@ proxies:
     short-id: 72ae7f89582e5c43
   servername: bags.yump.online
   client-fingerprint: safari
+- name: 🇪🇸 西班牙 (Spain) 02 - sanchun
+  server: esbe.vihodest.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: 88956de8-38db-449c-8410-4b70a4fb5c9b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE
+    short-id: e93196a756abca09
+  servername: esbe.vihodest.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
