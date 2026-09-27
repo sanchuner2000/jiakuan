@@ -13,16 +13,22 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
-  server: 45.80.111.45
-  port: 8880
+  server: onhit.shalana.xyz
+  port: 443
   udp: true
   type: vless
-  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
-  network: ws
-  ws-opts:
-    path: /cdn/assets/stream
-    headers:
-      Host: cnd.singapure.mygold.stream
+  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
+  tls: true
+  servername: onhit.shalana.xyz
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  server: 36.133.78.37
+  port: 50014
+  udp: true
+  type: vmess
+  uuid: 1b30f413-2865-4d40-9146-4207778718cd
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -30,6 +36,7 @@ proxy-groups:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
   - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +44,6 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
   - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
 rules:
 - MATCH,PROXIES

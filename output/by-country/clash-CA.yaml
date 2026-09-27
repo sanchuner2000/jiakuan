@@ -20,6 +20,22 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: t.me
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 03 - sanchun
+  server: mygptagent.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: mygptagent.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇨🇦 加拿大 (Canada) 01 - sanchun
   - 🇨🇦 加拿大 (Canada) 02 - sanchun
+  - 🇨🇦 加拿大 (Canada) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 (Canada) 01 - sanchun
   - 🇨🇦 加拿大 (Canada) 02 - sanchun
+  - 🇨🇦 加拿大 (Canada) 03 - sanchun
 rules:
 - MATCH,PROXIES

@@ -5,16 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - sanchun
-  server: 45.131.7.30
-  port: 8880
+  server: 18.169.206.105
+  port: 22222
   udp: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime02.workers.dev
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,37 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 100.42.228.109
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: mybb.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 82.198.246.37
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 04 - sanchun
   server: 107.172.76.105
   port: 443
   udp: true
@@ -45,7 +14,86 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c8d95078e61be690c18e2fbbefe5e2ef
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 34.94.125.227
+  port: 443
+  udp: true
+  type: trojan
+  password: M7v%w11Se*
+  sni: mxlo.wsone.icu
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 5.78.159.214
+  port: 80
+  udp: true
+  type: vless
+  uuid: 52ecd83b-b6c1-41ee-bc36-049755bd33d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NTXb7QGg9EyPkpG-7lmBNNaqf4473p_l8ITmTH-xmHg
+    short-id: 0db5c018ed7bb596
+  servername: 5.78.159.214
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: ccs2g.pai50288.uk
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pai50288
 - name: 🇺🇸 美国 (United States) 05 - sanchun
+  server: 100.42.228.109
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 06 - sanchun
+  server: 136.148.71.151
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: germa12.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: crossover.proxy.rlwy.net
+  port: 42617
+  udp: true
+  type: vless
+  uuid: 8addc3c5-a38a-4afe-b461-b40cdc14fdca
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸 美国 (United States) 08 - sanchun
+  server: vspeedfast.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vspeedfast.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: vspeedfast.org
+- name: 🇺🇸 美国 (United States) 09 - sanchun
   server: 85.209.157.177
   port: 8080
   udp: true
@@ -53,37 +101,58 @@ proxies:
   password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
   sni: hopp-transit.1cooldns.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: 104.21.57.84
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🇺🇸 美国 (United States) 07 - sanchun
-  server: 104.21.43.13
+- name: 🇺🇸 美国 (United States) 10 - sanchun
+  server: 13.143.182.7.fwqfw783rg2dad.website
   port: 443
   udp: true
   type: vless
-  uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
+  uuid: cc39844c-d9ba-4394-9cae-395933f4e353
   tls: true
-  servername: 1.I0-6.DE5.NeT
+  servername: 13.143.182.7.fwqfw783rg2dad.website
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /FbLtzaav4GSW7GPL6LUGsEkZ
-    headers:
-      Host: 1.I0-6.DE5.NeT
+    path: /websocket
+- name: 🇺🇸 美国 (United States) 11 - sanchun
+  server: lyra.yokkastars.com
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
+    short-id: ee33
+  servername: deepl.com
+  client-fingerprint: edge
+- name: 🇺🇸 美国 (United States) 12 - sanchun
+  server: 36.133.78.37
+  port: 50018
+  udp: true
+  type: vmess
+  uuid: e1be6941-0667-469c-9224-6f34adb549ba
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 (United States) 13 - sanchun
+  server: norw-mori-5.failspace.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: norw-mori-5.failspace.top
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 14 - sanchun
+  server: 36.133.78.37
+  port: 50012
+  udp: true
+  type: vmess
+  uuid: 1b30f413-2865-4d40-9146-4207778718cd
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,6 +165,13 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
+  - 🇺🇸 美国 (United States) 08 - sanchun
+  - 🇺🇸 美国 (United States) 09 - sanchun
+  - 🇺🇸 美国 (United States) 10 - sanchun
+  - 🇺🇸 美国 (United States) 11 - sanchun
+  - 🇺🇸 美国 (United States) 12 - sanchun
+  - 🇺🇸 美国 (United States) 13 - sanchun
+  - 🇺🇸 美国 (United States) 14 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,5 +184,12 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
+  - 🇺🇸 美国 (United States) 08 - sanchun
+  - 🇺🇸 美国 (United States) 09 - sanchun
+  - 🇺🇸 美国 (United States) 10 - sanchun
+  - 🇺🇸 美国 (United States) 11 - sanchun
+  - 🇺🇸 美国 (United States) 12 - sanchun
+  - 🇺🇸 美国 (United States) 13 - sanchun
+  - 🇺🇸 美国 (United States) 14 - sanchun
 rules:
 - MATCH,PROXIES

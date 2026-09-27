@@ -1,0 +1,61 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
+      "server": "aidrivercat.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "aidrivercat.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "aidrivercat.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
+      "server": "36.133.78.37",
+      "server_port": 50013,
+      "uuid": "e1be6941-0667-469c-9224-6f34adb549ba",
+      "security": "auto"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇩🇪 德国 (Germany) 01 - sanchun",
+        "🇩🇪 德国 (Germany) 02 - sanchun"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇩🇪 德国 (Germany) 01 - sanchun",
+        "🇩🇪 德国 (Germany) 02 - sanchun"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇷 法国 (France) 01 - sanchun
+  server: 35.180.175.72
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 02 - sanchun
+  server: 35.180.175.72
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 03 - sanchun
+  server: 104.21.13.204
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 04 - sanchun
+  server: 35.180.175.72
+  port: 22224
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 05 - sanchun
+  server: fra2.loozerp.wiki
+  port: 443
+  udp: true
+  type: vless
+  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: fra2.loozerp.wiki
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 06 - sanchun
+  server: 88.99.189.60
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 07 - sanchun
+  server: 185.255.179.166
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 08 - sanchun
+  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 09 - sanchun
+  server: 185.225.68.232
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 10 - sanchun
+  server: 185.171.202.105
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+  servername: fra.loozerp.wiki
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 11 - sanchun
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇷 法国 (France) 02 - sanchun
+  - 🇫🇷 法国 (France) 03 - sanchun
+  - 🇫🇷 法国 (France) 04 - sanchun
+  - 🇫🇷 法国 (France) 05 - sanchun
+  - 🇫🇷 法国 (France) 06 - sanchun
+  - 🇫🇷 法国 (France) 07 - sanchun
+  - 🇫🇷 法国 (France) 08 - sanchun
+  - 🇫🇷 法国 (France) 09 - sanchun
+  - 🇫🇷 法国 (France) 10 - sanchun
+  - 🇫🇷 法国 (France) 11 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇷 法国 (France) 02 - sanchun
+  - 🇫🇷 法国 (France) 03 - sanchun
+  - 🇫🇷 法国 (France) 04 - sanchun
+  - 🇫🇷 法国 (France) 05 - sanchun
+  - 🇫🇷 法国 (France) 06 - sanchun
+  - 🇫🇷 法国 (France) 07 - sanchun
+  - 🇫🇷 法国 (France) 08 - sanchun
+  - 🇫🇷 法国 (France) 09 - sanchun
+  - 🇫🇷 法国 (France) 10 - sanchun
+  - 🇫🇷 法国 (France) 11 - sanchun
+rules:
+- MATCH,PROXIES

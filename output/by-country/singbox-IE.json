@@ -6,16 +6,9 @@
     {
       "type": "vless",
       "tag": "🇮🇪 爱尔兰 (Ireland) 01 - sanchun",
-      "server": "45.131.7.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime02.workers.dev"
-        }
-      }
+      "server": "18.169.206.105",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
       "type": "selector",

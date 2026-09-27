@@ -1,0 +1,88 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  server: 36.134.35.36
+  port: 50011
+  udp: true
+  type: vmess
+  uuid: 1b30f413-2865-4d40-9146-4207778718cd
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
+  server: 157.148.7.136
+  port: 50011
+  udp: true
+  type: vmess
+  uuid: e1be6941-0667-469c-9224-6f34adb549ba
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
+  server: 157.148.7.55
+  port: 50011
+  udp: true
+  type: vmess
+  uuid: e1be6941-0667-469c-9224-6f34adb549ba
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
+  server: 36.133.74.15
+  port: 50011
+  udp: true
+  type: vmess
+  uuid: e1be6941-0667-469c-9224-6f34adb549ba
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - sanchun
+  server: 36.139.117.41
+  port: 50011
+  udp: true
+  type: vmess
+  uuid: 1b30f413-2865-4d40-9146-4207778718cd
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
+  server: 36.133.78.37
+  port: 50011
+  udp: true
+  type: vmess
+  uuid: 1b30f413-2865-4d40-9146-4207778718cd
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
+  server: 36.133.79.17
+  port: 50011
+  udp: true
+  type: vmess
+  uuid: e1be6941-0667-469c-9224-6f34adb549ba
+  alterId: 0
+  cipher: auto
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 05 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 05 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
+rules:
+- MATCH,PROXIES
