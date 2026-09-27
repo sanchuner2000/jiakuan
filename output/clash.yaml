@@ -4,48 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦 加拿大 (Canada) 01 - sanchun
-  server: 23.162.200.198
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 3h-unitedstates1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: aidrivercat.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aidrivercat.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aidrivercat.org
-- name: 🇨🇦 加拿大 (Canada) 04 - sanchun
-  server: 15.223.122.197
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 05 - sanchun
+- name: 🇺🇸 美国 (United States) 01 - sanchun
   server: 34.94.125.227
   port: 443
   udp: true
@@ -53,7 +12,7 @@ proxies:
   password: M7v%w11Se*
   sni: mxlo.wsone.icu
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 06 - sanchun
+- name: 🇺🇸 美国 (United States) 02 - sanchun
   server: 5.78.159.214
   port: 80
   udp: true
@@ -66,46 +25,15 @@ proxies:
     short-id: 0db5c018ed7bb596
   servername: 5.78.159.214
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 07 - sanchun
-  server: mygptagent.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: mygptagent.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇺🇸 美国 (United States) 08 - sanchun
-  server: 107.172.76.105
+- name: 🇨🇦 加拿大 (Canada) 03 - sanchun
+  server: 15.223.122.197
   port: 443
   udp: true
   type: hysteria2
-  password: 975e9f98b4a1b01285ffdb8158ced798
-  sni: www.bing.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c8d95078e61be690c18e2fbbefe5e2ef
-- name: 🇬🇧 英国 (United Kingdom) 09 - sanchun
-  server: 164.37.100.195
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
-    short-id: 2e124af254a65e7c
-  servername: tomaz1337shellbuy.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 10 - sanchun
+- name: 🇺🇸 美国 (United States) 04 - sanchun
   server: vspeedfast.org
   port: 443
   udp: true
@@ -121,98 +49,41 @@ proxies:
     path: /linkvws
     headers:
       Host: vspeedfast.org
-- name: 🇳🇱 荷兰 (Netherlands) 11 - sanchun
-  server: 89.105.197.204
-  port: 443
-  udp: true
-  type: vless
-  uuid: 22a375e0-f7c6-0003-a154-81189914bbf4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
-    short-id: 93ae75024604f796
-  servername: anyfile2file.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 12 - sanchun
-  server: 72.56.102.31
-  port: 443
-  udp: true
-  type: hysteria2
-  password: BWAFlp8g53
-  sni: 72.56.102.31
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 13 - sanchun
-  server: 151.241.138.151
-  port: 8444
-  udp: true
-  type: vless
-  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE
-    short-id: a3f509aa7a4b41cc
-  servername: pl1.gursub.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 14 - sanchun
-  server: 136.148.71.151
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: germa12.ggisopi.su
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 15 - sanchun
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇳🇱 荷兰 (Netherlands) 16 - sanchun
-  server: 87.120.216.144
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
-    short-id: 0c13e8822e7f58aa
-  servername: gerwai1488.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 17 - sanchun
-  server: 137.220.221.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇰🇷 韩国 (South Korea) 18 - sanchun
-  server: 140.238.2.250
+- name: 🇺🇸 美国 (United States) 05 - sanchun
+  server: aidrivercat.org
   port: 443
   udp: true
   type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 19 - sanchun
-  server: 149.88.23.202
+  tls: true
+  servername: aidrivercat.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aidrivercat.org
+- name: 🇺🇸 美国 (United States) 06 - sanchun
+  server: 107.172.76.105
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 975e9f98b4a1b01285ffdb8158ced798
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c8d95078e61be690c18e2fbbefe5e2ef
+- name: 🇨🇦 加拿大 (Canada) 07 - sanchun
+  server: 23.162.200.198
   port: 18000
   udp: true
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 (Japan) 20 - sanchun
+- name: 🇯🇵 日本 (Japan) 08 - sanchun
   server: 138.3.208.26
   port: 50160
   udp: true
@@ -220,7 +91,18 @@ proxies:
   password: 184cdec28da5a09450803c8debcd2cc9
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 21 - sanchun
+- name: 🇯🇵 日本 (Japan) 09 - sanchun
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇯🇵 日本 (Japan) 10 - sanchun
   server: 172.111.146.64
   port: 80
   udp: true
@@ -233,26 +115,42 @@ proxies:
     path: /vmess/
     headers:
       Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 22 - sanchun
-  server: 168.138.43.75
-  port: 80
+- name: 🇸🇬 新加坡 (Singapore) 11 - sanchun
+  server: 149.88.23.202
+  port: 18000
   udp: true
   type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇺🇸 美国 (United States) 23 - sanchun
-  server: 85.209.157.177
-  port: 8080
+- name: 🇯🇵 日本 (Japan) 12 - sanchun
+  server: 137.220.221.179
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇬🇧 英国 (United Kingdom) 13 - sanchun
+  server: 164.37.100.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
+    short-id: 2e124af254a65e7c
+  servername: tomaz1337shellbuy.vvzzkontaktezzvv.garden
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 14 - sanchun
+  server: 72.56.102.31
+  port: 443
   udp: true
   type: hysteria2
-  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
-  sni: hopp-transit.1cooldns.com
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 24 - sanchun
+  password: BWAFlp8g53
+  sni: 72.56.102.31
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 15 - sanchun
   server: 132.145.80.230
   port: 80
   udp: true
@@ -263,7 +161,159 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇫🇷 法国 (France) 25 - sanchun
+- name: 🇳🇱 荷兰 (Netherlands) 16 - sanchun
+  server: 89.105.197.204
+  port: 443
+  udp: true
+  type: vless
+  uuid: 22a375e0-f7c6-0003-a154-81189914bbf4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
+    short-id: 93ae75024604f796
+  servername: anyfile2file.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 17 - sanchun
+  server: mygptagent.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: mygptagent.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+- name: 🇦🇪 阿联酋 (UAE) 18 - sanchun
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇫🇷 法国 (France) 19 - sanchun
+  server: www.speedtest.net
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇩🇪 德国 (Germany) 20 - sanchun
+  server: ov-germany1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇵🇱 波兰 (Poland) 21 - sanchun
+  server: 151.241.138.151
+  port: 8444
+  udp: true
+  type: vless
+  uuid: 02bd8b5a-170b-4a79-8e68-9cec710272c7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE
+    short-id: a3f509aa7a4b41cc
+  servername: pl1.gursub.com
+  client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 22 - sanchun
+  server: 119.46.51.45
+  port: 37515
+  udp: true
+  type: vmess
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+- name: 🇫🇷 法国 (France) 23 - sanchun
+  server: nasnet-162191099-direct.mbghalibaf.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 24 - sanchun
+  server: 136.148.71.151
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: germa12.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 25 - sanchun
+  server: 47.83.207.148
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 26 - sanchun
+  server: 6jdvarazgu3qqr6q.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇸🇬 新加坡 (Singapore) 27 - sanchun
+  server: onhit.shalana.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
+  tls: true
+  servername: onhit.shalana.xyz
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 28 - sanchun
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 29 - sanchun
   server: fra2.loozerp.wiki
   port: 443
   udp: true
@@ -276,7 +326,7 @@ proxies:
     short-id: ff776ff77be48b88
   servername: fra2.loozerp.wiki
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 26 - sanchun
+- name: 🇷🇴 罗马尼亚 (Romania) 30 - sanchun
   server: 162.249.125.133
   port: 443
   udp: true
@@ -286,15 +336,47 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇹🇭 泰国 (Thailand) 27 - sanchun
-  server: 119.46.51.45
-  port: 37515
+- name: 🇰🇷 韩国 (South Korea) 31 - sanchun
+  server: 152-69-231-175.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇮🇳 印度 (India) 32 - sanchun
+  server: 152.67.8.205
+  port: 80
   udp: true
   type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
   alterId: 0
   cipher: auto
-- name: 🇵🇱 波兰 (Poland) 28 - sanchun
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇳🇱 荷兰 (Netherlands) 33 - sanchun
+  server: 87.120.216.144
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
+    short-id: 0c13e8822e7f58aa
+  servername: gerwai1488.vvzzkontaktezzvv.garden
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 34 - sanchun
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 35 - sanchun
   server: pl-waw.dontblockmepls.com
   port: 2063
   udp: true
@@ -306,89 +388,7 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 29 - sanchun
-  server: cosw.ggisopi.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-0003-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: cosw.ggisopi.su
-  client-fingerprint: qq
-- name: 🇸🇬 新加坡 (Singapore) 30 - sanchun
-  server: onhit.shalana.xyz
-  port: 443
-  udp: true
-  type: vless
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  tls: true
-  servername: onhit.shalana.xyz
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 31 - sanchun
-  server: 85.204.107.181
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 32 - sanchun
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 33 - sanchun
-  server: 5.157.10.148
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 34 - sanchun
-  server: 8.217.229.155
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
-- name: 🇦🇺 澳大利亚 (Australia) 35 - sanchun
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 36 - sanchun
-  server: go.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 37 - sanchun
+- name: 🇸🇪 瑞典 (Sweden) 36 - sanchun
   server: 94.103.2.224
   port: 50445
   udp: true
@@ -400,130 +400,15 @@ proxies:
     public-key: hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ
   servername: www.icloud.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 38 - sanchun
-  server: kazartip.thewalkingded.life
-  port: 443
+- name: 🇺🇸 美国 (United States) 37 - sanchun
+  server: 85.209.157.177
+  port: 8080
   udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
-    short-id: 7cf408996c82639f
-  servername: kazartip.thewalkingded.life
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 39 - sanchun
-  server: fra.loozerp.wiki
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-  servername: fra.loozerp.wiki
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 40 - sanchun
-  server: 3h-kazakhstan1.09vpn.com
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇺🇸 美国 (United States) 41 - sanchun
-  server: ccs2g.pai50288.uk
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  tls: true
-  servername: ccs2g.pai50288.uk
+  type: hysteria2
+  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
+  sni: hopp-transit.1cooldns.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /pai50288
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 42 - sanchun
-  server: free.sahanwickramasinghe.me
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 43 - sanchun
-  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 479526cd-5011-43cf-a788-504da95e07c2
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇵🇱 波兰 (Poland) 44 - sanchun
-  server: 144.31.5.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 45 - sanchun
-  server: norw-mori-5.failspace.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: norw-mori-5.failspace.top
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 46 - sanchun
-  server: 104.21.57.84
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🇫🇷 法国 (France) 47 - sanchun
-  server: 185.255.179.166
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇪🇪 爱沙尼亚 (Estonia) 48 - sanchun
+- name: 🇪🇪 爱沙尼亚 (Estonia) 38 - sanchun
   server: 5.181.201.44
   port: 443
   udp: true
@@ -536,124 +421,253 @@ proxies:
     short-id: 38018dde3e27335e
   servername: bababoy.karp1pdd.life
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 49 - sanchun
-  server: 152.67.8.205
+- name: 🇸🇪 瑞典 (Sweden) 39 - sanchun
+  server: 5.157.10.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 40 - sanchun
+  server: sc-thenetherlands1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇵🇱 波兰 (Poland) 41 - sanchun
+  server: go.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 42 - sanchun
+  server: kazartip.thewalkingded.life
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
+    short-id: 7cf408996c82639f
+  servername: kazartip.thewalkingded.life
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 43 - sanchun
+  server: cosw.ggisopi.su
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-0003-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: cosw.ggisopi.su
+  client-fingerprint: qq
+- name: 🇦🇪 阿联酋 (UAE) 44 - sanchun
+  server: 85.204.107.178
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 45 - sanchun
+  server: i2psm3knof5qjjix.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: i2psm3knof5qjjix.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+- name: 🌐 其他地区 (Other) 46 - sanchun
+  server: 104.21.13.204
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 47 - sanchun
+  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
   port: 80
   udp: true
   type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 48 - sanchun
+  server: 88.99.189.60
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 49 - sanchun
+  server: fra.loozerp.wiki
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+  servername: fra.loozerp.wiki
+  client-fingerprint: chrome
+- name: 🌐 其他地区 (Other) 50 - sanchun
+  server: ccs2g.pai50288.uk
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pai50288
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇦 加拿大 (Canada) 01 - sanchun
+  - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇺🇸 美国 (United States) 03 - sanchun
-  - 🇨🇦 加拿大 (Canada) 04 - sanchun
+  - 🇨🇦 加拿大 (Canada) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇨🇦 加拿大 (Canada) 07 - sanchun
-  - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 09 - sanchun
-  - 🇺🇸 美国 (United States) 10 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 11 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 12 - sanchun
-  - 🇵🇱 波兰 (Poland) 13 - sanchun
-  - 🇺🇸 美国 (United States) 14 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 15 - sanchun
+  - 🇯🇵 日本 (Japan) 08 - sanchun
+  - 🇯🇵 日本 (Japan) 09 - sanchun
+  - 🇯🇵 日本 (Japan) 10 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 11 - sanchun
+  - 🇯🇵 日本 (Japan) 12 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 13 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 14 - sanchun
+  - 🇰🇷 韩国 (South Korea) 15 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 16 - sanchun
-  - 🇯🇵 日本 (Japan) 17 - sanchun
-  - 🇰🇷 韩国 (South Korea) 18 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 19 - sanchun
-  - 🇯🇵 日本 (Japan) 20 - sanchun
-  - 🇯🇵 日本 (Japan) 21 - sanchun
-  - 🇯🇵 日本 (Japan) 22 - sanchun
-  - 🇺🇸 美国 (United States) 23 - sanchun
-  - 🇰🇷 韩国 (South Korea) 24 - sanchun
-  - 🇫🇷 法国 (France) 25 - sanchun
-  - 🇷🇴 罗马尼亚 (Romania) 26 - sanchun
-  - 🇹🇭 泰国 (Thailand) 27 - sanchun
-  - 🇵🇱 波兰 (Poland) 28 - sanchun
-  - 🇫🇮 芬兰 (Finland) 29 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 30 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 31 - sanchun
-  - 🇰🇷 韩国 (South Korea) 32 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 33 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 34 - sanchun
-  - 🇦🇺 澳大利亚 (Australia) 35 - sanchun
-  - 🇵🇱 波兰 (Poland) 36 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 37 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 38 - sanchun
-  - 🇫🇷 法国 (France) 39 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 40 - sanchun
-  - 🇺🇸 美国 (United States) 41 - sanchun
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 42 - sanchun
-  - 🇫🇷 法国 (France) 43 - sanchun
-  - 🇵🇱 波兰 (Poland) 44 - sanchun
-  - 🇺🇸 美国 (United States) 45 - sanchun
-  - 🇺🇸 美国 (United States) 46 - sanchun
+  - 🇨🇦 加拿大 (Canada) 17 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 18 - sanchun
+  - 🇫🇷 法国 (France) 19 - sanchun
+  - 🇩🇪 德国 (Germany) 20 - sanchun
+  - 🇵🇱 波兰 (Poland) 21 - sanchun
+  - 🇹🇭 泰国 (Thailand) 22 - sanchun
+  - 🇫🇷 法国 (France) 23 - sanchun
+  - 🇺🇸 美国 (United States) 24 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 25 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 26 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 27 - sanchun
+  - 🇫🇷 法国 (France) 28 - sanchun
+  - 🇫🇷 法国 (France) 29 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 30 - sanchun
+  - 🇰🇷 韩国 (South Korea) 31 - sanchun
+  - 🇮🇳 印度 (India) 32 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 33 - sanchun
+  - 🇦🇺 澳大利亚 (Australia) 34 - sanchun
+  - 🇵🇱 波兰 (Poland) 35 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 36 - sanchun
+  - 🇺🇸 美国 (United States) 37 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 38 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 39 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 40 - sanchun
+  - 🇵🇱 波兰 (Poland) 41 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 42 - sanchun
+  - 🇫🇮 芬兰 (Finland) 43 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 44 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 45 - sanchun
+  - 🌐 其他地区 (Other) 46 - sanchun
   - 🇫🇷 法国 (France) 47 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 48 - sanchun
-  - 🇮🇳 印度 (India) 49 - sanchun
+  - 🇫🇷 法国 (France) 48 - sanchun
+  - 🇫🇷 法国 (France) 49 - sanchun
+  - 🌐 其他地区 (Other) 50 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 (Canada) 01 - sanchun
+  - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇺🇸 美国 (United States) 03 - sanchun
-  - 🇨🇦 加拿大 (Canada) 04 - sanchun
+  - 🇨🇦 加拿大 (Canada) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇨🇦 加拿大 (Canada) 07 - sanchun
-  - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 09 - sanchun
-  - 🇺🇸 美国 (United States) 10 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 11 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 12 - sanchun
-  - 🇵🇱 波兰 (Poland) 13 - sanchun
-  - 🇺🇸 美国 (United States) 14 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 15 - sanchun
+  - 🇯🇵 日本 (Japan) 08 - sanchun
+  - 🇯🇵 日本 (Japan) 09 - sanchun
+  - 🇯🇵 日本 (Japan) 10 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 11 - sanchun
+  - 🇯🇵 日本 (Japan) 12 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 13 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 14 - sanchun
+  - 🇰🇷 韩国 (South Korea) 15 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 16 - sanchun
-  - 🇯🇵 日本 (Japan) 17 - sanchun
-  - 🇰🇷 韩国 (South Korea) 18 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 19 - sanchun
-  - 🇯🇵 日本 (Japan) 20 - sanchun
-  - 🇯🇵 日本 (Japan) 21 - sanchun
-  - 🇯🇵 日本 (Japan) 22 - sanchun
-  - 🇺🇸 美国 (United States) 23 - sanchun
-  - 🇰🇷 韩国 (South Korea) 24 - sanchun
-  - 🇫🇷 法国 (France) 25 - sanchun
-  - 🇷🇴 罗马尼亚 (Romania) 26 - sanchun
-  - 🇹🇭 泰国 (Thailand) 27 - sanchun
-  - 🇵🇱 波兰 (Poland) 28 - sanchun
-  - 🇫🇮 芬兰 (Finland) 29 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 30 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 31 - sanchun
-  - 🇰🇷 韩国 (South Korea) 32 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 33 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 34 - sanchun
-  - 🇦🇺 澳大利亚 (Australia) 35 - sanchun
-  - 🇵🇱 波兰 (Poland) 36 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 37 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 38 - sanchun
-  - 🇫🇷 法国 (France) 39 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 40 - sanchun
-  - 🇺🇸 美国 (United States) 41 - sanchun
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 42 - sanchun
-  - 🇫🇷 法国 (France) 43 - sanchun
-  - 🇵🇱 波兰 (Poland) 44 - sanchun
-  - 🇺🇸 美国 (United States) 45 - sanchun
-  - 🇺🇸 美国 (United States) 46 - sanchun
+  - 🇨🇦 加拿大 (Canada) 17 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 18 - sanchun
+  - 🇫🇷 法国 (France) 19 - sanchun
+  - 🇩🇪 德国 (Germany) 20 - sanchun
+  - 🇵🇱 波兰 (Poland) 21 - sanchun
+  - 🇹🇭 泰国 (Thailand) 22 - sanchun
+  - 🇫🇷 法国 (France) 23 - sanchun
+  - 🇺🇸 美国 (United States) 24 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 25 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 26 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 27 - sanchun
+  - 🇫🇷 法国 (France) 28 - sanchun
+  - 🇫🇷 法国 (France) 29 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 30 - sanchun
+  - 🇰🇷 韩国 (South Korea) 31 - sanchun
+  - 🇮🇳 印度 (India) 32 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 33 - sanchun
+  - 🇦🇺 澳大利亚 (Australia) 34 - sanchun
+  - 🇵🇱 波兰 (Poland) 35 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 36 - sanchun
+  - 🇺🇸 美国 (United States) 37 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 38 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 39 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 40 - sanchun
+  - 🇵🇱 波兰 (Poland) 41 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 42 - sanchun
+  - 🇫🇮 芬兰 (Finland) 43 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 44 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 45 - sanchun
+  - 🌐 其他地区 (Other) 46 - sanchun
   - 🇫🇷 法国 (France) 47 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 48 - sanchun
-  - 🇮🇳 印度 (India) 49 - sanchun
+  - 🇫🇷 法国 (France) 48 - sanchun
+  - 🇫🇷 法国 (France) 49 - sanchun
+  - 🌐 其他地区 (Other) 50 - sanchun
 rules:
 - MATCH,PROXIES

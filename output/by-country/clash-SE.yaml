@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - sanchun
+  server: 94.103.2.224
+  port: 50445
+  udp: true
+  type: vless
+  uuid: d2761575-3f08-41ae-9dd1-33ccf86dddd1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 02 - sanchun
   server: 5.157.10.148
   port: 443
   udp: true
@@ -16,18 +28,6 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 02 - sanchun
-  server: 94.103.2.224
-  port: 50445
-  udp: true
-  type: vless
-  uuid: d2761575-3f08-41ae-9dd1-33ccf86dddd1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ
-  servername: www.icloud.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

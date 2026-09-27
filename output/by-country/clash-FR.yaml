@@ -5,6 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - sanchun
+  server: www.speedtest.net
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 02 - sanchun
+  server: nasnet-162191099-direct.mbghalibaf.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 03 - sanchun
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 04 - sanchun
   server: fra2.loozerp.wiki
   port: 443
   udp: true
@@ -17,20 +47,7 @@ proxies:
     short-id: ff776ff77be48b88
   servername: fra2.loozerp.wiki
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 02 - sanchun
-  server: fra.loozerp.wiki
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-  servername: fra.loozerp.wiki
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 03 - sanchun
+- name: 🇫🇷 法国 (France) 05 - sanchun
   server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
   port: 80
   udp: true
@@ -43,8 +60,8 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 04 - sanchun
-  server: 185.255.179.166
+- name: 🇫🇷 法国 (France) 06 - sanchun
+  server: 88.99.189.60
   port: 443
   udp: true
   type: trojan
@@ -54,6 +71,19 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🇫🇷 法国 (France) 07 - sanchun
+  server: fra.loozerp.wiki
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+  servername: fra.loozerp.wiki
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +93,9 @@ proxy-groups:
   - 🇫🇷 法国 (France) 02 - sanchun
   - 🇫🇷 法国 (France) 03 - sanchun
   - 🇫🇷 法国 (France) 04 - sanchun
+  - 🇫🇷 法国 (France) 05 - sanchun
+  - 🇫🇷 法国 (France) 06 - sanchun
+  - 🇫🇷 法国 (France) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +105,8 @@ proxy-groups:
   - 🇫🇷 法国 (France) 02 - sanchun
   - 🇫🇷 法国 (France) 03 - sanchun
   - 🇫🇷 法国 (France) 04 - sanchun
+  - 🇫🇷 法国 (France) 05 - sanchun
+  - 🇫🇷 法国 (France) 06 - sanchun
+  - 🇫🇷 法国 (France) 07 - sanchun
 rules:
 - MATCH,PROXIES
