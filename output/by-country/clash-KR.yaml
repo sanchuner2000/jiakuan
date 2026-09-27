@@ -31,14 +31,6 @@ proxies:
   password: 1beb216e3f60aea9555dae60d219a5ca
   sni: 152-69-231-175.liao.kdns.fr
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
-  server: 36.133.78.37
-  port: 50016
-  udp: true
-  type: vmess
-  uuid: e1be6941-0667-469c-9224-6f34adb549ba
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,7 +39,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 - sanchun
   - 🇰🇷 韩国 (South Korea) 02 - sanchun
   - 🇰🇷 韩国 (South Korea) 03 - sanchun
-  - 🇰🇷 韩国 (South Korea) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +47,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 01 - sanchun
   - 🇰🇷 韩国 (South Korea) 02 - sanchun
   - 🇰🇷 韩国 (South Korea) 03 - sanchun
-  - 🇰🇷 韩国 (South Korea) 04 - sanchun
 rules:
 - MATCH,PROXIES

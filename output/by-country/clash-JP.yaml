@@ -19,17 +19,6 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 04 - sanchun
   server: 172.111.146.64
   port: 80
   udp: true
@@ -42,17 +31,17 @@ proxies:
     path: /vmess/
     headers:
       Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 05 - sanchun
-  server: jp3.998998.best
-  port: 443
+- name: 🇯🇵 日本 (Japan) 04 - sanchun
+  server: 168.138.43.75
+  port: 80
   udp: true
-  type: trojan
-  password: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
-  sni: nat11.outsidemyheart.space
-  skip-cert-verify: false
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /w4e5yh0p945y3
+    path: /cctv13.m3u8
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +51,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02 - sanchun
   - 🇯🇵 日本 (Japan) 03 - sanchun
   - 🇯🇵 日本 (Japan) 04 - sanchun
-  - 🇯🇵 日本 (Japan) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,6 +60,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02 - sanchun
   - 🇯🇵 日本 (Japan) 03 - sanchun
   - 🇯🇵 日本 (Japan) 04 - sanchun
-  - 🇯🇵 日本 (Japan) 05 - sanchun
 rules:
 - MATCH,PROXIES

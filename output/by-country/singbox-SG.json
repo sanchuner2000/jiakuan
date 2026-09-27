@@ -24,21 +24,12 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - sanchun",
-      "server": "36.133.78.37",
-      "server_port": 50014,
-      "uuid": "1b30f413-2865-4d40-9146-4207778718cd",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 03 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
       ]
     },
     {
@@ -46,8 +37,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 03 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

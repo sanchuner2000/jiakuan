@@ -58,13 +58,31 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 04 - sanchun",
+      "server": "144.31.5.3",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl4.moritech.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - sanchun",
         "🇵🇱 波兰 (Poland) 02 - sanchun",
-        "🇵🇱 波兰 (Poland) 03 - sanchun"
+        "🇵🇱 波兰 (Poland) 03 - sanchun",
+        "🇵🇱 波兰 (Poland) 04 - sanchun"
       ]
     },
     {
@@ -73,7 +91,8 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - sanchun",
         "🇵🇱 波兰 (Poland) 02 - sanchun",
-        "🇵🇱 波兰 (Poland) 03 - sanchun"
+        "🇵🇱 波兰 (Poland) 03 - sanchun",
+        "🇵🇱 波兰 (Poland) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

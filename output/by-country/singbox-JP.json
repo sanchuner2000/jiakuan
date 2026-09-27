@@ -25,18 +25,6 @@
     {
       "type": "vmess",
       "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 04 - sanchun",
       "server": "172.111.146.64",
       "server_port": 80,
       "uuid": "05b8c783-7f59-47f9-9923-06a465679f6a",
@@ -50,22 +38,15 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 05 - sanchun",
-      "server": "jp3.998998.best",
-      "server_port": 443,
-      "password": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
-      "tls": {
-        "enabled": true,
-        "server_name": "nat11.outsidemyheart.space",
-        "insecure": false
-      },
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 04 - sanchun",
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/w4e5yh0p945y3",
-        "headers": {
-          "Host": "nat11.outsidemyheart.space"
-        }
+        "path": "/cctv13.m3u8"
       }
     },
     {
@@ -76,8 +57,7 @@
         "🇯🇵 日本 (Japan) 01 - sanchun",
         "🇯🇵 日本 (Japan) 02 - sanchun",
         "🇯🇵 日本 (Japan) 03 - sanchun",
-        "🇯🇵 日本 (Japan) 04 - sanchun",
-        "🇯🇵 日本 (Japan) 05 - sanchun"
+        "🇯🇵 日本 (Japan) 04 - sanchun"
       ]
     },
     {
@@ -87,8 +67,7 @@
         "🇯🇵 日本 (Japan) 01 - sanchun",
         "🇯🇵 日本 (Japan) 02 - sanchun",
         "🇯🇵 日本 (Japan) 03 - sanchun",
-        "🇯🇵 日本 (Japan) 04 - sanchun",
-        "🇯🇵 日本 (Japan) 05 - sanchun"
+        "🇯🇵 日本 (Japan) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
