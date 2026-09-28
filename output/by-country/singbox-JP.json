@@ -4,10 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇯🇵 日本 (Japan) 01 - sanchun",
-      "server": "13.230.30.102",
-      "server_port": 38830,
+      "server": "138.3.208.26",
+      "server_port": 50160,
+      "password": "184cdec28da5a09450803c8debcd2cc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
+      "server": "13.158.67.183",
+      "server_port": 33561,
       "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -19,8 +31,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "5E5p5boHrgCyBlt5qZPX1XozU9I90JoBgS4zmXngllI",
-          "short_id": "ac12ed79"
+          "public_key": "158SMilJQo8T-Fi8-T1354xZsVFCYxA8dXQstKbIdVs",
+          "short_id": "6b9e61372a82002c"
         }
       }
     },
@@ -29,14 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun",
+        "🇯🇵 日本 (Japan) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun",
+        "🇯🇵 日本 (Japan) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

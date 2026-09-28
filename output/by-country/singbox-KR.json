@@ -5,25 +5,29 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-      "server": "149.88.23.202",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "tag": "🇰🇷 韩国 (South Korea) 01 - sanchun",
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
+        "🇰🇷 韩国 (South Korea) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
+        "🇰🇷 韩国 (South Korea) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
