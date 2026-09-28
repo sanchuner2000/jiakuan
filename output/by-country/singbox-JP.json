@@ -4,15 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 - sanchun",
-      "server": "137.220.221.179",
-      "server_port": 443,
-      "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
-    },
-    {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 01 - sanchun",
       "server": "168.138.43.75",
       "server_port": 80,
       "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
@@ -20,6 +13,27 @@
       "transport": {
         "type": "ws",
         "path": "/cctv13.m3u8"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
+      "server": "13.230.30.102",
+      "server_port": 38830,
+      "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5E5p5boHrgCyBlt5qZPX1XozU9I90JoBgS4zmXngllI",
+          "short_id": "ac12ed79"
+        }
       }
     },
     {
@@ -35,33 +49,13 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 04 - sanchun",
-      "server": "jp3.998998.best",
-      "server_port": 443,
-      "password": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
-      "tls": {
-        "enabled": true,
-        "server_name": "nat11.outsidemyheart.space",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/w4e5yh0p945y3",
-        "headers": {
-          "Host": "nat11.outsidemyheart.space"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇯🇵 日本 (Japan) 01 - sanchun",
         "🇯🇵 日本 (Japan) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun",
-        "🇯🇵 日本 (Japan) 04 - sanchun"
+        "🇯🇵 日本 (Japan) 03 - sanchun"
       ]
     },
     {
@@ -70,8 +64,7 @@
       "outbounds": [
         "🇯🇵 日本 (Japan) 01 - sanchun",
         "🇯🇵 日本 (Japan) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun",
-        "🇯🇵 日本 (Japan) 04 - sanchun"
+        "🇯🇵 日本 (Japan) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

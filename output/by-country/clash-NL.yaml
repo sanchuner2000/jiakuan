@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
-  server: 89.105.197.204
-  port: 443
-  udp: true
-  type: vless
-  uuid: 22a375e0-f7c6-0003-a154-81189914bbf4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
-    short-id: 93ae75024604f796
-  servername: anyfile2file.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   server: 72.56.102.31
   port: 443
   udp: true
@@ -25,20 +12,7 @@ proxies:
   password: BWAFlp8g53
   sni: 72.56.102.31
   skip-cert-verify: true
-- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
-  server: 87.120.216.144
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
-    short-id: 0c13e8822e7f58aa
-  servername: gerwai1488.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 04 - sanchun
+- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   server: hysteria.udpgw.com
   port: 8443
   udp: true
@@ -48,40 +22,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: HysteriaHowdy
-- name: 🇳🇱 荷兰 (Netherlands) 05 - sanchun
-  server: 2.27.205.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇳🇱 荷兰 (Netherlands) 06 - sanchun
-  server: sc-thenetherlands1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇳🇱 荷兰 (Netherlands) 07 - sanchun
-  server: 139.64.166.25
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: pahobac.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: pahobac.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,11 +29,6 @@ proxy-groups:
   - AUTO
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 05 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 06 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,10 +36,5 @@ proxy-groups:
   proxies:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 05 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 06 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 07 - sanchun
 rules:
 - MATCH,PROXIES

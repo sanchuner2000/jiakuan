@@ -5,16 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - sanchun
-  server: 144.31.5.3
+  server: go.wwwinternetvideo.click
   port: 443
   udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 02 - sanchun
   server: 31.77.13.19
   port: 2063
@@ -27,27 +24,6 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 03 - sanchun
-  server: 188.114.96.19
-  port: 80
-  udp: true
-  type: vmess
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 04 - sanchun
-  server: go.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,8 +31,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - sanchun
   - 🇵🇱 波兰 (Poland) 02 - sanchun
-  - 🇵🇱 波兰 (Poland) 03 - sanchun
-  - 🇵🇱 波兰 (Poland) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,7 +38,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - sanchun
   - 🇵🇱 波兰 (Poland) 02 - sanchun
-  - 🇵🇱 波兰 (Poland) 03 - sanchun
-  - 🇵🇱 波兰 (Poland) 04 - sanchun
 rules:
 - MATCH,PROXIES
