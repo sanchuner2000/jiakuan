@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 瑞典 (Sweden) 01 - sanchun
-  server: 5.157.10.148
+- name: 🇧🇪 比利时 (Belgium) 01 - sanchun
+  server: 34.79.178.1
   port: 443
   udp: true
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
+  uuid: 51e493d4-b275-45e0-a714-e014f40b3c32
   tls: true
   reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
+    public-key: nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA
+    short-id: 95ae4a39d3933191
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 瑞典 (Sweden) 01 - sanchun
+  - 🇧🇪 比利时 (Belgium) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 (Sweden) 01 - sanchun
+  - 🇧🇪 比利时 (Belgium) 01 - sanchun
 rules:
 - MATCH,PROXIES

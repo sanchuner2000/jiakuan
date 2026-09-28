@@ -6,28 +6,24 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - sanchun",
-      "server": "151.241.138.151",
-      "server_port": 8444,
-      "uuid": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
+      "server": "144.31.5.3",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl1.gursub.com",
+        "server_name": "pl4.moritech.net",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE",
-          "short_id": "a3f509aa7a4b41cc"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - sanchun",
-      "server": "pl-waw.dontblockmepls.com",
+      "server": "31.77.13.19",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
       "flow": "xtls-rprx-vision",
@@ -36,7 +32,7 @@
         "server_name": "rusbid.de",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -46,8 +42,23 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇵🇱 波兰 (Poland) 03 - sanchun",
+      "server": "188.114.96.19",
+      "server_port": 80,
+      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 04 - sanchun",
       "server": "go.wwwinternetvideo.click",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
@@ -64,7 +75,8 @@
         "auto",
         "🇵🇱 波兰 (Poland) 01 - sanchun",
         "🇵🇱 波兰 (Poland) 02 - sanchun",
-        "🇵🇱 波兰 (Poland) 03 - sanchun"
+        "🇵🇱 波兰 (Poland) 03 - sanchun",
+        "🇵🇱 波兰 (Poland) 04 - sanchun"
       ]
     },
     {
@@ -73,7 +85,8 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - sanchun",
         "🇵🇱 波兰 (Poland) 02 - sanchun",
-        "🇵🇱 波兰 (Poland) 03 - sanchun"
+        "🇵🇱 波兰 (Poland) 03 - sanchun",
+        "🇵🇱 波兰 (Poland) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

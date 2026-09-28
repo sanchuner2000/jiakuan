@@ -5,13 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
-  server: 138.3.208.26
-  port: 50160
+  server: 137.220.221.179
+  port: 443
   udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
 - name: 🇯🇵 日本 (Japan) 02 - sanchun
   server: 168.138.43.75
   port: 80
@@ -24,24 +22,24 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
 - name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: 172.111.146.64
-  port: 80
+  server: 138.3.208.26
+  port: 50160
   udp: true
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 172.111.146.64
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 04 - sanchun
-  server: 137.220.221.179
+  server: jp3.998998.best
   port: 443
   udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  type: trojan
+  password: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  sni: nat11.outsidemyheart.space
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /w4e5yh0p945y3
 proxy-groups:
 - name: PROXIES
   type: select
