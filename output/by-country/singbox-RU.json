@@ -5,21 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - sanchun",
-      "server": "34.79.178.1",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
+      "server": "fbsv6.guardora.pro",
       "server_port": 443,
-      "uuid": "51e493d4-b275-45e0-a714-e014f40b3c32",
+      "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "fbsv6.guardora.pro",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA",
-          "short_id": "95ae4a39d3933191"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "fbsv6.guardora.pro"
         }
       }
     },
@@ -28,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

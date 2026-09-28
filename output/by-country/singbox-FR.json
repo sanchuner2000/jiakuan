@@ -4,27 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 01 - sanchun",
-      "server": "199.232.78.188",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "mitivpn---gb--s---mitivpn-1.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 02 - sanchun",
+      "tag": "🇫🇷 法国 (France) 01 - sanchun",
       "server": "172.239.19.53",
       "server_port": 56890,
       "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
@@ -44,48 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 03 - sanchun",
-      "server": "199.232.78.170",
-      "server_port": 443,
-      "uuid": "XpnTeam-41",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Appxdn.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - sanchun",
-        "🇫🇷 法国 (France) 02 - sanchun",
-        "🇫🇷 法国 (France) 03 - sanchun"
+        "🇫🇷 法国 (France) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - sanchun",
-        "🇫🇷 法国 (France) 02 - sanchun",
-        "🇫🇷 法国 (France) 03 - sanchun"
+        "🇫🇷 法国 (France) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
