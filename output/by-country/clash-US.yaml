@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+- name: 🇺🇸 美国 (United States) 02 - sanchun
   server: 107.172.76.105
   port: 443
   udp: true
@@ -14,7 +25,18 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c8d95078e61be690c18e2fbbefe5e2ef
-- name: 🇺🇸 美国 (United States) 02 - sanchun
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 80.93.202.40
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime02.workers.dev
+- name: 🇺🇸 美国 (United States) 04 - sanchun
   server: 85.209.157.177
   port: 8080
   udp: true
@@ -22,6 +44,35 @@ proxies:
   password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
   sni: hopp-transit.1cooldns.com
   skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 05 - sanchun
+  server: 104.21.57.84
+  port: 8443
+  udp: true
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 🇺🇸 美国 (United States) 06 - sanchun
+  server: lyra.yokkastars.com
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 5be7fb02-b6a5-450f-b041-3243b98e8420
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE
+    short-id: ee33
+  servername: deepl.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -29,6 +80,10 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
+  - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
+  - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇺🇸 美国 (United States) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +91,9 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
+  - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
+  - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇺🇸 美国 (United States) 06 - sanchun
 rules:
 - MATCH,PROXIES
