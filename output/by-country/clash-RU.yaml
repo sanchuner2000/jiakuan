@@ -5,7 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  server: fbsv6.guardora.pro
+  server: 139.28.168.201
+  port: 443
+  udp: true
+  type: vless
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  server: 217.19.122.200
   port: 443
   udp: true
   type: vless
@@ -13,21 +26,25 @@ proxies:
   tls: true
   servername: fbsv6.guardora.pro
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: random
   network: ws
   ws-opts:
     path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
 rules:
 - MATCH,PROXIES

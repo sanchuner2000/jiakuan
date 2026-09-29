@@ -5,38 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
-  server: 13.230.30.102
-  port: 38830
-  udp: true
-  type: vless
-  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5E5p5boHrgCyBlt5qZPX1XozU9I90JoBgS4zmXngllI
-    short-id: ac12ed79
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 04 - sanchun
   server: 13.158.67.183
   port: 33561
   udp: true
@@ -49,6 +17,53 @@ proxies:
     short-id: 6b9e61372a82002c
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 02 - sanchun
+  server: 13.230.30.102
+  port: 38830
+  udp: true
+  type: vless
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5E5p5boHrgCyBlt5qZPX1XozU9I90JoBgS4zmXngllI
+    short-id: ac12ed79
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 03 - sanchun
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇯🇵 日本 (Japan) 04 - sanchun
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 05 - sanchun
+  server: 172.67.156.147
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +73,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02 - sanchun
   - 🇯🇵 日本 (Japan) 03 - sanchun
   - 🇯🇵 日本 (Japan) 04 - sanchun
+  - 🇯🇵 日本 (Japan) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +83,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02 - sanchun
   - 🇯🇵 日本 (Japan) 03 - sanchun
   - 🇯🇵 日本 (Japan) 04 - sanchun
+  - 🇯🇵 日本 (Japan) 05 - sanchun
 rules:
 - MATCH,PROXIES

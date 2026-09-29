@@ -14,8 +14,8 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
-      "server": "18.139.227.162",
-      "server_port": 28243,
+      "server": "18.136.119.69",
+      "server_port": 20975,
       "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -27,8 +27,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "IXxfPvq2OkbSuA-ZTBFpMzkDU1uO8dEI1e7s9VfHh1Y",
-          "short_id": "7996bf4dcf194d18"
+          "public_key": "GVg6RWWCJfXATSmArzQD69rXqs9-804Ot-_uX3WrJE4",
+          "short_id": "2bb0dc48"
         }
       }
     },
