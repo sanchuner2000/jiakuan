@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
-      "server": "172.104.237.173",
-      "server_port": 20855,
-      "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - sanchun",
+      "server": "94.176.234.161",
+      "server_port": 443,
+      "uuid": "d448490d-4ee6-442f-80e1-5e1c186c4ce1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.intel.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "c6Pu0_yAYxIrnYjbwIYLsKB_xhcLsk17BgojLeaIvE8",
-          "short_id": "efe9"
+          "public_key": "UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8",
+          "short_id": "dbb2ef1c7c"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 - sanchun"
+        "🇱🇹 立陶宛 (Lithuania) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 - sanchun"
+        "🇱🇹 立陶宛 (Lithuania) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -13,18 +13,17 @@ proxies:
   sni: 72.56.102.31
   skip-cert-verify: true
 - name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  server: 2.27.12.108
-  port: 2096
+  server: 51.15.16.68
+  port: 2053
   udp: true
   type: vless
-  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  uuid: 7d0fd363-16d2-43ce-9d6d-ed2c15d2cb7c
   tls: true
-  servername: stadb90.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
+  reality-opts:
+    public-key: Zotx4F9CI6_q9yeKCKIHDjwzCv_Aq7WSo7N0Zc1A6Sc
+    short-id: 3c99c85cbb6b3b44
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
   server: hysteria.udpgw.com
   port: 8443

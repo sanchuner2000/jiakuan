@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 - sanchun
-  server: 172.104.237.173
-  port: 20855
+- name: 🇱🇹 立陶宛 (Lithuania) 01 - sanchun
+  server: 94.176.234.161
+  port: 443
   udp: true
   type: vless
-  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  uuid: d448490d-4ee6-442f-80e1-5e1c186c4ce1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: c6Pu0_yAYxIrnYjbwIYLsKB_xhcLsk17BgojLeaIvE8
-    short-id: efe9
-  servername: www.cloudflare.com
+    public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
+    short-id: dbb2ef1c7c
+  servername: www.intel.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇱🇹 立陶宛 (Lithuania) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇱🇹 立陶宛 (Lithuania) 01 - sanchun
 rules:
 - MATCH,PROXIES

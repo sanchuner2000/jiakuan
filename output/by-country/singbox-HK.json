@@ -4,28 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
-      "server": "217.19.122.200",
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+      "server": "20.235.220.189",
       "server_port": 443,
-      "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "fbsv6.guardora.pro",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
+        "server_name": "6JDvArazgU3qQR6Q.v.3dns.vip",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/ws-vmess",
         "headers": {
-          "Host": "fbsv6.guardora.pro"
+          "Host": "6JDvArazgU3qQR6Q.v.3dns.vip"
         }
       }
     },
@@ -34,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

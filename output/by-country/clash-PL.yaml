@@ -13,7 +13,7 @@ proxies:
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 02 - sanchun
-  server: pl-waw.dontblockmepls.com
+  server: 31.77.13.19
   port: 2063
   udp: true
   type: vless
