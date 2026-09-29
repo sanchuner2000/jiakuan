@@ -18,7 +18,7 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - sanchun",
-      "server": "31.77.13.19",
+      "server": "pl-waw.dontblockmepls.com",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
       "flow": "xtls-rprx-vision",

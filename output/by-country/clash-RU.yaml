@@ -17,34 +17,17 @@ proxies:
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
-  server: 217.19.122.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  tls: true
-  servername: fbsv6.guardora.pro
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
 rules:
 - MATCH,PROXIES

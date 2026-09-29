@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - sanchun",
-      "server": "94.176.234.161",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - sanchun",
+      "server": "india.letsconnectpoint.com",
       "server_port": 443,
-      "uuid": "d448490d-4ee6-442f-80e1-5e1c186c4ce1",
+      "uuid": "914f3806-07a1-4158-9624-e183de065a38",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.intel.com",
+        "server_name": "india.letsconnectpoint.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8",
-          "short_id": "dbb2ef1c7c"
+          "public_key": "erUEmyU1QK8y2corQh9bOjk0oHl2Mo6Z9WgoyKg_rC0",
+          "short_id": "c1e3d5d4"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - sanchun"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - sanchun"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
