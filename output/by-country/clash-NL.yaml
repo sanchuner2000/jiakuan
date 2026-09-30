@@ -24,16 +24,6 @@ proxies:
     short-id: 3c99c85cbb6b3b44
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
-  server: hysteria.udpgw.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HowdyHysteria2023w0W
-  sni: sni-here.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: HysteriaHowdy
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
 rules:
 - MATCH,PROXIES

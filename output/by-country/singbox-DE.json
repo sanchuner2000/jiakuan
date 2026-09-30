@@ -4,22 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - sanchun",
-      "server": "104.21.57.84",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
-      },
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "93fa8bdb-9cca-4a3e-8355-b7c12e4f595e",
       "transport": {
         "type": "ws",
-        "path": "/lMnsZUN4/",
+        "path": "/vl/yLWNcuUuw1jlJpkDhGy?ed=2560",
         "headers": {
-          "Host": "v2ray1.dozapp.xyz"
+          "Host": "fornewiran.ade-1000.workers.dev"
         }
       }
     },
@@ -28,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - sanchun"
+        "🇩🇪 德国 (Germany) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - sanchun"
+        "🇩🇪 德国 (Germany) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
