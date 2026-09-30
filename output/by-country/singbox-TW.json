@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 01 - sanchun",
-      "server": "152.53.1.40",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - sanchun",
+      "server": "35.201.181.122",
       "server_port": 443,
-      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
-      "flow": "xtls-rprx-vision",
+      "uuid": "22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2",
       "tls": {
         "enabled": true,
-        "server_name": "at.quattro-tech.ru",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "short_id": "43dcff53849b81e6"
+          "public_key": "PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0",
+          "short_id": "32f66f37df3f58d2"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
