@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  server: 113.30.154.65
-  port: 443
+- name: 🇮🇩 印尼 (Indonesia) 01 - sanchun
+  server: 103.172.197.2
+  port: 29172
   udp: true
   type: vless
-  uuid: 550a69ec-fec1-4eca-b939-4ee076875fa8
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: firefox
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+  servername: aws.amazon.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+  - 🇮🇩 印尼 (Indonesia) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+  - 🇮🇩 印尼 (Indonesia) 01 - sanchun
 rules:
 - MATCH,PROXIES

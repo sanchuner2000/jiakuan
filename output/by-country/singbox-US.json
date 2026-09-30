@@ -20,8 +20,29 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "31.76.101.39",
+      "server_port": 443,
+      "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dzen.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js",
+          "short_id": "a1b2c3d4e5f67890"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
       "server": "85.209.157.177",
       "server_port": 8080,
       "password": "dsmO0439gj_nX942GJRE_9j39fbcxv52_R",
@@ -32,16 +53,23 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "norw-mori-4.failspace.top",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "172.67.167.78",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "norw-mori-4.failspace.top",
+        "server_name": "v2ray1.dozapp.xyz",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
       }
     },
     {
@@ -51,7 +79,8 @@
         "auto",
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun"
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ]
     },
     {
@@ -60,7 +89,8 @@
       "outbounds": [
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun"
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
