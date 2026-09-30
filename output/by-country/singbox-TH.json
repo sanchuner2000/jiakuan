@@ -5,10 +5,10 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 01 - sanchun",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - sanchun",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
       "security": "auto"
     },
     {
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 - sanchun"
+        "🇹🇭 泰国 (Thailand) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 - sanchun"
+        "🇹🇭 泰国 (Thailand) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
