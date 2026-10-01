@@ -12,40 +12,18 @@
       "security": "auto"
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
-      "server": "136.85.2.50",
-      "server_port": 443,
-      "uuid": "5567cac6-2a32-4318-83cd-7df3a9eebbd7",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4",
-          "short_id": "eb97ce837da2f6ad"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
