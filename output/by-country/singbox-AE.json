@@ -4,22 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇨🇿 捷克 (Czech) 01 - sanchun",
-      "server": "199.232.78.170",
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 01 - sanchun",
+      "server": "130.49.161.70",
       "server_port": 443,
-      "password": "mitivpn",
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "hy2.aspidnet.xyz",
         "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "mitivpn---de--s---mitivpn-11.global.ssl.fastly.net"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
     },
     {
@@ -27,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - sanchun"
+        "🇦🇪 阿联酋 (UAE) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - sanchun"
+        "🇦🇪 阿联酋 (UAE) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

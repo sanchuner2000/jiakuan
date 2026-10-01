@@ -16,6 +16,17 @@ proxies:
   ws-opts:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: 🇩🇪 德国 (Germany) 02 - sanchun
+  server: 199.232.78.170
+  port: 443
+  udp: true
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 03 - sanchun
   server: 34.159.243.3
   port: 443
   udp: true
@@ -27,6 +38,19 @@ proxies:
     short-id: 7394ea3cc2106697
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 04 - sanchun
+  server: id-nl-01.mintrocket.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
+  servername: id-nl-01.mintrocket.org
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +58,8 @@ proxy-groups:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 - sanchun
   - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +67,7 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 (Germany) 01 - sanchun
   - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 04 - sanchun
 rules:
 - MATCH,PROXIES

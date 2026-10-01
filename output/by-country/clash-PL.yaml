@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - sanchun
-  server: 34.118.43.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: 16e310b7-659e-45ee-a4b0-10e0289b8621
-  tls: true
-  reality-opts:
-    public-key: -bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ
-    short-id: 7e7623474d41f032
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 02 - sanchun
   server: go.wwwinternetvideo.click
   port: 443
   udp: true
@@ -30,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - sanchun
-  - 🇵🇱 波兰 (Poland) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - sanchun
-  - 🇵🇱 波兰 (Poland) 02 - sanchun
 rules:
 - MATCH,PROXIES

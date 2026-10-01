@@ -23,8 +23,27 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "mitivpn---de--s---mitivpn-11.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 03 - sanchun",
       "server": "34.159.243.3",
       "server_port": 443,
       "uuid": "753fa5ef-0b08-4fd3-b688-173ff594b758",
@@ -43,12 +62,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 04 - sanchun",
+      "server": "id-nl-01.mintrocket.org",
+      "server_port": 443,
+      "uuid": "f0a52dd3-4377-4402-a450-210bc81bcf25",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "id-nl-01.mintrocket.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
+          "short_id": "fee1f986a72444db"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇩🇪 德国 (Germany) 01 - sanchun",
-        "🇩🇪 德国 (Germany) 02 - sanchun"
+        "🇩🇪 德国 (Germany) 02 - sanchun",
+        "🇩🇪 德国 (Germany) 03 - sanchun",
+        "🇩🇪 德国 (Germany) 04 - sanchun"
       ]
     },
     {
@@ -56,7 +98,9 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 德国 (Germany) 01 - sanchun",
-        "🇩🇪 德国 (Germany) 02 - sanchun"
+        "🇩🇪 德国 (Germany) 02 - sanchun",
+        "🇩🇪 德国 (Germany) 03 - sanchun",
+        "🇩🇪 德国 (Germany) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
