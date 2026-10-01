@@ -4,19 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
-      "server": "162.249.125.133",
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+      "server": "yg1.ygkkk.dpdns.org",
       "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "uuid": "b2ba4a73-3123-479e-aa96-5973a9ecd0c0",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
+        "server_name": "jmp1.907737.xyz",
         "insecure": false
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
+      "transport": {
+        "type": "ws",
+        "path": "/b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm",
+        "headers": {
+          "Host": "jmp1.907737.xyz"
+        }
       }
     },
     {
@@ -24,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

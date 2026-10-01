@@ -4,8 +4,123 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
+      "server": "167.82.76.7",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "mitivpn---us--s---mitivpn-11.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "us3.zestapp778.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "us3.zestapp778.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "mybb.com",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rayan-007.nastaran.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "34.66.64.236",
+      "server_port": 443,
+      "uuid": "3893f05b-9b24-4bb1-a1dc-ba55509b0a01",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Th2whwnn3zQaHdImi5B1wYn8hxXz3JQs3_AQCuHfanQ",
+          "short_id": "76d093d99ceaf06a"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
+      "server": "guanwang.awsno.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
+      "server": "2.27.249.130",
+      "server_port": 443,
+      "uuid": "0f4081e7-612b-425f-8def-eebf144aedba",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "n11.clouderiux.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM",
+          "short_id": "9e15546f267baa64"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
       "server": "85.209.157.177",
       "server_port": 8080,
       "password": "dsmO0439gj_nX942GJRE_9j39fbcxv52_R",
@@ -17,7 +132,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
       "server": "104.21.57.84",
       "server_port": 8443,
       "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
@@ -41,7 +156,13 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 - sanchun",
-        "🇺🇸 美国 (United States) 02 - sanchun"
+        "🇺🇸 美国 (United States) 02 - sanchun",
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun",
+        "🇺🇸 美国 (United States) 05 - sanchun",
+        "🇺🇸 美国 (United States) 06 - sanchun",
+        "🇺🇸 美国 (United States) 07 - sanchun",
+        "🇺🇸 美国 (United States) 08 - sanchun"
       ]
     },
     {
@@ -49,7 +170,13 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 - sanchun",
-        "🇺🇸 美国 (United States) 02 - sanchun"
+        "🇺🇸 美国 (United States) 02 - sanchun",
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun",
+        "🇺🇸 美国 (United States) 05 - sanchun",
+        "🇺🇸 美国 (United States) 06 - sanchun",
+        "🇺🇸 美国 (United States) 07 - sanchun",
+        "🇺🇸 美国 (United States) 08 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

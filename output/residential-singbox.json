@@ -4,19 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
-      "server": "162.249.125.133",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun",
+      "server": "tcdnu.azad0namah.ir",
+      "server_port": 8443,
+      "uuid": "0da0a073-a5b0-4229-bf11-24592f6290b9",
       "tls": {
         "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
+        "server_name": "tcdnu.azad0namah.ir",
         "insecure": false
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
+      "transport": {
+        "type": "ws",
+        "path": "/tuws/"
       }
     },
     {
@@ -24,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
