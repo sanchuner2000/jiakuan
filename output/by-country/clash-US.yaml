@@ -5,51 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: mybb.com
-  port: 443
+  server: 85.209.157.177
+  port: 8080
   udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 2.27.249.130
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
-    short-id: 9e15546f267baa64
-  servername: n11.clouderiux.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: guanwang.awsno.com
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: guanwang.awsno.com
+  type: hysteria2
+  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
+  sni: hopp-transit.1cooldns.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: 172.67.167.78
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 104.21.57.84
   port: 8443
   udp: true
   type: vmess
@@ -64,29 +28,14 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: 85.209.157.177
-  port: 8080
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
+  port: 13209
   udp: true
-  type: hysteria2
-  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
-  sni: hopp-transit.1cooldns.com
+  type: trojan
+  password: fac593ac-d6aa-4523-bea9-b3eb2a2b3da3
+  sni: 207.yuanul.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: 211.229.56.86
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
-  tls: true
-  servername: 123.714541.xyz
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /Ra-vl
-    headers:
-      Host: 123.714541.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,9 +44,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
-  - 🇺🇸 美国 (United States) 04 - sanchun
-  - 🇺🇸 美国 (United States) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,8 +52,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
-  - 🇺🇸 美国 (United States) 04 - sanchun
-  - 🇺🇸 美国 (United States) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
 rules:
 - MATCH,PROXIES
