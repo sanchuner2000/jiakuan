@@ -18,7 +18,7 @@
     {
       "type": "vmess",
       "tag": "🇺🇸 美国 (United States) 02 - sanchun",
-      "server": "104.21.57.84",
+      "server": "172.67.167.78",
       "server_port": 8443,
       "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
       "security": "auto",
@@ -36,25 +36,12 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com",
-      "server_port": 13209,
-      "password": "fac593ac-d6aa-4523-bea9-b3eb2a2b3da3",
-      "tls": {
-        "enabled": true,
-        "server_name": "207.yuanul.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 - sanchun",
-        "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun"
+        "🇺🇸 美国 (United States) 02 - sanchun"
       ]
     },
     {
@@ -62,8 +49,7 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 - sanchun",
-        "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun"
+        "🇺🇸 美国 (United States) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

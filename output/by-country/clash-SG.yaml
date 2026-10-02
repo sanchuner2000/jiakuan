@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  server: 149.88.23.202
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
   server: 5.223.19.211
   port: 80
   udp: true
@@ -21,6 +13,14 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  server: 149.88.23.202
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select

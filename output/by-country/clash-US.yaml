@@ -13,7 +13,7 @@ proxies:
   sni: hopp-transit.1cooldns.com
   skip-cert-verify: false
 - name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 104.21.57.84
+  server: 172.67.167.78
   port: 8443
   udp: true
   type: vmess
@@ -28,14 +28,6 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: f533f9b2-c69a-4dd0-bc63-f2ab94dd5f53.f1eb10ae-1d82-4c6a-b4dd-bd9525520956.com
-  port: 13209
-  udp: true
-  type: trojan
-  password: fac593ac-d6aa-4523-bea9-b3eb2a2b3da3
-  sni: 207.yuanul.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇺🇸 美国 (United States) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇺🇸 美国 (United States) 03 - sanchun
 rules:
 - MATCH,PROXIES

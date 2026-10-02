@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-      "server": "149.88.23.202",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 - sanchun",
       "server": "5.223.19.211",
       "server_port": 80,
       "uuid": "4b8a0930-1c36-4efe-b4fe-21f9ad97905c",
@@ -21,6 +13,14 @@
         "type": "ws",
         "path": "/"
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
+      "server": "149.88.23.202",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
     },
     {
       "type": "selector",
