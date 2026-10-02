@@ -4,21 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 01 - sanchun",
-      "server": "172.64.150.28",
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+      "server": "93ucrn4i0pffuabk.v.3dns.vip",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
+        "server_name": "93ucrn4i0pffuabk.v.3dns.vip",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/ws-vmess",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "93ucrn4i0PffUAbk.v.3dns.vip"
         }
       }
     },
@@ -27,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
