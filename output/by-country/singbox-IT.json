@@ -4,15 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - sanchun",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 01 - sanchun",
+      "server": "63.141.128.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
       "transport": {
         "type": "ws",
-        "path": "/cctv13.m3u8"
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime42.workers.dev"
+        }
       }
     },
     {
@@ -20,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - sanchun"
+        "🇮🇹 意大利 (Italy) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - sanchun"
+        "🇮🇹 意大利 (Italy) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

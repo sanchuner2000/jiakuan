@@ -4,8 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
+      "server": "mybb.com",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rayan-007.nastaran.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
       "server": "85.209.157.177",
       "server_port": 8080,
       "password": "dsmO0439gj_nX942GJRE_9j39fbcxv52_R",
@@ -16,18 +39,42 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "104.21.57.84",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 - sanchun"
+        "🇺🇸 美国 (United States) 01 - sanchun",
+        "🇺🇸 美国 (United States) 02 - sanchun",
+        "🇺🇸 美国 (United States) 03 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 - sanchun"
+        "🇺🇸 美国 (United States) 01 - sanchun",
+        "🇺🇸 美国 (United States) 02 - sanchun",
+        "🇺🇸 美国 (United States) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
