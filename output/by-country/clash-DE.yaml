@@ -16,31 +16,18 @@ proxies:
     public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
     short-id: 29455a3a790acbd0
   servername: mcde.67resserv67.info
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 02 - sanchun
-  server: undef.network
-  port: 2052
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 - sanchun
-  - 🇩🇪 德国 (Germany) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 - sanchun
-  - 🇩🇪 德国 (Germany) 02 - sanchun
 rules:
 - MATCH,PROXIES
