@@ -12,40 +12,18 @@
       "security": "auto"
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
-      "server": "103.106.229.236",
-      "server_port": 443,
-      "uuid": "454431fc-71e2-42b1-b375-5b55dd06666a",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg.monkora.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -16,9 +16,9 @@ proxies:
     public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
     short-id: 29455a3a790acbd0
   servername: mcde.67resserv67.info
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 02 - sanchun
-  server: uwu.blueknightnet.qzz.io
+  server: undef.network
   port: 2052
   udp: true
   type: vless

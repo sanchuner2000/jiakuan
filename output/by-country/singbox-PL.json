@@ -4,15 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇵🇱 波兰 (Poland) 01 - sanchun",
-      "server": "pl.tronsg.com",
+      "server": "go.wwwinternetvideo.click",
       "server_port": 443,
-      "password": "Trojan@82164024",
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
-        "server_name": "pl.tronsg.com",
-        "insecure": false
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {

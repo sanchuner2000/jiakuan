@@ -17,42 +17,17 @@ proxies:
     short-id: a4f8c92d
   servername: kaneki.cfd
   client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  server: hysteria.udpgw.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HowdyHysteria2023w0W
-  sni: sni-here.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
-  server: 103.75.125.17
-  port: 443
-  udp: true
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
 rules:
 - MATCH,PROXIES

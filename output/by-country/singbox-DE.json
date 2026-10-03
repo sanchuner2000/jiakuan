@@ -15,7 +15,7 @@
         "server_name": "mcde.67resserv67.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -27,7 +27,7 @@
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
-      "server": "uwu.blueknightnet.qzz.io",
+      "server": "undef.network",
       "server_port": 2052,
       "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
       "transport": {
