@@ -4,28 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇹 意大利 (Italy) 01 - sanchun
-  server: 63.141.128.30
-  port: 8880
+- name: 🇫🇮 芬兰 (Finland) 01 - sanchun
+  server: 77.42.28.120
+  port: 1280
   udp: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: vms.lifetime42.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇹 意大利 (Italy) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 (Italy) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 01 - sanchun
 rules:
 - MATCH,PROXIES

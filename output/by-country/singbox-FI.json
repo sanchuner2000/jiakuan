@@ -5,16 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 01 - sanchun",
-      "server": "63.141.128.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - sanchun",
+      "server": "77.42.28.120",
+      "server_port": 1280,
+      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime42.workers.dev"
-        }
+        "path": "/"
       }
     },
     {
@@ -22,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 意大利 (Italy) 01 - sanchun"
+        "🇫🇮 芬兰 (Finland) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 意大利 (Italy) 01 - sanchun"
+        "🇫🇮 芬兰 (Finland) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+  server: 31.76.34.216
+  port: 443
+  udp: true
+  type: vless
+  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
+  servername: ru-c-1.minzt.su
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
   server: msk.frkn.org
   port: 443
   udp: true
@@ -12,17 +24,34 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  server: fbsv6.guardora.pro
+  port: 443
+  udp: true
+  type: vless
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  tls: true
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
 rules:
 - MATCH,PROXIES

@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+      "server": "217.60.35.228",
+      "server_port": 8443,
+      "uuid": "e19b5aa3-16c9-435a-8bc9-76f2f6ddff43",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "kaneki.cfd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4jeCe2efqOkTQ-r99RHuACTH8_BuNNP1Rx6cuBXS4hg",
+          "short_id": "a4f8c92d"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
       "server": "hysteria.udpgw.com",
       "server_port": 8443,
       "password": "HowdyHysteria2023w0W",
@@ -20,18 +41,42 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
+      "server": "103.75.125.17",
+      "server_port": 443,
+      "uuid": "454431fc-71e2-42b1-b375-5b55dd06666a",
+      "tls": {
+        "enabled": true,
+        "server_name": "example.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 03 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

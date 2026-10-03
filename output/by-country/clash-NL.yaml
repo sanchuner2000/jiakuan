@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  server: 217.60.35.228
+  port: 8443
+  udp: true
+  type: vless
+  uuid: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4jeCe2efqOkTQ-r99RHuACTH8_BuNNP1Rx6cuBXS4hg
+    short-id: a4f8c92d
+  servername: kaneki.cfd
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   server: hysteria.udpgw.com
   port: 8443
   udp: true
@@ -14,17 +27,32 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: HysteriaHowdy
+- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  server: 103.75.125.17
+  port: 443
+  udp: true
+  type: vless
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  tls: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
 rules:
 - MATCH,PROXIES

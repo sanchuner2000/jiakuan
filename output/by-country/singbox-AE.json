@@ -20,18 +20,32 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - sanchun",
+      "server": "go.wwwinternetvideo.click",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - sanchun"
+        "🇦🇪 阿联酋 (UAE) 01 - sanchun",
+        "🇦🇪 阿联酋 (UAE) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - sanchun"
+        "🇦🇪 阿联酋 (UAE) 01 - sanchun",
+        "🇦🇪 阿联酋 (UAE) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
