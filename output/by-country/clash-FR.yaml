@@ -5,7 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - sanchun
-  server: www.calmlunch.com
+  server: 212.183.88.136
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 02 - sanchun
+  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 03 - sanchun
+  server: 185.225.68.232
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 04 - sanchun
+  server: 185.220.100.168
   port: 443
   udp: true
   type: trojan
@@ -21,11 +56,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇷 法国 (France) 02 - sanchun
+  - 🇫🇷 法国 (France) 03 - sanchun
+  - 🇫🇷 法国 (France) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇷 法国 (France) 02 - sanchun
+  - 🇫🇷 法国 (France) 03 - sanchun
+  - 🇫🇷 法国 (France) 04 - sanchun
 rules:
 - MATCH,PROXIES

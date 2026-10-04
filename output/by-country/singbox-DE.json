@@ -4,22 +4,190 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
-      "server": "104.21.70.21",
-      "server_port": 8080,
-      "uuid": "8a36be1d-7c78-4885-8a1f-bedf5ba7db1c",
+      "server": "167.82.76.27",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
         "headers": {
-          "Host": "lucky-lab-ac6d.caveyi8071.workers.dev"
+          "Host": "mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
+      "server": "167.82.76.7",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 03 - sanchun",
+      "server": "meet-goshawk.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "meet-goshawk.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 04 - sanchun",
+      "server": "31.77.109.35",
+      "server_port": 443,
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-de1.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY",
+          "short_id": "494afdc75f8c2fa8"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 05 - sanchun",
+      "server": "actual-squid.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "actual-squid.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 06 - sanchun",
+      "server": "31.77.168.192",
+      "server_port": 443,
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-de1.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY",
+          "short_id": "494afdc75f8c2fa8"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 07 - sanchun",
+      "server": "193.108.117.54",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "aidrivercat.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "aidrivercat.org"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
+      "tag": "🇩🇪 德国 (Germany) 08 - sanchun",
+      "server": "id-nl-01.mintrocket.org",
+      "server_port": 443,
+      "uuid": "f0a52dd3-4377-4402-a450-210bc81bcf25",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "id-nl-01.mintrocket.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
+          "short_id": "fee1f986a72444db"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 09 - sanchun",
+      "server": "rubifen.adaspoloandco.com",
+      "server_port": 443,
+      "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575",
+      "tls": {
+        "enabled": true,
+        "server_name": "rubifen.adaspoloandco.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/GOrbEh"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 10 - sanchun",
+      "server": "144.31.215.227",
+      "server_port": 443,
+      "uuid": "91d734be-a3d0-4d50-83ab-74cf7b6966fa",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-de.bulkavpn.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ",
+          "short_id": "c885e8f8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 11 - sanchun",
       "server": "177.1.186.44",
       "server_port": 443,
       "uuid": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00",
@@ -39,27 +207,21 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 03 - sanchun",
-      "server": "uwu.blueknightnet.qzz.io",
-      "server_port": 2052,
-      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
-      "transport": {
-        "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net",
-        "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇩🇪 德国 (Germany) 01 - sanchun",
         "🇩🇪 德国 (Germany) 02 - sanchun",
-        "🇩🇪 德国 (Germany) 03 - sanchun"
+        "🇩🇪 德国 (Germany) 03 - sanchun",
+        "🇩🇪 德国 (Germany) 04 - sanchun",
+        "🇩🇪 德国 (Germany) 05 - sanchun",
+        "🇩🇪 德国 (Germany) 06 - sanchun",
+        "🇩🇪 德国 (Germany) 07 - sanchun",
+        "🇩🇪 德国 (Germany) 08 - sanchun",
+        "🇩🇪 德国 (Germany) 09 - sanchun",
+        "🇩🇪 德国 (Germany) 10 - sanchun",
+        "🇩🇪 德国 (Germany) 11 - sanchun"
       ]
     },
     {
@@ -68,7 +230,15 @@
       "outbounds": [
         "🇩🇪 德国 (Germany) 01 - sanchun",
         "🇩🇪 德国 (Germany) 02 - sanchun",
-        "🇩🇪 德国 (Germany) 03 - sanchun"
+        "🇩🇪 德国 (Germany) 03 - sanchun",
+        "🇩🇪 德国 (Germany) 04 - sanchun",
+        "🇩🇪 德国 (Germany) 05 - sanchun",
+        "🇩🇪 德国 (Germany) 06 - sanchun",
+        "🇩🇪 德国 (Germany) 07 - sanchun",
+        "🇩🇪 德国 (Germany) 08 - sanchun",
+        "🇩🇪 德国 (Germany) 09 - sanchun",
+        "🇩🇪 德国 (Germany) 10 - sanchun",
+        "🇩🇪 德国 (Germany) 11 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

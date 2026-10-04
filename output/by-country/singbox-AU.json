@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
-      "server": "31.76.34.216",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
+      "server": "34.40.217.165",
       "server_port": 443,
-      "uuid": "94def50e-5f3c-4e4c-9719-3325f42d2131",
-      "flow": "xtls-rprx-vision",
+      "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
       "tls": {
         "enabled": true,
-        "server_name": "ru-c-1.minzt.su",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00",
-          "short_id": ""
+          "public_key": "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E",
+          "short_id": "d725f0dd8cce210f"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

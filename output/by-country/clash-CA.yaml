@@ -12,17 +12,25 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 02 - sanchun
+  server: milo.rubinaz.xyz
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇦 加拿大 (Canada) 01 - sanchun
+  - 🇨🇦 加拿大 (Canada) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇦 加拿大 (Canada) 01 - sanchun
+  - 🇨🇦 加拿大 (Canada) 02 - sanchun
 rules:
 - MATCH,PROXIES

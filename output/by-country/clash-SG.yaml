@@ -13,16 +13,82 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
-  server: 35.185.179.62
-  port: 443
+  server: 5.223.41.93
+  port: 80
   udp: true
   type: vless
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  server: 5.223.41.164
+  port: 80
+  udp: true
+  type: vless
+  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 04 - sanchun
+  server: glowing-marmoset.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: glowing-marmoset.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 05 - sanchun
+  server: pet-antelope.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pet-antelope.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 06 - sanchun
+  server: 5.223.41.179
+  port: 80
+  udp: true
+  type: vless
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 07 - sanchun
+  server: real-cardinal.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: real-cardinal.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 08 - sanchun
+  server: desired-boxer.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: desired-boxer.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 09 - sanchun
+  server: inviting-ferret.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 10 - sanchun
+  server: 112.49.63.11
+  port: 33102
+  udp: true
+  type: vless
+  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-    short-id: eb97ce837da2f6ad
-  servername: www.cloudflare.com
+  servername: sgg.knhqf.com
+  skip-cert-verify: false
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -31,6 +97,14 @@ proxy-groups:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
   - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 05 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 06 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 07 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 08 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 09 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 10 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +112,13 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
   - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 05 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 06 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 07 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 08 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 09 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 10 - sanchun
 rules:
 - MATCH,PROXIES

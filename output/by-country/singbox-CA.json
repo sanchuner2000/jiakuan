@@ -12,18 +12,27 @@
       "security": "auto"
     },
     {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 02 - sanchun",
+      "server": "milo.rubinaz.xyz",
+      "server_port": 8080,
+      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 - sanchun"
+        "🇨🇦 加拿大 (Canada) 01 - sanchun",
+        "🇨🇦 加拿大 (Canada) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 - sanchun"
+        "🇨🇦 加拿大 (Canada) 01 - sanchun",
+        "🇨🇦 加拿大 (Canada) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

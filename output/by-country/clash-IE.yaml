@@ -5,29 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - sanchun
-  server: 198.55.102.59
-  port: 4443
+  server: sacred-anemone.rooster465.autos
+  port: 443
   udp: true
-  type: vless
-  uuid: 7f86f371-5a85-48be-babc-7af1ae7ffb75
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
-    short-id: ce6767c3f1
-  servername: vk.com
-  client-fingerprint: chrome
+  type: trojan
+  password: UX82473651
+  sni: sacred-anemone.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - sanchun
+  server: loved-shark.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - sanchun
+  - 🇮🇪 爱尔兰 (Ireland) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - sanchun
+  - 🇮🇪 爱尔兰 (Ireland) 02 - sanchun
 rules:
 - MATCH,PROXIES

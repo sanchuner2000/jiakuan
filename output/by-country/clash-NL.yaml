@@ -5,19 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
-  server: 217.60.35.228
-  port: 8443
+  server: 107.189.18.145
+  port: 443
   udp: true
   type: vless
-  uuid: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
+  uuid: 67a171fb-a31d-49f3-a9d6-98de350763e8
+  tls: true
+  servername: restnet.duckdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+  server: 87.58.201.67
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e38d9f6-0c9d-437b-8135-20f93f94c572
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4jeCe2efqOkTQ-r99RHuACTH8_BuNNP1Rx6cuBXS4hg
-    short-id: a4f8c92d
-  servername: kaneki.cfd
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+    public-key: G3Ljfvmg8X2VYuxSgGCBdn3Rca207x86GNRBLLmxuUQ
+    short-id: 0aaf3be85ef94749
+  servername: ne3.paledweld.com
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 04 - sanchun
   server: hysteria.udpgw.com
   port: 8443
   udp: true
@@ -34,6 +55,8 @@ proxy-groups:
   - AUTO
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +64,7 @@ proxy-groups:
   proxies:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
 rules:
 - MATCH,PROXIES

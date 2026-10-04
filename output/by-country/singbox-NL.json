@@ -6,27 +6,62 @@
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
-      "server": "217.60.35.228",
-      "server_port": 8443,
-      "uuid": "e19b5aa3-16c9-435a-8bc9-76f2f6ddff43",
+      "server": "107.189.18.145",
+      "server_port": 443,
+      "uuid": "67a171fb-a31d-49f3-a9d6-98de350763e8",
+      "tls": {
+        "enabled": true,
+        "server_name": "restnet.duckdns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+      "server": "87.58.201.67",
+      "server_port": 443,
+      "uuid": "6e38d9f6-0c9d-437b-8135-20f93f94c572",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "kaneki.cfd",
+        "server_name": "ne3.paledweld.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "4jeCe2efqOkTQ-r99RHuACTH8_BuNNP1Rx6cuBXS4hg",
-          "short_id": "a4f8c92d"
+          "public_key": "G3Ljfvmg8X2VYuxSgGCBdn3Rca207x86GNRBLLmxuUQ",
+          "short_id": "0aaf3be85ef94749"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+      "tag": "🇳🇱 荷兰 (Netherlands) 04 - sanchun",
       "server": "hysteria.udpgw.com",
       "server_port": 8443,
       "password": "HowdyHysteria2023w0W",
@@ -46,7 +81,9 @@
       "outbounds": [
         "auto",
         "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 02 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 04 - sanchun"
       ]
     },
     {
@@ -54,7 +91,9 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 02 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
