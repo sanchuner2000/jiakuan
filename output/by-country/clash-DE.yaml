@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+- name: 🇩🇪 德国 (Germany) 02 - sanchun
   server: 177.1.186.44
   port: 443
   udp: true
@@ -16,18 +27,33 @@ proxies:
     public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
     short-id: 29455a3a790acbd0
   servername: mcde.67resserv67.info
-  client-fingerprint: safari
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 03 - sanchun
+  server: uwu.blueknightnet.qzz.io
+  port: 2052
+  udp: true
+  type: vless
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
 rules:
 - MATCH,PROXIES

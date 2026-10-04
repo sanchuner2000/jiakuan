@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
+  server: mybb.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇺🇸 美国 (United States) 02 - sanchun
   server: guanwang.awsno.com
   port: 443
   udp: true
@@ -20,7 +35,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 02 - sanchun
+- name: 🇺🇸 美国 (United States) 03 - sanchun
   server: 85.209.157.177
   port: 8080
   udp: true
@@ -28,7 +43,7 @@ proxies:
   password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
   sni: hopp-transit.1cooldns.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 03 - sanchun
+- name: 🇺🇸 美国 (United States) 04 - sanchun
   server: 172.67.167.78
   port: 8443
   udp: true
@@ -52,6 +67,7 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +76,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
 rules:
 - MATCH,PROXIES
