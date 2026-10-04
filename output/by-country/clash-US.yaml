@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: 571x2.r4bn.bim.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 34.29.203.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0106efd7-39bf-449d-b734-a4aa758d6480
+  tls: true
+  reality-opts:
+    public-key: VL1ZiaWxae8teZWJeBAIHadbo7z1Ezu1KA2kIA1TDmk
+    short-id: 7dfdbf323c4ef0a8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 03 - sanchun
   server: guided-ferret.rooster465.autos
   port: 443
   udp: true
@@ -12,7 +35,24 @@ proxies:
   password: UX82473651
   sni: guided-ferret.rooster465.autos
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 02 - sanchun
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: ultimate-jaguar.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: ultimate-jaguar.rooster465.autos
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 05 - sanchun
+  server: 3h-unitedstates1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇺🇸 美国 (United States) 06 - sanchun
   server: vspeedfast.org
   port: 443
   udp: true
@@ -28,15 +68,54 @@ proxies:
     path: /linkvws
     headers:
       Host: vspeedfast.org
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: ultimate-jaguar.rooster465.autos
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: 13.143.166.71
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: ultimate-jaguar.rooster465.autos
+  type: vless
+  uuid: 0afdcc75-e449-418d-8eac-c5b657363443
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FuKGULeQ9xZMJN8hWz6J_49tDJKT9HA-nsAXOOVRmyM
+    short-id: ff867ed245c73f43
+  servername: cdn.jsdelivr.net
+  client-fingerprint: safari
+- name: 🇺🇸 美国 (United States) 08 - sanchun
+  server: 85.209.157.177
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
+  sni: hopp-transit.1cooldns.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 04 - sanchun
+- name: 🇺🇸 美国 (United States) 09 - sanchun
+  server: 43.255.156.101
+  port: 21263
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4
+    short-id: 3d31326f95
+  servername: us1p1.xn--ghq880n3na965a.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 10 - sanchun
+  server: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
+  tls: true
+  servername: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
+- name: 🇺🇸 美国 (United States) 11 - sanchun
   server: 216.106.183.35
   port: 443
   udp: true
@@ -52,55 +131,6 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
-- name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: 34.29.203.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0106efd7-39bf-449d-b734-a4aa758d6480
-  tls: true
-  reality-opts:
-    public-key: VL1ZiaWxae8teZWJeBAIHadbo7z1Ezu1KA2kIA1TDmk
-    short-id: 7dfdbf323c4ef0a8
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: 85.209.157.177
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
-  sni: hopp-transit.1cooldns.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 07 - sanchun
-  server: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
-  tls: true
-  servername: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
-- name: 🇺🇸 美国 (United States) 08 - sanchun
-  server: 104.21.57.84
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,6 +144,9 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
   - 🇺🇸 美国 (United States) 08 - sanchun
+  - 🇺🇸 美国 (United States) 09 - sanchun
+  - 🇺🇸 美国 (United States) 10 - sanchun
+  - 🇺🇸 美国 (United States) 11 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -127,5 +160,8 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
   - 🇺🇸 美国 (United States) 08 - sanchun
+  - 🇺🇸 美国 (United States) 09 - sanchun
+  - 🇺🇸 美国 (United States) 10 - sanchun
+  - 🇺🇸 美国 (United States) 11 - sanchun
 rules:
 - MATCH,PROXIES

@@ -24,14 +24,6 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
 - name: 🇰🇷 韩国 (South Korea) 03 - sanchun
-  server: evolving-ewe.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: evolving-ewe.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
   server: engaging-toucan.rooster465.autos
   port: 443
   udp: true
@@ -39,31 +31,23 @@ proxies:
   password: UX82473651
   sni: engaging-toucan.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
-  server: optimum-snapper.rooster465.autos
+- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
+  server: evolving-ewe.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: optimum-snapper.rooster465.autos
+  sni: evolving-ewe.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
+  server: liked-eft.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: liked-eft.rooster465.autos
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 06 - sanchun
-  server: delicate-buck.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: delicate-buck.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
   server: noted-cougar.rooster465.autos
   port: 443
   udp: true
@@ -71,13 +55,29 @@ proxies:
   password: UX82473651
   sni: noted-cougar.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
-  server: liked-eft.rooster465.autos
+- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
+  server: optimum-snapper.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: liked-eft.rooster465.autos
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
+  server: delicate-buck.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: delicate-buck.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
+  server: ikr100b.zxom.eu.org
+  port: 20007
+  udp: true
+  type: trojan
+  password: 178c178666bb4ae5
+  sni: ikr100b.zxom.eu.org
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES

@@ -4,72 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "guided-ferret.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "guided-ferret.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
-      "server": "vspeedfast.org",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "vspeedfast.org",
-        "insecure": false
-      },
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/linkvws",
+        "path": "?ed=2560",
         "headers": {
-          "Host": "vspeedfast.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "ultimate-jaguar.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "ultimate-jaguar.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
-      "server": "216.106.183.35",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "aksai.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "aksai.org"
+          "Host": "571x2.r4bn.bim.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
       "server": "34.29.203.135",
       "server_port": 443,
       "uuid": "0106efd7-39bf-449d-b734-a4aa758d6480",
@@ -88,8 +38,84 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "guided-ferret.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "guided-ferret.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "ultimate-jaguar.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "ultimate-jaguar.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
+      "server": "3h-unitedstates1.09vpn.com",
+      "server_port": 80,
+      "uuid": "18cf8db1-9f86-43f7-baa0-382efb7f2dfa",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "🇺🇸 美国 (United States) 06 - sanchun",
+      "server": "vspeedfast.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "vspeedfast.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "vspeedfast.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "server": "13.143.166.71",
+      "server_port": 443,
+      "uuid": "0afdcc75-e449-418d-8eac-c5b657363443",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.jsdelivr.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FuKGULeQ9xZMJN8hWz6J_49tDJKT9HA-nsAXOOVRmyM",
+          "short_id": "ff867ed245c73f43"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
       "server": "85.209.157.177",
       "server_port": 8080,
       "password": "dsmO0439gj_nX942GJRE_9j39fbcxv52_R",
@@ -101,7 +127,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 09 - sanchun",
+      "server": "43.255.156.101",
+      "server_port": 21263,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "us1p1.xn--ghq880n3na965a.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4",
+          "short_id": "3d31326f95"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 10 - sanchun",
       "server": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
       "server_port": 443,
       "uuid": "0b3c3f4f-843a-5b0a-98fe-132c88fbefc0",
@@ -121,21 +168,21 @@
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 08 - sanchun",
-      "server": "104.21.57.84",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "tag": "🇺🇸 美国 (United States) 11 - sanchun",
+      "server": "216.106.183.35",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
+        "server_name": "aksai.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/lMnsZUN4/",
+        "path": "/linkvws",
         "headers": {
-          "Host": "v2ray1.dozapp.xyz"
+          "Host": "aksai.org"
         }
       }
     },
@@ -151,7 +198,10 @@
         "🇺🇸 美国 (United States) 05 - sanchun",
         "🇺🇸 美国 (United States) 06 - sanchun",
         "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun"
+        "🇺🇸 美国 (United States) 08 - sanchun",
+        "🇺🇸 美国 (United States) 09 - sanchun",
+        "🇺🇸 美国 (United States) 10 - sanchun",
+        "🇺🇸 美国 (United States) 11 - sanchun"
       ]
     },
     {
@@ -165,7 +215,10 @@
         "🇺🇸 美国 (United States) 05 - sanchun",
         "🇺🇸 美国 (United States) 06 - sanchun",
         "🇺🇸 美国 (United States) 07 - sanchun",
-        "🇺🇸 美国 (United States) 08 - sanchun"
+        "🇺🇸 美国 (United States) 08 - sanchun",
+        "🇺🇸 美国 (United States) 09 - sanchun",
+        "🇺🇸 美国 (United States) 10 - sanchun",
+        "🇺🇸 美国 (United States) 11 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

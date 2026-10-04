@@ -6,21 +6,35 @@
     {
       "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
-      "server": "yg1.ygkkk.dpdns.org",
+      "server": "6jdvarazgu3qqr6q.v.3dns.vip",
       "server_port": 443,
-      "uuid": "b2ba4a73-3123-479e-aa96-5973a9ecd0c0",
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "jmp1.907737.xyz",
+        "server_name": "6jdvarazgu3qqr6q.v.3dns.vip",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm",
-        "headers": {
-          "Host": "jmp1.907737.xyz"
-        }
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+      "server": "i2psm3knof5qjjix.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "i2psm3knof5qjjix.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess"
       }
     },
     {
@@ -28,14 +42,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

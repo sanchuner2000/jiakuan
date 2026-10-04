@@ -16,7 +16,7 @@ proxies:
     public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
     short-id: ad6e08b22389abd2
   servername: d3-ee1.cloud-cdn.xyz
-  client-fingerprint: firefox
+  client-fingerprint: edge
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   server: 163.245.52.91
   port: 443
@@ -29,7 +29,7 @@ proxies:
     public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
     short-id: ad6e08b22389abd2
   servername: d3-ee1.cloud-cdn.xyz
-  client-fingerprint: safari
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
