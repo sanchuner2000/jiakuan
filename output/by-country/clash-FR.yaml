@@ -5,96 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - sanchun
-  server: 162.19.10.99
-  port: 443
-  udp: true
-  type: vless
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 02 - sanchun
-  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 479526cd-5011-43cf-a788-504da95e07c2
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 03 - sanchun
-  server: 88.99.189.60
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 04 - sanchun
-  server: 166.1.36.83
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 05 - sanchun
-  server: 185.220.100.168
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 06 - sanchun
-  server: 149.202.58.99
-  port: 443
-  udp: true
-  type: vless
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  tls: true
-  servername: bab-6.site
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vws/
-- name: 🇫🇷 法国 (France) 07 - sanchun
-  server: ov-france1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇫🇷 法国 (France) 08 - sanchun
-  server: 185.225.68.232
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 09 - sanchun
-  server: 45.87.41.18
+  server: 172.67.231.254
   port: 443
   udp: true
   type: trojan
@@ -110,27 +21,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇷 法国 (France) 01 - sanchun
-  - 🇫🇷 法国 (France) 02 - sanchun
-  - 🇫🇷 法国 (France) 03 - sanchun
-  - 🇫🇷 法国 (France) 04 - sanchun
-  - 🇫🇷 法国 (France) 05 - sanchun
-  - 🇫🇷 法国 (France) 06 - sanchun
-  - 🇫🇷 法国 (France) 07 - sanchun
-  - 🇫🇷 法国 (France) 08 - sanchun
-  - 🇫🇷 法国 (France) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇷 法国 (France) 01 - sanchun
-  - 🇫🇷 法国 (France) 02 - sanchun
-  - 🇫🇷 法国 (France) 03 - sanchun
-  - 🇫🇷 法国 (France) 04 - sanchun
-  - 🇫🇷 法国 (France) 05 - sanchun
-  - 🇫🇷 法国 (France) 06 - sanchun
-  - 🇫🇷 法国 (France) 07 - sanchun
-  - 🇫🇷 法国 (France) 08 - sanchun
-  - 🇫🇷 法国 (France) 09 - sanchun
 rules:
 - MATCH,PROXIES

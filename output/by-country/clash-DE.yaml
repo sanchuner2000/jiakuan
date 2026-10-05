@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
-  server: 104.21.70.21
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
-  network: ws
-  ws-opts:
-    path: /rN50nmm9L1DeY73C?ed=2560
-    headers:
-      Host: lucky-lab-ac6d.caveyi8071.workers.dev
-- name: 🇩🇪 德国 (Germany) 02 - sanchun
   server: 199.232.78.101
   port: 443
   udp: true
@@ -26,6 +15,17 @@ proxies:
   network: ws
   ws-opts:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: 🇩🇪 德国 (Germany) 02 - sanchun
+  server: 199.232.78.160
+  port: 443
+  udp: true
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: 🇩🇪 德国 (Germany) 03 - sanchun
   server: 167.82.76.7
   port: 443
@@ -36,126 +36,86 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /
 - name: 🇩🇪 德国 (Germany) 04 - sanchun
-  server: 177.1.186.44
+  server: 150.241.64.105
   port: 443
   udp: true
   type: vless
-  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  uuid: 9a1b2785-6baf-455c-9f75-80157ee7f7c5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
-    short-id: 29455a3a790acbd0
-  servername: mcde.67resserv67.info
+    public-key: PK5kinwngrsb3QKJwwpeMcL4Iqj4r-ck7EwZDl62Sng
+    short-id: 7d286a1f
+  servername: conv.unit-digital.com
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 05 - sanchun
-  server: 31.77.109.35
+  server: 94.156.170.235
   port: 443
   udp: true
   type: vless
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  uuid: 27407f1d-fe61-469b-a5a9-0aef7ee7476d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
-    short-id: 494afdc75f8c2fa8
-  servername: d3-de1.cloud-cdn.xyz
-  client-fingerprint: ios
+    public-key: pLapXzPp5-UcWeB4SLUZgN0TdJzHiFF7U03ia0Wcv0Y
+    short-id: da4d87fa
+  servername: qw.pashalloh.org
+  client-fingerprint: safari
 - name: 🇩🇪 德国 (Germany) 06 - sanchun
-  server: actual-squid.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: actual-squid.rooster465.autos
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 07 - sanchun
-  server: 57.129.96.67
+  server: 188.114.96.7
   port: 443
   udp: true
   type: vless
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-  flow: xtls-rprx-vision
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
   tls: true
-  servername: nasnet-571299667-direct.mbghalibaf.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 08 - sanchun
-  server: 193.108.117.54
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aidrivercat.org
+  servername: s3ws.ragingbull.de5.net
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /wsrb7k2m
     headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 09 - sanchun
-  server: rubifen.adaspoloandco.com
-  port: 443
+      Host: s3ws.ragingbull.de5.net
+- name: 🇩🇪 德国 (Germany) 07 - sanchun
+  server: 188.114.97.3
+  port: 2087
   udp: true
   type: vless
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
   tls: true
-  servername: rubifen.adaspoloandco.com
+  servername: s4ws.ragingbull.de5.net
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /GOrbEh
-- name: 🇩🇪 德国 (Germany) 10 - sanchun
-  server: id-nl-01.mintrocket.org
+    path: /wsrb7k2m
+    headers:
+      Host: s4ws.ragingbull.de5.net
+- name: 🇩🇪 德国 (Germany) 08 - sanchun
+  server: 212.232.18.134
   port: 443
   udp: true
   type: vless
-  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
-  flow: xtls-rprx-vision
+  uuid: 65616081-1772-49d7-a793-42bc13d22f69
   tls: true
   reality-opts:
-    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
-    short-id: fee1f986a72444db
-  servername: id-nl-01.mintrocket.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 11 - sanchun
-  server: meet-goshawk.rooster465.autos
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: de-1-2.imnotgay.party
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 09 - sanchun
+  server: 188.114.96.3
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: meet-goshawk.rooster465.autos
+  type: vless
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+  tls: true
+  servername: s4ws.ragingbull.de5.net
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 12 - sanchun
-  server: 31.77.168.192
-  port: 443
-  udp: true
-  type: vless
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
-    short-id: 494afdc75f8c2fa8
-  servername: d3-de1.cloud-cdn.xyz
-  client-fingerprint: edge
-- name: 🇩🇪 德国 (Germany) 13 - sanchun
-  server: 144.31.215.227
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ
-    short-id: c885e8f8
-  servername: cdn-de.bulkavpn.top
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /wsrb7k2m
+    headers:
+      Host: s4ws.ragingbull.de5.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -170,10 +130,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 07 - sanchun
   - 🇩🇪 德国 (Germany) 08 - sanchun
   - 🇩🇪 德国 (Germany) 09 - sanchun
-  - 🇩🇪 德国 (Germany) 10 - sanchun
-  - 🇩🇪 德国 (Germany) 11 - sanchun
-  - 🇩🇪 德国 (Germany) 12 - sanchun
-  - 🇩🇪 德国 (Germany) 13 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -188,9 +144,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 07 - sanchun
   - 🇩🇪 德国 (Germany) 08 - sanchun
   - 🇩🇪 德国 (Germany) 09 - sanchun
-  - 🇩🇪 德国 (Germany) 10 - sanchun
-  - 🇩🇪 德国 (Germany) 11 - sanchun
-  - 🇩🇪 德国 (Germany) 12 - sanchun
-  - 🇩🇪 德国 (Germany) 13 - sanchun
 rules:
 - MATCH,PROXIES

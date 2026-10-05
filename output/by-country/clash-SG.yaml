@@ -12,67 +12,17 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
-  server: real-cardinal.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: real-cardinal.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
-  server: glowing-marmoset.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: glowing-marmoset.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 04 - sanchun
-  server: desired-boxer.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: desired-boxer.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 05 - sanchun
-  server: pet-antelope.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pet-antelope.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 06 - sanchun
-  server: inviting-ferret.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: inviting-ferret.rooster465.autos
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 05 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 05 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 06 - sanchun
 rules:
 - MATCH,PROXIES

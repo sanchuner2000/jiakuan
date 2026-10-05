@@ -5,16 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 3h-unitedstates1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 155.46.167.30
+  server: 45.131.210.30
   port: 8880
   udp: true
   type: vless
@@ -23,63 +14,48 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime50.workers.dev
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 34.29.203.135
+      Host: vms.lifetime05.workers.dev
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 172.86.105.224
   port: 443
   udp: true
   type: vless
-  uuid: 0106efd7-39bf-449d-b734-a4aa758d6480
+  uuid: 71e9e770-bfc6-11f1-8b5c-54db13ea7d40
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VL1ZiaWxae8teZWJeBAIHadbo7z1Ezu1KA2kIA1TDmk
-    short-id: 7dfdbf323c4ef0a8
-  servername: www.cloudflare.com
+    public-key: n25FmewpAEsvLl9Vr0bRFcz044f4IE7orWeWOzu8rwk
+  servername: www.nvidia.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: guided-ferret.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: guided-ferret.rooster465.autos
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: ultimate-jaguar.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: ultimate-jaguar.rooster465.autos
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: 167.82.76.27
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇺🇸 美国 (United States) 07 - sanchun
-  server: vspeedfast.org
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: guanwang.awsno.com
   port: 443
   udp: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
   tls: true
-  servername: vspeedfast.org
+  servername: guanwang.awsno.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /hls/cctv5phd.m3u8
     headers:
-      Host: vspeedfast.org
-- name: 🇺🇸 美国 (United States) 08 - sanchun
+      Host: guanwang.awsno.com
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 34.187.170.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: dffab367-7769-4c6c-86f2-66fc6bd03003
+  tls: true
+  reality-opts:
+    public-key: LYnDDS0AkBwVeeTyIEE5MhrTV_PZO5f1qBAbMN6z4HM
+    short-id: f1955f72763eb2fb
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇺🇸 美国 (United States) 05 - sanchun
   server: 85.209.157.177
   port: 8080
   udp: true
@@ -87,67 +63,29 @@ proxies:
   password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
   sni: hopp-transit.1cooldns.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 09 - sanchun
-  server: 172.67.167.78
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🇺🇸 美国 (United States) 10 - sanchun
-  server: 43.255.156.101
-  port: 21263
+- name: 🇺🇸 美国 (United States) 06 - sanchun
+  server: edtxxw.zx10.eu.cc
+  port: 443
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
+  uuid: b0437161-402e-483d-8462-65215b245b07
   tls: true
-  reality-opts:
-    public-key: YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4
-    short-id: 3d31326f95
-  servername: us1p1.xn--ghq880n3na965a.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 11 - sanchun
-  server: cu.877774.xyz
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f3244e28-157b-49e9-9730-89832f89ebcc
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: balanced-minds-carrier-demanding.trycloudflare.com
+  servername: edtxxw.zx10.eu.cc
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vmess-argo
+    path: /video/GRJASkdUFAsPR0NGFQ8YGkYXSEpaV19IFA8QR0UMEBgXElFEEUdbQVMTDBNbRF4QSQ9cV0AQQ1lZUxAXFENCXwxTCgwBUgYPUR5bQ1JfUUYDWlVGRwEWSFwWWRoOBwAZA0g=
     headers:
-      Host: balanced-minds-carrier-demanding.trycloudflare.com
-- name: 🇺🇸 美国 (United States) 12 - sanchun
-  server: 216.106.183.35
-  port: 443
+      Host: edtxxw.zx10.eu.cc
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: v29.hdacd.com
+  port: 30829
   udp: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
-  tls: true
-  servername: aksai.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -160,11 +98,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
-  - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇺🇸 美国 (United States) 09 - sanchun
-  - 🇺🇸 美国 (United States) 10 - sanchun
-  - 🇺🇸 美国 (United States) 11 - sanchun
-  - 🇺🇸 美国 (United States) 12 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -177,10 +110,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇺🇸 美国 (United States) 06 - sanchun
   - 🇺🇸 美国 (United States) 07 - sanchun
-  - 🇺🇸 美国 (United States) 08 - sanchun
-  - 🇺🇸 美国 (United States) 09 - sanchun
-  - 🇺🇸 美国 (United States) 10 - sanchun
-  - 🇺🇸 美国 (United States) 11 - sanchun
-  - 🇺🇸 美国 (United States) 12 - sanchun
 rules:
 - MATCH,PROXIES

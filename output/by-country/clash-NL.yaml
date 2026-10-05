@@ -5,40 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
-  server: 188.114.98.112
-  port: 80
-  udp: true
-  type: vless
-  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
-  network: ws
-  ws-opts:
-    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
-    headers:
-      Host: elenaaaaaaaaaa.cloudns.pro.
-- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  server: 107.189.18.145
+  server: 194.93.61.20
   port: 443
   udp: true
   type: vless
-  uuid: 67a171fb-a31d-49f3-a9d6-98de350763e8
-  tls: true
-  servername: restnet.duckdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
-  server: 87.58.201.67
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e38d9f6-0c9d-437b-8135-20f93f94c572
-  flow: xtls-rprx-vision
+  uuid: 65616081-1772-49d7-a793-42bc13d22f69
   tls: true
   reality-opts:
-    public-key: G3Ljfvmg8X2VYuxSgGCBdn3Rca207x86GNRBLLmxuUQ
-    short-id: 0aaf3be85ef94749
-  servername: ne3.paledweld.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 04 - sanchun
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: nl-1-2.imnotgay.party
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   server: hysteria.udpgw.com
   port: 8443
   udp: true
@@ -48,33 +25,49 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: HysteriaHowdy
-- name: 🇳🇱 荷兰 (Netherlands) 05 - sanchun
-  server: 188.114.97.6
+- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  server: 2.27.71.53
   port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5tMM2VdgddmxOKhdNa3b7i_aXno1g-_61SzkppS2UXQ
+    short-id: f3c023cc
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇳🇱 荷兰 (Netherlands) 04 - sanchun
+  server: turntable.proxy.rlwy.net
+  port: 14565
+  udp: true
+  type: vless
+  uuid: 4f690878-0531-4b7e-8d2f-bcf0912a92b9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇳🇱 荷兰 (Netherlands) 05 - sanchun
+  server: 150.241.80.113
+  port: 443
+  udp: true
+  type: vless
+  uuid: 86037609-3790-4901-bd2f-c698092fb1fc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qmfrMwVYth3lsYuv7qfr22YlTIlNtVjMl0v4Z5pX7hM
+    short-id: 87cc0414902bee2d
+  servername: nl.skfv-mirror.ru
+  client-fingerprint: safari
+- name: 🇳🇱 荷兰 (Netherlands) 06 - sanchun
+  server: 77.74.123.106
+  port: 4443
   udp: true
   type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-test-italy.dynuddns.net
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇳🇱 荷兰 (Netherlands) 06 - sanchun
-  server: renderer-stream-1-832.mirra.now
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: renderer-stream-1-832.mirra.now
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-832.mirra.now
 proxy-groups:
 - name: PROXIES
   type: select
