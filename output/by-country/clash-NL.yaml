@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  server: 188.114.98.112
+  port: 80
+  udp: true
+  type: vless
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  network: ws
+  ws-opts:
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
+    headers:
+      Host: elenaaaaaaaaaa.cloudns.pro.
+- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   server: 107.189.18.145
   port: 443
   udp: true
@@ -14,7 +25,7 @@ proxies:
   servername: restnet.duckdns.org
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
   server: 87.58.201.67
   port: 443
   udp: true
@@ -27,7 +38,17 @@ proxies:
     short-id: 0aaf3be85ef94749
   servername: ne3.paledweld.com
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+- name: 🇳🇱 荷兰 (Netherlands) 04 - sanchun
+  server: hysteria.udpgw.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HowdyHysteria2023w0W
+  sni: sni-here.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: HysteriaHowdy
+- name: 🇳🇱 荷兰 (Netherlands) 05 - sanchun
   server: 188.114.97.6
   port: 443
   udp: true
@@ -38,6 +59,22 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 06 - sanchun
+  server: renderer-stream-1-832.mirra.now
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: renderer-stream-1-832.mirra.now
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-1-832.mirra.now
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +83,9 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 05 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +94,8 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 05 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 06 - sanchun
 rules:
 - MATCH,PROXIES

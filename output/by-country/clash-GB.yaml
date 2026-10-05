@@ -4,33 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
-  server: yg1.ygkkk.dpdns.org
+- name: 🇬🇧 英国 (United Kingdom) 01 - sanchun
+  server: pahobac.org
   port: 443
   udp: true
   type: vmess
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   tls: true
-  servername: jmp1.907737.xyz
+  servername: pahobac.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    path: /linkvws
     headers:
-      Host: jmp1.907737.xyz
+      Host: pahobac.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 01 - sanchun
 rules:
 - MATCH,PROXIES

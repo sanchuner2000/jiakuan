@@ -5,21 +5,21 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
-      "server": "yg1.ygkkk.dpdns.org",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 - sanchun",
+      "server": "pahobac.org",
       "server_port": 443,
-      "uuid": "b2ba4a73-3123-479e-aa96-5973a9ecd0c0",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "jmp1.907737.xyz",
+        "server_name": "pahobac.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm",
+        "path": "/linkvws",
         "headers": {
-          "Host": "jmp1.907737.xyz"
+          "Host": "pahobac.org"
         }
       }
     },
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇬🇧 英国 (United Kingdom) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇬🇧 英国 (United Kingdom) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

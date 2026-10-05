@@ -6,20 +6,31 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "server": "3h-unitedstates1.09vpn.com",
+      "server_port": 80,
+      "uuid": "18cf8db1-9f86-43f7-baa0-382efb7f2dfa",
       "transport": {
         "type": "ws",
-        "path": "?ed=2560",
-        "headers": {
-          "Host": "571x2.r4bn.bim.hh.vavava.kdns.fr"
-        }
+        "path": "/vless/"
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "155.46.167.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime50.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
       "server": "34.29.203.135",
       "server_port": 443,
       "uuid": "0106efd7-39bf-449d-b734-a4aa758d6480",
@@ -39,7 +50,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
       "server": "guided-ferret.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -51,7 +62,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
       "server": "ultimate-jaguar.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -62,19 +73,27 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "3h-unitedstates1.09vpn.com",
-      "server_port": 80,
-      "uuid": "18cf8db1-9f86-43f7-baa0-382efb7f2dfa",
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
+      "server": "167.82.76.27",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless/"
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net"
+        }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
       "server": "vspeedfast.org",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -93,27 +112,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
-      "server": "13.143.166.71",
-      "server_port": 443,
-      "uuid": "0afdcc75-e449-418d-8eac-c5b657363443",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.jsdelivr.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FuKGULeQ9xZMJN8hWz6J_49tDJKT9HA-nsAXOOVRmyM",
-          "short_id": "ff867ed245c73f43"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
       "tag": "🇺🇸 美国 (United States) 08 - sanchun",
       "server": "85.209.157.177",
@@ -126,8 +124,28 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇺🇸 美国 (United States) 09 - sanchun",
+      "server": "172.67.167.78",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 10 - sanchun",
       "server": "43.255.156.101",
       "server_port": 21263,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
@@ -147,28 +165,28 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 10 - sanchun",
-      "server": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 11 - sanchun",
+      "server": "cu.877774.xyz",
       "server_port": 443,
-      "uuid": "0b3c3f4f-843a-5b0a-98fe-132c88fbefc0",
+      "uuid": "f3244e28-157b-49e9-9730-89832f89ebcc",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "balanced-minds-carrier-demanding.trycloudflare.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0"
+        "path": "/vmess-argo",
+        "headers": {
+          "Host": "balanced-minds-carrier-demanding.trycloudflare.com"
+        }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 11 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 12 - sanchun",
       "server": "216.106.183.35",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -201,7 +219,8 @@
         "🇺🇸 美国 (United States) 08 - sanchun",
         "🇺🇸 美国 (United States) 09 - sanchun",
         "🇺🇸 美国 (United States) 10 - sanchun",
-        "🇺🇸 美国 (United States) 11 - sanchun"
+        "🇺🇸 美国 (United States) 11 - sanchun",
+        "🇺🇸 美国 (United States) 12 - sanchun"
       ]
     },
     {
@@ -218,7 +237,8 @@
         "🇺🇸 美国 (United States) 08 - sanchun",
         "🇺🇸 美国 (United States) 09 - sanchun",
         "🇺🇸 美国 (United States) 10 - sanchun",
-        "🇺🇸 美国 (United States) 11 - sanchun"
+        "🇺🇸 美国 (United States) 11 - sanchun",
+        "🇺🇸 美国 (United States) 12 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

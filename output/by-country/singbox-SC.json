@@ -4,22 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
-      "server": "yg1.ygkkk.dpdns.org",
+      "type": "trojan",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - sanchun",
+      "server": "199.232.78.160",
       "server_port": 443,
-      "uuid": "b2ba4a73-3123-479e-aa96-5973a9ecd0c0",
-      "security": "auto",
+      "password": "mitivpn",
       "tls": {
         "enabled": true,
-        "server_name": "jmp1.907737.xyz",
+        "server_name": "ssl.fastly.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
         "headers": {
-          "Host": "jmp1.907737.xyz"
+          "Host": "mitivpn---deb--s---mitivpn-2.global.ssl.fastly.net"
         }
       }
     },
@@ -28,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

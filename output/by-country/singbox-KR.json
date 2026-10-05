@@ -12,68 +12,8 @@
       "security": "auto"
     },
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 02 - sanchun",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - sanchun",
-      "server": "engaging-toucan.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "engaging-toucan.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - sanchun",
-      "server": "evolving-ewe.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "evolving-ewe.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - sanchun",
-      "server": "liked-eft.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "liked-eft.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - sanchun",
-      "server": "noted-cougar.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "noted-cougar.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - sanchun",
       "server": "optimum-snapper.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -85,13 +25,73 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - sanchun",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - sanchun",
+      "server": "evolving-ewe.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "evolving-ewe.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - sanchun",
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - sanchun",
+      "server": "engaging-toucan.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "engaging-toucan.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - sanchun",
+      "server": "liked-eft.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "liked-eft.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - sanchun",
       "server": "delicate-buck.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
         "server_name": "delicate-buck.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - sanchun",
+      "server": "noted-cougar.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "noted-cougar.rooster465.autos",
         "insecure": false
       }
     },
