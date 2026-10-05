@@ -27,25 +27,6 @@
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
-      "server": "nl-1.srv.dvzh.net",
-      "server_port": 443,
-      "uuid": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl-1.srv.dvzh.net",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/upload/session",
-        "headers": {
-          "Host": "nl-1.srv.dvzh.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
       "server": "nl-2.srv.dvzh.net",
       "server_port": 443,
       "uuid": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
@@ -65,24 +46,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇳🇱 荷兰 (Netherlands) 04 - sanchun",
-      "server": "hysteria.udpgw.com",
-      "server_port": 8443,
-      "password": "HowdyHysteria2023w0W",
-      "tls": {
-        "enabled": true,
-        "server_name": "sni-here.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "HysteriaHowdy"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 05 - sanchun",
+      "tag": "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
       "server": "77.74.123.106",
       "server_port": 4443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
@@ -93,37 +58,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 06 - sanchun",
-      "server": "150.241.80.113",
-      "server_port": 443,
-      "uuid": "86037609-3790-4901-bd2f-c698092fb1fc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl.skfv-mirror.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qmfrMwVYth3lsYuv7qfr22YlTIlNtVjMl0v4Z5pX7hM",
-          "short_id": "87cc0414902bee2d"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
         "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 04 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 05 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 06 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 03 - sanchun"
       ]
     },
     {
@@ -132,10 +73,7 @@
       "outbounds": [
         "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
         "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 04 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 05 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 06 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

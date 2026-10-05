@@ -16,28 +16,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
-      "server": "136.110.116.68",
-      "server_port": 443,
-      "uuid": "0c4c6ebb-603f-4429-8682-beef6b65b80d",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE",
-          "short_id": "8380ad05cd21a69f"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
       "server": "prime-corgi.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -48,26 +28,12 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 04 - sanchun",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇯🇵 日本 (Japan) 01 - sanchun",
-        "🇯🇵 日本 (Japan) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun",
-        "🇯🇵 日本 (Japan) 04 - sanchun"
+        "🇯🇵 日本 (Japan) 02 - sanchun"
       ]
     },
     {
@@ -75,9 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇯🇵 日本 (Japan) 01 - sanchun",
-        "🇯🇵 日本 (Japan) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun",
-        "🇯🇵 日本 (Japan) 04 - sanchun"
+        "🇯🇵 日本 (Japan) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
