@@ -5,29 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 45.131.210.30
-  port: 8880
+  server: 167.82.76.7
+  port: 443
   udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: vms.lifetime05.workers.dev
 - name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 172.86.105.224
+  server: 85.209.157.177
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
+  sni: hopp-transit.1cooldns.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 34.187.170.146
   port: 443
   udp: true
   type: vless
-  uuid: 71e9e770-bfc6-11f1-8b5c-54db13ea7d40
-  flow: xtls-rprx-vision
+  uuid: dffab367-7769-4c6c-86f2-66fc6bd03003
   tls: true
   reality-opts:
-    public-key: n25FmewpAEsvLl9Vr0bRFcz044f4IE7orWeWOzu8rwk
-  servername: www.nvidia.com
+    public-key: LYnDDS0AkBwVeeTyIEE5MhrTV_PZO5f1qBAbMN6z4HM
+    short-id: f1955f72763eb2fb
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 03 - sanchun
+- name: 🇺🇸 美国 (United States) 04 - sanchun
   server: guanwang.awsno.com
   port: 443
   udp: true
@@ -43,49 +51,6 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: 34.187.170.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: dffab367-7769-4c6c-86f2-66fc6bd03003
-  tls: true
-  reality-opts:
-    public-key: LYnDDS0AkBwVeeTyIEE5MhrTV_PZO5f1qBAbMN6z4HM
-    short-id: f1955f72763eb2fb
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: 85.209.157.177
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
-  sni: hopp-transit.1cooldns.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: edtxxw.zx10.eu.cc
-  port: 443
-  udp: true
-  type: vless
-  uuid: b0437161-402e-483d-8462-65215b245b07
-  tls: true
-  servername: edtxxw.zx10.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/GRJASkdUFAsPR0NGFQ8YGkYXSEpaV19IFA8QR0UMEBgXElFEEUdbQVMTDBNbRF4QSQ9cV0AQQ1lZUxAXFENCXwxTCgwBUgYPUR5bQ1JfUUYDWlVGRwEWSFwWWRoOBwAZA0g=
-    headers:
-      Host: edtxxw.zx10.eu.cc
-- name: 🇺🇸 美国 (United States) 07 - sanchun
-  server: v29.hdacd.com
-  port: 30829
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,9 +60,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
-  - 🇺🇸 美国 (United States) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
-  - 🇺🇸 美国 (United States) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,8 +69,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
-  - 🇺🇸 美国 (United States) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
-  - 🇺🇸 美国 (United States) 07 - sanchun
 rules:
 - MATCH,PROXIES

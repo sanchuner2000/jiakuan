@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - sanchun
+  server: go.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 02 - sanchun
   server: pl-waw.dontblockmepls.com
   port: 2063
   udp: true
@@ -16,27 +24,6 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 02 - sanchun
-  server: 2.26.54.13
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 95909398-3902-495b-9670-63f1b13becde
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg
-    short-id: f9d89d4a
-  servername: files.meridian-labs.net
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 03 - sanchun
-  server: go.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - sanchun
   - 🇵🇱 波兰 (Poland) 02 - sanchun
-  - 🇵🇱 波兰 (Poland) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - sanchun
   - 🇵🇱 波兰 (Poland) 02 - sanchun
-  - 🇵🇱 波兰 (Poland) 03 - sanchun
 rules:
 - MATCH,PROXIES

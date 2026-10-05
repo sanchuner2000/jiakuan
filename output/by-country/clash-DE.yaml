@@ -16,18 +16,7 @@ proxies:
   ws-opts:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: 🇩🇪 德国 (Germany) 02 - sanchun
-  server: 199.232.78.160
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇩🇪 德国 (Germany) 03 - sanchun
-  server: 167.82.76.7
+  server: 167.82.76.27
   port: 443
   udp: true
   type: trojan
@@ -37,20 +26,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 (Germany) 04 - sanchun
-  server: 150.241.64.105
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9a1b2785-6baf-455c-9f75-80157ee7f7c5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PK5kinwngrsb3QKJwwpeMcL4Iqj4r-ck7EwZDl62Sng
-    short-id: 7d286a1f
-  servername: conv.unit-digital.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 05 - sanchun
+- name: 🇩🇪 德国 (Germany) 03 - sanchun
   server: 94.156.170.235
   port: 443
   udp: true
@@ -63,21 +39,7 @@ proxies:
     short-id: da4d87fa
   servername: qw.pashalloh.org
   client-fingerprint: safari
-- name: 🇩🇪 德国 (Germany) 06 - sanchun
-  server: 188.114.96.7
-  port: 443
-  udp: true
-  type: vless
-  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
-  tls: true
-  servername: s3ws.ragingbull.de5.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wsrb7k2m
-    headers:
-      Host: s3ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 07 - sanchun
+- name: 🇩🇪 德国 (Germany) 04 - sanchun
   server: 188.114.97.3
   port: 2087
   udp: true
@@ -91,18 +53,21 @@ proxies:
     path: /wsrb7k2m
     headers:
       Host: s4ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 08 - sanchun
-  server: 212.232.18.134
+- name: 🇩🇪 德国 (Germany) 05 - sanchun
+  server: 188.114.96.7
   port: 443
   udp: true
   type: vless
-  uuid: 65616081-1772-49d7-a793-42bc13d22f69
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
   tls: true
-  reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: de-1-2.imnotgay.party
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 09 - sanchun
+  servername: s3ws.ragingbull.de5.net
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /wsrb7k2m
+    headers:
+      Host: s3ws.ragingbull.de5.net
+- name: 🇩🇪 德国 (Germany) 06 - sanchun
   server: 188.114.96.3
   port: 443
   udp: true
@@ -116,6 +81,33 @@ proxies:
     path: /wsrb7k2m
     headers:
       Host: s4ws.ragingbull.de5.net
+- name: 🇩🇪 德国 (Germany) 07 - sanchun
+  server: 188.114.96.3
+  port: 2087
+  udp: true
+  type: vless
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+  tls: true
+  servername: s3ws.ragingbull.de5.net
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /wsrb7k2m
+    headers:
+      Host: s3ws.ragingbull.de5.net
+- name: 🇩🇪 德国 (Germany) 08 - sanchun
+  server: 31.77.109.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
+    short-id: 494afdc75f8c2fa8
+  servername: d3-de1.cloud-cdn.xyz
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,7 +121,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 06 - sanchun
   - 🇩🇪 德国 (Germany) 07 - sanchun
   - 🇩🇪 德国 (Germany) 08 - sanchun
-  - 🇩🇪 德国 (Germany) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -143,6 +134,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 06 - sanchun
   - 🇩🇪 德国 (Germany) 07 - sanchun
   - 🇩🇪 德国 (Germany) 08 - sanchun
-  - 🇩🇪 德国 (Germany) 09 - sanchun
 rules:
 - MATCH,PROXIES

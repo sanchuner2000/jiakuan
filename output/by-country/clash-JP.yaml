@@ -5,6 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 02 - sanchun
+  server: 136.110.116.68
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
+  tls: true
+  reality-opts:
+    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+    short-id: 8380ad05cd21a69f
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 03 - sanchun
+  server: prime-corgi.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: prime-corgi.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 04 - sanchun
   server: 168.138.43.75
   port: 80
   udp: true
@@ -15,35 +43,6 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: bgroup.jp3.ilovegairport.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: f354744d-21d9-4836-9934-4989e1c4d877
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: TDbVu9oeQc6rjrsBcHuMs0tybjKy2EQQdZalmLvwSk0
-    short-id: 8ea105393d
-  servername: ap-northeast-1.console.aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 04 - sanchun
-  server: prime-corgi.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: prime-corgi.rooster465.autos
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
