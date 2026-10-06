@@ -4,22 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 01 - sanchun",
-      "server": "104.16.72.50",
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
+      "server": "msk.frkn.org",
       "server_port": 443,
-      "password": "humanity",
+      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
+        "server_name": "msk.frkn.org",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
