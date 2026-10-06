@@ -4,8 +4,46 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+      "server": "199.232.78.101",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "mitivpn---deb--s---mitivpn-1.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+      "server": "167.82.76.7",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
       "server": "2.27.71.53",
       "server_port": 443,
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
@@ -25,8 +63,24 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇳🇱 荷兰 (Netherlands) 04 - sanchun",
+      "server": "hysteria.udpgw.com",
+      "server_port": 8443,
+      "password": "HowdyHysteria2023w0W",
+      "tls": {
+        "enabled": true,
+        "server_name": "sni-here.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "HysteriaHowdy"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
+      "tag": "🇳🇱 荷兰 (Netherlands) 05 - sanchun",
       "server": "nl-2.srv.dvzh.net",
       "server_port": 443,
       "uuid": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
@@ -46,25 +100,15 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
-      "server": "77.74.123.106",
-      "server_port": 4443,
-      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
-      "tls": {
-        "enabled": true,
-        "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
         "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 03 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 04 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 05 - sanchun"
       ]
     },
     {
@@ -73,7 +117,9 @@
       "outbounds": [
         "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
         "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 03 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 04 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 05 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

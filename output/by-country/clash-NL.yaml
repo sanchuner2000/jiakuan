@@ -5,6 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  server: 199.232.78.101
+  port: 443
+  udp: true
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+  server: 167.82.76.7
+  port: 443
+  udp: true
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
   server: 2.27.71.53
   port: 443
   udp: true
@@ -17,7 +39,17 @@ proxies:
     short-id: f3c023cc
   servername: addons.mozilla.org
   client-fingerprint: randomized
-- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+- name: 🇳🇱 荷兰 (Netherlands) 04 - sanchun
+  server: hysteria.udpgw.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HowdyHysteria2023w0W
+  sni: sni-here.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: HysteriaHowdy
+- name: 🇳🇱 荷兰 (Netherlands) 05 - sanchun
   server: nl-2.srv.dvzh.net
   port: 443
   udp: true
@@ -30,14 +62,6 @@ proxies:
     short-id: e0ccc8c2f487d913
   servername: nl-2.srv.dvzh.net
   client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
-  server: 77.74.123.106
-  port: 4443
-  udp: true
-  type: trojan
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +70,8 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +80,7 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 05 - sanchun
 rules:
 - MATCH,PROXIES

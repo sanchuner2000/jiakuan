@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
-  server: 199.232.78.101
-  port: 443
+  server: 104.21.70.21
+  port: 8080
   udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /rN50nmm9L1DeY73C?ed=2560
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
 - name: 🇩🇪 德国 (Germany) 02 - sanchun
-  server: 167.82.76.7
+  server: 199.232.78.160
   port: 443
   udp: true
   type: trojan
@@ -25,22 +25,40 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: 🇩🇪 德国 (Germany) 03 - sanchun
-  server: 188.114.96.7
+  server: 167.82.76.27
+  port: 443
+  udp: true
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/des---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
+- name: 🇩🇪 德国 (Germany) 04 - sanchun
+  server: 31.77.109.35
   port: 443
   udp: true
   type: vless
-  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  flow: xtls-rprx-vision
   tls: true
-  servername: s3ws.ragingbull.de5.net
+  reality-opts:
+    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
+    short-id: 494afdc75f8c2fa8
+  servername: d3-de1.cloud-cdn.xyz
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 05 - sanchun
+  server: 77.74.123.106
+  port: 4443
+  udp: true
+  type: trojan
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  sni: grape-test-italy.dynuddns.net
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wsrb7k2m
-    headers:
-      Host: s3ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 04 - sanchun
+- name: 🇩🇪 德国 (Germany) 06 - sanchun
   server: 188.114.96.3
   port: 443
   udp: true
@@ -54,7 +72,7 @@ proxies:
     path: /wsrb7k2m
     headers:
       Host: s4ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 05 - sanchun
+- name: 🇩🇪 德国 (Germany) 07 - sanchun
   server: 188.114.96.3
   port: 2087
   udp: true
@@ -68,7 +86,7 @@ proxies:
     path: /wsrb7k2m
     headers:
       Host: s3ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 06 - sanchun
+- name: 🇩🇪 德国 (Germany) 08 - sanchun
   server: 188.114.97.3
   port: 2087
   udp: true
@@ -93,6 +111,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 04 - sanchun
   - 🇩🇪 德国 (Germany) 05 - sanchun
   - 🇩🇪 德国 (Germany) 06 - sanchun
+  - 🇩🇪 德国 (Germany) 07 - sanchun
+  - 🇩🇪 德国 (Germany) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,5 +124,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 04 - sanchun
   - 🇩🇪 德国 (Germany) 05 - sanchun
   - 🇩🇪 德国 (Germany) 06 - sanchun
+  - 🇩🇪 德国 (Germany) 07 - sanchun
+  - 🇩🇪 德国 (Germany) 08 - sanchun
 rules:
 - MATCH,PROXIES

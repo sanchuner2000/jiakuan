@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - sanchun
+  server: 80.93.202.40
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime02.workers.dev
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - sanchun
   server: 162.249.125.133
   port: 443
   udp: true
@@ -20,11 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 02 - sanchun
 rules:
 - MATCH,PROXIES
