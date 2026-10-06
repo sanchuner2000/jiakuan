@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 (France) 01 - sanchun",
-      "server": "172.67.231.254",
+      "server": "104.16.72.50",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -23,18 +23,40 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 02 - sanchun",
+      "server": "iiproxy888.iiproxy.com",
+      "server_port": 8443,
+      "uuid": "806fa224-44f7-4c1b-b7a3-05bfdfdfbf87",
+      "tls": {
+        "enabled": true,
+        "server_name": "iiproxy888.iiproxy.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - sanchun"
+        "🇫🇷 法国 (France) 01 - sanchun",
+        "🇫🇷 法国 (France) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - sanchun"
+        "🇫🇷 法国 (France) 01 - sanchun",
+        "🇫🇷 法国 (France) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

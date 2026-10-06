@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - sanchun
-  server: 172.67.231.254
+  server: 104.16.72.50
   port: 443
   udp: true
   type: trojan
@@ -15,17 +15,32 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🇫🇷 法国 (France) 02 - sanchun
+  server: iiproxy888.iiproxy.com
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
+  tls: true
+  servername: iiproxy888.iiproxy.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇷 法国 (France) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇷 法国 (France) 02 - sanchun
 rules:
 - MATCH,PROXIES

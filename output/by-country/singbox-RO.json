@@ -4,22 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
-      "server": "80.93.202.40",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime02.workers.dev"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - sanchun",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -38,16 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 02 - sanchun"
+        "🇷🇴 罗马尼亚 (Romania) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 02 - sanchun"
+        "🇷🇴 罗马尼亚 (Romania) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
