@@ -4,205 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "password": "mitivpn",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
-        "headers": {
-          "Host": "mitivpn---deb--s---mitivpn-2.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - sanchun",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 03 - sanchun",
-      "server": "199.232.78.101",
-      "server_port": 443,
-      "password": "mitivpn",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
-        "headers": {
-          "Host": "mitivpn---deb--s---mitivpn-1.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 04 - sanchun",
-      "server": "167.82.76.7",
-      "server_port": 443,
-      "password": "mitivpn",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun",
-      "server": "163.245.52.91",
-      "server_port": 443,
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "d3-ee1.cloud-cdn.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ",
-          "short_id": "ad6e08b22389abd2"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
-      "server": "85.209.157.177",
-      "server_port": 8080,
-      "password": "dsmO0439gj_nX942GJRE_9j39fbcxv52_R",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-transit.1cooldns.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 07 - sanchun",
-      "server": "167.82.76.27",
-      "server_port": 443,
-      "password": "mitivpn",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/des---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1",
-        "headers": {
-          "Host": "mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 08 - sanchun",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - sanchun",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 10 - sanchun",
-      "server": "119.46.51.45",
-      "server_port": 37515,
-      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "tag": "🇨🇦 加拿大 (Canada) 01 - sanchun",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 11 - sanchun",
-      "server": "msk.frkn.org",
-      "server_port": 443,
-      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
-      "tls": {
-        "enabled": true,
-        "server_name": "msk.frkn.org",
-        "insecure": false
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 12 - sanchun",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 13 - sanchun",
-      "server": "162.249.125.133",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 14 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
       "server": "guanwang.awsno.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
@@ -221,14 +32,34 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 15 - sanchun",
-      "server": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
-      "server_port": 443,
-      "uuid": "0b3c3f4f-843a-5b0a-98fe-132c88fbefc0",
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
+      "server": "138.3.208.26",
+      "server_port": 50160,
+      "password": "184cdec28da5a09450803c8debcd2cc9",
       "tls": {
         "enabled": true,
-        "server_name": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - sanchun",
+      "server": "149.88.23.202",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 05 - sanchun",
+      "server": "117.55.233.87",
+      "server_port": 443,
+      "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
+      "tls": {
+        "enabled": true,
+        "server_name": "s3ws.ragingbull.de5.net",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -237,25 +68,181 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0"
+        "path": "/wsrb7k2m",
+        "headers": {
+          "Host": "s3ws.ragingbull.de5.net"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 06 - sanchun",
+      "server": "104.18.8.83",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 07 - sanchun",
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - sanchun",
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 09 - sanchun",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 10 - sanchun",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - sanchun",
+      "server": "152-69-231-175.liao.kdns.fr",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "152-69-231-175.liao.kdns.fr",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 12 - sanchun",
+      "server": "162.249.125.133",
+      "server_port": 443,
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c1b4086fea89914496c7e10967a419216566"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 13 - sanchun",
+      "server": "85.209.157.177",
+      "server_port": 8080,
+      "password": "dsmO0439gj_nX942GJRE_9j39fbcxv52_R",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-transit.1cooldns.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 16 - sanchun",
+      "tag": "🇵🇱 波兰 (Poland) 14 - sanchun",
+      "server": "pl-waw.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 15 - sanchun",
       "server": "175.29.23.179",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "fzo5i.ir46.90k.hh.ov0.kdns.fr",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/glasspanel/guest000_0_5de14443985f/",
         "headers": {
           "Host": "fzo5i.ir46.90k.hh.ov0.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 16 - sanchun",
+      "server": "163.245.52.91",
+      "server_port": 443,
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-ee1.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ",
+          "short_id": "ad6e08b22389abd2"
         }
       }
     },
@@ -294,36 +281,16 @@
     },
     {
       "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 19 - sanchun",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 20 - sanchun",
-      "server": "pl-waw.dontblockmepls.com",
-      "server_port": 2063,
-      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "rusbid.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
-          "short_id": ""
-        }
-      }
+      "tag": "🇺🇸 美国 (United States) 19 - sanchun",
+      "server": "v29.hdacd.com",
+      "server_port": 30829,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
     },
     {
       "type": "hysteria2",
-      "tag": "🇳🇱 荷兰 (Netherlands) 21 - sanchun",
+      "tag": "🇳🇱 荷兰 (Netherlands) 20 - sanchun",
       "server": "hysteria.udpgw.com",
       "server_port": 8443,
       "password": "HowdyHysteria2023w0W",
@@ -338,90 +305,56 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 22 - sanchun",
-      "server": "104.16.72.50",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 23 - sanchun",
-      "server": "v29.hdacd.com",
-      "server_port": 30829,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 - sanchun",
-        "🇦🇪 阿联酋 (UAE) 02 - sanchun",
-        "🇩🇪 德国 (Germany) 03 - sanchun",
-        "🇩🇪 德国 (Germany) 04 - sanchun",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇩🇪 德国 (Germany) 07 - sanchun",
-        "🇯🇵 日本 (Japan) 08 - sanchun",
-        "🇰🇷 韩国 (South Korea) 09 - sanchun",
+        "🇨🇦 加拿大 (Canada) 01 - sanchun",
+        "🇺🇸 美国 (United States) 02 - sanchun",
+        "🇯🇵 日本 (Japan) 03 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 04 - sanchun",
+        "🇩🇪 德国 (Germany) 05 - sanchun",
+        "🇫🇷 法国 (France) 06 - sanchun",
+        "🇯🇵 日本 (Japan) 07 - sanchun",
+        "🇰🇷 韩国 (South Korea) 08 - sanchun",
+        "🇦🇪 阿联酋 (UAE) 09 - sanchun",
         "🇹🇭 泰国 (Thailand) 10 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 11 - sanchun",
-        "🇯🇵 日本 (Japan) 12 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 13 - sanchun",
-        "🇺🇸 美国 (United States) 14 - sanchun",
-        "🇺🇸 美国 (United States) 15 - sanchun",
-        "🇹🇭 泰国 (Thailand) 16 - sanchun",
+        "🇰🇷 韩国 (South Korea) 11 - sanchun",
+        "🇷🇴 罗马尼亚 (Romania) 12 - sanchun",
+        "🇺🇸 美国 (United States) 13 - sanchun",
+        "🇵🇱 波兰 (Poland) 14 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 15 - sanchun",
+        "🇪🇪 爱沙尼亚 (Estonia) 16 - sanchun",
         "🇵🇱 波兰 (Poland) 17 - sanchun",
         "🇩🇪 德国 (Germany) 18 - sanchun",
-        "🇨🇦 加拿大 (Canada) 19 - sanchun",
-        "🇵🇱 波兰 (Poland) 20 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 21 - sanchun",
-        "🇫🇷 法国 (France) 22 - sanchun",
-        "🇺🇸 美国 (United States) 23 - sanchun"
+        "🇺🇸 美国 (United States) 19 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 20 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 - sanchun",
-        "🇦🇪 阿联酋 (UAE) 02 - sanchun",
-        "🇩🇪 德国 (Germany) 03 - sanchun",
-        "🇩🇪 德国 (Germany) 04 - sanchun",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun",
-        "🇺🇸 美国 (United States) 06 - sanchun",
-        "🇩🇪 德国 (Germany) 07 - sanchun",
-        "🇯🇵 日本 (Japan) 08 - sanchun",
-        "🇰🇷 韩国 (South Korea) 09 - sanchun",
+        "🇨🇦 加拿大 (Canada) 01 - sanchun",
+        "🇺🇸 美国 (United States) 02 - sanchun",
+        "🇯🇵 日本 (Japan) 03 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 04 - sanchun",
+        "🇩🇪 德国 (Germany) 05 - sanchun",
+        "🇫🇷 法国 (France) 06 - sanchun",
+        "🇯🇵 日本 (Japan) 07 - sanchun",
+        "🇰🇷 韩国 (South Korea) 08 - sanchun",
+        "🇦🇪 阿联酋 (UAE) 09 - sanchun",
         "🇹🇭 泰国 (Thailand) 10 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 11 - sanchun",
-        "🇯🇵 日本 (Japan) 12 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 13 - sanchun",
-        "🇺🇸 美国 (United States) 14 - sanchun",
-        "🇺🇸 美国 (United States) 15 - sanchun",
-        "🇹🇭 泰国 (Thailand) 16 - sanchun",
+        "🇰🇷 韩国 (South Korea) 11 - sanchun",
+        "🇷🇴 罗马尼亚 (Romania) 12 - sanchun",
+        "🇺🇸 美国 (United States) 13 - sanchun",
+        "🇵🇱 波兰 (Poland) 14 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 15 - sanchun",
+        "🇪🇪 爱沙尼亚 (Estonia) 16 - sanchun",
         "🇵🇱 波兰 (Poland) 17 - sanchun",
         "🇩🇪 德国 (Germany) 18 - sanchun",
-        "🇨🇦 加拿大 (Canada) 19 - sanchun",
-        "🇵🇱 波兰 (Poland) 20 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 21 - sanchun",
-        "🇫🇷 法国 (France) 22 - sanchun",
-        "🇺🇸 美国 (United States) 23 - sanchun"
+        "🇺🇸 美国 (United States) 19 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 20 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
