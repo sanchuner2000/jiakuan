@@ -6,24 +6,17 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "mybb.com",
-      "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "server": "jrnkkm.de5.net",
+      "server_port": 2083,
+      "uuid": "d1f68cb6-bfab-4c14-b1c8-f58d047d00e3",
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "jrnkkm.de5.net",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
-        }
+        "path": "/ws"
       }
     },
     {
@@ -39,8 +32,20 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "77.74.123.107",
+      "server_port": 4443,
+      "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
+      "tls": {
+        "enabled": true,
+        "server_name": "grape-test-italy.dynuddns.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
       "server": "guanwang.awsno.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
@@ -59,35 +64,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
-      "server": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
-      "server_port": 443,
-      "uuid": "0b3c3f4f-843a-5b0a-98fe-132c88fbefc0",
-      "tls": {
-        "enabled": true,
-        "server_name": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "v29.hdacd.com",
-      "server_port": 30829,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -95,8 +71,7 @@
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun"
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ]
     },
     {
@@ -106,8 +81,7 @@
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun"
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

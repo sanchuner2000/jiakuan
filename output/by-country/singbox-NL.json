@@ -4,22 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 01 - sanchun",
-      "server": "172.67.231.254",
-      "server_port": 443,
-      "password": "humanity",
+      "type": "hysteria2",
+      "tag": "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+      "server": "hysteria.udpgw.com",
+      "server_port": 8443,
+      "password": "HowdyHysteria2023w0W",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
+        "server_name": "sni-here.com",
+        "insecure": true
       },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "HysteriaHowdy"
       }
     },
     {
@@ -27,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - sanchun"
+        "🇳🇱 荷兰 (Netherlands) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

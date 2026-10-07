@@ -12,17 +12,51 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  server: asia.csmaster.site
+  port: 443
+  udp: true
+  type: vless
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  tls: true
+  servername: asia.csmaster.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  server: asia.csmaster.site
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  tls: true
+  servername: asia.csmaster.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
 rules:
 - MATCH,PROXIES
