@@ -4,8 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇫🇷 法国 (France) 01 - sanchun",
+      "server": "8.47.69.0",
+      "server_port": 2053,
+      "uuid": "9d672694-c146-422e-b3b5-3717a38a0fcc",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.api-music-fa.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/voip/updates/static/fr2035",
+        "headers": {
+          "Host": "fr.api-music-fa.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 02 - sanchun",
       "server": "172.67.231.254",
       "server_port": 443,
       "password": "humanity",
@@ -27,14 +46,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - sanchun"
+        "🇫🇷 法国 (France) 01 - sanchun",
+        "🇫🇷 法国 (France) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - sanchun"
+        "🇫🇷 法国 (France) 01 - sanchun",
+        "🇫🇷 法国 (France) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

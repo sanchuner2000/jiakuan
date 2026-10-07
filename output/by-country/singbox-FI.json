@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - sanchun",
       "server": "159.194.250.154",
       "server_port": 443,
       "uuid": "f0482c9d-ff67-4a43-af8e-76fc5d55c250",
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
+        "🇫🇮 芬兰 (Finland) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
+        "🇫🇮 芬兰 (Finland) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

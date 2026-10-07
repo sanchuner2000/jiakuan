@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+- name: 🇫🇮 芬兰 (Finland) 01 - sanchun
   server: 159.194.250.154
   port: 443
   udp: true
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 01 - sanchun
 rules:
 - MATCH,PROXIES

@@ -17,22 +17,6 @@ proxies:
   ws-opts:
     path: /ws
 - name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 85.209.157.177
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
-  sni: hopp-transit.1cooldns.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 77.74.123.107
-  port: 4443
-  udp: true
-  type: trojan
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 04 - sanchun
   server: guanwang.awsno.com
   port: 443
   udp: true
@@ -48,6 +32,14 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: v29.hdacd.com
+  port: 30829
+  udp: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,7 +48,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
-  - 🇺🇸 美国 (United States) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,6 +56,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
-  - 🇺🇸 美国 (United States) 04 - sanchun
 rules:
 - MATCH,PROXIES
