@@ -6,17 +6,48 @@
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
-      "server": "117.55.233.87",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8a36be1d-7c78-4885-8a1f-bedf5ba7db1c",
+      "transport": {
+        "type": "ws",
+        "path": "/rN50nmm9L1DeY73C?ed=2560",
+        "headers": {
+          "Host": "lucky-lab-ac6d.caveyi8071.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
+      "server": "31.77.109.35",
+      "server_port": 443,
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-de1.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY",
+          "short_id": "494afdc75f8c2fa8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 03 - sanchun",
+      "server": "188.114.96.7",
       "server_port": 443,
       "uuid": "f49d04d6-aaa7-4013-b323-bc35b78230db",
       "tls": {
         "enabled": true,
         "server_name": "s3ws.ragingbull.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -28,7 +59,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
+      "tag": "🇩🇪 德国 (Germany) 04 - sanchun",
       "server": "de2.srv.vbuste.ru",
       "server_port": 443,
       "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
@@ -53,7 +84,9 @@
       "outbounds": [
         "auto",
         "🇩🇪 德国 (Germany) 01 - sanchun",
-        "🇩🇪 德国 (Germany) 02 - sanchun"
+        "🇩🇪 德国 (Germany) 02 - sanchun",
+        "🇩🇪 德国 (Germany) 03 - sanchun",
+        "🇩🇪 德国 (Germany) 04 - sanchun"
       ]
     },
     {
@@ -61,7 +94,9 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 德国 (Germany) 01 - sanchun",
-        "🇩🇪 德国 (Germany) 02 - sanchun"
+        "🇩🇪 德国 (Germany) 02 - sanchun",
+        "🇩🇪 德国 (Germany) 03 - sanchun",
+        "🇩🇪 德国 (Germany) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

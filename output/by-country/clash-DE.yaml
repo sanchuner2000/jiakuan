@@ -5,7 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
-  server: 117.55.233.87
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  network: ws
+  ws-opts:
+    path: /rN50nmm9L1DeY73C?ed=2560
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+- name: 🇩🇪 德国 (Germany) 02 - sanchun
+  server: 31.77.109.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
+    short-id: 494afdc75f8c2fa8
+  servername: d3-de1.cloud-cdn.xyz
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 03 - sanchun
+  server: 188.114.96.7
   port: 443
   udp: true
   type: vless
@@ -13,13 +37,12 @@ proxies:
   tls: true
   servername: s3ws.ragingbull.de5.net
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /wsrb7k2m
     headers:
       Host: s3ws.ragingbull.de5.net
-- name: 🇩🇪 德国 (Germany) 02 - sanchun
+- name: 🇩🇪 德国 (Germany) 04 - sanchun
   server: de2.srv.vbuste.ru
   port: 443
   udp: true
@@ -39,6 +62,8 @@ proxy-groups:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 - sanchun
   - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +71,7 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 (Germany) 01 - sanchun
   - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 04 - sanchun
 rules:
 - MATCH,PROXIES

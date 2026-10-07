@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
+  server: mybb.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 85.209.157.177
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
+  sni: hopp-transit.1cooldns.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 03 - sanchun
   server: guanwang.awsno.com
   port: 443
   udp: true
@@ -20,15 +43,20 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 85.209.157.177
-  port: 8080
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
+  port: 443
   udp: true
-  type: hysteria2
-  password: dsmO0439gj_nX942GJRE_9j39fbcxv52_R
-  sni: hopp-transit.1cooldns.com
+  type: vless
+  uuid: 0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
+  tls: true
+  servername: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 03 - sanchun
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
+- name: 🇺🇸 美国 (United States) 05 - sanchun
   server: v29.hdacd.com
   port: 30829
   udp: true
@@ -44,6 +72,8 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
+  - 🇺🇸 美国 (United States) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +82,7 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
+  - 🇺🇸 美国 (United States) 05 - sanchun
 rules:
 - MATCH,PROXIES
