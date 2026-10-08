@@ -6,6 +6,20 @@
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "8a36be1d-7c78-4885-8a1f-bedf5ba7db1c",
+      "transport": {
+        "type": "ws",
+        "path": "/rN50nmm9L1DeY73C?ed=2560",
+        "headers": {
+          "Host": "lucky-lab-ac6d.caveyi8071.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
       "server": "de2.srv.vbuste.ru",
       "server_port": 443,
       "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
@@ -29,14 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 - sanchun"
+        "🇩🇪 德国 (Germany) 01 - sanchun",
+        "🇩🇪 德国 (Germany) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 - sanchun"
+        "🇩🇪 德国 (Germany) 01 - sanchun",
+        "🇩🇪 德国 (Germany) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

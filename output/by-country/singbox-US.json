@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "jrnkkm.de5.net",
-      "server_port": 2083,
-      "uuid": "d1f68cb6-bfab-4c14-b1c8-f58d047d00e3",
-      "tls": {
-        "enabled": true,
-        "server_name": "jrnkkm.de5.net",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 01 - sanchun",
       "server": "guanwang.awsno.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
@@ -37,6 +21,22 @@
         "headers": {
           "Host": "guanwang.awsno.com"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "jrnkkm.de5.net",
+      "server_port": 2083,
+      "uuid": "d1f68cb6-bfab-4c14-b1c8-f58d047d00e3",
+      "tls": {
+        "enabled": true,
+        "server_name": "jrnkkm.de5.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws"
       }
     },
     {

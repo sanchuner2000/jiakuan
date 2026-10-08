@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  network: ws
+  ws-opts:
+    path: /rN50nmm9L1DeY73C?ed=2560
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+- name: 🇩🇪 德国 (Germany) 02 - sanchun
   server: de2.srv.vbuste.ru
   port: 443
   udp: true
@@ -23,11 +34,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇩🇪 德国 (Germany) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇩🇪 德国 (Germany) 02 - sanchun
 rules:
 - MATCH,PROXIES
