@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 法国 (France) 01 - sanchun
-  server: 104.18.32.47
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 01 - sanchun
+  server: psf-3.weedly.top
+  port: 80
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
+  type: vless
+  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
   network: ws
   ws-opts:
-    path: /assignment
+    path: /
+    headers:
+      Host: machinemag.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 01 - sanchun
 rules:
 - MATCH,PROXIES
