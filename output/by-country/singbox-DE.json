@@ -6,6 +6,20 @@
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
+      "server": "172.64.229.129",
+      "server_port": 2052,
+      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "transport": {
+        "type": "ws",
+        "path": "/rain1226",
+        "headers": {
+          "Host": "eu02.123450908.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
       "server": "31.77.148.89",
       "server_port": 45021,
       "uuid": "ad263f1c-199e-4aaf-bf22-c3ad0407d377"
@@ -15,14 +29,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 - sanchun"
+        "🇩🇪 德国 (Germany) 01 - sanchun",
+        "🇩🇪 德国 (Germany) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 - sanchun"
+        "🇩🇪 德国 (Germany) 01 - sanchun",
+        "🇩🇪 德国 (Germany) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
