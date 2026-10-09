@@ -18,18 +18,25 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 154.40.55.185
+  server: 38.181.42.136
+  port: 9443
+  udp: true
+  type: trojan
+  password: trj-qWC4DKUemeUYWSKA1xx7okumSKKw0QSX
+  sni: www.jqyverse.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
   port: 443
   udp: true
   type: vless
-  uuid: 52919204-4ed9-42c8-97a0-0f01d007f898
-  flow: xtls-rprx-vision
+  uuid: 0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
   tls: true
-  reality-opts:
-    public-key: XY0OTrgnRWxHbqBC8u4qFWvZakjNZY83AAnL_lwHu1M
-    short-id: e726fb
-  servername: www.oracle.com
-  client-fingerprint: chrome
+  servername: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
+  - 🇺🇸 美国 (United States) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
+  - 🇺🇸 美国 (United States) 03 - sanchun
 rules:
 - MATCH,PROXIES
