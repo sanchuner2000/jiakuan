@@ -5,63 +5,145 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
-  server: 172.64.229.129
-  port: 2052
+  server: 104.21.70.21
+  port: 8080
   udp: true
   type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
   network: ws
   ws-opts:
-    path: /rain1226
+    path: /
     headers:
-      Host: eu02.123450908.xyz
-- name: 🇫🇷 法国 (France) 02 - sanchun
-  server: 104.18.32.47
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+- name: 🇩🇪 德国 (Germany) 02 - sanchun
+  server: 172.67.210.250
+  port: 8080
+  udp: true
+  type: vless
+  uuid: f85183cf-af02-4656-b1e9-3a61dced201f
+  network: ws
+  ws-opts:
+    path: /vl/uyXT65o0H9U3hDBrVjJ9E?ed=2560
+    headers:
+      Host: freeworld.aliaicode47649.workers.dev
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: cf.130519.xyz
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  type: vless
+  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
+  tls: true
+  servername: 20664.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 20664.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 04 - sanchun
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: 572b2f63-62b5-4e79-a6c8-d2211bf33576
+  tls: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🇯🇵 日本 (Japan) 05 - sanchun
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇫🇷 法国 (France) 06 - sanchun
+  server: 8.47.69.0
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  tls: true
+  servername: vless.api-music-fa.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
-- name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
-  server: 157.228.128.59
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- name: 🇩🇪 德国 (Germany) 07 - sanchun
+  server: de2.srv.vbuste.ru
   port: 443
   udp: true
   type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  servername: addons.mozilla.org
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
   client-fingerprint: randomized
-- name: 🇩🇪 德国 (Germany) 04 - sanchun
+- name: 🇩🇪 德国 (Germany) 08 - sanchun
   server: 31.77.148.89
   port: 45021
   udp: true
   type: vless
   uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
+- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
+  server: 47.80.19.173
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
+    short-id: 3c4041d3
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 - sanchun
-  - 🇫🇷 法国 (France) 02 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 03 - sanchun
-  - 🇩🇪 德国 (Germany) 04 - sanchun
+  - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
+  - 🇯🇵 日本 (Japan) 05 - sanchun
+  - 🇫🇷 法国 (France) 06 - sanchun
+  - 🇩🇪 德国 (Germany) 07 - sanchun
+  - 🇩🇪 德国 (Germany) 08 - sanchun
+  - 🇰🇷 韩国 (South Korea) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 - sanchun
-  - 🇫🇷 法国 (France) 02 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 03 - sanchun
-  - 🇩🇪 德国 (Germany) 04 - sanchun
+  - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
+  - 🇯🇵 日本 (Japan) 05 - sanchun
+  - 🇫🇷 法国 (France) 06 - sanchun
+  - 🇩🇪 德国 (Germany) 07 - sanchun
+  - 🇩🇪 德国 (Germany) 08 - sanchun
+  - 🇰🇷 韩国 (South Korea) 09 - sanchun
 rules:
 - MATCH,PROXIES

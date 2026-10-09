@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 法国 (France) 01 - sanchun
-  server: 8.47.69.0
-  port: 2053
+- name: 🇺🇸 美国 (United States) 01 - sanchun
+  server: cf.130519.xyz
+  port: 443
   udp: true
   type: vless
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
   tls: true
-  servername: vless.api-music-fa.com
+  servername: 20664.pages.dev
   skip-cert-verify: false
+  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /api/voip/updates/static/fr2035
+    path: /
     headers:
-      Host: fr.api-music-fa.com
+      Host: 20664.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇺🇸 美国 (United States) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 (France) 01 - sanchun
+  - 🇺🇸 美国 (United States) 01 - sanchun
 rules:
 - MATCH,PROXIES
