@@ -5,31 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: cf.130519.xyz
+  server: 172.245.253.16
   port: 443
   udp: true
   type: vless
-  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
+  uuid: b67422ff-101b-433b-8f66-4ab282960b36
+  flow: xtls-rprx-vision
   tls: true
-  servername: 20664.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 20664.pages.dev
+  reality-opts:
+    public-key: Vh8dv6ENmfFd4JlPgj9-R1Fbet2m6JyRFukcVvDq5A8
+    short-id: e7dc2c820ba8bbd4
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 154.40.55.185
+  port: 443
+  udp: true
+  type: vless
+  uuid: 52919204-4ed9-42c8-97a0-0f01d007f898
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XY0OTrgnRWxHbqBC8u4qFWvZakjNZY83AAnL_lwHu1M
+    short-id: e726fb
+  servername: www.oracle.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 - sanchun
+  - 🇺🇸 美国 (United States) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 - sanchun
+  - 🇺🇸 美国 (United States) 02 - sanchun
 rules:
 - MATCH,PROXIES

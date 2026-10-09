@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇦 加拿大 (Canada) 01 - sanchun
+  server: 209.200.246.61
+  port: 443
+  udp: true
+  type: vless
+  uuid: ab9929fd-ab22-48e3-8723-480733c0eca9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NO3w10fOUvwK8L7vzCVPDLWIKYCHDaB6ealdMnv4jS4
+    short-id: e287e3906e3c
+  servername: ca.vpnskyline.com
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇦 加拿大 (Canada) 01 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 (Canada) 01 - sanchun
+rules:
+- MATCH,PROXIES

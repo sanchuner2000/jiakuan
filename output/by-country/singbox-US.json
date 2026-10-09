@@ -6,23 +6,42 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "cf.130519.xyz",
+      "server": "172.245.253.16",
       "server_port": 443,
-      "uuid": "9784bb19-3833-43ad-83b0-27ef8fc04ef2",
+      "uuid": "b67422ff-101b-433b-8f66-4ab282960b36",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "20664.pages.dev",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Vh8dv6ENmfFd4JlPgj9-R1Fbet2m6JyRFukcVvDq5A8",
+          "short_id": "e7dc2c820ba8bbd4"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "20664.pages.dev"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "154.40.55.185",
+      "server_port": 443,
+      "uuid": "52919204-4ed9-42c8-97a0-0f01d007f898",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.oracle.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XY0OTrgnRWxHbqBC8u4qFWvZakjNZY83AAnL_lwHu1M",
+          "short_id": "e726fb"
         }
       }
     },
@@ -31,14 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 - sanchun"
+        "🇺🇸 美国 (United States) 01 - sanchun",
+        "🇺🇸 美国 (United States) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 - sanchun"
+        "🇺🇸 美国 (United States) 01 - sanchun",
+        "🇺🇸 美国 (United States) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

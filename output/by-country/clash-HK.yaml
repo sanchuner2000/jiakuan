@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 - sanchun
-  server: 47.80.19.173
-  port: 2053
+- name: 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  server: 82.29.36.250
+  port: 443
   udp: true
   type: vless
-  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
-    short-id: 3c4041d3
-  servername: gateway.icloud.com
+    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
+    short-id: ac3342a709db
+  servername: aws.amazon.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
 rules:
 - MATCH,PROXIES
