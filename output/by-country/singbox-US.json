@@ -39,6 +39,27 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "154.40.55.185",
+      "server_port": 443,
+      "uuid": "52919204-4ed9-42c8-97a0-0f01d007f898",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.oracle.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XY0OTrgnRWxHbqBC8u4qFWvZakjNZY83AAnL_lwHu1M",
+          "short_id": "e726fb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
       "server": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
       "server_port": 443,
       "uuid": "0b3c3f4f-843a-5b0a-98fe-132c88fbefc0",
@@ -59,7 +80,8 @@
         "auto",
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun"
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ]
     },
     {
@@ -68,7 +90,8 @@
       "outbounds": [
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun"
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

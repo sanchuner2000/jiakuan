@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - sanchun
-  server: pl-waw.dontblockmepls.com
+  server: 2.26.231.218
   port: 2063
   udp: true
   type: vless
