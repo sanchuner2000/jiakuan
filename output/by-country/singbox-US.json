@@ -4,73 +4,127 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "172.245.253.16",
+      "server": "guanwang.awsno.com",
       "server_port": 443,
-      "uuid": "b67422ff-101b-433b-8f66-4ab282960b36",
-      "flow": "xtls-rprx-vision",
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Vh8dv6ENmfFd4JlPgj9-R1Fbet2m6JyRFukcVvDq5A8",
-          "short_id": "e7dc2c820ba8bbd4"
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 02 - sanchun",
-      "server": "38.181.42.136",
-      "server_port": 9443,
-      "password": "trj-qWC4DKUemeUYWSKA1xx7okumSKKw0QSX",
+      "server": "jp-x2.vatilon.cc",
+      "server_port": 10003,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
       "tls": {
         "enabled": true,
-        "server_name": "www.jqyverse.com",
+        "server_name": "jp-x2.vatilon.cc",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
+      "server": "xjp111-3.vatilon.cc",
+      "server_port": 10003,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "xjp111-3.vatilon.cc",
         "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "154.40.55.185",
-      "server_port": 443,
-      "uuid": "52919204-4ed9-42c8-97a0-0f01d007f898",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "sh.polymarket.party",
+      "server_port": 23202,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp2.australiacaregroup.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
+      "server": "193.23.195.37",
+      "server_port": 13443,
+      "uuid": "9ebf4fda-7395-4800-b42f-b2dda649880a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.oracle.com",
+        "server_name": "ya.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XY0OTrgnRWxHbqBC8u4qFWvZakjNZY83AAnL_lwHu1M",
-          "short_id": "e726fb"
+          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+          "short_id": "d2061bb1"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
+      "server": "my1.australiacaregroup.site",
+      "server_port": 10001,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "my1.australiacaregroup.site",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess",
+        "headers": {
+          "Host": "my1.australiacaregroup.site"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
-      "server": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
-      "server_port": 443,
-      "uuid": "0b3c3f4f-843a-5b0a-98fe-132c88fbefc0",
+      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "server": "my1.australiacaregroup.site",
+      "server_port": 10002,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
       "tls": {
         "enabled": true,
-        "server_name": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
-        "insecure": false
+        "server_name": "my1.australiacaregroup.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0"
+        "path": "/vless",
+        "headers": {
+          "Host": "my1.australiacaregroup.site"
+        }
       }
     },
     {
@@ -81,7 +135,10 @@
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun"
+        "🇺🇸 美国 (United States) 04 - sanchun",
+        "🇺🇸 美国 (United States) 05 - sanchun",
+        "🇺🇸 美国 (United States) 06 - sanchun",
+        "🇺🇸 美国 (United States) 07 - sanchun"
       ]
     },
     {
@@ -91,7 +148,10 @@
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun"
+        "🇺🇸 美国 (United States) 04 - sanchun",
+        "🇺🇸 美国 (United States) 05 - sanchun",
+        "🇺🇸 美国 (United States) 06 - sanchun",
+        "🇺🇸 美国 (United States) 07 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

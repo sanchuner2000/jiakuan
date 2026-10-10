@@ -4,231 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "172.245.253.16",
+      "server": "guanwang.awsno.com",
       "server_port": 443,
-      "uuid": "b67422ff-101b-433b-8f66-4ab282960b36",
-      "flow": "xtls-rprx-vision",
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Vh8dv6ENmfFd4JlPgj9-R1Fbet2m6JyRFukcVvDq5A8",
-          "short_id": "e7dc2c820ba8bbd4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
-      "server": "104.21.70.21",
-      "server_port": 8080,
-      "uuid": "8a36be1d-7c78-4885-8a1f-bedf5ba7db1c",
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/rN50nmm9L1DeY73C?ed=2560",
+        "path": "/hls/cctv5phd.m3u8",
         "headers": {
-          "Host": "lucky-lab-ac6d.caveyi8071.workers.dev"
+          "Host": "guanwang.awsno.com"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "38.181.42.136",
-      "server_port": 9443,
-      "password": "trj-qWC4DKUemeUYWSKA1xx7okumSKKw0QSX",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "jp-x2.vatilon.cc",
+      "server_port": 10003,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
       "tls": {
         "enabled": true,
-        "server_name": "www.jqyverse.com",
+        "server_name": "jp-x2.vatilon.cc",
         "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 04 - sanchun",
-      "server": "128.241.25.11",
-      "server_port": 30021,
-      "uuid": "339cda3d-79a5-4d37-8ad8-eddc130c992a",
-      "tls": {
-        "enabled": true,
-        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 - sanchun",
-      "server": "129.153.71.28",
-      "server_port": 28863,
-      "uuid": "b3a15df4-c8ad-4e98-b427-7a679aee2b18",
-      "tls": {
-        "enabled": true,
-        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 06 - sanchun",
-      "server": "129.153.71.28",
-      "server_port": 28863,
-      "uuid": "572b2f63-62b5-4e79-a6c8-d2211bf33576",
-      "tls": {
-        "enabled": true,
-        "server_name": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 07 - sanchun",
-      "server": "104.18.32.47",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 08 - sanchun",
-      "server": "tyxyrytyro-51255165170-direct.araghchy.com",
-      "server_port": 443,
-      "uuid": "tyxyrytyro",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tyxyrytyro-51255165170-direct.araghchy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - sanchun",
-      "server": "gb.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "gb.tronsg.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 10 - sanchun",
-      "server": "157.228.128.59",
-      "server_port": 443,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws",
-          "short_id": "06e00e7c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 11 - sanchun",
-      "server": "154.40.55.185",
-      "server_port": 443,
-      "uuid": "52919204-4ed9-42c8-97a0-0f01d007f898",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.oracle.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XY0OTrgnRWxHbqBC8u4qFWvZakjNZY83AAnL_lwHu1M",
-          "short_id": "e726fb"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 12 - sanchun",
-      "server": "swidenlanzerotte.live",
-      "server_port": 443,
-      "uuid": "56de13ac-086e-4789-8e1e-1bf2bd90216b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swidenlanzerotte.live",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 13 - sanchun",
+      "tag": "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
       "server": "fi-s-1.pythonmakemigreat.wiki",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
@@ -249,10 +58,85 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 14 - sanchun",
-      "server": "82.29.36.250",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
+      "server": "dobro.ali-bard.online",
       "server_port": 443,
-      "uuid": "41a7af38-0bb1-4493-aa8d-634af0c2548b",
+      "uuid": "12e95f93-443c-45f0-9a2a-5b318b9124cf",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dobro.ali-bard.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 05 - sanchun",
+      "server": "jpga01.xyy123.bid",
+      "server_port": 443,
+      "uuid": "05453546-201f-4e8d-97ae-fd70da0e951f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "shop.business.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AgTktefiMM58y7f-KFgEtmVti_YJbd0GPSkxNeJ0RH4",
+          "short_id": "cfffc6b65acb2ad3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 06 - sanchun",
+      "server": "35.199.90.53",
+      "server_port": 443,
+      "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs",
+          "short_id": "b62a4da6cd1c4dd6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 07 - sanchun",
+      "server": "rgiw5k0gg5-1492025789-direct.kheibarr.com",
+      "server_port": 443,
+      "uuid": "rgiw5k0gg5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rgiw5k0gg5-1492025789-direct.kheibarr.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 08 - sanchun",
+      "server": "20.212.105.115",
+      "server_port": 41202,
+      "uuid": "f0e2feb9-cbe0-49fc-a148-8ec97cb0f948",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -263,49 +147,87 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g",
-          "short_id": "ac3342a709db"
+          "public_key": "Qy3mbHGSK-cWrJ_Dsaj-R8ydGtWo4lr3EtAvrEWv3mo",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 15 - sanchun",
-      "server": "8.47.69.0",
-      "server_port": 2053,
-      "uuid": "9d672694-c146-422e-b3b5-3717a38a0fcc",
-      "tls": {
-        "enabled": true,
-        "server_name": "vless.api-music-fa.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/voip/updates/static/fr2035",
-        "headers": {
-          "Host": "fr.api-music-fa.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 16 - sanchun",
-      "server": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
+      "tag": "🇩🇪 德国 (Germany) 09 - sanchun",
+      "server": "ge-s-1.pythonmakemigreat.wiki",
       "server_port": 443,
-      "uuid": "0b3c3f4f-843a-5b0a-98fe-132c88fbefc0",
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "86153507-1976-48f1-ac86-e8ab274470a8.fly.dev",
+        "server_name": "ge-s-1.pythonmakemigreat.wiki",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8",
+          "short_id": "2c9a2790ad5900b2"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 10 - sanchun",
+      "server": "165.215.250.14",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0"
+        "path": "//assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 11 - sanchun",
+      "server": "xjp111-3.vatilon.cc",
+      "server_port": 10003,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "xjp111-3.vatilon.cc",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 17 - sanchun",
+      "tag": "🇸🇬 新加坡 (Singapore) 12 - sanchun",
+      "server": "japro02.xyy123.bid",
+      "server_port": 443,
+      "uuid": "440f986b-9469-4d80-adf0-01ba37af73c5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "shop.business.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE",
+          "short_id": "6d962e8d8a0dce"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 13 - sanchun",
       "server": "2.26.231.218",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
@@ -326,10 +248,278 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 18 - sanchun",
-      "server": "31.77.148.89",
-      "server_port": 45021,
-      "uuid": "ad263f1c-199e-4aaf-bf22-c3ad0407d377"
+      "tag": "🇺🇸 美国 (United States) 14 - sanchun",
+      "server": "sh.polymarket.party",
+      "server_port": 23202,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp2.australiacaregroup.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 15 - sanchun",
+      "server": "defrnode.xyy123.bid",
+      "server_port": 443,
+      "uuid": "8af93649-403b-46d8-9966-923d4c58402c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "p-y3-www-amazon-com-kalias.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE",
+          "short_id": "0fa4a0e2493392"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 16 - sanchun",
+      "server": "40.120.36.23",
+      "server_port": 26460,
+      "uuid": "234ff65c-35e8-4ff6-a1e7-cce6acb2f3e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rnykCyLboP7HiOwx0Tfo5OSUVaJXbSMOB9MKkEZ_Xh8",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 17 - sanchun",
+      "server": "milo.rubinaz.xyz",
+      "server_port": 8080,
+      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 18 - sanchun",
+      "server": "193.23.195.37",
+      "server_port": 13443,
+      "uuid": "9ebf4fda-7395-4800-b42f-b2dda649880a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+          "short_id": "d2061bb1"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇳🇱 荷兰 (Netherlands) 19 - sanchun",
+      "server": "nl-2a972c8052.shamanapp.online",
+      "server_port": 33736,
+      "uuid": "1281acca-f21d-475c-bf04-eccbee7f8df2",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess-ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 20 - sanchun",
+      "server": "159.australiacaregroup.site",
+      "server_port": 10002,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "159.australiacaregroup.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "159.australiacaregroup.site"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 21 - sanchun",
+      "server": "159.australiacaregroup.site",
+      "server_port": 10001,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "159.australiacaregroup.site",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess",
+        "headers": {
+          "Host": "159.australiacaregroup.site"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 22 - sanchun",
+      "server": "13.143.137.206",
+      "server_port": 8443,
+      "uuid": "9ebf4fda-7395-4800-b42f-b2dda649880a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+          "short_id": "d2061bb1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 23 - sanchun",
+      "server": "34.35.186.228",
+      "server_port": 443,
+      "uuid": "8d65c8a7-4876-4556-bb6a-feccfb46ee81",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE",
+          "short_id": "89b3a20484eb43ec"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 24 - sanchun",
+      "server": "marz.zovip2.ir",
+      "server_port": 443,
+      "uuid": "a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7",
+      "tls": {
+        "enabled": true,
+        "server_name": "marz.zovip2.ir",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gropcdn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 25 - sanchun",
+      "server": "5.199.0.226",
+      "server_port": 443,
+      "uuid": "b0a100ee-c397-43f2-bdae-2adfb7a0d4e5",
+      "tls": {
+        "enabled": true,
+        "server_name": "rnxq-1lpi3m.linmeisoft.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/b0a100ee-c397-43f2-bdae-2adfb7a0d4e5",
+        "headers": {
+          "Host": "rnxq-1lpi3m.linmeisoft.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 26 - sanchun",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 27 - sanchun",
+      "server": "my1.australiacaregroup.site",
+      "server_port": 10001,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "my1.australiacaregroup.site",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess",
+        "headers": {
+          "Host": "my1.australiacaregroup.site"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 28 - sanchun",
+      "server": "my1.australiacaregroup.site",
+      "server_port": 10002,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "my1.australiacaregroup.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "my1.australiacaregroup.site"
+        }
+      }
     },
     {
       "type": "selector",
@@ -337,23 +527,33 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 - sanchun",
-        "🇩🇪 德国 (Germany) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇯🇵 日本 (Japan) 04 - sanchun",
+        "🇺🇸 美国 (United States) 02 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
         "🇯🇵 日本 (Japan) 05 - sanchun",
-        "🇯🇵 日本 (Japan) 06 - sanchun",
+        "🇧🇷 巴西 (Brazil) 06 - sanchun",
         "🇫🇷 法国 (France) 07 - sanchun",
-        "🇫🇷 法国 (France) 08 - sanchun",
-        "🇬🇧 英国 (United Kingdom) 09 - sanchun",
-        "🇦🇪 阿联酋 (UAE) 10 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 08 - sanchun",
+        "🇩🇪 德国 (Germany) 09 - sanchun",
+        "🇫🇷 法国 (France) 10 - sanchun",
         "🇺🇸 美国 (United States) 11 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 12 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 13 - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 14 - sanchun",
-        "🇫🇷 法国 (France) 15 - sanchun",
-        "🇺🇸 美国 (United States) 16 - sanchun",
-        "🇵🇱 波兰 (Poland) 17 - sanchun",
-        "🇩🇪 德国 (Germany) 18 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 12 - sanchun",
+        "🇵🇱 波兰 (Poland) 13 - sanchun",
+        "🇺🇸 美国 (United States) 14 - sanchun",
+        "🇩🇪 德国 (Germany) 15 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 16 - sanchun",
+        "🇨🇦 加拿大 (Canada) 17 - sanchun",
+        "🇺🇸 美国 (United States) 18 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 19 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 20 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 21 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 22 - sanchun",
+        "🇿🇦 南非 (South Africa) 23 - sanchun",
+        "🇩🇪 德国 (Germany) 24 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 25 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 26 - sanchun",
+        "🇺🇸 美国 (United States) 27 - sanchun",
+        "🇺🇸 美国 (United States) 28 - sanchun"
       ]
     },
     {
@@ -361,23 +561,33 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 - sanchun",
-        "🇩🇪 德国 (Germany) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇯🇵 日本 (Japan) 04 - sanchun",
+        "🇺🇸 美国 (United States) 02 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 03 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
         "🇯🇵 日本 (Japan) 05 - sanchun",
-        "🇯🇵 日本 (Japan) 06 - sanchun",
+        "🇧🇷 巴西 (Brazil) 06 - sanchun",
         "🇫🇷 法国 (France) 07 - sanchun",
-        "🇫🇷 法国 (France) 08 - sanchun",
-        "🇬🇧 英国 (United Kingdom) 09 - sanchun",
-        "🇦🇪 阿联酋 (UAE) 10 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 08 - sanchun",
+        "🇩🇪 德国 (Germany) 09 - sanchun",
+        "🇫🇷 法国 (France) 10 - sanchun",
         "🇺🇸 美国 (United States) 11 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 12 - sanchun",
-        "🇳🇱 荷兰 (Netherlands) 13 - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 14 - sanchun",
-        "🇫🇷 法国 (France) 15 - sanchun",
-        "🇺🇸 美国 (United States) 16 - sanchun",
-        "🇵🇱 波兰 (Poland) 17 - sanchun",
-        "🇩🇪 德国 (Germany) 18 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 12 - sanchun",
+        "🇵🇱 波兰 (Poland) 13 - sanchun",
+        "🇺🇸 美国 (United States) 14 - sanchun",
+        "🇩🇪 德国 (Germany) 15 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 16 - sanchun",
+        "🇨🇦 加拿大 (Canada) 17 - sanchun",
+        "🇺🇸 美国 (United States) 18 - sanchun",
+        "🇳🇱 荷兰 (Netherlands) 19 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 20 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 21 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 22 - sanchun",
+        "🇿🇦 南非 (South Africa) 23 - sanchun",
+        "🇩🇪 德国 (Germany) 24 - sanchun",
+        "🇬🇧 英国 (United Kingdom) 25 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 26 - sanchun",
+        "🇺🇸 美国 (United States) 27 - sanchun",
+        "🇺🇸 美国 (United States) 28 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

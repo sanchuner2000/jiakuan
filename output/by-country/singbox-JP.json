@@ -6,69 +6,21 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 01 - sanchun",
-      "server": "128.241.25.11",
-      "server_port": 30021,
-      "uuid": "339cda3d-79a5-4d37-8ad8-eddc130c992a",
+      "server": "jpga01.xyy123.bid",
+      "server_port": 443,
+      "uuid": "05453546-201f-4e8d-97ae-fd70da0e951f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
-        "insecure": false,
+        "server_name": "shop.business.amazon.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
-      "server": "129.153.71.28",
-      "server_port": 28863,
-      "uuid": "b3a15df4-c8ad-4e98-b427-7a679aee2b18",
-      "tls": {
-        "enabled": true,
-        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
-        "insecure": false,
-        "utls": {
+        },
+        "reality": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
-      "server": "129.153.71.28",
-      "server_port": 28863,
-      "uuid": "572b2f63-62b5-4e79-a6c8-d2211bf33576",
-      "tls": {
-        "enabled": true,
-        "server_name": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
+          "public_key": "AgTktefiMM58y7f-KFgEtmVti_YJbd0GPSkxNeJ0RH4",
+          "short_id": "cfffc6b65acb2ad3"
         }
       }
     },
@@ -77,18 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 - sanchun",
-        "🇯🇵 日本 (Japan) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 - sanchun",
-        "🇯🇵 日本 (Japan) 02 - sanchun",
-        "🇯🇵 日本 (Japan) 03 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

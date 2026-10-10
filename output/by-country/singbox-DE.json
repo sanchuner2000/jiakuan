@@ -6,23 +6,64 @@
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
-      "server": "104.21.70.21",
-      "server_port": 8080,
-      "uuid": "8a36be1d-7c78-4885-8a1f-bedf5ba7db1c",
-      "transport": {
-        "type": "ws",
-        "path": "/rN50nmm9L1DeY73C?ed=2560",
-        "headers": {
-          "Host": "lucky-lab-ac6d.caveyi8071.workers.dev"
+      "server": "ge-s-1.pythonmakemigreat.wiki",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ge-s-1.pythonmakemigreat.wiki",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8",
+          "short_id": "2c9a2790ad5900b2"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
-      "server": "31.77.148.89",
-      "server_port": 45021,
-      "uuid": "ad263f1c-199e-4aaf-bf22-c3ad0407d377"
+      "server": "defrnode.xyy123.bid",
+      "server_port": 443,
+      "uuid": "8af93649-403b-46d8-9966-923d4c58402c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "p-y3-www-amazon-com-kalias.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE",
+          "short_id": "0fa4a0e2493392"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 03 - sanchun",
+      "server": "marz.zovip2.ir",
+      "server_port": 443,
+      "uuid": "a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7",
+      "tls": {
+        "enabled": true,
+        "server_name": "marz.zovip2.ir",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gropcdn"
+      }
     },
     {
       "type": "selector",
@@ -30,7 +71,8 @@
       "outbounds": [
         "auto",
         "🇩🇪 德国 (Germany) 01 - sanchun",
-        "🇩🇪 德国 (Germany) 02 - sanchun"
+        "🇩🇪 德国 (Germany) 02 - sanchun",
+        "🇩🇪 德国 (Germany) 03 - sanchun"
       ]
     },
     {
@@ -38,7 +80,8 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 德国 (Germany) 01 - sanchun",
-        "🇩🇪 德国 (Germany) 02 - sanchun"
+        "🇩🇪 德国 (Germany) 02 - sanchun",
+        "🇩🇪 德国 (Germany) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,51 +5,91 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 172.245.253.16
+  server: guanwang.awsno.com
   port: 443
   udp: true
-  type: vless
-  uuid: b67422ff-101b-433b-8f66-4ab282960b36
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: Vh8dv6ENmfFd4JlPgj9-R1Fbet2m6JyRFukcVvDq5A8
-    short-id: e7dc2c820ba8bbd4
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 38.181.42.136
-  port: 9443
-  udp: true
-  type: trojan
-  password: trj-qWC4DKUemeUYWSKA1xx7okumSKKw0QSX
-  sni: www.jqyverse.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 154.40.55.185
-  port: 443
-  udp: true
-  type: vless
-  uuid: 52919204-4ed9-42c8-97a0-0f01d007f898
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XY0OTrgnRWxHbqBC8u4qFWvZakjNZY83AAnL_lwHu1M
-    short-id: e726fb
-  servername: www.oracle.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
-  tls: true
-  servername: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
+  servername: guanwang.awsno.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: jp-x2.vatilon.cc
+  port: 10003
+  udp: true
+  type: trojan
+  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  sni: jp-x2.vatilon.cc
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: xjp111-3.vatilon.cc
+  port: 10003
+  udp: true
+  type: trojan
+  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  sni: xjp111-3.vatilon.cc
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: sh.polymarket.party
+  port: 23202
+  udp: true
+  type: vless
+  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  tls: true
+  servername: jp2.australiacaregroup.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 05 - sanchun
+  server: 193.23.195.37
+  port: 13443
+  udp: true
+  type: vless
+  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: d2061bb1
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 06 - sanchun
+  server: my1.australiacaregroup.site
+  port: 10001
+  udp: true
+  type: vmess
+  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: my1.australiacaregroup.site
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: my1.australiacaregroup.site
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: my1.australiacaregroup.site
+  port: 10002
+  udp: true
+  type: vless
+  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  tls: true
+  servername: my1.australiacaregroup.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: my1.australiacaregroup.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +99,9 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
+  - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +111,8 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
+  - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
 rules:
 - MATCH,PROXIES

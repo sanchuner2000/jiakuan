@@ -5,7 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - sanchun
-  server: 104.18.32.47
+  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: rgiw5k0gg5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 02 - sanchun
+  server: 165.215.250.14
   port: 443
   udp: true
   type: trojan
@@ -14,31 +24,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 02 - sanchun
-  server: tyxyrytyro-51255165170-direct.araghchy.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: tyxyrytyro
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 03 - sanchun
-  server: 8.47.69.0
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  tls: true
-  servername: vless.api-music-fa.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
+    path: //assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇫🇷 法国 (France) 01 - sanchun
   - 🇫🇷 法国 (France) 02 - sanchun
-  - 🇫🇷 法国 (France) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 (France) 01 - sanchun
   - 🇫🇷 法国 (France) 02 - sanchun
-  - 🇫🇷 法国 (France) 03 - sanchun
 rules:
 - MATCH,PROXIES

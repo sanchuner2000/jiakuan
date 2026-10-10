@@ -5,24 +5,60 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - sanchun
-  server: gb.tronsg.com
+  server: 40.120.36.23
+  port: 26460
+  udp: true
+  type: vless
+  uuid: 234ff65c-35e8-4ff6-a1e7-cce6acb2f3e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rnykCyLboP7HiOwx0Tfo5OSUVaJXbSMOB9MKkEZ_Xh8
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 02 - sanchun
+  server: 13.143.137.206
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: d2061bb1
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 03 - sanchun
+  server: 5.199.0.226
   port: 443
   udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: gb.tronsg.com
+  type: vless
+  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+  tls: true
+  servername: rnxq-1lpi3m.linmeisoft.com
   skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+    headers:
+      Host: rnxq-1lpi3m.linmeisoft.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇬🇧 英国 (United Kingdom) 01 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 02 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 (United Kingdom) 01 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 02 - sanchun
+  - 🇬🇧 英国 (United Kingdom) 03 - sanchun
 rules:
 - MATCH,PROXIES
