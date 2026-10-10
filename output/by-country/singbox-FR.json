@@ -4,9 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇫🇷 法国 (France) 01 - sanchun",
-      "server": "165.215.250.14",
+      "server": "rgiw5k0gg5-1492025789-direct.kheibarr.com",
+      "server_port": 443,
+      "uuid": "rgiw5k0gg5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rgiw5k0gg5-1492025789-direct.kheibarr.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 02 - sanchun",
+      "server": "172.67.231.254",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -16,23 +29,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "//assignment",
+        "path": "/assignment",
         "headers": {
           "Host": "www.calmlunch.com"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 02 - sanchun",
-      "server": "rgiw5k0gg5-1492025789-direct.kheibarr.com",
-      "server_port": 443,
-      "uuid": "rgiw5k0gg5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "rgiw5k0gg5-1492025789-direct.kheibarr.com",
-        "insecure": false
       }
     },
     {

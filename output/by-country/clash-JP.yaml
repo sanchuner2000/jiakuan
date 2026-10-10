@@ -17,17 +17,29 @@ proxies:
     short-id: cfffc6b65acb2ad3
   servername: shop.business.amazon.com
   client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 02 - sanchun
+  server: gz1.polymarket.party
+  port: 50002
+  udp: true
+  type: vless
+  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  tls: true
+  servername: tyo1.australiacaregroup.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇯🇵 日本 (Japan) 01 - sanchun
+  - 🇯🇵 日本 (Japan) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 日本 (Japan) 01 - sanchun
+  - 🇯🇵 日本 (Japan) 02 - sanchun
 rules:
 - MATCH,PROXIES

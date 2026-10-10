@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - sanchun",
+      "server": "sg.fasti.win",
+      "server_port": 443,
+      "uuid": "a16bd0e2-ff2e-4e4c-a955-0c684255a065",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg.fasti.win",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs",
+          "short_id": "feedbacc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
       "server": "japro02.xyy123.bid",
       "server_port": 443,
       "uuid": "440f986b-9469-4d80-adf0-01ba37af73c5",
@@ -25,18 +46,60 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - sanchun",
+      "server": "34.87.113.18",
+      "server_port": 443,
+      "uuid": "5567cac6-2a32-4318-83cd-7df3a9eebbd7",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4",
+          "short_id": "eb97ce837da2f6ad"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - sanchun",
+      "server": "sh.polymarket.party",
+      "server_port": 8447,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "48.maoming.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 01 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 02 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 03 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 04 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 01 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 02 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 03 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

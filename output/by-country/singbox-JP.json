@@ -25,18 +25,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
+      "server": "gz1.polymarket.party",
+      "server_port": 50002,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "tyo1.australiacaregroup.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun",
+        "🇯🇵 日本 (Japan) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 - sanchun"
+        "🇯🇵 日本 (Japan) 01 - sanchun",
+        "🇯🇵 日本 (Japan) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

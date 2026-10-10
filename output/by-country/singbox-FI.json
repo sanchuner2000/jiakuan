@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
-      "server": "34.92.19.135",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - sanchun",
+      "server": "marz.zovip2.ir",
       "server_port": 443,
-      "uuid": "90153538-ef08-4942-b8e1-41e7c523e659",
+      "uuid": "a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "marz.zovip2.ir",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM",
-          "short_id": "56d4e7ae4f86fa39"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gropcdn"
       }
     },
     {
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇫🇮 芬兰 (Finland) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - sanchun"
+        "🇫🇮 芬兰 (Finland) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - sanchun
+  server: sg.fasti.win
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
+  servername: sg.fasti.win
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
   server: japro02.xyy123.bid
   port: 443
   udp: true
@@ -17,17 +30,45 @@ proxies:
     short-id: 6d962e8d8a0dce
   servername: shop.business.amazon.com
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  server: 34.87.113.18
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  tls: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+    short-id: eb97ce837da2f6ad
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 04 - sanchun
+  server: sh.polymarket.party
+  port: 8447
+  udp: true
+  type: vless
+  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  tls: true
+  servername: 48.maoming.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
 rules:
 - MATCH,PROXIES
