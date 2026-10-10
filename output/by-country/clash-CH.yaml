@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - sanchun
-  server: dobro.ali-bard.online
+  server: 179.255.191.86
   port: 443
   udp: true
   type: vless

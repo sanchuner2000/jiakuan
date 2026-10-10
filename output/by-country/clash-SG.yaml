@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  server: 20.212.105.115
-  port: 41202
-  udp: true
-  type: vless
-  uuid: f0e2feb9-cbe0-49fc-a148-8ec97cb0f948
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Qy3mbHGSK-cWrJ_Dsaj-R8ydGtWo4lr3EtAvrEWv3mo
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
   server: japro02.xyy123.bid
   port: 443
   udp: true
@@ -29,54 +17,17 @@ proxies:
     short-id: 6d962e8d8a0dce
   servername: shop.business.amazon.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
-  server: 159.australiacaregroup.site
-  port: 10002
-  udp: true
-  type: vless
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  tls: true
-  servername: 159.australiacaregroup.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 159.australiacaregroup.site
-- name: 🇸🇬 新加坡 (Singapore) 04 - sanchun
-  server: 159.australiacaregroup.site
-  port: 10001
-  udp: true
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 159.australiacaregroup.site
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: 159.australiacaregroup.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 02 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
 rules:
 - MATCH,PROXIES
