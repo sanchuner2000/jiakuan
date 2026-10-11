@@ -5,35 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
-  server: 129.153.71.28
-  port: 28863
+  server: 172.67.156.147
+  port: 443
   udp: true
   type: vless
-  uuid: 572b2f63-62b5-4e79-a6c8-d2211bf33576
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  servername: jp3.yohototo.top
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /tyxyws
     headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: 129.153.71.28
-  port: 28863
+  server: or3.sfacg.uk
+  port: 2083
   udp: true
-  type: vless
-  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  servername: cdn.sfacg.uk
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /or3
     headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: PROXIES
   type: select

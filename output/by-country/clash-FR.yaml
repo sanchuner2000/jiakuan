@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - sanchun
-  server: 165.215.250.14
+  server: 104.18.9.83
   port: 443
   udp: true
   type: trojan
@@ -14,17 +14,18 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: //assignment
+    path: /assignment
 - name: 🇫🇷 法国 (France) 02 - sanchun
-  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  server: 185.220.100.168
   port: 443
   udp: true
-  type: vless
-  uuid: rgiw5k0gg5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 - name: 🇫🇷 法国 (France) 03 - sanchun
   server: 8.47.69.0
   port: 2053

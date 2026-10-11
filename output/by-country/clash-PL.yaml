@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 瑞士 (Switzerland) 01 - sanchun
-  server: 179.255.191.86
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 01 - sanchun
+  server: 2.26.231.218
+  port: 2063
   udp: true
   type: vless
-  uuid: 12e95f93-443c-45f0-9a2a-5b318b9124cf
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: dobro.ali-bard.online
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 瑞士 (Switzerland) 01 - sanchun
+  - 🇵🇱 波兰 (Poland) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 (Switzerland) 01 - sanchun
+  - 🇵🇱 波兰 (Poland) 01 - sanchun
 rules:
 - MATCH,PROXIES
