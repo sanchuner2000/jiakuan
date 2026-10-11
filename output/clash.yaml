@@ -23,17 +23,19 @@ proxies:
     short-id: 4477382ff6d3d41c
   servername: www.icloud.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 03 - sanchun
-  server: 104.18.9.83
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 95.111.212.241
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: vless
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 04 - sanchun
   server: guanwang.awsno.com
   port: 443
@@ -50,7 +52,55 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇵🇱 波兰 (Poland) 05 - sanchun
+- name: 🇺🇸 美国 (United States) 05 - sanchun
+  server: ccs2g.pai50288.uk
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pai50288
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
+  server: 34.92.19.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  tls: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 07 - sanchun
+  server: 104.18.9.83
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇸🇬 新加坡 (Singapore) 08 - sanchun
+  server: 34.87.113.18
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  tls: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+    short-id: eb97ce837da2f6ad
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 09 - sanchun
   server: 2.26.231.218
   port: 2063
   udp: true
@@ -61,21 +111,8 @@ proxies:
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: 95.111.212.241
-  port: 443
-  udp: true
-  type: vless
-  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
-    short-id: 3a697adb4c58d495
-  servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 07 - sanchun
+- name: 🇫🇷 法国 (France) 10 - sanchun
   server: 185.220.100.168
   port: 443
   udp: true
@@ -86,43 +123,6 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇯🇵 日本 (Japan) 08 - sanchun
-  server: 172.67.156.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 09 - sanchun
-  server: or3.sfacg.uk
-  port: 2083
-  udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: cdn.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🇨🇦 加拿大 (Canada) 10 - sanchun
-  server: milo.rubinaz.xyz
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
 - name: 🇿🇦 南非 (South Africa) 11 - sanchun
   server: 34.35.186.228
   port: 443
@@ -135,33 +135,13 @@ proxies:
     short-id: 89b3a20484eb43ec
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 12 - sanchun
-  server: 13.143.137.206
-  port: 13443
+- name: 🇨🇦 加拿大 (Canada) 12 - sanchun
+  server: milo.rubinaz.xyz
+  port: 8080
   udp: true
   type: vless
-  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  servername: ya.ru
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 13 - sanchun
-  server: 13.143.137.206
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8ff3db5a-5f41-4f25-a8a4-7fbf00f1c319
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  servername: ya.ru
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 14 - sanchun
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+- name: 🇫🇷 法国 (France) 13 - sanchun
   server: 8.47.69.0
   port: 2053
   udp: true
@@ -175,6 +155,19 @@ proxies:
     path: /api/voip/updates/static/fr2035
     headers:
       Host: fr.api-music-fa.com
+- name: 🇦🇪 阿联酋 (UAE) 14 - sanchun
+  server: 157.228.128.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
 proxy-groups:
 - name: PROXIES
   type: select
@@ -182,18 +175,18 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇫🇷 法国 (France) 03 - sanchun
+  - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
-  - 🇵🇱 波兰 (Poland) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
   - 🇫🇷 法国 (France) 07 - sanchun
-  - 🇯🇵 日本 (Japan) 08 - sanchun
-  - 🇯🇵 日本 (Japan) 09 - sanchun
-  - 🇨🇦 加拿大 (Canada) 10 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 08 - sanchun
+  - 🇵🇱 波兰 (Poland) 09 - sanchun
+  - 🇫🇷 法国 (France) 10 - sanchun
   - 🇿🇦 南非 (South Africa) 11 - sanchun
-  - 🇺🇸 美国 (United States) 12 - sanchun
-  - 🇺🇸 美国 (United States) 13 - sanchun
-  - 🇫🇷 法国 (France) 14 - sanchun
+  - 🇨🇦 加拿大 (Canada) 12 - sanchun
+  - 🇫🇷 法国 (France) 13 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 14 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -201,17 +194,17 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
-  - 🇫🇷 法国 (France) 03 - sanchun
+  - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
-  - 🇵🇱 波兰 (Poland) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
   - 🇫🇷 法国 (France) 07 - sanchun
-  - 🇯🇵 日本 (Japan) 08 - sanchun
-  - 🇯🇵 日本 (Japan) 09 - sanchun
-  - 🇨🇦 加拿大 (Canada) 10 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 08 - sanchun
+  - 🇵🇱 波兰 (Poland) 09 - sanchun
+  - 🇫🇷 法国 (France) 10 - sanchun
   - 🇿🇦 南非 (South Africa) 11 - sanchun
-  - 🇺🇸 美国 (United States) 12 - sanchun
-  - 🇺🇸 美国 (United States) 13 - sanchun
-  - 🇫🇷 法国 (France) 14 - sanchun
+  - 🇨🇦 加拿大 (Canada) 12 - sanchun
+  - 🇫🇷 法国 (France) 13 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 14 - sanchun
 rules:
 - MATCH,PROXIES
