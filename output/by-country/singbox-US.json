@@ -4,8 +4,39 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
+      "server": "www.wto.org",
+      "server_port": 8443,
+      "password": "ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f",
+      "tls": {
+        "enabled": true,
+        "server_name": "jiangjc.pages.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "jiangjc.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "xjp111-3.vatilon.cc",
+      "server_port": 10003,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "xjp111-3.vatilon.cc",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
       "server": "guanwang.awsno.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
@@ -25,7 +56,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
       "server": "193.23.195.37",
       "server_port": 13443,
       "uuid": "9ebf4fda-7395-4800-b42f-b2dda649880a",
@@ -45,29 +76,14 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "gz2.vatilon.cc",
-      "server_port": 36032,
-      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "us2.australiacaregroup.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun"
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ]
     },
     {
@@ -76,7 +92,8 @@
       "outbounds": [
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun"
+        "🇺🇸 美国 (United States) 03 - sanchun",
+        "🇺🇸 美国 (United States) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

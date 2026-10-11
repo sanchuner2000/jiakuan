@@ -5,6 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
+  server: www.wto.org
+  port: 8443
+  udp: true
+  type: trojan
+  password: ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f
+  sni: jiangjc.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: xjp111-3.vatilon.cc
+  port: 10003
+  udp: true
+  type: trojan
+  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  sni: xjp111-3.vatilon.cc
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 03 - sanchun
   server: guanwang.awsno.com
   port: 443
   udp: true
@@ -20,7 +39,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 02 - sanchun
+- name: 🇺🇸 美国 (United States) 04 - sanchun
   server: 193.23.195.37
   port: 13443
   udp: true
@@ -33,16 +52,6 @@ proxies:
     short-id: d2061bb1
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: gz2.vatilon.cc
-  port: 36032
-  udp: true
-  type: vless
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  tls: true
-  servername: us2.australiacaregroup.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +60,7 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +69,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
+  - 🇺🇸 美国 (United States) 04 - sanchun
 rules:
 - MATCH,PROXIES

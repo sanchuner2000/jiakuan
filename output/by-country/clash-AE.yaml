@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 瑞士 (Switzerland) 01 - sanchun
-  server: 179.255.191.86
+- name: 🇦🇪 阿联酋 (UAE) 01 - sanchun
+  server: 157.228.128.59
   port: 443
   udp: true
   type: vless
-  uuid: 12e95f93-443c-45f0-9a2a-5b318b9124cf
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: dobro.ali-bard.online
-  client-fingerprint: firefox
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 瑞士 (Switzerland) 01 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 (Switzerland) 01 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 01 - sanchun
 rules:
 - MATCH,PROXIES

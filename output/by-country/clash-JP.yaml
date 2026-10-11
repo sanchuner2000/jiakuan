@@ -5,28 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
-  server: jpga01.xyy123.bid
-  port: 443
+  server: 129.153.71.28
+  port: 28863
   udp: true
   type: vless
-  uuid: 05453546-201f-4e8d-97ae-fd70da0e951f
-  flow: xtls-rprx-vision
+  uuid: 572b2f63-62b5-4e79-a6c8-d2211bf33576
   tls: true
-  reality-opts:
-    public-key: AgTktefiMM58y7f-KFgEtmVti_YJbd0GPSkxNeJ0RH4
-    short-id: cfffc6b65acb2ad3
-  servername: shop.business.amazon.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: gz1.polymarket.party
-  port: 50002
-  udp: true
-  type: vless
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  tls: true
-  servername: tyo1.australiacaregroup.site
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🇯🇵 日本 (Japan) 02 - sanchun
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
