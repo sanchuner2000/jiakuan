@@ -1,0 +1,57 @@
+name: Clean Update Subscriptions Runs
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 22 * * *' # UTC22点 = 北京时间早上6点自动执行
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    env:
+      TOKEN: ${{ secrets.PAT_TOKEN }}
+      REPO: sanchuner2000/jiakuan
+    steps:
+      - name: Delete finished runs, keep latest one for each workflow
+        run: |
+          set +e
+          clean_workflow_by_id() {
+            local WF_ID="$1"
+            echo "===== 清理 Workflow ID: $WF_ID ====="
+            local ALL_RUNS=""
+            local PAGE=1
+            while true; do
+              RESP=$(curl -s -w "\nHTTP_STATUS=%{http_code}" -H "Authorization: token $TOKEN" "https://api.github.com/repos/${REPO}/actions/workflows/${WF_ID}/runs?per_page=100&page=${PAGE}")
+              HTTP_CODE=$(echo "$RESP" | tail -n1 | sed 's/HTTP_STATUS=//')
+              BODY=$(echo "$RESP" | head -n -1)
+              if [ "$HTTP_CODE" -ne 200 ];then
+                echo "❌ API请求失败，跳过该工作流"
+                return
+              fi
+              PAGE_RUNS=$(echo "$BODY" | jq -r '.workflow_runs[] | select(.status=="completed") | .id')
+              if [ -z "$PAGE_RUNS" ]; then
+                break
+              fi
+              ALL_RUNS+=$'\n'"$PAGE_RUNS"
+              PAGE=$((PAGE+1))
+            done
+            arr=($(echo "$ALL_RUNS" | sed '/^$/d'))
+            count=${#arr[@]}
+            echo "✅ 找到已完成记录总数: $count"
+            if (( count <= 1 )); then
+              echo "记录数量≤1，无需删除"
+              return
+            fi
+            for ((i=1; i<count; i++)); do
+              rid=${arr[$i]}
+              echo "删除 Run ID: $rid"
+              curl -X DELETE -s -H "Authorization: token $TOKEN" "https://api.github.com/repos/${REPO}/actions/runs/$rid" || echo "⚠ 删除失败: $rid"
+            done
+            echo "===== ID $WF_ID 清理完成 ====="
+          }
+          # Update Subscriptions 主工作流ID
+          clean_workflow_by_id 356852665
+          # 自动获取当前Clean自身工作流ID，清理自己历史记录
+          RESP_SELF=$(curl -s -H "Authorization: token $TOKEN" "https://api.github.com/repos/${REPO}/actions/workflows")
+          SELF_ID=$(echo "$RESP_SELF" | jq -r '.workflows[] | select(.name=="Clean Update Subscriptions Runs") | .id')
+          echo "当前清理脚本自身Workflow ID: $SELF_ID"
+          clean_workflow_by_id $SELF_ID
