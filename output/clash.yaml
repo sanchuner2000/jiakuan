@@ -11,6 +11,17 @@ proxies:
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 89.117.112.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime11.workers.dev
+- name: 🇺🇸 美国 (United States) 03 - sanchun
   server: 51.81.203.63
   port: 443
   udp: true
@@ -23,35 +34,17 @@ proxies:
     short-id: 4477382ff6d3d41c
   servername: www.icloud.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 95.111.212.241
+- name: 🇫🇷 法国 (France) 04 - sanchun
+  server: 104.18.9.83
   port: 443
   udp: true
-  type: vless
-  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
-    short-id: 3a697adb4c58d495
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: guanwang.awsno.com
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: guanwang.awsno.com
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
+    path: /assignment
 - name: 🇺🇸 美国 (United States) 05 - sanchun
   server: ccs2g.pai50288.uk
   port: 443
@@ -77,29 +70,35 @@ proxies:
     short-id: 56d4e7ae4f86fa39
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 07 - sanchun
-  server: 104.18.9.83
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇸🇬 新加坡 (Singapore) 08 - sanchun
-  server: 34.87.113.18
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: 95.111.212.241
   port: 443
   udp: true
   type: vless
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-    short-id: eb97ce837da2f6ad
-  servername: www.cloudflare.com
+    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
+    short-id: 3a697adb4c58d495
+  servername: www.samsung.com
   client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 08 - sanchun
+  server: guanwang.awsno.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
 - name: 🇵🇱 波兰 (Poland) 09 - sanchun
   server: 2.26.231.218
   port: 2063
@@ -112,17 +111,18 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10 - sanchun
-  server: 185.220.100.168
+- name: 🇸🇬 新加坡 (Singapore) 10 - sanchun
+  server: 34.87.113.18
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: vless
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  tls: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+    short-id: eb97ce837da2f6ad
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇿🇦 南非 (South Africa) 11 - sanchun
   server: 34.35.186.228
   port: 443
@@ -142,6 +142,17 @@ proxies:
   type: vless
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
 - name: 🇫🇷 法国 (France) 13 - sanchun
+  server: 185.220.100.168
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 14 - sanchun
   server: 8.47.69.0
   port: 2053
   udp: true
@@ -155,19 +166,6 @@ proxies:
     path: /api/voip/updates/static/fr2035
     headers:
       Host: fr.api-music-fa.com
-- name: 🇦🇪 阿联酋 (UAE) 14 - sanchun
-  server: 157.228.128.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
 proxy-groups:
 - name: PROXIES
   type: select
@@ -176,17 +174,17 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
-  - 🇺🇸 美国 (United States) 04 - sanchun
+  - 🇫🇷 法国 (France) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
-  - 🇫🇷 法国 (France) 07 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 08 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
+  - 🇺🇸 美国 (United States) 08 - sanchun
   - 🇵🇱 波兰 (Poland) 09 - sanchun
-  - 🇫🇷 法国 (France) 10 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 10 - sanchun
   - 🇿🇦 南非 (South Africa) 11 - sanchun
   - 🇨🇦 加拿大 (Canada) 12 - sanchun
   - 🇫🇷 法国 (France) 13 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 14 - sanchun
+  - 🇫🇷 法国 (France) 14 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -195,16 +193,16 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
   - 🇺🇸 美国 (United States) 02 - sanchun
   - 🇺🇸 美国 (United States) 03 - sanchun
-  - 🇺🇸 美国 (United States) 04 - sanchun
+  - 🇫🇷 法国 (France) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
-  - 🇫🇷 法国 (France) 07 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 08 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
+  - 🇺🇸 美国 (United States) 08 - sanchun
   - 🇵🇱 波兰 (Poland) 09 - sanchun
-  - 🇫🇷 法国 (France) 10 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 10 - sanchun
   - 🇿🇦 南非 (South Africa) 11 - sanchun
   - 🇨🇦 加拿大 (Canada) 12 - sanchun
   - 🇫🇷 法国 (France) 13 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 14 - sanchun
+  - 🇫🇷 法国 (France) 14 - sanchun
 rules:
 - MATCH,PROXIES
