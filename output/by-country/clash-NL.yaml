@@ -1,0 +1,31 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  server: nl-2a972c8052.shamanapp.online
+  port: 33736
+  udp: true
+  type: vmess
+  uuid: 1281acca-f21d-475c-bf04-eccbee7f8df2
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+rules:
+- MATCH,PROXIES

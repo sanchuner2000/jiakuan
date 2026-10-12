@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "89.117.112.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime11.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
       "server": "51.81.203.63",
       "server_port": 443,
       "uuid": "cb2dbb6a-a1ea-4023-9ace-6466cee57241",
@@ -35,6 +21,29 @@
           "enabled": true,
           "public_key": "nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0",
           "short_id": "4477382ff6d3d41c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "whuiy.xyz",
+      "server_port": 443,
+      "uuid": "c64992bd-54aa-4d3d-8527-42da7d7e520a",
+      "tls": {
+        "enabled": true,
+        "server_name": "whuiy.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-cdn",
+        "headers": {
+          "Host": "whuiy.xyz"
         }
       }
     },
@@ -59,56 +68,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
-      "server": "95.111.212.241",
-      "server_port": 443,
-      "uuid": "924fe46b-b6e0-479e-ae7f-a3661680e706",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g",
-          "short_id": "3a697adb4c58d495"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "guanwang.awsno.com",
-      "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "guanwang.awsno.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/hls/cctv5phd.m3u8",
-        "headers": {
-          "Host": "guanwang.awsno.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun"
+        "🇺🇸 美国 (United States) 03 - sanchun"
       ]
     },
     {
@@ -117,9 +83,7 @@
       "outbounds": [
         "🇺🇸 美国 (United States) 01 - sanchun",
         "🇺🇸 美国 (United States) 02 - sanchun",
-        "🇺🇸 美国 (United States) 03 - sanchun",
-        "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun"
+        "🇺🇸 美国 (United States) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

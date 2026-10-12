@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-      "server": "34.87.113.18",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - sanchun",
+      "server": "fi.pythonsetupbib.online",
       "server_port": 443,
-      "uuid": "5567cac6-2a32-4318-83cd-7df3a9eebbd7",
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "fi.pythonsetupbib.online",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4",
-          "short_id": "eb97ce837da2f6ad"
+          "public_key": "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg",
+          "short_id": "bdf5852d1423e694"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
+        "🇫🇮 芬兰 (Finland) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - sanchun"
+        "🇫🇮 芬兰 (Finland) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
