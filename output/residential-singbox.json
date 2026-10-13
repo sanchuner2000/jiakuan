@@ -5,24 +5,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 - sanchun",
-      "server": "178.105.133.160",
-      "server_port": 4443,
-      "uuid": "fb0818b3-4031-4843-b5f7-1d75177a1758",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun",
+      "server": "googol.wookshop.ir",
+      "server_port": 17915,
+      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
       "tls": {
         "enabled": true,
-        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
+        "server_name": "googol.wookshop.ir",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
         }
       }
     },
@@ -31,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 瑞士 (Switzerland) 01 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 瑞士 (Switzerland) 01 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

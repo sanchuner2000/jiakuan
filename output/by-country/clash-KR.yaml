@@ -1,0 +1,101 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇰🇷 韩国 (South Korea) 01 - sanchun
+  server: 132.145.80.230
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇰🇷 韩国 (South Korea) 02 - sanchun
+  server: optimum-snapper.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 03 - sanchun
+  server: 3.34.131.153
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
+  server: 3.34.192.47
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: central-jawfish.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
+  server: 3.35.168.225
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: noted-cougar.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 06 - sanchun
+  server: main-fawn.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: main-fawn.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
+  server: engaging-toucan.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
+  server: 3.36.50.213
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pure-kodiak.rooster465.autos
+  skip-cert-verify: false
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇰🇷 韩国 (South Korea) 01 - sanchun
+  - 🇰🇷 韩国 (South Korea) 02 - sanchun
+  - 🇰🇷 韩国 (South Korea) 03 - sanchun
+  - 🇰🇷 韩国 (South Korea) 04 - sanchun
+  - 🇰🇷 韩国 (South Korea) 05 - sanchun
+  - 🇰🇷 韩国 (South Korea) 06 - sanchun
+  - 🇰🇷 韩国 (South Korea) 07 - sanchun
+  - 🇰🇷 韩国 (South Korea) 08 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇷 韩国 (South Korea) 01 - sanchun
+  - 🇰🇷 韩国 (South Korea) 02 - sanchun
+  - 🇰🇷 韩国 (South Korea) 03 - sanchun
+  - 🇰🇷 韩国 (South Korea) 04 - sanchun
+  - 🇰🇷 韩国 (South Korea) 05 - sanchun
+  - 🇰🇷 韩国 (South Korea) 06 - sanchun
+  - 🇰🇷 韩国 (South Korea) 07 - sanchun
+  - 🇰🇷 韩国 (South Korea) 08 - sanchun
+rules:
+- MATCH,PROXIES
