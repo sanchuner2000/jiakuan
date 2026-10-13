@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - sanchun
-  server: sub.merky.top
+  server: 94.143.231.146
   port: 443
   udp: true
   type: vless

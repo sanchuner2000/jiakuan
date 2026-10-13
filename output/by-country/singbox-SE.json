@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - sanchun",
-      "server": "sub.merky.top",
+      "server": "94.143.231.146",
       "server_port": 443,
       "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
       "tls": {

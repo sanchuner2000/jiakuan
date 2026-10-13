@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  server: moral-basilisk.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: moral-basilisk.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
   server: simple-molly.rooster465.autos
   port: 443
   udp: true
@@ -20,13 +12,21 @@ proxies:
   password: UX82473651
   sni: simple-molly.rooster465.autos
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
+- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
   server: inviting-ferret.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: inviting-ferret.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  server: moral-basilisk.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: moral-basilisk.rooster465.autos
   skip-cert-verify: false
 - name: 🇸🇬 新加坡 (Singapore) 04 - sanchun
   server: 3.1.252.137

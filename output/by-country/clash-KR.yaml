@@ -16,46 +16,22 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
 - name: 🇰🇷 韩国 (South Korea) 02 - sanchun
-  server: optimum-snapper.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 03 - sanchun
-  server: 3.34.131.153
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
-  server: 3.34.192.47
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: central-jawfish.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
-  server: 3.35.168.225
+  server: noted-cougar.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: noted-cougar.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 06 - sanchun
-  server: main-fawn.rooster465.autos
+- name: 🇰🇷 韩国 (South Korea) 03 - sanchun
+  server: central-jawfish.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: main-fawn.rooster465.autos
+  sni: central-jawfish.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
   server: engaging-toucan.rooster465.autos
   port: 443
   udp: true
@@ -63,7 +39,7 @@ proxies:
   password: UX82473651
   sni: engaging-toucan.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
   server: 3.36.50.213
   port: 443
   udp: true
@@ -71,6 +47,46 @@ proxies:
   password: UX82473651
   sni: pure-kodiak.rooster465.autos
   skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 06 - sanchun
+  server: pretty-rat.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
+  server: 3.35.207.188
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: main-fawn.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
+  server: optimum-snapper.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
+  server: jp4.998998.best
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: nat12.9966338.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vvvvvvvvv
+    headers:
+      Host: nat12.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +100,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - sanchun
   - 🇰🇷 韩国 (South Korea) 07 - sanchun
   - 🇰🇷 韩国 (South Korea) 08 - sanchun
+  - 🇰🇷 韩国 (South Korea) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,5 +114,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - sanchun
   - 🇰🇷 韩国 (South Korea) 07 - sanchun
   - 🇰🇷 韩国 (South Korea) 08 - sanchun
+  - 🇰🇷 韩国 (South Korea) 09 - sanchun
 rules:
 - MATCH,PROXIES

@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  server: 31.57.190.34
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   server: uk3-2.998998.best
   port: 443
   udp: true
@@ -26,11 +37,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
 rules:
 - MATCH,PROXIES

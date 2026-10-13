@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 01 - sanchun",
-      "server": "43.206.225.188",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "warm-krill.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 01 - sanchun",
       "server": "172.111.146.64",
       "server_port": 80,
       "uuid": "05b8c783-7f59-47f9-9923-06a465679f6a",
@@ -29,19 +17,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
-      "server": "amazed-mako.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "amazed-mako.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 04 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
       "server": "13.193.213.184",
       "server_port": 443,
       "password": "UX82473651",
@@ -53,55 +29,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 05 - sanchun",
-      "server": "winning-marten.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "winning-marten.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 06 - sanchun",
-      "server": "promoted-rattler.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "promoted-rattler.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 07 - sanchun",
-      "server": "musical-terrier.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "musical-terrier.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 08 - sanchun",
-      "server": "assuring-skink.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "assuring-skink.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 09 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
       "server": "13.230.91.226",
       "server_port": 443,
       "password": "UX82473651",
@@ -113,26 +41,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 10 - sanchun",
-      "server": "13.230.139.12",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "brief-glider.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - sanchun",
-      "server": "137.220.221.179",
-      "server_port": 443,
-      "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 12 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 04 - sanchun",
       "server": "3.112.188.176",
       "server_port": 443,
       "password": "UX82473651",
@@ -144,7 +53,67 @@
     },
     {
       "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 13 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 05 - sanchun",
+      "server": "18.183.167.216",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "amazed-mako.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 06 - sanchun",
+      "server": "43.206.225.188",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "warm-krill.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 07 - sanchun",
+      "server": "176.34.5.100",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "assuring-skink.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 08 - sanchun",
+      "server": "winning-marten.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "winning-marten.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 09 - sanchun",
+      "server": "13.230.139.12",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "brief-glider.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 10 - sanchun",
       "server": "obliging-louse.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -156,13 +125,37 @@
     },
     {
       "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 14 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 11 - sanchun",
       "server": "comic-poodle.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
         "server_name": "comic-poodle.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 12 - sanchun",
+      "server": "fancy-javelin.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "fancy-javelin.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 13 - sanchun",
+      "server": "promoted-rattler.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "promoted-rattler.rooster465.autos",
         "insecure": false
       }
     },
@@ -183,8 +176,7 @@
         "🇯🇵 日本 (Japan) 10 - sanchun",
         "🇯🇵 日本 (Japan) 11 - sanchun",
         "🇯🇵 日本 (Japan) 12 - sanchun",
-        "🇯🇵 日本 (Japan) 13 - sanchun",
-        "🇯🇵 日本 (Japan) 14 - sanchun"
+        "🇯🇵 日本 (Japan) 13 - sanchun"
       ]
     },
     {
@@ -203,8 +195,7 @@
         "🇯🇵 日本 (Japan) 10 - sanchun",
         "🇯🇵 日本 (Japan) 11 - sanchun",
         "🇯🇵 日本 (Japan) 12 - sanchun",
-        "🇯🇵 日本 (Japan) 13 - sanchun",
-        "🇯🇵 日本 (Japan) 14 - sanchun"
+        "🇯🇵 日本 (Japan) 13 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
