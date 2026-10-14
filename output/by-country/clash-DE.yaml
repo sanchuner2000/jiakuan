@@ -28,22 +28,6 @@ proxies:
   password: UX82473651
   sni: meet-goshawk.rooster465.autos
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 04 - sanchun
-  server: renderer-stream-2-114.mirra.now
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: renderer-stream-2-114.mirra.now
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-114.mirra.now
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +36,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 01 - sanchun
   - 🇩🇪 德国 (Germany) 02 - sanchun
   - 🇩🇪 德国 (Germany) 03 - sanchun
-  - 🇩🇪 德国 (Germany) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,6 +44,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 01 - sanchun
   - 🇩🇪 德国 (Germany) 02 - sanchun
   - 🇩🇪 德国 (Germany) 03 - sanchun
-  - 🇩🇪 德国 (Germany) 04 - sanchun
 rules:
 - MATCH,PROXIES

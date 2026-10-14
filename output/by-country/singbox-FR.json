@@ -19,9 +19,9 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 02 - sanchun",
-      "server": "7q4eiwcseu-193708596-direct.rahbarii.com",
+      "server": "193.70.85.96",
       "server_port": 443,
-      "uuid": "7q4eiwcseu",
+      "uuid": "58756a39-0472-5f8a-89e3-a80fa94af59e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -43,33 +43,13 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 04 - sanchun",
-      "server": "212.183.88.136",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇷 法国 (France) 01 - sanchun",
         "🇫🇷 法国 (France) 02 - sanchun",
-        "🇫🇷 法国 (France) 03 - sanchun",
-        "🇫🇷 法国 (France) 04 - sanchun"
+        "🇫🇷 法国 (France) 03 - sanchun"
       ]
     },
     {
@@ -78,8 +58,7 @@
       "outbounds": [
         "🇫🇷 法国 (France) 01 - sanchun",
         "🇫🇷 法国 (France) 02 - sanchun",
-        "🇫🇷 法国 (France) 03 - sanchun",
-        "🇫🇷 法国 (France) 04 - sanchun"
+        "🇫🇷 法国 (France) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

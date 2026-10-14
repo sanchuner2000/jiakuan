@@ -4,109 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
-  server: googol.wookshop.ir
-  port: 17915
-  udp: true
-  type: vless
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
-  tls: true
-  servername: googol.wookshop.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - sanchun
-  server: 54.72.130.222
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: adapting-basilisk.rooster465.autos
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 03 - sanchun
-  server: 51.255.165.170
-  port: 443
-  udp: true
-  type: vless
-  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 04 - sanchun
-  server: 7q4eiwcseu-193708596-direct.rahbarii.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7q4eiwcseu
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 7q4eiwcseu-193708596-direct.rahbarii.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 05 - sanchun
-  server: 51.255.166.202
-  port: 443
-  udp: true
-  type: vless
-  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: alert-titmouse.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: alert-titmouse.rooster465.autos
-  skip-cert-verify: false
-- name: 🇮🇪 爱尔兰 (Ireland) 07 - sanchun
-  server: 3.253.106.233
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: loved-shark.rooster465.autos
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 08 - sanchun
-  server: 3.120.109.26
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: actual-squid.rooster465.autos
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 09 - sanchun
-  server: 31.57.190.34
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇯🇵 日本 (Japan) 10 - sanchun
-  server: 172.111.146.64
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 🇯🇵 日本 (Japan) 11 - sanchun
-  server: 13.193.213.184
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: stable-python.rooster465.autos
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 12 - sanchun
+- name: 🇺🇸 美国 (United States) 01 - sanchun
   server: 213.165.50.45
   port: 9443
   udp: true
@@ -119,80 +17,58 @@ proxies:
     short-id: 649ab61e575fdbc9
   servername: usa.edgeses.org
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 13 - sanchun
-  server: app-ms-33.ecom-ai-solutions.com
-  port: 443
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 38.180.137.143
+  port: 9443
   udp: true
   type: vless
-  uuid: 0cf8e402-e801-4aeb-9b7a-00a933f9f1c1
+  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: fyG6EMB247gGPXLK1YqvbWd_Q9fnoMWkbmGfG1BRJUE
-    short-id: c90408131c6d00b0
-  servername: assets-ms-33.ecom-ai-solutions.com
-  client-fingerprint: randomized
-- name: 🇯🇵 日本 (Japan) 14 - sanchun
-  server: 13.230.91.226
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: random
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - sanchun
+  server: 54.72.130.222
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: musical-terrier.rooster465.autos
+  sni: adapting-basilisk.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 15 - sanchun
-  server: 3.112.188.176
+- name: 🇩🇪 德国 (Germany) 04 - sanchun
+  server: 3.120.109.26
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: live-stallion.rooster465.autos
+  sni: actual-squid.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 16 - sanchun
-  server: 18.183.167.216
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: amazed-mako.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 17 - sanchun
-  server: 94.143.231.146
+- name: 🇺🇸 美国 (United States) 05 - sanchun
+  server: xstack.mahanfixe.workers.dev
   port: 443
   udp: true
   type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
   tls: true
-  servername: sub.merky.top
+  servername: xstack.mahanfixe.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
-- name: 🇯🇵 日本 (Japan) 18 - sanchun
-  server: 43.206.225.188
+    path: /xiron
+- name: 🇫🇷 法国 (France) 06 - sanchun
+  server: 51.255.165.170
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: warm-krill.rooster465.autos
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 19 - sanchun
-  server: us16-4.998998.best
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
+  flow: xtls-rprx-vision
   tls: true
-  servername: server1.9966338.xyz
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /efrsdioy98wert
-    headers:
-      Host: server1.9966338.xyz
-- name: 🇸🇪 瑞典 (Sweden) 20 - sanchun
+- name: 🇸🇪 瑞典 (Sweden) 07 - sanchun
   server: 46.246.125.153
   port: 443
   udp: true
@@ -205,15 +81,59 @@ proxies:
     short-id: a83b77e064761e3c
   servername: res.cdn.office.net
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 21 - sanchun
-  server: pleased-albacore.rooster465.autos
+- name: 🇫🇷 法国 (France) 08 - sanchun
+  server: 193.70.85.96
+  port: 443
+  udp: true
+  type: vless
+  uuid: 58756a39-0472-5f8a-89e3-a80fa94af59e
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 7q4eiwcseu-193708596-direct.rahbarii.com
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 (UAE) 09 - sanchun
+  server: 157.228.128.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇯🇵 日本 (Japan) 10 - sanchun
+  server: fancy-javelin.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: pleased-albacore.rooster465.autos
+  sni: fancy-javelin.rooster465.autos
   skip-cert-verify: false
-- name: 🇬🇷 希腊 (Greece) 22 - sanchun
+- name: 🇺🇸 美国 (United States) 11 - sanchun
+  server: 2.26.89.14
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0cf8e402-e801-4aeb-9b7a-00a933f9f1c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fyG6EMB247gGPXLK1YqvbWd_Q9fnoMWkbmGfG1BRJUE
+    short-id: c90408131c6d00b0
+  servername: assets-ms-33.ecom-ai-solutions.com
+  client-fingerprint: random
+- name: 🇮🇪 爱尔兰 (Ireland) 12 - sanchun
+  server: 3.253.106.233
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: false
+- name: 🇬🇷 希腊 (Greece) 13 - sanchun
   server: 157.228.150.34
   port: 443
   udp: true
@@ -226,15 +146,23 @@ proxies:
     short-id: 3cef317b
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 23 - sanchun
-  server: 176.34.5.100
+- name: 🇯🇵 日本 (Japan) 14 - sanchun
+  server: 3.112.188.176
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: assuring-skink.rooster465.autos
+  sni: live-stallion.rooster465.autos
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 24 - sanchun
+- name: 🇯🇵 日本 (Japan) 15 - sanchun
+  server: 43.206.225.188
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: warm-krill.rooster465.autos
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - sanchun
   server: 103.193.173.51
   port: 39485
   udp: true
@@ -247,7 +175,75 @@ proxies:
     short-id: b9
   servername: www.icloud.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 25 - sanchun
+- name: 🇮🇳 印度 (India) 17 - sanchun
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇪 瑞典 (Sweden) 18 - sanchun
+  server: swe.wizard.select
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
+    short-id: 3b20e438da99
+  servername: swe.wizard.select
+  client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 19 - sanchun
+  server: 3.34.131.153
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 20 - sanchun
+  server: 87.242.127.113
+  port: 4510
+  udp: true
+  type: vless
+  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM
+    short-id: 2d0c188798bae174
+  servername: 9c99da.usecache.net
+  client-fingerprint: random
+- name: 🇳🇱 荷兰 (Netherlands) 21 - sanchun
+  server: 31.57.190.34
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇸🇪 瑞典 (Sweden) 22 - sanchun
+  server: sub.merky.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+- name: 🇵🇱 波兰 (Poland) 23 - sanchun
   server: 144.31.101.196
   port: 33891
   udp: true
@@ -260,17 +256,30 @@ proxies:
     short-id: 5bd7b68ca4c04443
   servername: browser.yandex.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 26 - sanchun
-  server: 132.145.80.230
-  port: 80
+- name: 🇯🇵 日本 (Japan) 24 - sanchun
+  server: 18.183.167.216
+  port: 443
   udp: true
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
+  type: trojan
+  password: UX82473651
+  sni: amazed-mako.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 25 - sanchun
+  server: engaging-toucan.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 26 - sanchun
+  server: 3.34.192.47
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: central-jawfish.rooster465.autos
+  skip-cert-verify: false
 - name: 🇳🇱 荷兰 (Netherlands) 27 - sanchun
   server: uk3-2.998998.best
   port: 443
@@ -287,37 +296,15 @@ proxies:
     path: /serhrdftshg
     headers:
       Host: server22.9966338.xyz
-- name: 🇨🇦 加拿大 (Canada) 28 - sanchun
-  server: milo.rubinaz.xyz
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-- name: 🇰🇷 韩国 (South Korea) 29 - sanchun
-  server: noted-cougar.rooster465.autos
+- name: 🇸🇬 新加坡 (Singapore) 28 - sanchun
+  server: musical-mouse.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: noted-cougar.rooster465.autos
+  sni: musical-mouse.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 30 - sanchun
-  server: central-jawfish.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: central-jawfish.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 31 - sanchun
-  server: simple-molly.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: simple-molly.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 32 - sanchun
+- name: 🇯🇵 日本 (Japan) 29 - sanchun
   server: winning-marten.rooster465.autos
   port: 443
   udp: true
@@ -325,28 +312,95 @@ proxies:
   password: UX82473651
   sni: winning-marten.rooster465.autos
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 33 - sanchun
-  server: 87.242.127.113
-  port: 4510
-  udp: true
-  type: vless
-  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM
-    short-id: 2d0c188798bae174
-  servername: 9c99da.usecache.net
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 34 - sanchun
-  server: engaging-toucan.rooster465.autos
+- name: 🇯🇵 日本 (Japan) 30 - sanchun
+  server: musical-terrier.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: engaging-toucan.rooster465.autos
+  sni: musical-terrier.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 35 - sanchun
+- name: 🇯🇵 日本 (Japan) 31 - sanchun
+  server: 176.34.5.100
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: assuring-skink.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 32 - sanchun
+  server: optimum-snapper.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: false
+- name: 🇨🇦 加拿大 (Canada) 33 - sanchun
+  server: milo.rubinaz.xyz
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+- name: 🇩🇪 德国 (Germany) 34 - sanchun
+  server: pleased-albacore.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pleased-albacore.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 35 - sanchun
+  server: comic-poodle.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: comic-poodle.rooster465.autos
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 36 - sanchun
+  server: 51.255.166.202
+  port: 443
+  udp: true
+  type: vless
+  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 37 - sanchun
+  server: main-fawn.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: main-fawn.rooster465.autos
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 38 - sanchun
+  server: alert-titmouse.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: alert-titmouse.rooster465.autos
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 39 - sanchun
+  server: us16-4.998998.best
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: server1.9966338.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /efrsdioy98wert
+    headers:
+      Host: server1.9966338.xyz
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 40 - sanchun
   server: 3h-kazakhstan1.09vpn.com
   port: 80
   udp: true
@@ -357,166 +411,23 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-- name: 🇰🇷 韩国 (South Korea) 36 - sanchun
-  server: 3.36.50.213
+- name: 🇰🇷 韩国 (South Korea) 41 - sanchun
+  server: 3.35.168.225
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: pure-kodiak.rooster465.autos
+  sni: noted-cougar.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 37 - sanchun
-  server: 13.230.139.12
+- name: 🇯🇵 日本 (Japan) 42 - sanchun
+  server: promoted-rattler.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: brief-glider.rooster465.autos
+  sni: promoted-rattler.rooster465.autos
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 38 - sanchun
-  server: meet-goshawk.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: meet-goshawk.rooster465.autos
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 39 - sanchun
-  server: 157.228.128.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 40 - sanchun
-  server: pretty-rat.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 41 - sanchun
-  server: inviting-ferret.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: inviting-ferret.rooster465.autos
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 42 - sanchun
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇰🇷 韩国 (South Korea) 43 - sanchun
-  server: 3.35.207.188
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: main-fawn.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 44 - sanchun
-  server: obliging-louse.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: obliging-louse.rooster465.autos
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 45 - sanchun
-  server: 31.76.227.58
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0cf8e402-e801-4aeb-9b7a-00a933f9f1c1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: kInywP138eVlHbS7wodX2Q_R1OC0JdViypEeguSvpQ0
-    short-id: 33e6fe7545082926
-  servername: assets-mi-27.spbstudentlife.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 46 - sanchun
-  server: 135.136.176.183
-  port: 443
-  udp: true
-  type: vless
-  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-  tls: true
-  servername: rnxq-1lpi3m.linmeisoft.com
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-    headers:
-      Host: rnxq-1lpi3m.linmeisoft.com
-- name: 🇰🇷 韩国 (South Korea) 47 - sanchun
-  server: optimum-snapper.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 48 - sanchun
-  server: comic-poodle.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: comic-poodle.rooster465.autos
-  skip-cert-verify: false
-- name: 🇮🇳 印度 (India) 49 - sanchun
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 50 - sanchun
-  server: moral-basilisk.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: moral-basilisk.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 51 - sanchun
-  server: 3.1.252.137
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: brave-tomcat.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 52 - sanchun
-  server: fancy-javelin.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: fancy-javelin.rooster465.autos
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 53 - sanchun
+- name: 🇭🇰 中国香港 (Hong Kong) 43 - sanchun
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -532,44 +443,82 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 54 - sanchun
-  server: 3696b38bsg.murphyweb.sbs
-  port: 32134
-  udp: true
-  type: vless
-  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
-    short-id: 6c6c7c97
-  servername: buylite.music.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 55 - sanchun
-  server: renderer-stream-2-114.mirra.now
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: renderer-stream-2-114.mirra.now
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-114.mirra.now
-- name: 🇸🇬 新加坡 (Singapore) 56 - sanchun
-  server: musical-mouse.rooster465.autos
+- name: 🇸🇬 新加坡 (Singapore) 44 - sanchun
+  server: 3.1.252.137
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: musical-mouse.rooster465.autos
+  sni: brave-tomcat.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 57 - sanchun
+- name: 🇸🇬 新加坡 (Singapore) 45 - sanchun
+  server: simple-molly.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: simple-molly.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 46 - sanchun
+  server: obliging-louse.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: obliging-louse.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 47 - sanchun
+  server: 3.36.50.213
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pure-kodiak.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 48 - sanchun
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇸🇬 新加坡 (Singapore) 49 - sanchun
+  server: inviting-ferret.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 50 - sanchun
+  server: meet-goshawk.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: meet-goshawk.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 51 - sanchun
+  server: 13.230.139.12
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: brief-glider.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 52 - sanchun
+  server: moral-basilisk.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: moral-basilisk.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 53 - sanchun
   server: jp4.998998.best
   port: 443
   udp: true
@@ -585,139 +534,148 @@ proxies:
     path: /vvvvvvvvv
     headers:
       Host: nat12.9966338.xyz
-- name: 🇯🇵 日本 (Japan) 58 - sanchun
-  server: promoted-rattler.rooster465.autos
+- name: 🇺🇸 美国 (United States) 54 - sanchun
+  server: app-mi-27.spbstudentlife.com
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: promoted-rattler.rooster465.autos
+  type: vless
+  uuid: 0cf8e402-e801-4aeb-9b7a-00a933f9f1c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kInywP138eVlHbS7wodX2Q_R1OC0JdViypEeguSvpQ0
+    short-id: 33e6fe7545082926
+  servername: assets-mi-27.spbstudentlife.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 55 - sanchun
+  server: googol.wookshop.ir
+  port: 17915
+  udp: true
+  type: vless
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  tls: true
+  servername: googol.wookshop.ir
   skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
-  - 🇮🇪 爱尔兰 (Ireland) 02 - sanchun
-  - 🇫🇷 法国 (France) 03 - sanchun
-  - 🇫🇷 法国 (France) 04 - sanchun
-  - 🇫🇷 法国 (France) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
-  - 🇮🇪 爱尔兰 (Ireland) 07 - sanchun
-  - 🇩🇪 德国 (Germany) 08 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 09 - sanchun
+  - 🇺🇸 美国 (United States) 01 - sanchun
+  - 🇺🇸 美国 (United States) 02 - sanchun
+  - 🇮🇪 爱尔兰 (Ireland) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 04 - sanchun
+  - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇫🇷 法国 (France) 06 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 07 - sanchun
+  - 🇫🇷 法国 (France) 08 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 09 - sanchun
   - 🇯🇵 日本 (Japan) 10 - sanchun
-  - 🇯🇵 日本 (Japan) 11 - sanchun
-  - 🇺🇸 美国 (United States) 12 - sanchun
-  - 🇺🇸 美国 (United States) 13 - sanchun
+  - 🇺🇸 美国 (United States) 11 - sanchun
+  - 🇮🇪 爱尔兰 (Ireland) 12 - sanchun
+  - 🇬🇷 希腊 (Greece) 13 - sanchun
   - 🇯🇵 日本 (Japan) 14 - sanchun
   - 🇯🇵 日本 (Japan) 15 - sanchun
-  - 🇯🇵 日本 (Japan) 16 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 17 - sanchun
-  - 🇯🇵 日本 (Japan) 18 - sanchun
-  - 🇺🇸 美国 (United States) 19 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 20 - sanchun
-  - 🇩🇪 德国 (Germany) 21 - sanchun
-  - 🇬🇷 希腊 (Greece) 22 - sanchun
-  - 🇯🇵 日本 (Japan) 23 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 24 - sanchun
-  - 🇵🇱 波兰 (Poland) 25 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 16 - sanchun
+  - 🇮🇳 印度 (India) 17 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 18 - sanchun
+  - 🇰🇷 韩国 (South Korea) 19 - sanchun
+  - 🇵🇱 波兰 (Poland) 20 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 21 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 22 - sanchun
+  - 🇵🇱 波兰 (Poland) 23 - sanchun
+  - 🇯🇵 日本 (Japan) 24 - sanchun
+  - 🇰🇷 韩国 (South Korea) 25 - sanchun
   - 🇰🇷 韩国 (South Korea) 26 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 27 - sanchun
-  - 🇨🇦 加拿大 (Canada) 28 - sanchun
-  - 🇰🇷 韩国 (South Korea) 29 - sanchun
-  - 🇰🇷 韩国 (South Korea) 30 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 31 - sanchun
-  - 🇯🇵 日本 (Japan) 32 - sanchun
-  - 🇵🇱 波兰 (Poland) 33 - sanchun
-  - 🇰🇷 韩国 (South Korea) 34 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 35 - sanchun
-  - 🇰🇷 韩国 (South Korea) 36 - sanchun
-  - 🇯🇵 日本 (Japan) 37 - sanchun
-  - 🇩🇪 德国 (Germany) 38 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 39 - sanchun
-  - 🇰🇷 韩国 (South Korea) 40 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 41 - sanchun
-  - 🇫🇷 法国 (France) 42 - sanchun
-  - 🇰🇷 韩国 (South Korea) 43 - sanchun
-  - 🇯🇵 日本 (Japan) 44 - sanchun
-  - 🇺🇸 美国 (United States) 45 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 46 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 28 - sanchun
+  - 🇯🇵 日本 (Japan) 29 - sanchun
+  - 🇯🇵 日本 (Japan) 30 - sanchun
+  - 🇯🇵 日本 (Japan) 31 - sanchun
+  - 🇰🇷 韩国 (South Korea) 32 - sanchun
+  - 🇨🇦 加拿大 (Canada) 33 - sanchun
+  - 🇩🇪 德国 (Germany) 34 - sanchun
+  - 🇯🇵 日本 (Japan) 35 - sanchun
+  - 🇫🇷 法国 (France) 36 - sanchun
+  - 🇰🇷 韩国 (South Korea) 37 - sanchun
+  - 🇺🇸 美国 (United States) 38 - sanchun
+  - 🇺🇸 美国 (United States) 39 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 40 - sanchun
+  - 🇰🇷 韩国 (South Korea) 41 - sanchun
+  - 🇯🇵 日本 (Japan) 42 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 43 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 44 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 45 - sanchun
+  - 🇯🇵 日本 (Japan) 46 - sanchun
   - 🇰🇷 韩国 (South Korea) 47 - sanchun
-  - 🇯🇵 日本 (Japan) 48 - sanchun
-  - 🇮🇳 印度 (India) 49 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 50 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 51 - sanchun
-  - 🇯🇵 日本 (Japan) 52 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 53 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 54 - sanchun
-  - 🇩🇪 德国 (Germany) 55 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 56 - sanchun
-  - 🇰🇷 韩国 (South Korea) 57 - sanchun
-  - 🇯🇵 日本 (Japan) 58 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 48 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 49 - sanchun
+  - 🇩🇪 德国 (Germany) 50 - sanchun
+  - 🇯🇵 日本 (Japan) 51 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 52 - sanchun
+  - 🇰🇷 韩国 (South Korea) 53 - sanchun
+  - 🇺🇸 美国 (United States) 54 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 55 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
-  - 🇮🇪 爱尔兰 (Ireland) 02 - sanchun
-  - 🇫🇷 法国 (France) 03 - sanchun
-  - 🇫🇷 法国 (France) 04 - sanchun
-  - 🇫🇷 法国 (France) 05 - sanchun
-  - 🇺🇸 美国 (United States) 06 - sanchun
-  - 🇮🇪 爱尔兰 (Ireland) 07 - sanchun
-  - 🇩🇪 德国 (Germany) 08 - sanchun
-  - 🇳🇱 荷兰 (Netherlands) 09 - sanchun
+  - 🇺🇸 美国 (United States) 01 - sanchun
+  - 🇺🇸 美国 (United States) 02 - sanchun
+  - 🇮🇪 爱尔兰 (Ireland) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 04 - sanchun
+  - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇫🇷 法国 (France) 06 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 07 - sanchun
+  - 🇫🇷 法国 (France) 08 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 09 - sanchun
   - 🇯🇵 日本 (Japan) 10 - sanchun
-  - 🇯🇵 日本 (Japan) 11 - sanchun
-  - 🇺🇸 美国 (United States) 12 - sanchun
-  - 🇺🇸 美国 (United States) 13 - sanchun
+  - 🇺🇸 美国 (United States) 11 - sanchun
+  - 🇮🇪 爱尔兰 (Ireland) 12 - sanchun
+  - 🇬🇷 希腊 (Greece) 13 - sanchun
   - 🇯🇵 日本 (Japan) 14 - sanchun
   - 🇯🇵 日本 (Japan) 15 - sanchun
-  - 🇯🇵 日本 (Japan) 16 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 17 - sanchun
-  - 🇯🇵 日本 (Japan) 18 - sanchun
-  - 🇺🇸 美国 (United States) 19 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 20 - sanchun
-  - 🇩🇪 德国 (Germany) 21 - sanchun
-  - 🇬🇷 希腊 (Greece) 22 - sanchun
-  - 🇯🇵 日本 (Japan) 23 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 24 - sanchun
-  - 🇵🇱 波兰 (Poland) 25 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 16 - sanchun
+  - 🇮🇳 印度 (India) 17 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 18 - sanchun
+  - 🇰🇷 韩国 (South Korea) 19 - sanchun
+  - 🇵🇱 波兰 (Poland) 20 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 21 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 22 - sanchun
+  - 🇵🇱 波兰 (Poland) 23 - sanchun
+  - 🇯🇵 日本 (Japan) 24 - sanchun
+  - 🇰🇷 韩国 (South Korea) 25 - sanchun
   - 🇰🇷 韩国 (South Korea) 26 - sanchun
   - 🇳🇱 荷兰 (Netherlands) 27 - sanchun
-  - 🇨🇦 加拿大 (Canada) 28 - sanchun
-  - 🇰🇷 韩国 (South Korea) 29 - sanchun
-  - 🇰🇷 韩国 (South Korea) 30 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 31 - sanchun
-  - 🇯🇵 日本 (Japan) 32 - sanchun
-  - 🇵🇱 波兰 (Poland) 33 - sanchun
-  - 🇰🇷 韩国 (South Korea) 34 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 35 - sanchun
-  - 🇰🇷 韩国 (South Korea) 36 - sanchun
-  - 🇯🇵 日本 (Japan) 37 - sanchun
-  - 🇩🇪 德国 (Germany) 38 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 39 - sanchun
-  - 🇰🇷 韩国 (South Korea) 40 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 41 - sanchun
-  - 🇫🇷 法国 (France) 42 - sanchun
-  - 🇰🇷 韩国 (South Korea) 43 - sanchun
-  - 🇯🇵 日本 (Japan) 44 - sanchun
-  - 🇺🇸 美国 (United States) 45 - sanchun
-  - 🇬🇧 英国 (United Kingdom) 46 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 28 - sanchun
+  - 🇯🇵 日本 (Japan) 29 - sanchun
+  - 🇯🇵 日本 (Japan) 30 - sanchun
+  - 🇯🇵 日本 (Japan) 31 - sanchun
+  - 🇰🇷 韩国 (South Korea) 32 - sanchun
+  - 🇨🇦 加拿大 (Canada) 33 - sanchun
+  - 🇩🇪 德国 (Germany) 34 - sanchun
+  - 🇯🇵 日本 (Japan) 35 - sanchun
+  - 🇫🇷 法国 (France) 36 - sanchun
+  - 🇰🇷 韩国 (South Korea) 37 - sanchun
+  - 🇺🇸 美国 (United States) 38 - sanchun
+  - 🇺🇸 美国 (United States) 39 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 40 - sanchun
+  - 🇰🇷 韩国 (South Korea) 41 - sanchun
+  - 🇯🇵 日本 (Japan) 42 - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 43 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 44 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 45 - sanchun
+  - 🇯🇵 日本 (Japan) 46 - sanchun
   - 🇰🇷 韩国 (South Korea) 47 - sanchun
-  - 🇯🇵 日本 (Japan) 48 - sanchun
-  - 🇮🇳 印度 (India) 49 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 50 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 51 - sanchun
-  - 🇯🇵 日本 (Japan) 52 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 53 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 54 - sanchun
-  - 🇩🇪 德国 (Germany) 55 - sanchun
-  - 🇸🇬 新加坡 (Singapore) 56 - sanchun
-  - 🇰🇷 韩国 (South Korea) 57 - sanchun
-  - 🇯🇵 日本 (Japan) 58 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 48 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 49 - sanchun
+  - 🇩🇪 德国 (Germany) 50 - sanchun
+  - 🇯🇵 日本 (Japan) 51 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 52 - sanchun
+  - 🇰🇷 韩国 (South Korea) 53 - sanchun
+  - 🇺🇸 美国 (United States) 54 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 55 - sanchun
 rules:
 - MATCH,PROXIES

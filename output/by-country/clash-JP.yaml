@@ -5,33 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
-  server: 172.111.146.64
-  port: 80
+  server: fancy-javelin.rooster465.autos
+  port: 443
   udp: true
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
+  type: trojan
+  password: UX82473651
+  sni: fancy-javelin.rooster465.autos
+  skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: 13.193.213.184
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: stable-python.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: 13.230.91.226
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: musical-terrier.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 04 - sanchun
   server: 3.112.188.176
   port: 443
   udp: true
@@ -39,7 +20,15 @@ proxies:
   password: UX82473651
   sni: live-stallion.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 05 - sanchun
+- name: 🇯🇵 日本 (Japan) 03 - sanchun
+  server: 43.206.225.188
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: warm-krill.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 04 - sanchun
   server: 18.183.167.216
   port: 443
   udp: true
@@ -47,13 +36,21 @@ proxies:
   password: UX82473651
   sni: amazed-mako.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 06 - sanchun
-  server: 43.206.225.188
+- name: 🇯🇵 日本 (Japan) 05 - sanchun
+  server: winning-marten.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: warm-krill.rooster465.autos
+  sni: winning-marten.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 06 - sanchun
+  server: musical-terrier.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: musical-terrier.rooster465.autos
   skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 07 - sanchun
   server: 176.34.5.100
@@ -64,20 +61,20 @@ proxies:
   sni: assuring-skink.rooster465.autos
   skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 08 - sanchun
-  server: winning-marten.rooster465.autos
+  server: comic-poodle.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: winning-marten.rooster465.autos
+  sni: comic-poodle.rooster465.autos
   skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 09 - sanchun
-  server: 13.230.139.12
+  server: promoted-rattler.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: brief-glider.rooster465.autos
+  sni: promoted-rattler.rooster465.autos
   skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 10 - sanchun
   server: obliging-louse.rooster465.autos
@@ -88,28 +85,12 @@ proxies:
   sni: obliging-louse.rooster465.autos
   skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 11 - sanchun
-  server: comic-poodle.rooster465.autos
+  server: 13.230.139.12
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: comic-poodle.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 12 - sanchun
-  server: fancy-javelin.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: fancy-javelin.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 13 - sanchun
-  server: promoted-rattler.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: promoted-rattler.rooster465.autos
+  sni: brief-glider.rooster465.autos
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -127,8 +108,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 09 - sanchun
   - 🇯🇵 日本 (Japan) 10 - sanchun
   - 🇯🇵 日本 (Japan) 11 - sanchun
-  - 🇯🇵 日本 (Japan) 12 - sanchun
-  - 🇯🇵 日本 (Japan) 13 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -145,7 +124,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 09 - sanchun
   - 🇯🇵 日本 (Japan) 10 - sanchun
   - 🇯🇵 日本 (Japan) 11 - sanchun
-  - 🇯🇵 日本 (Japan) 12 - sanchun
-  - 🇯🇵 日本 (Japan) 13 - sanchun
 rules:
 - MATCH,PROXIES

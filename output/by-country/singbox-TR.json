@@ -5,24 +5,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 - sanchun",
-      "server": "135.136.176.183",
-      "server_port": 443,
-      "uuid": "b0a100ee-c397-43f2-bdae-2adfb7a0d4e5",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - sanchun",
+      "server": "googol.wookshop.ir",
+      "server_port": 17915,
+      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
       "tls": {
         "enabled": true,
-        "server_name": "rnxq-1lpi3m.linmeisoft.com",
+        "server_name": "googol.wookshop.ir",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/b0a100ee-c397-43f2-bdae-2adfb7a0d4e5",
-        "headers": {
-          "Host": "rnxq-1lpi3m.linmeisoft.com"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -31,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: alert-titmouse.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: alert-titmouse.rooster465.autos
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 02 - sanchun
   server: 213.165.50.45
   port: 9443
   udp: true
@@ -25,8 +17,33 @@ proxies:
     short-id: 649ab61e575fdbc9
   servername: usa.edgeses.org
   client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 38.180.137.143
+  port: 9443
+  udp: true
+  type: vless
+  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: random
 - name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: app-ms-33.ecom-ai-solutions.com
+  server: xstack.mahanfixe.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  tls: true
+  servername: xstack.mahanfixe.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /xiron
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 2.26.89.14
   port: 443
   udp: true
   type: vless
@@ -37,8 +54,16 @@ proxies:
     public-key: fyG6EMB247gGPXLK1YqvbWd_Q9fnoMWkbmGfG1BRJUE
     short-id: c90408131c6d00b0
   servername: assets-ms-33.ecom-ai-solutions.com
-  client-fingerprint: randomized
-- name: 🇺🇸 美国 (United States) 04 - sanchun
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 05 - sanchun
+  server: alert-titmouse.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: alert-titmouse.rooster465.autos
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 06 - sanchun
   server: us16-4.998998.best
   port: 443
   udp: true
@@ -54,8 +79,8 @@ proxies:
     path: /efrsdioy98wert
     headers:
       Host: server1.9966338.xyz
-- name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: 31.76.227.58
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: app-mi-27.spbstudentlife.com
   port: 443
   udp: true
   type: vless
@@ -77,6 +102,8 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,5 +114,7 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 03 - sanchun
   - 🇺🇸 美国 (United States) 04 - sanchun
   - 🇺🇸 美国 (United States) 05 - sanchun
+  - 🇺🇸 美国 (United States) 06 - sanchun
+  - 🇺🇸 美国 (United States) 07 - sanchun
 rules:
 - MATCH,PROXIES

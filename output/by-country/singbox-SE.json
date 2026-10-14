@@ -6,22 +6,6 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - sanchun",
-      "server": "94.143.231.146",
-      "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
-      "tls": {
-        "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - sanchun",
       "server": "46.246.125.153",
       "server_port": 443,
       "uuid": "a16a3e32-8d63-4dec-8c67-1361388a64ca",
@@ -41,12 +25,50 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - sanchun",
+      "server": "swe.wizard.select",
+      "server_port": 443,
+      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swe.wizard.select",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
+          "short_id": "3b20e438da99"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - sanchun",
+      "server": "sub.merky.top",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 02 - sanchun"
+        "🇸🇪 瑞典 (Sweden) 02 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 03 - sanchun"
       ]
     },
     {
@@ -54,7 +76,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 02 - sanchun"
+        "🇸🇪 瑞典 (Sweden) 02 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

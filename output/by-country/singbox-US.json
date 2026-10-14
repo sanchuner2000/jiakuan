@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 01 - sanchun",
-      "server": "alert-titmouse.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "alert-titmouse.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 01 - sanchun",
       "server": "213.165.50.45",
       "server_port": 9443,
       "uuid": "c3db7657-88ce-42a6-b998-1e0364b277ac",
@@ -38,8 +26,45 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 - sanchun",
+      "server": "38.180.137.143",
+      "server_port": 9443,
+      "uuid": "fe0721ac-c577-4938-b7ca-8ab5f43bb8da",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4",
+          "short_id": "b390142456517acc"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 03 - sanchun",
-      "server": "app-ms-33.ecom-ai-solutions.com",
+      "server": "xstack.mahanfixe.workers.dev",
+      "server_port": 443,
+      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
+      "tls": {
+        "enabled": true,
+        "server_name": "xstack.mahanfixe.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/xiron"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "server": "2.26.89.14",
       "server_port": 443,
       "uuid": "0cf8e402-e801-4aeb-9b7a-00a933f9f1c1",
       "flow": "xtls-rprx-vision",
@@ -48,7 +73,7 @@
         "server_name": "assets-ms-33.ecom-ai-solutions.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -58,8 +83,20 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
+      "server": "alert-titmouse.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "alert-titmouse.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 04 - sanchun",
+      "tag": "🇺🇸 美国 (United States) 06 - sanchun",
       "server": "us16-4.998998.best",
       "server_port": 443,
       "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
@@ -79,8 +116,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 05 - sanchun",
-      "server": "31.76.227.58",
+      "tag": "🇺🇸 美国 (United States) 07 - sanchun",
+      "server": "app-mi-27.spbstudentlife.com",
       "server_port": 443,
       "uuid": "0cf8e402-e801-4aeb-9b7a-00a933f9f1c1",
       "flow": "xtls-rprx-vision",
@@ -107,7 +144,9 @@
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
         "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun"
+        "🇺🇸 美国 (United States) 05 - sanchun",
+        "🇺🇸 美国 (United States) 06 - sanchun",
+        "🇺🇸 美国 (United States) 07 - sanchun"
       ]
     },
     {
@@ -118,7 +157,9 @@
         "🇺🇸 美国 (United States) 02 - sanchun",
         "🇺🇸 美国 (United States) 03 - sanchun",
         "🇺🇸 美国 (United States) 04 - sanchun",
-        "🇺🇸 美国 (United States) 05 - sanchun"
+        "🇺🇸 美国 (United States) 05 - sanchun",
+        "🇺🇸 美国 (United States) 06 - sanchun",
+        "🇺🇸 美国 (United States) 07 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
