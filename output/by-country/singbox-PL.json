@@ -25,18 +25,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - sanchun",
+      "server": "87.242.127.113",
+      "server_port": 4510,
+      "uuid": "c3db7657-88ce-42a6-b998-1e0364b277ac",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "9c99da.usecache.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM",
+          "short_id": "2d0c188798bae174"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - sanchun"
+        "🇵🇱 波兰 (Poland) 01 - sanchun",
+        "🇵🇱 波兰 (Poland) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - sanchun"
+        "🇵🇱 波兰 (Poland) 01 - sanchun",
+        "🇵🇱 波兰 (Poland) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 01 - sanchun",
+      "server": "188.253.26.216",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl3.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "noszGxmy754-TNyz9eM8EyHiaCRF2T4cu3El6GKb6n0",
+          "short_id": "0da7e14db353e7d0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
       "server": "5.42.117.160",
       "server_port": 1443,
       "uuid": "2db2d74d-f653-459c-818e-22a294e24175",
@@ -21,27 +42,6 @@
           "enabled": true,
           "public_key": "ngTZPxjdNEZ9l-_62155NaUx4LmkjW7vVVWplrkqSlE",
           "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 02 - sanchun",
-      "server": "150.251.143.220",
-      "server_port": 443,
-      "uuid": "7b9b233c-c646-4859-88b2-2a55695c6487",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nlastra.finakfree.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jQx41aPKBwFCRKregjdLMmwo4ShIYfjHWIMIl-0HJhc",
-          "short_id": "288d01b5"
         }
       }
     },

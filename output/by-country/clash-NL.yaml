@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  server: 188.253.26.216
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: noszGxmy754-TNyz9eM8EyHiaCRF2T4cu3El6GKb6n0
+    short-id: 0da7e14db353e7d0
+  servername: nl3.nztvpn.com
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
   server: 5.42.117.160
   port: 1443
   udp: true
@@ -15,19 +28,6 @@ proxies:
   reality-opts:
     public-key: ngTZPxjdNEZ9l-_62155NaUx4LmkjW7vVVWplrkqSlE
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
-  server: 150.251.143.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7b9b233c-c646-4859-88b2-2a55695c6487
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jQx41aPKBwFCRKregjdLMmwo4ShIYfjHWIMIl-0HJhc
-    short-id: 288d01b5
-  servername: nlastra.finakfree.ru
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
