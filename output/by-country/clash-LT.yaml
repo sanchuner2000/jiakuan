@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
-  server: 185.31.242.61
+- name: 🇱🇹 立陶宛 (Lithuania) 01 - sanchun
+  server: 84.32.109.20
   port: 443
   udp: true
   type: vless
@@ -13,21 +13,21 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0
+    public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
     short-id: 0da7e14db353e7d0
-  servername: est.nztvpn.com
+  servername: litv.nztvpn.com
   client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
+  - 🇱🇹 立陶宛 (Lithuania) 01 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
+  - 🇱🇹 立陶宛 (Lithuania) 01 - sanchun
 rules:
 - MATCH,PROXIES

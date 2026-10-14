@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 - sanchun",
-      "server": "185.170.215.228",
-      "server_port": 443,
-      "uuid": "b0a100ee-c397-43f2-bdae-2adfb7a0d4e5",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - sanchun",
+      "server": "3696b38bsg.murphyweb.sbs",
+      "server_port": 32134,
+      "uuid": "5b01dc2d-6892-49b8-8289-3f73a32e00e4",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "rnxq-1lpi3m.linmeisoft.com",
-        "insecure": false,
+        "server_name": "buylite.music.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/b0a100ee-c397-43f2-bdae-2adfb7a0d4e5",
-        "headers": {
-          "Host": "rnxq-1lpi3m.linmeisoft.com"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4",
+          "short_id": "6c6c7c97"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
