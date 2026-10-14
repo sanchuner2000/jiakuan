@@ -6,16 +6,21 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - sanchun",
-      "server": "googol.wookshop.ir",
-      "server_port": 17915,
-      "uuid": "439628ee-ef8e-4a3e-ba0f-091b7376dcb8",
+      "server": "153.56.210.61",
+      "server_port": 443,
+      "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "googol.wookshop.ir",
-        "insecure": false,
+        "server_name": "amd.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
+          "short_id": "a696de84963656de"
         }
       }
     },

@@ -5,44 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
-  server: 3.120.109.26
+  server: 147.45.39.4
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: actual-squid.rooster465.autos
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 02 - sanchun
-  server: pleased-albacore.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pleased-albacore.rooster465.autos
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 03 - sanchun
-  server: meet-goshawk.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: meet-goshawk.rooster465.autos
-  skip-cert-verify: false
+  type: vless
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7vGRh29DmlE13UV_fLUfl2bUpqkmJprSenLZXS8XJEc
+    short-id: 3560f3d77a767c3a
+  servername: de5.nztvpn.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 - sanchun
-  - 🇩🇪 德国 (Germany) 02 - sanchun
-  - 🇩🇪 德国 (Germany) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 - sanchun
-  - 🇩🇪 德国 (Germany) 02 - sanchun
-  - 🇩🇪 德国 (Germany) 03 - sanchun
 rules:
 - MATCH,PROXIES

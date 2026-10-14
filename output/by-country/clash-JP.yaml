@@ -5,124 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
-  server: fancy-javelin.rooster465.autos
-  port: 443
+  server: 38.180.201.12
+  port: 9443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: fancy-javelin.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: 3.112.188.176
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: live-stallion.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: 43.206.225.188
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: warm-krill.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 04 - sanchun
-  server: 18.183.167.216
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: amazed-mako.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 05 - sanchun
-  server: winning-marten.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: winning-marten.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 06 - sanchun
-  server: musical-terrier.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: musical-terrier.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 07 - sanchun
-  server: 176.34.5.100
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: assuring-skink.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 08 - sanchun
-  server: comic-poodle.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: comic-poodle.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 09 - sanchun
-  server: promoted-rattler.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: promoted-rattler.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 10 - sanchun
-  server: obliging-louse.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: obliging-louse.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 11 - sanchun
-  server: 13.230.139.12
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: brief-glider.rooster465.autos
-  skip-cert-verify: false
+  type: vless
+  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇯🇵 日本 (Japan) 01 - sanchun
-  - 🇯🇵 日本 (Japan) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
-  - 🇯🇵 日本 (Japan) 04 - sanchun
-  - 🇯🇵 日本 (Japan) 05 - sanchun
-  - 🇯🇵 日本 (Japan) 06 - sanchun
-  - 🇯🇵 日本 (Japan) 07 - sanchun
-  - 🇯🇵 日本 (Japan) 08 - sanchun
-  - 🇯🇵 日本 (Japan) 09 - sanchun
-  - 🇯🇵 日本 (Japan) 10 - sanchun
-  - 🇯🇵 日本 (Japan) 11 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 日本 (Japan) 01 - sanchun
-  - 🇯🇵 日本 (Japan) 02 - sanchun
-  - 🇯🇵 日本 (Japan) 03 - sanchun
-  - 🇯🇵 日本 (Japan) 04 - sanchun
-  - 🇯🇵 日本 (Japan) 05 - sanchun
-  - 🇯🇵 日本 (Japan) 06 - sanchun
-  - 🇯🇵 日本 (Japan) 07 - sanchun
-  - 🇯🇵 日本 (Japan) 08 - sanchun
-  - 🇯🇵 日本 (Japan) 09 - sanchun
-  - 🇯🇵 日本 (Japan) 10 - sanchun
-  - 🇯🇵 日本 (Japan) 11 - sanchun
 rules:
 - MATCH,PROXIES
